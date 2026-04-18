@@ -1,8 +1,8 @@
 import express from 'express';
-import { detectDomain } from '../controllers/skill.controller.js';
+import { detectUserDomain } from '../controllers/skill.controller.js';
 
 const router = express.Router();
 
-router.post('/detect-domain', detectDomain);
+router.post('/detect-domain', detectUserDomain);
 
 export default router;

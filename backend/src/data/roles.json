@@ -1,0 +1,302 @@
+{
+  "Frontend Developer": {
+    "domain": "IT",
+    "skills": {
+      "html": 3,
+      "css": 3,
+      "javascript": 3,
+      "react": 2,
+      "tailwind": 2,
+      "git": 2,
+      "figma": 1
+    }
+  },
+  "Backend Developer": {
+    "domain": "IT",
+    "skills": {
+      "node": 3,
+      "express": 3,
+      "sql": 3,
+      "mongodb": 2,
+      "rest api": 2,
+      "python": 2,
+      "docker": 1
+    }
+  },
+  "Full Stack Developer": {
+    "domain": "IT",
+    "skills": {
+      "javascript": 3,
+      "react": 3,
+      "node": 3,
+      "sql": 2,
+      "rest api": 2,
+      "git": 2,
+      "docker": 1
+    }
+  },
+  "Data Analyst": {
+    "domain": "IT",
+    "skills": {
+      "python": 3,
+      "sql": 3,
+      "excel": 3,
+      "tableau": 2,
+      "power bi": 2,
+      "mongodb": 1,
+      "flask": 1
+    }
+  },
+  "DevOps Engineer": {
+    "domain": "IT",
+    "skills": {
+      "docker": 3,
+      "linux": 3,
+      "aws": 3,
+      "git": 2,
+      "python": 2,
+      "postman": 1,
+      "rest api": 1
+    }
+  },
+  "CAD Design Engineer": {
+    "domain": "Mechanical",
+    "skills": {
+      "solidworks": 3,
+      "autocad": 3,
+      "catia": 2,
+      "gd&t": 2,
+      "product design": 2,
+      "tolerance analysis": 1,
+      "3d printing": 1
+    }
+  },
+  "FEA/CFD Analyst": {
+    "domain": "Mechanical",
+    "skills": {
+      "ansys": 3,
+      "fea": 3,
+      "cfd": 3,
+      "solidworks": 2,
+      "matlab": 2,
+      "fluid mechanics": 1,
+      "thermodynamics": 1
+    }
+  },
+  "Manufacturing Engineer": {
+    "domain": "Mechanical",
+    "skills": {
+      "cnc": 3,
+      "cam": 3,
+      "lean manufacturing": 2,
+      "quality control": 2,
+      "fmea": 2,
+      "autocad": 1,
+      "six sigma": 1
+    }
+  },
+  "Product Design Engineer": {
+    "domain": "Mechanical",
+    "skills": {
+      "solidworks": 3,
+      "product design": 3,
+      "creo": 2,
+      "fusion 360": 2,
+      "gd&t": 2,
+      "3d printing": 2,
+      "fmea": 1
+    }
+  },
+  "HVAC Engineer": {
+    "domain": "Mechanical",
+    "skills": {
+      "hvac": 3,
+      "autocad": 3,
+      "thermodynamics": 2,
+      "fluid mechanics": 2,
+      "hydraulics": 2,
+      "cfd": 1,
+      "matlab": 1
+    }
+  },
+  "Embedded Systems Engineer": {
+    "domain": "ECE",
+    "skills": {
+      "embedded c": 3,
+      "arm cortex": 3,
+      "stm32": 2,
+      "rtos": 2,
+      "i2c": 2,
+      "spi": 2,
+      "uart": 1
+    }
+  },
+  "PCB Design Engineer": {
+    "domain": "ECE",
+    "skills": {
+      "pcb design": 3,
+      "kicad": 3,
+      "ltspice": 2,
+      "proteus": 2,
+      "vhdl": 1,
+      "signal processing": 1,
+      "power electronics": 1
+    }
+  },
+  "IoT Engineer": {
+    "domain": "ECE",
+    "skills": {
+      "iot": 3,
+      "esp32": 3,
+      "arduino": 3,
+      "mqtt": 2,
+      "raspberry pi": 2,
+      "embedded c": 2,
+      "i2c": 1
+    }
+  },
+  "VLSI Design Engineer": {
+    "domain": "ECE",
+    "skills": {
+      "vhdl": 3,
+      "verilog": 3,
+      "fpga": 3,
+      "matlab": 2,
+      "signal processing": 2,
+      "ltspice": 1,
+      "kicad": 1
+    }
+  },
+  "Signal Processing Engineer": {
+    "domain": "ECE",
+    "skills": {
+      "signal processing": 3,
+      "matlab": 3,
+      "labview": 2,
+      "fpga": 2,
+      "verilog": 1,
+      "arduino": 1,
+      "can bus": 1
+    }
+  },
+  "Business Analyst": {
+    "domain": "MBA",
+    "skills": {
+      "business analysis": 3,
+      "excel": 3,
+      "sql": 2,
+      "tableau": 2,
+      "power bi": 2,
+      "market research": 2,
+      "swot analysis": 1
+    }
+  },
+  "Digital Marketing Executive": {
+    "domain": "MBA",
+    "skills": {
+      "digital marketing": 3,
+      "seo": 3,
+      "google analytics": 3,
+      "hubspot": 2,
+      "brand management": 2,
+      "power bi": 1,
+      "excel": 1
+    }
+  },
+  "Sales Executive": {
+    "domain": "MBA",
+    "skills": {
+      "b2b sales": 3,
+      "crm": 3,
+      "salesforce": 2,
+      "competitive analysis": 2,
+      "excel": 2,
+      "kpi tracking": 1,
+      "powerpoint": 1
+    }
+  },
+  "Operations Manager": {
+    "domain": "MBA",
+    "skills": {
+      "supply chain management": 3,
+      "erp": 3,
+      "project management": 2,
+      "budgeting": 2,
+      "forecasting": 2,
+      "scrum": 1,
+      "kpi tracking": 1
+    }
+  },
+  "Financial Analyst": {
+    "domain": "MBA",
+    "skills": {
+      "financial modeling": 3,
+      "excel": 3,
+      "forecasting": 3,
+      "tableau": 2,
+      "sql": 2,
+      "power bi": 1,
+      "budgeting": 1
+    }
+  },
+  "Accounts Executive": {
+    "domain": "BCom",
+    "skills": {
+      "tally": 3,
+      "accounting": 3,
+      "gst": 3,
+      "tds": 2,
+      "journal entries": 2,
+      "bank reconciliation": 2,
+      "excel": 1
+    }
+  },
+  "Tax Consultant": {
+    "domain": "BCom",
+    "skills": {
+      "income tax": 3,
+      "gst": 3,
+      "tds": 3,
+      "tally": 2,
+      "auditing": 2,
+      "taxation": 2,
+      "financial statements": 1
+    }
+  },
+  "Audit Associate": {
+    "domain": "BCom",
+    "skills": {
+      "auditing": 3,
+      "financial statements": 3,
+      "ifrs": 2,
+      "ratio analysis": 2,
+      "tally": 2,
+      "excel": 2,
+      "balance sheet": 1
+    }
+  },
+  "Finance Executive": {
+    "domain": "BCom",
+    "skills": {
+      "financial reporting": 3,
+      "accounts payable": 3,
+      "accounts receivable": 3,
+      "sap fico": 2,
+      "quickbooks": 2,
+      "payroll": 1,
+      "cost accounting": 1
+    }
+  },
+  "Bookkeeper": {
+    "domain": "BCom",
+    "skills": {
+      "bookkeeping": 3,
+      "tally prime": 3,
+      "journal entries": 3,
+      "bank reconciliation": 2,
+      "accounts payable": 2,
+      "accounts receivable": 2,
+      "zoho books": 1
+    }
+  }
+}
