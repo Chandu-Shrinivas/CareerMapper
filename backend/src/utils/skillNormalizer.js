@@ -1,6 +1,19 @@
 import { readJsonFile } from './fileUtils.js';
 
 const synonyms = readJsonFile('data/skillDictionary.json');
+const synonymEntries = Object.entries(synonyms);
+
+const canonicalizeSkill = (value) =>
+  String(value || '')
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, ' ')
+    .trim()
+    .replace(/\s+/g, ' ');
+
+const synonymMap = synonymEntries.reduce((acc, [key, val]) => {
+  acc[canonicalizeSkill(key)] = canonicalizeSkill(val);
+  return acc;
+}, {});
 
 export const normalizeSkills = (skills) => {
   const levelHierarchy = {
@@ -14,12 +27,16 @@ export const normalizeSkills = (skills) => {
   const validLevels = ['beginner', 'intermediate', 'advanced'];
 
   skills.forEach(skill => {
-    // Test 5, 11: Safely convert to string and strip special characters
-    let normalizedName = String(skill.name).replace(/[^a-zA-Z0-9]/g, '').toLowerCase().trim();
+    // Canonical form keeps multi-word skills consistent across datasets
+    let normalizedName = canonicalizeSkill(skill.name);
     
     // Map synonyms if they exist in dictionary
-    if (synonyms[normalizedName]) {
-      normalizedName = synonyms[normalizedName];
+    if (synonymMap[normalizedName]) {
+      normalizedName = synonymMap[normalizedName];
+    }
+
+    if (!normalizedName) {
+      return;
     }
     
     // Test 6, 7: Validate and default level
