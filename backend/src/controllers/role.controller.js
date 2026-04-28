@@ -1,13 +1,13 @@
 import { matchRoles } from '../services/role.service.js';
-import { normalizeSkills } from '../utils/skillNormalizer.js';
-import { detectDomain } from '../services/domain.service.js';
+import { normalizeSkills} from '../utils/skillNormalizer.js';
+import { detectDomain} from '../services/domain.service.js';
 
 export const getRoleMatches = (req, res) => {
   try {
     const { skills } = req.body;
 
     if (!skills || !Array.isArray(skills)) {
-      return res.status(400).json({ error: "Invalid input. 'skills' array is required." });
+     return res.status(400).json({ error: "Invalid input. 'skills' array is required." });
     }
 
     const normalizedSkills = normalizeSkills(skills);

@@ -15,8 +15,6 @@ const LEVEL_WEIGHTS = {
 };
 
 const MAX_LEVEL_WEIGHT = 4;
-const MIN_MATCHED_SKILLS = 2;
-const MIN_COVERAGE_PERCENT = 20;
 
 const canonicalizeSkill = (value) =>
   String(value || '')
@@ -43,7 +41,6 @@ export const matchRoles = (userSkills, detectedDomain = 'Unknown') => {
   if (!userSkills || !Array.isArray(userSkills)) {
     return [];
   }
-
   try {
     const rolesData = JSON.parse(fs.readFileSync(rolesFilePath, 'utf8'));
     const recommendations = [];
@@ -67,36 +64,44 @@ export const matchRoles = (userSkills, detectedDomain = 'Unknown') => {
     }
 
     for (const [roleName, roleData] of Object.entries(rolesData)) {
+      // Apply strict domain filtering
       if (detectedDomain !== 'Unknown' && roleData.domain !== detectedDomain) {
         continue;
       }
 
       const roleSkills = roleData.skills;
       
-      // ROLE GATING (MANDATORY)
+      // Soft role relevance: anchors boost score but don't hard-block
       const hasSkill = (skill) => userSkillMap[canonicalizeSkill(skill)] > 0;
-      let gatePassed = true;
+      let anchorSkills = ROLE_ANCHOR_SKILLS[roleName] || [];
 
       if (roleName === 'Frontend Developer') {
-        gatePassed = hasSkill('react') || hasSkill('javascript');
+        anchorSkills = ['react', 'javascript', 'html', 'css', 'dom'];
       } else if (roleName === 'Backend Developer') {
-        gatePassed = hasSkill('node') || hasSkill('java') || hasSkill('python');
+        anchorSkills = ['node', 'api', 'sql', 'authentication', 'authorization', 'java', 'python'];
       } else if (roleName === 'Full Stack Developer') {
-        const hasFrontend = ['react', 'javascript', 'html', 'css'].some(hasSkill);
-        const hasBackend = ['node', 'java', 'python', 'sql', 'api'].some(hasSkill);
-        gatePassed = hasFrontend && hasBackend;
+        anchorSkills = ['react', 'javascript', 'html', 'css', 'node', 'java', 'python', 'sql', 'api'];
       } else if (roleName === 'Software Tester' || roleName === 'Tester') {
-        gatePassed = hasSkill('testing') || hasSkill('postman');
+        anchorSkills = ['testing', 'postman', 'api', 'automation'];
       } else if (roleName === 'Data Analyst') {
-        gatePassed = hasSkill('python') || hasSkill('statistics') || hasSkill('data cleaning');
+        anchorSkills = ['python', 'sql', 'statistics', 'data cleaning', 'tableau'];
       } else if (roleName === 'DevOps Engineer') {
-        gatePassed = hasSkill('docker') || hasSkill('linux') || hasSkill('aws');
-      } else if (ROLE_ANCHOR_SKILLS[roleName]) {
-        gatePassed = ROLE_ANCHOR_SKILLS[roleName].some(hasSkill);
-      }
-
-      if (!gatePassed) {
-        continue;
+        anchorSkills = ['docker', 'linux', 'aws', 'microservices', 'ci cd'];
+      } else if (roleName === 'Data Scientist') {
+        anchorSkills = ['data science', 'machine learning', 'pandas'];
+      } else if (roleName === 'Machine Learning Engineer') {
+        anchorSkills = ['machine learning', 'deep learning', 'nlp', 'computer vision', 'tensorflow', 'pytorch'];
+      } else if (roleName === 'UI/UX Designer') {
+        anchorSkills = ['ui design', 'ux design', 'figma', 'wireframing'];
+      } else if (roleName === 'Mobile Developer') {
+        anchorSkills = ['mobile app development', 'react native', 'flutter', 'swift', 'kotlin', 'android studio'];
+      } else if (!anchorSkills || anchorSkills.length === 0) {
+        // Auto-extract core skills (weight >= 3) as anchors for any unlisted roles
+        for (const [skill, weight] of Object.entries(roleSkills)) {
+          if (weight >= 3) {
+            anchorSkills.push(canonicalizeSkill(skill));
+          }
+        }
       }
 
       let weightedScore = 0;
@@ -117,27 +122,104 @@ export const matchRoles = (userSkills, detectedDomain = 'Unknown') => {
       }
 
       let percentage = 0;
-      if (weightedScore > 0 && roleMaxWeight > 0) {
-        const coveragePercent = (matchedRoleWeight / Object.values(roleSkills).reduce((acc, wt) => acc + wt, 0)) * 100;
-        const qualityPercent = (weightedScore / roleMaxWeight) * 100;
+      if (roleMaxWeight > 0) {
+        const totalRoleWeight = Object.values(roleSkills).reduce((acc, wt) => acc + wt, 0);
+        const coveragePercent = totalRoleWeight > 0 ? (matchedRoleWeight / totalRoleWeight) * 100 : 0;
+        const qualityPercent = matchedRoleWeight > 0 ? (weightedScore / (matchedRoleWeight * MAX_LEVEL_WEIGHT)) * 100 : 0;
+        const matchedAnchors = anchorSkills.filter(hasSkill).length;
+        const anchorRatio = anchorSkills.length > 0 ? (matchedAnchors / anchorSkills.length) : 0;
 
-        if (matchedSkills < MIN_MATCHED_SKILLS || coveragePercent < MIN_COVERAGE_PERCENT) {
-          continue;
+        // Relaxed scoring: coverage drives rank, anchors boost relevance, weak overlap still gets low scores.
+        const baseScore = (coveragePercent * 0.85) + (qualityPercent * 0.15);
+        const anchorBoost = anchorRatio * 22; // Boosted strong anchors
+        percentage = Math.round(baseScore + anchorBoost);
+        percentage = Math.max(0, Math.min(90, percentage)); // keep cap
+
+        // STRICT FILTERING TO PREVENT LEAKAGE AND CONTROL SECONDARY ROLES
+        if (matchedSkills === 0 || coveragePercent < 5) {
+          percentage = 0;
+        } else if (anchorRatio === 0) {
+          // No core skills matched -> Massive penalty to prevent leakage
+          percentage = Math.max(0, Math.min(25, percentage - 25)); // Smoothed penalty
+        } else if (anchorRatio < 0.4) {
+          // Weak core skill overlap -> Capped secondary role
+          percentage = Math.max(0, Math.min(45, percentage - 10)); // Softened drop and raised cap
         }
 
-        percentage = Math.round((coveragePercent * 0.7) + (qualityPercent * 0.3));
-        percentage = Math.min(90, percentage); // requested cap
+        // HARD CUTOFFS FOR SPECIALIZED ROLES
+        if (roleName === 'Machine Learning Engineer' || roleName === 'Data Scientist') {
+          const hasAdvancedML = ['machine learning', 'deep learning', 'data science', 'tensorflow', 'pytorch', 'nlp', 'computer vision'].some(hasSkill);
+          if (!hasAdvancedML) {
+            percentage = 0; // Hard cutoff if they have no actual ML skills
+          }
+        }
+
+        if (roleName === 'Data Analyst') {
+          const hasDataCore = ['statistics', 'data cleaning', 'tableau', 'excel'].some(hasSkill);
+          if (!hasDataCore) {
+            percentage = Math.max(0, percentage - 25); // Heavy penalty if only python/sql
+          }
+        }
+
+        if (roleName === 'Cloud Engineer' || roleName === 'DevOps Engineer') {
+          const hasCloudCore = ['aws', 'azure', 'docker', 'kubernetes', 'linux', 'ci cd'].filter(hasSkill).length;
+          if (hasCloudCore < 2) {
+            percentage = Math.max(0, percentage - 15); // Require at least 2 cloud/devops skills to score high
+          }
+        }
+
+        if (roleName === 'UI/UX Designer') {
+          const hasDesignCore = ['ui design', 'ux design', 'figma', 'wireframing', 'adobe xd'].some(hasSkill);
+          if (!hasDesignCore) {
+            percentage = 0; // Hard cutoff to separate from developers who just know HTML/CSS
+          }
+        }
+
+        if (roleName === 'Mobile Developer') {
+          const hasMobileCore = ['mobile app development', 'react native', 'flutter', 'swift', 'kotlin', 'android studio'].some(hasSkill);
+          if (!hasMobileCore) {
+            percentage = 0; // Hard cutoff to separate from standard devs
+          }
+        }
+
+        // Consistency tuning: keep broad roles from overpowering specialists on one-sided skill sets.
+        if (roleName === 'Full Stack Developer') {
+          const hasFrontendAnchor = ['react', 'javascript', 'html', 'css'].some(hasSkill);
+          const hasBackendAnchor = ['node', 'java', 'python', 'sql', 'api'].some(hasSkill);
+          if (hasFrontendAnchor && hasBackendAnchor) {
+            percentage = Math.min(90, percentage + 8);
+          } else {
+            percentage = Math.max(0, percentage - 8); // Softened from 12 to 8
+          }
+        }
+
+        if (roleName === 'Backend Developer') {
+          const backendCoreMatched = ['node', 'api', 'sql', 'authentication'].filter(hasSkill).length;
+          if (backendCoreMatched >= 2) {
+            percentage = Math.min(90, percentage + 10);
+          }
+        }
+
+        if (roleName === 'Software Tester' || roleName === 'Tester') {
+          const hasTesterCore = ['testing', 'postman', 'automation'].some(hasSkill);
+          if (!hasTesterCore) {
+            percentage = Math.max(0, percentage - 15);
+          } else {
+            percentage = Math.min(90, percentage + 12); // Boost tester if core skills are present
+          }
+        }
       }
 
-      if (percentage > 0) {
-        recommendations.push({ role: roleName, score: percentage });
-      }
+      recommendations.push({ role: roleName, score: percentage });
     }
 
-    recommendations.sort((a, b) => b.score - a.score);
+    // Apply minimum score threshold to remove noise
+    const validRecommendations = recommendations.filter(r => r.score >= 15);
 
-    // Return top 3 roles (or more if you want, but standard is top 3)
-    return recommendations.slice(0, 3);
+    validRecommendations.sort((a, b) => b.score - a.score);
+
+    // Return top 3 recommendations
+    return validRecommendations.slice(0, 3);
 
   } catch (error) {
     console.error('Error matching roles:', error);

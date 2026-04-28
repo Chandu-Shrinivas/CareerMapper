@@ -2,300 +2,503 @@
   "Frontend Developer": {
     "domain": "IT",
     "skills": {
-      "html": 3,
-      "css": 3,
-      "javascript": 3,
-      "react": 2,
+      "react": 4,
+      "javascript": 4,
+      "html": 4,
+      "css": 4,
+      "dom": 3,
+      "responsive design": 3,
       "tailwind": 2,
-      "git": 2,
-      "figma": 1
+      "redux": 2,
+      "figma": 1,
+      "git": 1
     }
   },
   "Backend Developer": {
     "domain": "IT",
     "skills": {
-      "node": 3,
-      "express": 3,
-      "sql": 3,
-      "mongodb": 2,
-      "rest api": 2,
-      "python": 2,
-      "docker": 1
+      "node": 4,
+      "api": 4,
+      "sql": 4,
+      "authentication": 4,
+      "authorization": 3,
+      "microservices": 3,
+      "python": 3,
+      "java": 3,
+      "mongo": 2,
+      "docker": 2
     }
   },
   "Full Stack Developer": {
     "domain": "IT",
     "skills": {
-      "javascript": 3,
-      "react": 3,
-      "node": 3,
-      "sql": 2,
-      "rest api": 2,
+      "node": 4,
+      "api": 4,
+      "sql": 4,
+      "mongo": 3,
+      "authentication": 3,
+      "react": 2,
+      "javascript": 2,
+      "html": 1,
+      "css": 1
+    }
+  },
+  "Software Tester": {
+    "domain": "IT",
+    "skills": {
+      "testing": 4,
+      "api": 4,
+      "postman": 4,
+      "sql": 3,
+      "python": 2,
       "git": 2,
-      "docker": 1
+      "linux": 1,
+      "automation": 2
     }
   },
   "Data Analyst": {
     "domain": "IT",
     "skills": {
-      "python": 3,
-      "sql": 3,
+      "python": 4,
+      "sql": 4,
+      "statistics": 4,
+      "data cleaning": 4,
+      "tableau": 3,
       "excel": 3,
-      "tableau": 2,
-      "power bi": 2,
-      "mongodb": 1,
-      "flask": 1
+      "mongo": 1,
+      "git": 1
     }
   },
   "DevOps Engineer": {
     "domain": "IT",
     "skills": {
-      "docker": 3,
-      "linux": 3,
-      "aws": 3,
-      "git": 2,
+      "docker": 4,
+      "linux": 4,
+      "aws": 4,
+      "git": 3,
+      "microservices": 3,
+      "ci cd": 3,
       "python": 2,
-      "postman": 1,
-      "rest api": 1
+      "api": 1
+    }
+  },
+  "Cloud Engineer": {
+    "domain": "IT",
+    "skills": {
+      "aws": 4,
+      "azure": 4,
+      "cloud computing": 4,
+      "docker": 3,
+      "kubernetes": 3,
+      "linux": 3,
+      "terraform": 3,
+      "python": 2,
+      "networking": 2,
+      "ci cd": 2
+    }
+  },
+  "Cybersecurity Analyst": {
+    "domain": "IT",
+    "skills": {
+      "cybersecurity": 4,
+      "network security": 4,
+      "penetration testing": 4,
+      "ethical hacking": 3,
+      "firewalls": 3,
+      "linux": 3,
+      "wireshark": 2,
+      "python": 2,
+      "incident response": 2
+    }
+  },
+  "Machine Learning Engineer": {
+    "domain": "IT",
+    "skills": {
+      "machine learning": 4,
+      "deep learning": 4,
+      "python": 4,
+      "tensorflow": 3,
+      "pytorch": 3,
+      "nlp": 3,
+      "computer vision": 2,
+      "sql": 2,
+      "statistics": 2
+    }
+  },
+  "UI/UX Designer": {
+    "domain": "IT",
+    "skills": {
+      "ui design": 4,
+      "ux design": 4,
+      "figma": 4,
+      "wireframing": 3,
+      "prototyping": 3,
+      "user research": 3,
+      "adobe xd": 2,
+      "html": 1,
+      "css": 1
+    }
+  },
+  "Database Administrator": {
+    "domain": "IT",
+    "skills": {
+      "database administration": 4,
+      "sql": 4,
+      "oracle": 4,
+      "mysql": 3,
+      "postgresql": 3,
+      "database tuning": 3,
+      "linux": 2,
+      "mongodb": 2
+    }
+  },
+  "Data Scientist": {
+    "domain": "IT",
+    "skills": {
+      "data science": 4,
+      "python": 4,
+      "machine learning": 4,
+      "statistics": 4,
+      "data visualization": 3,
+      "pandas": 3,
+      "sql": 3,
+      "numpy": 2,
+      "tableau": 2
+    }
+  },
+  "Mobile Developer": {
+    "domain": "IT",
+    "skills": {
+      "mobile app development": 4,
+      "react native": 4,
+      "flutter": 4,
+      "swift": 3,
+      "kotlin": 3,
+      "android studio": 3,
+      "xcode": 2,
+      "api": 2,
+      "git": 2
     }
   },
   "CAD Design Engineer": {
     "domain": "Mechanical",
     "skills": {
-      "solidworks": 3,
-      "autocad": 3,
-      "catia": 2,
-      "gd&t": 2,
-      "product design": 2,
-      "tolerance analysis": 1,
+      "solidworks": 4,
+      "autocad": 4,
+      "catia": 3,
+      "gd&t": 3,
+      "product design": 3,
+      "tolerance analysis": 2,
+      "creo": 2,
+      "fusion 360": 2,
+      "manufacturing processes": 1,
       "3d printing": 1
     }
   },
   "FEA/CFD Analyst": {
     "domain": "Mechanical",
     "skills": {
-      "ansys": 3,
-      "fea": 3,
-      "cfd": 3,
-      "solidworks": 2,
+      "ansys": 4,
+      "fea": 4,
+      "cfd": 4,
+      "solidworks": 3,
+      "catia": 2,
       "matlab": 2,
-      "fluid mechanics": 1,
-      "thermodynamics": 1
+      "fluid mechanics": 3,
+      "thermodynamics": 3,
+      "strength of materials": 2,
+      "tolerance analysis": 1
     }
   },
   "Manufacturing Engineer": {
     "domain": "Mechanical",
     "skills": {
-      "cnc": 3,
-      "cam": 3,
-      "lean manufacturing": 2,
-      "quality control": 2,
-      "fmea": 2,
+      "cnc": 4,
+      "cam": 4,
+      "manufacturing processes": 4,
+      "production planning": 4,
+      "machining": 4,
+      "lean manufacturing": 3,
+      "quality control": 3,
+      "fmea": 3,
+      "six sigma": 2,
       "autocad": 1,
-      "six sigma": 1
+      "solidworks": 1
     }
   },
   "Product Design Engineer": {
     "domain": "Mechanical",
     "skills": {
-      "solidworks": 3,
-      "product design": 3,
-      "creo": 2,
-      "fusion 360": 2,
-      "gd&t": 2,
+      "solidworks": 4,
+      "product design": 4,
+      "creo": 3,
+      "fusion 360": 3,
+      "gd&t": 3,
+      "autocad": 2,
+      "catia": 2,
+      "tolerance analysis": 2,
       "3d printing": 2,
-      "fmea": 1
+      "fmea": 2
     }
   },
   "HVAC Engineer": {
     "domain": "Mechanical",
     "skills": {
-      "hvac": 3,
-      "autocad": 3,
-      "thermodynamics": 2,
-      "fluid mechanics": 2,
+      "hvac": 4,
+      "autocad": 4,
+      "thermodynamics": 3,
+      "fluid mechanics": 3,
+      "heat transfer": 3,
       "hydraulics": 2,
-      "cfd": 1,
-      "matlab": 1
+      "cfd": 2,
+      "matlab": 2,
+      "ansys": 2,
+      "quality control": 1
     }
   },
   "Embedded Systems Engineer": {
     "domain": "ECE",
     "skills": {
-      "embedded c": 3,
-      "arm cortex": 3,
-      "stm32": 2,
-      "rtos": 2,
+      "embedded c": 4,
+      "arm cortex": 4,
+      "firmware": 4,
+      "stm32": 3,
+      "rtos": 3,
+      "uart": 3,
       "i2c": 2,
       "spi": 2,
-      "uart": 1
+      "can bus": 2,
+      "power electronics": 1
     }
   },
   "PCB Design Engineer": {
     "domain": "ECE",
     "skills": {
-      "pcb design": 3,
-      "kicad": 3,
-      "ltspice": 2,
-      "proteus": 2,
-      "vhdl": 1,
-      "signal processing": 1,
-      "power electronics": 1
+      "pcb design": 4,
+      "kicad": 4,
+      "ltspice": 3,
+      "proteus": 3,
+      "digital electronics": 3,
+      "power electronics": 2,
+      "signal processing": 2,
+      "vhdl": 2,
+      "matlab": 1
     }
   },
   "IoT Engineer": {
     "domain": "ECE",
     "skills": {
-      "iot": 3,
+      "iot": 4,
       "esp32": 3,
       "arduino": 3,
-      "mqtt": 2,
-      "raspberry pi": 2,
+      "mqtt": 3,
       "embedded c": 2,
-      "i2c": 1
+      "raspberry pi": 2,
+      "i2c": 2,
+      "uart": 2,
+      "firmware": 1
     }
   },
   "VLSI Design Engineer": {
     "domain": "ECE",
     "skills": {
-      "vhdl": 3,
-      "verilog": 3,
-      "fpga": 3,
-      "matlab": 2,
+      "vhdl": 4,
+      "verilog": 4,
+      "fpga": 4,
+      "asic design": 4,
+      "digital electronics": 3,
       "signal processing": 2,
-      "ltspice": 1,
+      "ltspice": 2,
+      "matlab": 2,
       "kicad": 1
     }
   },
   "Signal Processing Engineer": {
     "domain": "ECE",
     "skills": {
-      "signal processing": 3,
-      "matlab": 3,
-      "labview": 2,
+      "signal processing": 4,
+      "matlab": 4,
+      "labview": 3,
+      "digital electronics": 3,
       "fpga": 2,
-      "verilog": 1,
+      "verilog": 2,
+      "vhdl": 2,
       "arduino": 1,
-      "can bus": 1
+      "can bus": 1,
+      "python": 1
     }
   },
   "Business Analyst": {
     "domain": "MBA",
     "skills": {
-      "business analysis": 3,
-      "excel": 3,
-      "sql": 2,
-      "tableau": 2,
-      "power bi": 2,
-      "market research": 2,
-      "swot analysis": 1
+      "business analysis": 4,
+      "stakeholder management": 4,
+      "market research": 4,
+      "strategy": 4,
+      "swot analysis": 3,
+      "analytics": 3,
+      "communication": 3,
+      "excel": 2,
+      "project management": 2,
+      "kpi tracking": 1
     }
   },
-  "Digital Marketing Executive": {
+  "Marketing Analyst": {
     "domain": "MBA",
     "skills": {
-      "digital marketing": 3,
-      "seo": 3,
-      "google analytics": 3,
-      "hubspot": 2,
-      "brand management": 2,
-      "power bi": 1,
-      "excel": 1
+      "marketing": 4,
+      "branding": 4,
+      "digital marketing": 4,
+      "google analytics": 4,
+      "seo": 4,
+      "market research": 3,
+      "communication": 3,
+      "brand management": 3,
+      "competitive analysis": 2,
+      "analytics": 2
+    }
+  },
+  "HR Executive": {
+    "domain": "MBA",
+    "skills": {
+      "recruitment": 4,
+      "employee engagement": 4,
+      "hr operations": 4,
+      "communication": 3,
+      "hr analytics": 3,
+      "conflict resolution": 3,
+      "project management": 2,
+      "kpi tracking": 2,
+      "payroll": 1
+    }
+  },
+  "Product Manager": {
+    "domain": "MBA",
+    "skills": {
+      "product strategy": 4,
+      "market research": 4,
+      "business analysis": 4,
+      "project management": 3,
+      "roadmapping": 3,
+      "analytics": 3,
+      "communication": 3,
+      "strategy": 3,
+      "scrum": 2,
+      "kpi tracking": 1
     }
   },
   "Sales Executive": {
     "domain": "MBA",
     "skills": {
-      "b2b sales": 3,
-      "crm": 3,
-      "salesforce": 2,
-      "competitive analysis": 2,
-      "excel": 2,
-      "kpi tracking": 1,
+      "b2b sales": 4,
+      "crm": 4,
+      "salesforce": 3,
+      "competitive analysis": 3,
+      "communication": 3,
+      "market research": 2,
+      "kpi tracking": 2,
+      "excel": 1,
       "powerpoint": 1
     }
   },
   "Operations Manager": {
     "domain": "MBA",
     "skills": {
-      "supply chain management": 3,
-      "erp": 3,
-      "project management": 2,
-      "budgeting": 2,
-      "forecasting": 2,
-      "scrum": 1,
-      "kpi tracking": 1
+      "supply chain management": 4,
+      "operations management": 4,
+      "erp": 4,
+      "project management": 3,
+      "process improvement": 3,
+      "lean six sigma": 2,
+      "kpi tracking": 2,
+      "inventory management": 2,
+      "logistics": 2,
+      "excel": 1
+    }
+  },
+  "Accountant": {
+    "domain": "BCom",
+    "skills": {
+      "tally": 4,
+      "accounting": 4,
+      "gst": 4,
+      "tds": 3,
+      "journal entries": 3,
+      "bank reconciliation": 3,
+      "financial statements": 3,
+      "balance sheet": 2,
+      "excel": 2
     }
   },
   "Financial Analyst": {
-    "domain": "MBA",
-    "skills": {
-      "financial modeling": 3,
-      "excel": 3,
-      "forecasting": 3,
-      "tableau": 2,
-      "sql": 2,
-      "power bi": 1,
-      "budgeting": 1
-    }
-  },
-  "Accounts Executive": {
     "domain": "BCom",
     "skills": {
-      "tally": 3,
-      "accounting": 3,
-      "gst": 3,
-      "tds": 2,
-      "journal entries": 2,
-      "bank reconciliation": 2,
-      "excel": 1
+      "finance": 4,
+      "financial modeling": 4,
+      "investment": 4,
+      "excel": 3,
+      "financial statements": 3,
+      "forecasting": 3,
+      "ratio analysis": 2,
+      "balance sheet": 2,
+      "budgeting": 2
     }
   },
   "Tax Consultant": {
     "domain": "BCom",
     "skills": {
-      "income tax": 3,
-      "gst": 3,
-      "tds": 3,
+      "income tax": 4,
+      "gst": 4,
+      "tds": 4,
+      "taxation": 3,
       "tally": 2,
       "auditing": 2,
-      "taxation": 2,
-      "financial statements": 1
+      "accounting": 2,
+      "financial statements": 2,
+      "excel": 1
     }
   },
-  "Audit Associate": {
+  "Auditor": {
     "domain": "BCom",
     "skills": {
-      "auditing": 3,
-      "financial statements": 3,
-      "ifrs": 2,
-      "ratio analysis": 2,
+      "auditing": 4,
+      "financial statements": 4,
+      "ifrs": 3,
+      "ratio analysis": 3,
+      "balance sheet": 2,
       "tally": 2,
-      "excel": 2,
-      "balance sheet": 1
+      "accounting": 2,
+      "gst": 1,
+      "excel": 1
     }
   },
   "Finance Executive": {
     "domain": "BCom",
     "skills": {
-      "financial reporting": 3,
-      "accounts payable": 3,
-      "accounts receivable": 3,
-      "sap fico": 2,
+      "financial reporting": 4,
+      "accounts payable": 4,
+      "accounts receivable": 4,
+      "sap fico": 3,
+      "cost accounting": 2,
+      "accounting": 2,
+      "bank reconciliation": 2,
       "quickbooks": 2,
-      "payroll": 1,
-      "cost accounting": 1
+      "excel": 1,
+      "payroll": 1
     }
   },
   "Bookkeeper": {
     "domain": "BCom",
     "skills": {
-      "bookkeeping": 3,
-      "tally prime": 3,
-      "journal entries": 3,
-      "bank reconciliation": 2,
+      "bookkeeping": 4,
+      "tally prime": 4,
+      "journal entries": 4,
+      "bank reconciliation": 3,
       "accounts payable": 2,
       "accounts receivable": 2,
+      "accounting": 2,
+      "gst": 1,
+      "excel": 1,
       "zoho books": 1
     }
   }
