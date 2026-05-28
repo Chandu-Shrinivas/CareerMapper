@@ -4,154 +4,145 @@ import pandas as pd
 import numpy as np
 from sklearn.model_selection import train_test_split
 from sklearn.feature_extraction.text import TfidfVectorizer
-
-# =====================================================================
-# STAGE 1: Explaining Why TF-IDF is Used for Text Classification
-# =====================================================================
-"""
-Why TF-IDF (Term Frequency-Inverse Document Frequency)?
-------------------------------------------------------
-Machine learning models cannot process raw text directly. They require numerical vectors.
-TF-IDF is an NLP technique that converts text documents into numerical vectors by balancing two factors:
-
-1. Term Frequency (TF): How frequently a word appears in a specific document.
-   - If 'react' appears multiple times in a profile, TF increases, indicating high local importance.
-   
-2. Inverse Document Frequency (IDF): How common or rare a word is across ALL documents in the dataset.
-   - Common stopwords like 'and', 'developer', or 'engineer' appear in almost every profile. IDF penalizes them.
-   - Rare, highly informative technical keywords like 'react', 'kubernetes', or 'gd&t' have a very high IDF boost.
-
-Mathematical Intuition:
-   TF-IDF(t, d, D) = TF(t, d) * IDF(t, D)
-   
-Result:
-   Highly descriptive anchor skills get large weights, while generic filler words are suppressed.
-"""
+import joblib
 
 def clean_skill_text(text):
     """
-    STAGE 2: Text Preprocessing & Cleaning Function
-    
-    This function cleans raw skill list text:
-    1. Converts string to lowercase.
-    2. Removes punctuation and special characters, keeping alphanumeric tokens and common abbreviations.
-    3. Trims redundant spaces.
+    NLP Preprocessing & Cleaning:
+    1. Converts text to lowercase.
+    2. Removes special characters except alphanumeric, spaces, and select technical signs 
+       (e.g., C++, .Net, C#) to preserve vital vocabulary.
+    3. Compresses multiple spaces to a single space.
     """
     if not isinstance(text, str):
         return ""
     
-    # Convert text to lowercase
-    text = text.toLowerCase() if hasattr(text, 'toLowerCase') else str(text).lower()
+    text = text.lower()
     
-    # Remove special characters except alphanumeric, spaces, and select technical signs (e.g. C++, .Net, C#)
-    # This keeps common skills like 'c#', 'c++', 'gd&t', and '.net' intact
+    # Preserve key technical suffixes like C#, C++, .Net, GD&T
     text = re.sub(r'[^a-zA-Z0-9&#_+-]', ' ', text)
     
-    # Remove redundant multiple spaces with a single space
+    # Trim and remove multiple spaces
     text = re.sub(r'\s+', ' ', text).strip()
     
     return text
 
-def run_tfidf_pipeline():
+def run_production_preprocessing():
     print("==================================================")
-    # STAGE 3: Loading the CSV Dataset
-    # ==================================================
-    print("Stage 3: Loading raw job/skill dataset...")
+    print("STARTING REAL DATASET PREPROCESSING PIPELINE")
+    print("==================================================")
+
+    # 1. Resolve robust file paths
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    raw_dataset_path = os.path.join(script_dir, '../datasets/raw/clean_it_roles_dataset_no_leakage.csv')
+    cleaned_output_path = os.path.join(script_dir, '../datasets/cleaned/clean_it_roles_dataset_preprocessed.csv')
+    vectorizer_output_path = os.path.join(script_dir, '../models/role_classifier_vectorizer.joblib')
     
-    # Mocking standard dataset structure as a demonstration or load from file
-    mock_csv_data = {
-        'text': [
-            'React.JS, Redux, javascript, HTML5, CSS3, DOM, Responsive design',
-            'NodeJS, ExpressJS, API, SQL, authentication, authorization, mongo DB, docker',
-            'Testing, manual testing, selenium testing, postman, API, python, Git',
-            'Python, SQL, statistics, data cleaning, tableau, MS excel, powerpoint',
-            'SolidWorks, sw, auto cad, CATIA v5, Creo, GD&T, 3D printing',
-            'Embedded C, ARM cortex, Firmware, STM 32, real time os (RTOS), UART, I2C, SPI',
-            'Business analysis, Strategy, Analytics, Stakeholder management, swot analysis',
-            'Accounting, Finance, tally erp, gst, TDS, Income tax return, BRS, excel'
-        ],
-        'role': [
-            'Frontend Developer',
-            'Backend Developer',
-            'Software Tester',
-            'Data Analyst',
-            'CAD Design Engineer',
-            'Embedded Systems Engineer',
-            'Business Analyst',
-            'Accountant'
-        ]
-    }
+    final_xtrain_path = os.path.join(script_dir, '../datasets/final/X_train_tfidf.joblib')
+    final_xval_path = os.path.join(script_dir, '../datasets/final/X_val_tfidf.joblib')
+    final_ytrain_path = os.path.join(script_dir, '../datasets/final/y_train.joblib')
+    final_yval_path = os.path.join(script_dir, '../datasets/final/y_val.joblib')
+
+    print(f"Loading raw dataset from: {raw_dataset_path}")
+    if not os.path.exists(raw_dataset_path):
+        raise FileNotFoundError(f"Real dataset not found! Please ensure it was copied to: {raw_dataset_path}")
+
+    # Load dataset
+    df = pd.read_csv(raw_dataset_path)
+    total_raw_records = len(df)
+    print(f"Loaded successfully! Initial records: {total_raw_records}")
+
+    # 2. Null Handling
+    print("\n[STEP 1] Handling null values...")
+    null_text = df['text'].isnull().sum()
+    null_role = df['role'].isnull().sum()
+    print(f"  Null 'text' values found: {null_text}")
+    print(f"  Null 'role' values found: {null_role}")
     
-    df = pd.DataFrame(mock_csv_data)
-    print(f"Dataset successfully loaded. Columns found: {list(df.columns)}")
-    print(f"Total candidate records: {len(df)}")
-    print("\nSample records before preprocessing:")
-    print(df.head(3))
+    df = df.dropna(subset=['text', 'role'])
+    print(f"  Records remaining after null dropping: {len(df)}")
+
+    # 3. Duplicate Handling
+    print("\n[STEP 2] Handling duplicate text samples...")
+    duplicates = df.duplicated(subset=['text']).sum()
+    print(f"  Duplicate descriptions found: {duplicates}")
+    
+    df = df.drop_duplicates(subset=['text'])
+    post_dedup_records = len(df)
+    print(f"  Records remaining after deduplication: {post_dedup_records}")
+    print(f"  Total records cleaned/filtered out: {total_raw_records - post_dedup_records}")
+
+    # 4. Role Distribution Analysis
+    print("\n[STEP 3] Running class (role) distribution analysis:")
+    role_counts = df['role'].value_counts()
+    print("-" * 50)
+    for role_name, count in role_counts.items():
+        percentage = (count / post_dedup_records) * 100
+        print(f"  * {role_name:<30} : {count:<5} ({percentage:.2f}%)")
     print("-" * 50)
 
-    # ==================================================
-    # STAGE 4: Cleaning and Preprocessing Text
-    # ==================================================
-    print("Stage 4: Cleaning text columns (lowercase, special chars)...")
+    # 5. Clean Text Column
+    print("\n[STEP 4] Applying skill text standardizations...")
     df['cleaned_text'] = df['text'].apply(clean_skill_text)
     
-    print("\nSample records after preprocessing:")
-    for idx, row in df.head(3).iterrows():
-        print(f"  Raw:     {row['text']}")
-        print(f"  Cleaned: {row['cleaned_text']}\n")
-    print("-" * 50)
+    # Save the intermediate preprocessed DataFrame
+    os.makedirs(os.path.dirname(cleaned_output_path), exist_ok=True)
+    df.to_csv(cleaned_output_path, index=False)
+    print(f"  Cleaned dataset saved to: {cleaned_output_path}")
 
-    # ==================================================
-    # STAGE 5: Split Dataset into Train/Test Splits
-    # ==================================================
-    print("Stage 5: Splitting dataset into training and validation folds...")
-    
+    # 6. Stratified Split (80% train, 20% validation)
+    print("\n[STEP 5] Splitting dataset into training and validation folds (Stratified)...")
     X = df['cleaned_text']
     y = df['role']
-    
-    # Split using train_test_split (80% train, 20% test)
-    # random_state is set for full reproducibility
-    X_train, X_val, y_train, y_val = train_test_split(
-        X, y, 
-        test_size=0.2, 
-        random_state=42
-    )
-    
-    print(f"  Training samples:   {len(X_train)}")
-    print(f"  Validation samples: {len(X_val)}")
-    print("-" * 50)
 
-    # ==================================================
-    # STAGE 6: Applying TF-IDF Vectorization
-    # ==================================================
-    print("Stage 6: Transforming clean text to TF-IDF feature matrix...")
-    
-    # We define token_pattern to keep technical characters like #, +, - (C++, C#, .Net)
+    # Stratified split to preserve class distribution across folds
+    X_train, X_val, y_train, y_val = train_test_split(
+        X, y,
+        test_size=0.2,
+        random_state=42,
+        stratify=y
+    )
+
+    print(f"  Training Set Shape  : {X_train.shape[0]} profiles")
+    print(f"  Validation Set Shape: {X_val.shape[0]} profiles")
+
+    # 7. TF-IDF Vectorization
+    print("\n[STEP 6] Performing TF-IDF Vectorization...")
+    # Using 'english' stopwords and capturing technical symbols
     vectorizer = TfidfVectorizer(
         token_pattern=r'(?u)\b[a-zA-Z0-9&#_+-]+\b',
+        stop_words='english',
         lowercase=True
     )
-    
-    # Fit & transform on training fold, and transform on validation fold
+
+    # Fit vectorizer on training data and transform folds
     X_train_tfidf = vectorizer.fit_transform(X_train)
     X_val_tfidf = vectorizer.transform(X_val)
-    
-    print(f"  Vocabulary Size: {len(vectorizer.vocabulary_)} distinct skill terms")
-    print("  Extracted Vocabulary mapping:")
-    print(dict(list(vectorizer.vocabulary_.items())[:10]))
-    print("-" * 50)
 
-    # ==================================================
-    # STAGE 7: Showing Resulting Feature Matrices
-    # ==================================================
-    print("Stage 7: Displaying resulting sparse matrix shapes...")
-    print(f"  Training Sparse Matrix Shape:   {X_train_tfidf.shape}")
-    print(f"  Validation Sparse Matrix Shape: {X_val_tfidf.shape}")
-    print("\nProportion details:")
-    print(f"  - Rows: {X_train_tfidf.shape[0]} profiles")
-    print(f"  - Columns (Features): {X_train_tfidf.shape[1]} unique skill dimensions")
+    vocabulary_size = len(vectorizer.vocabulary_)
+    print(f"  TF-IDF Feature Space dimension: {vocabulary_size} distinct vocabulary words")
+    print(f"  Training matrix shape         : {X_train_tfidf.shape}")
+    print(f"  Validation matrix shape       : {X_val_tfidf.shape}")
+
+    # 8. Save Processed Vectors and Estimators
+    print("\n[STEP 7] Serializing preprocessed vectors and TF-IDF estimator...")
+    os.makedirs(os.path.dirname(vectorizer_output_path), exist_ok=True)
+    os.makedirs(os.path.dirname(final_xtrain_path), exist_ok=True)
+
+    # Save vectorizer
+    joblib.dump(vectorizer, vectorizer_output_path)
+    print(f"  Saved TfidfVectorizer to: {vectorizer_output_path}")
+
+    # Save final matrices and label lists
+    joblib.dump(X_train_tfidf, final_xtrain_path)
+    joblib.dump(X_val_tfidf, final_xval_path)
+    joblib.dump(y_train, final_ytrain_path)
+    joblib.dump(y_val, final_yval_path)
+    print("  Saved TF-IDF sparse matrices and stratified target labels!")
+
+    print("\n==================================================")
+    print("PRODUCTION PREPROCESSING PIPELINE COMPLETED!")
     print("==================================================")
-    print("TF-IDF PIPELINE WORKFLOW COMPLETE!")
 
 if __name__ == '__main__':
-    run_tfidf_pipeline()
+    run_production_preprocessing()
