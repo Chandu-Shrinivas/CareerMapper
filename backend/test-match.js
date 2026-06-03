@@ -7,6 +7,6 @@ const skills = [
   { "name": "css", "level": "intermediate" }
 ];
 
-const result = matchRoles(skills);
+const result = await matchRoles(skills);
 console.log("\n--- FINAL OUTPUT ---");
 console.log(JSON.stringify(result, null, 2));

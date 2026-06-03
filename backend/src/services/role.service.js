@@ -1,6 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import { predict } from './ml.service.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -37,7 +38,7 @@ const ROLE_ANCHOR_SKILLS = {
   'Financial Analyst': ['financial modeling', 'forecasting', 'budgeting']
 };
 
-export const matchRoles = (userSkills, detectedDomain = 'Unknown') => {
+export const matchRoles = async (userSkills, detectedDomain = 'Unknown') => {
   if (!userSkills || !Array.isArray(userSkills)) {
     return [];
   }
@@ -213,12 +214,54 @@ export const matchRoles = (userSkills, detectedDomain = 'Unknown') => {
       recommendations.push({ role: roleName, score: percentage });
     }
 
-    // Apply minimum score threshold to remove noise
+    // 1. Get profile text
+    const profileText = userSkills.map(s => String(s.name || '').trim()).join(' ');
+
+    // 2. Call ML Service and execute hybrid merge
+    try {
+      const mlResult = await predict(profileText);
+      if (mlResult && mlResult.success && !mlResult.fallback && mlResult.predictions) {
+        const mlPredictions = mlResult.predictions; // [{ role, confidence }]
+        
+        // Filter ML predictions against rule-approved roles (score >= 15)
+        const approvedPredictions = mlPredictions.filter(mlPred => {
+          const ruleRole = recommendations.find(r => r.role === mlPred.role);
+          return ruleRole && ruleRole.score >= 15;
+        });
+
+        if (approvedPredictions.length > 0) {
+          // Compute hybrid scores for approved roles
+          const hybridScores = {};
+          approvedPredictions.forEach(mlPred => {
+            const ruleRole = recommendations.find(r => r.role === mlPred.role);
+            const ruleScore = ruleRole.score;
+            const mlConfidence = mlPred.confidence;
+            // Combined score formula: 50% Rule Engine + 50% ML confidence
+            hybridScores[mlPred.role] = Math.round(ruleScore * 0.5 + (mlConfidence * 100) * 0.5);
+          });
+
+          // Re-map recommendations using hybrid scores where available
+          const mergedRecommendations = recommendations.map(r => {
+            if (hybridScores[r.role] !== undefined) {
+              return { role: r.role, score: hybridScores[r.role] };
+            } else {
+              // Non-predicted roles keep their baseline rule score
+              return { role: r.role, score: r.score };
+            }
+          });
+
+          const validRecommendations = mergedRecommendations.filter(r => r.score >= 15);
+          validRecommendations.sort((a, b) => b.score - a.score);
+          return validRecommendations.slice(0, 3);
+        }
+      }
+    } catch (err) {
+      console.warn('[WARNING] Error executing hybrid merge, falling back to rule engine:', err.message);
+    }
+
+    // Fallback: standard rule-based matching
     const validRecommendations = recommendations.filter(r => r.score >= 15);
-
     validRecommendations.sort((a, b) => b.score - a.score);
-
-    // Return top 3 recommendations
     return validRecommendations.slice(0, 3);
 
   } catch (error) {

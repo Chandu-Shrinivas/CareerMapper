@@ -168,8 +168,8 @@ const runRuntimeVerification = async () => {
     const data = await response.json();
     console.log("Status:", response.status);
     console.log("Response:", JSON.stringify(data, null, 2));
-    const hasReact = data.skills?.some(s => s.name === "react");
-    const hasNode = data.skills?.some(s => s.name === "node");
+    const hasReact = data.skills?.some(s => s.name === "React.js");
+    const hasNode = data.skills?.some(s => s.name === "Node.js");
     const pass = hasReact && hasNode && data.domain === "IT";
     console.log(`-> Extraction and domain OK? ${pass ? "PASS" : "FAIL"}`);
   } catch (err) {
@@ -191,8 +191,8 @@ const runRuntimeVerification = async () => {
     const data = await response.json();
     console.log("Status:", response.status);
     console.log("Response:", JSON.stringify(data, null, 2));
-    const react = data.skills?.find(s => s.name === "react");
-    const python = data.skills?.find(s => s.name === "python");
+    const react = data.skills?.find(s => s.name === "React.js");
+    const python = data.skills?.find(s => s.name === "Python");
     const pass = react && react.level === "advanced" && python && python.level === "beginner";
     console.log(`-> Proximity separation OK? ${pass ? "PASS" : "FAIL"}`);
   } catch (err) {
@@ -214,7 +214,7 @@ const runRuntimeVerification = async () => {
     const data = await response.json();
     console.log("Status:", response.status);
     console.log("Response:", JSON.stringify(data, null, 2));
-    const react = data.skills?.find(s => s.name === "react");
+    const react = data.skills?.find(s => s.name === "React.js");
     const pass = react && react.level === "advanced";
     console.log(`-> Highest level React retained? ${pass ? "PASS" : "FAIL"}`);
   } catch (err) {

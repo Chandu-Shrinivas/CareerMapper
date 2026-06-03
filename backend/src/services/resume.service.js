@@ -8,7 +8,7 @@ export const extractSkillsFromResume = async (fileBuffer) => {
   // STEP 1 — Extract text
   const parser = new PDFParse({ data: fileBuffer });
   const data = await parser.getText();
-  const text = data.text.toLowerCase();
+  const text = data.text.toLowerCase().replace(/\s+/g, ' ');
 
   // STEP 2 — Load skill dictionary
   const domainsData = readJsonFile('data/domains.json');
@@ -25,8 +25,13 @@ export const extractSkillsFromResume = async (fileBuffer) => {
   const extractedSkills = [];
   
   for (const skill of knownSkills) {
-    let idx = text.indexOf(skill);
-    while (idx !== -1) {
+    const escaped = skill.replace(/[-[\]{}()*+?.,\\^$|#\s]/g, '\\$&');
+    const regex = new RegExp(`(?<![a-zA-Z0-9])${escaped}(?![a-zA-Z0-9])`, 'gi');
+    
+    let match;
+    while ((match = regex.exec(text)) !== null) {
+      const idx = match.index;
+      
       // STEP 4 — Level Detection (using the specific occurrence index)
       const detectedLevel = detectLevel(text, skill, idx);
       
@@ -36,7 +41,10 @@ export const extractSkillsFromResume = async (fileBuffer) => {
         level: detectedLevel
       });
       
-      idx = text.indexOf(skill, idx + 1);
+      // Prevent infinite loop on zero-width match
+      if (regex.lastIndex === match.index) {
+        regex.lastIndex++;
+      }
     }
   }
 

@@ -2,7 +2,7 @@ import { matchRoles } from './src/services/role.service.js';
 import { normalizeSkills } from './src/utils/skillNormalizer.js';
 import { detectDomain } from './src/services/domain.service.js';
 
-const runValidation = () => {
+const runValidation = async () => {
   console.log("==================================================");
   console.log("STARTING COMPREHENSIVE SYSTEM VALIDATION");
   console.log("==================================================\n");
@@ -18,7 +18,7 @@ const runValidation = () => {
             { name: "nodejs", level: "intermediate" },
             { name: "JS", level: "advanced" }
           ],
-          verify: (res) => {
+          verify: async (res) => {
             console.log("Normalized Map:", res);
             const react = res.find(s => s.name === "react");
             const node = res.find(s => s.name === "node");
@@ -37,7 +37,7 @@ const runValidation = () => {
             { name: "react", level: "advanced" },
             { name: "node", level: "advanced" }
           ],
-          verify: (res) => {
+          verify: async (res) => {
             const domain = detectDomain(res);
             console.log(`Input IT skills -> Detected: ${domain.domain} (${domain.confidence}%)`);
             console.log(`-> Should be IT: ${domain.domain === "IT" ? "PASS" : "FAIL"}`);
@@ -48,7 +48,7 @@ const runValidation = () => {
             { name: "solidworks", level: "advanced" },
             { name: "autocad", level: "intermediate" }
           ],
-          verify: (res) => {
+          verify: async (res) => {
             const domain = detectDomain(res);
             console.log(`Input Mechanical skills -> Detected: ${domain.domain} (${domain.confidence}%)`);
             console.log(`-> Should be Mechanical: ${domain.domain === "Mechanical" ? "PASS" : "FAIL"}`);
@@ -59,7 +59,7 @@ const runValidation = () => {
             { name: "accounting", level: "advanced" },
             { name: "tally", level: "advanced" }
           ],
-          verify: (res) => {
+          verify: async (res) => {
             const domain = detectDomain(res);
             console.log(`Input BCom skills -> Detected: ${domain.domain} (${domain.confidence}%)`);
             console.log(`-> Should be BCom: ${domain.domain === "BCom" ? "PASS" : "FAIL"}`);
@@ -71,7 +71,7 @@ const runValidation = () => {
             { name: "embedded c", level: "advanced" }, // ECE
             { name: "react", level: "intermediate" } // IT
           ],
-          verify: (res) => {
+          verify: async (res) => {
             const domain = detectDomain(res);
             console.log(`Mixed equal skills -> Detected: ${domain.domain} (${domain.confidence}%)`);
           }
@@ -88,9 +88,9 @@ const runValidation = () => {
             { name: "strategy", level: "advanced" },
             { name: "marketing", level: "advanced" }
           ],
-          verify: (res) => {
+          verify: async (res) => {
             const dom = detectDomain(res);
-            const matches = matchRoles(res, dom.domain);
+            const matches = await matchRoles(res, dom.domain);
             console.log(`MBA Matches (domain=${dom.domain}):`, matches);
             const containsIT = matches.some(m => ["Frontend Developer", "Backend Developer", "Full Stack Developer", "Software Tester"].includes(m.role));
             console.log(`-> Contains IT Roles? ${containsIT ? "FAIL" : "PASS (Isolated)"}`);
@@ -103,9 +103,9 @@ const runValidation = () => {
             { name: "auditing", level: "advanced" },
             { name: "gst", level: "advanced" }
           ],
-          verify: (res) => {
+          verify: async (res) => {
             const dom = detectDomain(res);
-            const matches = matchRoles(res, dom.domain);
+            const matches = await matchRoles(res, dom.domain);
             console.log(`BCom Matches (domain=${dom.domain}):`, matches);
             const containsIT = matches.some(m => ["Frontend Developer", "Backend Developer", "Full Stack Developer", "Software Tester"].includes(m.role));
             console.log(`-> Contains IT Roles? ${containsIT ? "FAIL" : "PASS (Isolated)"}`);
@@ -123,9 +123,9 @@ const runValidation = () => {
             { name: "postman", level: "advanced" },
             { name: "api", level: "intermediate" }
           ],
-          verify: (res) => {
+          verify: async (res) => {
             const dom = detectDomain(res);
-            const matches = matchRoles(res, dom.domain);
+            const matches = await matchRoles(res, dom.domain);
             const tester = matches.find(m => m.role === "Software Tester");
             console.log(`Tester with core skills -> Score: ${tester ? tester.score : "Not Recommended"}`);
             console.log(`-> Tester recommended high? ${tester && tester.score >= 70 ? "PASS" : "FAIL"}`);
@@ -138,9 +138,9 @@ const runValidation = () => {
             { name: "sql", level: "advanced" },
             { name: "linux", level: "advanced" }
           ],
-          verify: (res) => {
+          verify: async (res) => {
             const dom = detectDomain(res);
-            const matches = matchRoles(res, dom.domain);
+            const matches = await matchRoles(res, dom.domain);
             const tester = matches.find(m => m.role === "Software Tester");
             console.log(`Tester without core skills -> Score: ${tester ? tester.score : "Not Recommended"}`);
             console.log(`-> Correctly penalized/omitted? ${!tester || tester.score < 40 ? "PASS" : "FAIL"}`);
@@ -153,9 +153,9 @@ const runValidation = () => {
             { name: "tailwind", level: "advanced" },
             { name: "figma", level: "advanced" }
           ],
-          verify: (res) => {
+          verify: async (res) => {
             const dom = detectDomain(res);
-            const matches = matchRoles(res, dom.domain);
+            const matches = await matchRoles(res, dom.domain);
             const frontend = matches.find(m => m.role === "Frontend Developer");
             console.log(`Frontend without core anchors -> Score: ${frontend ? frontend.score : "Not Recommended"}`);
             console.log(`-> Correctly penalized/omitted? ${!frontend || frontend.score < 40 ? "PASS" : "FAIL"}`);
@@ -169,9 +169,9 @@ const runValidation = () => {
         {
           name: "Empty Payload",
           input: [],
-          verify: (res) => {
+          verify: async (res) => {
             const dom = detectDomain(res);
-            const matches = matchRoles(res, dom.domain);
+            const matches = await matchRoles(res, dom.domain);
             console.log(`Empty Input -> Domain: ${dom.domain}, Matches:`, matches);
             console.log(`-> Handled safely? ${dom.domain === "Unknown" && matches.length === 0 ? "PASS" : "FAIL"}`);
           }
@@ -182,9 +182,9 @@ const runValidation = () => {
             { name: "blockchain", level: "advanced" },
             { name: "quantum computing", level: "advanced" }
           ],
-          verify: (res) => {
+          verify: async (res) => {
             const dom = detectDomain(res);
-            const matches = matchRoles(res, dom.domain);
+            const matches = await matchRoles(res, dom.domain);
             console.log(`Unknown Input -> Domain: ${dom.domain}, Matches:`, matches);
             console.log(`-> Handled safely? ${dom.domain === "Unknown" && matches.length === 0 ? "PASS" : "FAIL"}`);
           }
@@ -195,7 +195,7 @@ const runValidation = () => {
             { name: "react", level: "expert" }, // Expert is not in skillNormalizer hierarchy!
             { name: "javascript", level: "super-pro" }
           ],
-          verify: (res) => {
+          verify: async (res) => {
             console.log("Invalid Levels Normalization:", res);
             const react = res.find(s => s.name === "react");
             const js = res.find(s => s.name === "javascript");
@@ -207,17 +207,17 @@ const runValidation = () => {
     }
   ];
 
-  suites.forEach(s => {
+  for (const s of suites) {
     console.log("--------------------------------------------------");
     console.log(`Suite: ${s.name}`);
     console.log("--------------------------------------------------");
-    s.cases.forEach((c, idx) => {
+    for (const c of s.cases) {
       if (c.name) console.log(`\nCase: ${c.name}`);
       const normalized = normalizeSkills(c.input);
-      c.verify(normalized);
-    });
+      await c.verify(normalized);
+    }
     console.log("\n");
-  });
+  }
 };
 
-runValidation();
+await runValidation();

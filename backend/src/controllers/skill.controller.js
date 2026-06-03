@@ -1,4 +1,4 @@
-import { normalizeSkills } from '../utils/skillNormalizer.js';
+import { normalizeSkills, prettifySkillName } from '../utils/skillNormalizer.js';
 import { detectDomain } from '../services/domain.service.js';
 
 export const detectUserDomain = (req, res) => {
@@ -18,9 +18,15 @@ export const detectUserDomain = (req, res) => {
     // 2. Detect domain
     const { domain, confidence } = detectDomain(normalizedSkills);
 
+    // Format skill names for response presentation
+    const prettySkills = normalizedSkills.map(s => ({
+      name: prettifySkillName(s.name),
+      level: s.level
+    }));
+
     // 3. Return response
     return res.status(200).json({
-      skills: normalizedSkills,
+      skills: prettySkills,
       domain,
       confidence
     });

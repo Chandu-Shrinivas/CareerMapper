@@ -64,9 +64,9 @@ const tests = [
   }
 ];
 
-tests.forEach(t => {
+for (const t of tests) {
   console.log(`\n--- ${t.name} ---`);
-  const result = matchRoles(t.skills);
+  const result = await matchRoles(t.skills);
   // print top 3
   console.log(JSON.stringify(result.slice(0, 3), null, 2));
-});
+}

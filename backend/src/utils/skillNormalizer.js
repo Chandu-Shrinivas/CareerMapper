@@ -61,3 +61,54 @@ export const normalizeSkills = (skills) => {
 
   return Array.from(normalizedMap.values());
 };
+
+const prettyMap = {
+  "java": "Java",
+  "python": "Python",
+  "c": "C",
+  "javascript": "JavaScript",
+  "typescript": "TypeScript",
+  "html": "HTML",
+  "css": "CSS",
+  "react": "React.js",
+  "react.js": "React.js",
+  "tailwind": "Tailwind CSS",
+  "tailwind css": "Tailwind CSS",
+  "api": "REST APIs",
+  "rest api": "REST APIs",
+  "rest apis": "REST APIs",
+  "spring boot": "Spring Boot",
+  "mysql": "MySQL",
+  "git": "Git",
+  "github": "GitHub",
+  "vs code": "VS Code",
+  "eclipse": "Eclipse",
+  "linux": "Linux",
+  "windows": "Windows",
+  "figma": "Figma",
+  "sap": "SAP",
+  "chatgpt": "ChatGPT",
+  "gemini ai": "Gemini AI",
+  "google generative ai": "Google Generative AI",
+  "hibernate": "Hibernate",
+  "maven": "Maven",
+  "ui design": "UI Design",
+  "ux design": "UX Design",
+  "node": "Node.js",
+  "node.js": "Node.js",
+  "express": "Express",
+  "redux": "Redux",
+  "mongodb": "MongoDB",
+  "mongo": "MongoDB",
+  "postman": "Postman"
+};
+
+export const prettifySkillName = (name) => {
+  if (!name) return "";
+  const lower = name.toLowerCase().trim();
+  if (prettyMap[lower]) {
+    return prettyMap[lower];
+  }
+  // Title case fallback
+  return name.split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
+};

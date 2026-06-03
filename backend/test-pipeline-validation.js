@@ -4,7 +4,7 @@ import { readJsonFile } from './src/utils/fileUtils.js';
 
 // Replicate the exact end-to-end extraction and normalization pipeline
 const runPipeline = (rawText) => {
-  const text = rawText.toLowerCase();
+  const text = rawText.toLowerCase().replace(/\s+/g, ' ');
 
   // 1. Load skill dictionary (same as in resume.service.js)
   const domainsData = readJsonFile('data/domains.json');
@@ -19,14 +19,20 @@ const runPipeline = (rawText) => {
   // 2. Skill Extraction (same as in resume.service.js)
   const extractedSkills = [];
   for (const skill of knownSkills) {
-    let idx = text.indexOf(skill);
-    while (idx !== -1) {
+    const escaped = skill.replace(/[-[\]{}()*+?.,\\^$|#\s]/g, '\\$&');
+    const regex = new RegExp(`(?<![a-zA-Z0-9])${escaped}(?![a-zA-Z0-9])`, 'gi');
+    
+    let match;
+    while ((match = regex.exec(text)) !== null) {
+      const idx = match.index;
       const detectedLevel = detectLevel(text, skill, idx);
       extractedSkills.push({
         name: skill,
         level: detectedLevel
       });
-      idx = text.indexOf(skill, idx + 1);
+      if (regex.lastIndex === match.index) {
+        regex.lastIndex++;
+      }
     }
   }
 

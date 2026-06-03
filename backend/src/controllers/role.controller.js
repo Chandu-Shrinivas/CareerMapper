@@ -2,7 +2,7 @@ import { matchRoles } from '../services/role.service.js';
 import { normalizeSkills} from '../utils/skillNormalizer.js';
 import { detectDomain} from '../services/domain.service.js';
 
-export const getRoleMatches = (req, res) => {
+export const getRoleMatches = async (req, res) => {
   try {
     const { skills } = req.body;
 
@@ -12,7 +12,7 @@ export const getRoleMatches = (req, res) => {
 
     const normalizedSkills = normalizeSkills(skills);
     const { domain } = detectDomain(normalizedSkills);
-    const recommendations = matchRoles(normalizedSkills, domain);
+    const recommendations = await matchRoles(normalizedSkills, domain);
 
     return res.status(200).json({ recommendations });
   } catch (error) {

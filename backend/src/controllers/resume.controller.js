@@ -1,5 +1,5 @@
 import { extractSkillsFromResume } from '../services/resume.service.js';
-import { normalizeSkills } from '../utils/skillNormalizer.js';
+import { normalizeSkills, prettifySkillName } from '../utils/skillNormalizer.js';
 import { detectDomain } from '../services/domain.service.js';
 
 export const processResume = async (req, res) => {
@@ -24,8 +24,14 @@ export const processResume = async (req, res) => {
     const normalizedSkills = normalizeSkills(extractedSkills);
     const { domain, confidence } = detectDomain(normalizedSkills);
 
+    // Format skill names for response presentation
+    const prettySkills = normalizedSkills.map(s => ({
+      name: prettifySkillName(s.name),
+      level: s.level
+    }));
+
     return res.status(200).json({
-      skills: normalizedSkills,
+      skills: prettySkills,
       domain,
       confidence
     });
