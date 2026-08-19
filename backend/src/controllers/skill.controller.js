@@ -16,7 +16,7 @@ export const detectUserDomain = (req, res) => {
     const normalizedSkills = normalizeSkills(skills);
 
     // 2. Detect domain
-    const { domain, confidence } = detectDomain(normalizedSkills);
+    const { domain, confidence, domains } = detectDomain(normalizedSkills);
 
     // Format skill names for response presentation
     const prettySkills = normalizedSkills.map(s => ({
@@ -28,7 +28,8 @@ export const detectUserDomain = (req, res) => {
     return res.status(200).json({
       skills: prettySkills,
       domain,
-      confidence
+      confidence,
+      domains
     });
   } catch (error) {
     console.error('Error in detectUserDomain:', error);

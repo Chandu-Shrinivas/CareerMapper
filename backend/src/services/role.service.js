@@ -38,6 +38,37 @@ const ROLE_ANCHOR_SKILLS = {
   'Financial Analyst': ['financial modeling', 'forecasting', 'budgeting']
 };
 
+const selectFinalRecommendations = (recs, detectedDomain) => {
+  const activeDomains = [];
+  if (detectedDomain && detectedDomain !== 'Unknown') {
+    if (Array.isArray(detectedDomain)) {
+      activeDomains.push(...detectedDomain);
+    } else if (typeof detectedDomain === 'string') {
+      detectedDomain.split(',').forEach(d => {
+        const trimmed = d.trim();
+        if (trimmed) activeDomains.push(trimmed);
+      });
+    }
+  }
+
+  if (activeDomains.length > 1) {
+    let finalRecs = [];
+    activeDomains.forEach(dom => {
+      const domRecs = recs
+        .filter(r => r.domain === dom && r.score >= 5)
+        .sort((a, b) => b.score - a.score)
+        .slice(0, 2);
+      finalRecs.push(...domRecs);
+    });
+    finalRecs.sort((a, b) => b.score - a.score);
+    return finalRecs;
+  } else {
+    const validRecommendations = recs.filter(r => r.score >= 15);
+    validRecommendations.sort((a, b) => b.score - a.score);
+    return validRecommendations.slice(0, 3);
+  }
+};
+
 export const matchRoles = async (userSkills, detectedDomain = 'Unknown') => {
   if (!userSkills || !Array.isArray(userSkills)) {
     return [];
@@ -65,9 +96,17 @@ export const matchRoles = async (userSkills, detectedDomain = 'Unknown') => {
     }
 
     for (const [roleName, roleData] of Object.entries(rolesData)) {
-      // Apply strict domain filtering
-      if (detectedDomain !== 'Unknown' && roleData.domain !== detectedDomain) {
-        continue;
+      // Apply domain filtering
+      if (detectedDomain !== 'Unknown') {
+        const domainsToFilter = Array.isArray(detectedDomain)
+          ? detectedDomain
+          : typeof detectedDomain === 'string'
+            ? detectedDomain.split(',').map(d => d.trim())
+            : [detectedDomain];
+        
+        if (!domainsToFilter.includes(roleData.domain)) {
+          continue;
+        }
       }
 
       const roleSkills = roleData.skills;
@@ -109,6 +148,8 @@ export const matchRoles = async (userSkills, detectedDomain = 'Unknown') => {
       let matchedRoleWeight = 0;
       let roleMaxWeight = 0;
       let matchedSkills = 0;
+      const matchedSkillsList = [];
+      const missingSkillsList = [];
 
       for (const [skillName, roleWeight] of Object.entries(roleSkills)) {
         const normalizedSkillName = canonicalizeSkill(skillName);
@@ -119,6 +160,9 @@ export const matchRoles = async (userSkills, detectedDomain = 'Unknown') => {
           weightedScore += (roleWeight * userLevelWeight);
           matchedRoleWeight += roleWeight;
           matchedSkills++;
+          matchedSkillsList.push(skillName);
+        } else {
+          missingSkillsList.push(skillName);
         }
       }
 
@@ -211,7 +255,13 @@ export const matchRoles = async (userSkills, detectedDomain = 'Unknown') => {
         }
       }
 
-      recommendations.push({ role: roleName, score: percentage });
+      recommendations.push({ 
+        role: roleName, 
+        score: percentage,
+        domain: roleData.domain,
+        matchedSkills: matchedSkillsList,
+        missingSkills: missingSkillsList
+      });
     }
 
     // 1. Get profile text
@@ -243,16 +293,26 @@ export const matchRoles = async (userSkills, detectedDomain = 'Unknown') => {
           // Re-map recommendations using hybrid scores where available
           const mergedRecommendations = recommendations.map(r => {
             if (hybridScores[r.role] !== undefined) {
-              return { role: r.role, score: hybridScores[r.role] };
+              return { 
+                role: r.role, 
+                score: hybridScores[r.role],
+                domain: r.domain,
+                matchedSkills: r.matchedSkills,
+                missingSkills: r.missingSkills
+              };
             } else {
               // Non-predicted roles keep their baseline rule score
-              return { role: r.role, score: r.score };
+              return { 
+                role: r.role, 
+                score: r.score,
+                domain: r.domain,
+                matchedSkills: r.matchedSkills,
+                missingSkills: r.missingSkills
+              };
             }
           });
 
-          const validRecommendations = mergedRecommendations.filter(r => r.score >= 15);
-          validRecommendations.sort((a, b) => b.score - a.score);
-          return validRecommendations.slice(0, 3);
+          return selectFinalRecommendations(mergedRecommendations, detectedDomain);
         }
       }
     } catch (err) {
@@ -260,9 +320,7 @@ export const matchRoles = async (userSkills, detectedDomain = 'Unknown') => {
     }
 
     // Fallback: standard rule-based matching
-    const validRecommendations = recommendations.filter(r => r.score >= 15);
-    validRecommendations.sort((a, b) => b.score - a.score);
-    return validRecommendations.slice(0, 3);
+    return selectFinalRecommendations(recommendations, detectedDomain);
 
   } catch (error) {
     console.error('Error matching roles:', error);

@@ -29,7 +29,7 @@ export const detectLevel = (text, skill, skillIndex) => {
   }
 
   const keywords = [
-    { word: "expert", level: "advanced" },
+    { word: "expert", level: "expert" },
     { word: "advanced", level: "advanced" },
     { word: "intermediate", level: "intermediate" },
     { word: "experience", level: "intermediate" },

@@ -10,14 +10,28 @@ sys.path.append(CURRENT_DIR)
 
 from utils.inference_guard import InferenceGuard
 
+from fastapi.middleware.cors import CORSMiddleware
+
 app = FastAPI(
     title="CareerMapper ML Inference Service",
     description="Calibrated, production-safe career classification using TF-IDF + LinearSVC",
     version="1.0.0"
 )
 
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
 # Initialize the global inference guard instance (loads models on demand)
 guard = InferenceGuard()
+try:
+    guard._load_models()
+except Exception as e:
+    print(f"Warning: could not pre-load models at startup: {e}")
 
 class PredictionRequest(BaseModel):
     text: str = Field(..., description="Raw text describing technical profile/skills", example="react html css javascript web developer")

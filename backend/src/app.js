@@ -11,6 +11,10 @@ app.use(cors());
 app.use(express.json());
 
 // Routes Setup (Mounted at root as requested)
+app.get('/health', (req, res) => {
+  res.status(200).json({ status: 'ok' });
+});
+
 app.use('/', skillRoutes);
 app.use('/', knowledgeRoutes);
 app.use('/', resumeRoutes);

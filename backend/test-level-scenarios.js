@@ -8,7 +8,7 @@ const runTests = () => {
   // Test 1
   const text1 = "Expert communication skills and beginner python";
   console.log("Test 1 Input:", `"${text1}"`);
-  console.log("-> communication level:", detectLevel(text1, "communication")); // Expected: advanced
+  console.log("-> communication level:", detectLevel(text1, "communication")); // Expected: expert
   console.log("-> python level:", detectLevel(text1, "python")); // Expected: beginner
   console.log("");
 

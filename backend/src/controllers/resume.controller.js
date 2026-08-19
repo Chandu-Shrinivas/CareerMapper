@@ -22,7 +22,7 @@ export const processResume = async (req, res) => {
 
     // Pass skills to normalizeSkills() and detectDomain()
     const normalizedSkills = normalizeSkills(extractedSkills);
-    const { domain, confidence } = detectDomain(normalizedSkills);
+    const { domain, confidence, domains } = detectDomain(normalizedSkills);
 
     // Format skill names for response presentation
     const prettySkills = normalizedSkills.map(s => ({
@@ -30,10 +30,12 @@ export const processResume = async (req, res) => {
       level: s.level
     }));
 
+    // Return response
     return res.status(200).json({
       skills: prettySkills,
       domain,
-      confidence
+      confidence,
+      domains
     });
 
   } catch (error) {

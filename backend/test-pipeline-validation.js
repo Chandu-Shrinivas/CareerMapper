@@ -52,13 +52,13 @@ const tests = [
       const comm = skills.find(s => s.name === "communication");
       const python = skills.find(s => s.name === "python");
       
-      const commPass = comm && comm.level === "advanced";
+      const commPass = comm && comm.level === "expert";
       const pythonPass = python && python.level === "beginner";
       
       const pass = commPass && pythonPass;
       console.log(`-> Verdict: ${pass ? "PASS" : "FAIL"}`);
       if (!comm) console.log("   Inconsistency: 'communication' skill not extracted!");
-      if (python && python.level === "advanced") console.log("   Inconsistency: python was falsely assigned 'advanced'!");
+      if (python && python.level === "expert") console.log("   Inconsistency: python was falsely assigned 'expert'!");
     }
   },
   {
