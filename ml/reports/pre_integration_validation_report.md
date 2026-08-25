@@ -12,7 +12,7 @@ This document reports the empirical validation findings of the **CareerMapper ML
 | **Vectorizer** | `TfidfVectorizer` (Vocabulary: 21,604 terms) |
 | **Validation Set Accuracy** | **76.41%** |
 | **Disk Footprint** | Classifier: 1.65 MB \| Vectorizer: 0.49 MB |
-| **Avg Inference Speed** | **0.181 ms** per single text profile (target: <200ms) |
+| **Avg Inference Speed** | **0.209 ms** per single text profile (target: <200ms) |
 | **Class Calibration** | Avg Correct Confidence: **34.14%** \| Avg Incorrect Confidence: **23.94%** |
 | **Overconfident Wrongs** | **0** instances of incorrect predictions with >85% confidence |
 | **Deployment Verdict** | **DEPLOY NOW** |
@@ -63,14 +63,14 @@ Evaluating model resilience against empty inputs, garbage text, domain spamming,
 ## 3. Pre-Integration Verification Metrics
 
 ### Inference Latency Profile
-- **Warm Single Inference (P50)**: **0.1783 ms**
-- **Warm Single Inference (P90)**: **0.1937 ms**
-- **Warm Single Inference (P99)**: **0.2084 ms**
-- **Average Inference Latency**: **0.1806 ms**
+- **Warm Single Inference (P50)**: **0.1779 ms**
+- **Warm Single Inference (P90)**: **0.2348 ms**
+- **Warm Single Inference (P99)**: **0.8121 ms**
+- **Average Inference Latency**: **0.2086 ms**
 - **Batch Processing Throughput**:
-  - Batch size = 10: 0.48 ms (0.05 ms/sample)
-  - Batch size = 50: 0.50 ms (0.01 ms/sample)
-  - Batch size = 100: 0.71 ms (0.01 ms/sample)
+  - Batch size = 10: 0.87 ms (0.09 ms/sample)
+  - Batch size = 50: 0.71 ms (0.01 ms/sample)
+  - Batch size = 100: 0.65 ms (0.01 ms/sample)
 
 ### Score Calibration Analysis
 - **Average Confidence on Correct Predictions**: **34.14%**

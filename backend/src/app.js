@@ -4,6 +4,8 @@ import skillRoutes from './routes/skill.routes.js';
 import knowledgeRoutes from './routes/knowledge.routes.js';
 import resumeRoutes from './routes/resume.routes.js';
 import roleRoutes from './routes/role.routes.js';
+import jobRoutes from './routes/job.routes.js';
+import chatRoutes from './routes/chat.routes.js';
 
 const app = express();
 
@@ -19,5 +21,7 @@ app.use('/', skillRoutes);
 app.use('/', knowledgeRoutes);
 app.use('/', resumeRoutes);
 app.use('/', roleRoutes);
+app.use('/', jobRoutes);
+app.use('/', chatRoutes);
 
 export default app;

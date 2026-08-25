@@ -286,8 +286,13 @@ export const matchRoles = async (userSkills, detectedDomain = 'Unknown') => {
             const ruleRole = recommendations.find(r => r.role === mlPred.role);
             const ruleScore = ruleRole.score;
             const mlConfidence = mlPred.confidence;
-            // Combined score formula: 50% Rule Engine + 50% ML confidence
-            hybridScores[mlPred.role] = Math.round(ruleScore * 0.5 + (mlConfidence * 100) * 0.5);
+            // Treat ML confidence as meaningful only when it's sufficient (>= 35%)
+            if (mlConfidence >= 0.35) {
+              hybridScores[mlPred.role] = Math.round(ruleScore * 0.5 + (mlConfidence * 100) * 0.5);
+            } else {
+              // Preserve rule score when ML evidence is weak/low-confidence
+              hybridScores[mlPred.role] = ruleScore;
+            }
           });
 
           // Re-map recommendations using hybrid scores where available

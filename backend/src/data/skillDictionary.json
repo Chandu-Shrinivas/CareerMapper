@@ -150,6 +150,7 @@
   "dba": "database administration",
   "rdbms": "sql",
   "pgsql": "postgresql",
+  "postgres": "postgresql",
   "ux": "ux design",
   "ui": "ui design",
   "spring boot": "spring boot",

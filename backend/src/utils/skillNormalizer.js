@@ -3,7 +3,7 @@ import { readJsonFile } from './fileUtils.js';
 const synonyms = readJsonFile('data/skillDictionary.json');
 const synonymEntries = Object.entries(synonyms);
 
-const canonicalizeSkill = (value) =>
+export const canonicalizeSkill = (value) =>
   String(value || '')
     .toLowerCase()
     .replace(/[^a-z0-9]+/g, ' ')
@@ -14,6 +14,11 @@ const synonymMap = synonymEntries.reduce((acc, [key, val]) => {
   acc[canonicalizeSkill(key)] = canonicalizeSkill(val);
   return acc;
 }, {});
+
+export const getNormalizedSkillName = (name) => {
+  const canonical = canonicalizeSkill(name);
+  return synonymMap[canonical] || canonical;
+};
 
 export const normalizeSkills = (skills) => {
   const levelHierarchy = {
