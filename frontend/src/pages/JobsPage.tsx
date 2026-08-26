@@ -3,7 +3,7 @@ import { useNavigate, useSearchParams } from 'react-router-dom';
 import { 
   Search, MapPin, Briefcase, Filter, RotateCw, ExternalLink, 
   AlertTriangle, Sparkles, SlidersHorizontal, ArrowRight,
-  ChevronDown, Check, Info, Clock
+  ChevronDown, Check, Info, Bookmark
 } from 'lucide-react';
 import { Button } from '../components/ui/button';
 import { Input } from '../components/ui/input';
@@ -15,12 +15,13 @@ import { Separator } from '../components/ui/separator';
 import { Sheet, SheetTrigger, SheetContent, SheetHeader, SheetTitle } from '../components/ui/sheet';
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from '../components/ui/dialog';
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '../components/ui/tooltip';
-import { Tabs, TabsList, TabsTrigger, TabsContent } from '../components/ui/tabs';
 import { SkillIcon } from '../components/SkillIcon';
 import { CompanyLogo } from '../components/CompanyLogo';
 import { api } from '../services/api';
 import { ChartContainer, ChartTooltip, ChartTooltipContent, type ChartConfig } from '../components/ui/chart';
 import { PieChart, Pie, Cell, Label } from 'recharts';
+import { toast } from 'sonner';
+import { Select, SelectTrigger, SelectContent, SelectItem, SelectValue } from '../components/ui/select';
 
 const DRAFT_KEY = 'cm_profile_draft';
 
@@ -215,6 +216,140 @@ export default function JobsPage() {
   const [selectedJob, setSelectedJob] = useState<any | null>(null);
   const [detailModalOpen, setDetailModalOpen] = useState<boolean>(false);
   const [isMobileFilterOpen, setIsMobileFilterOpen] = useState<boolean>(false);
+
+  // Saved Jobs Map & Statuses
+  const [savedJobsMap, setSavedJobsMap] = useState<Record<string, string>>({}); // key: source_jobId, value: savedJobId (MongoDB _id)
+  const [savedJobsStatuses, setSavedJobsStatuses] = useState<Record<string, string>>({}); // key: savedJobId, value: status string
+
+  // Fetch saved jobs once on mount
+  useEffect(() => {
+    const fetchSavedJobs = async () => {
+      try {
+        const res = await api.getSavedJobs();
+        if (res.status === 'success' && Array.isArray(res.data)) {
+          const map: Record<string, string> = {};
+          const statuses: Record<string, string> = {};
+          res.data.forEach((j: any) => {
+            const key = `${j.source}_${j.jobId}`;
+            map[key] = j._id;
+            statuses[j._id] = j.status;
+          });
+          setSavedJobsMap(map);
+          setSavedJobsStatuses(statuses);
+        }
+      } catch (error) {
+        console.error('Failed to load saved jobs:', error);
+      }
+    };
+    fetchSavedJobs();
+  }, []);
+
+  const isJobSaved = (jobId: string) => {
+    const source = selectedJob?.source || 'JSearch';
+    return !!savedJobsMap[`${source}_${jobId}`];
+  };
+
+  const getSavedJobId = (jobId: string) => {
+    const source = selectedJob?.source || 'JSearch';
+    return savedJobsMap[`${source}_${jobId}`] || '';
+  };
+
+  const getSavedJobStatus = (jobId: string) => {
+    const dbId = getSavedJobId(jobId);
+    return savedJobsStatuses[dbId] || 'Saved';
+  };
+
+  const handleToggleSaveJob = async (job: any) => {
+    const source = job.source || 'JSearch';
+    const jobId = job.id || job.jobId;
+    const key = `${source}_${jobId}`;
+    const isSaved = !!savedJobsMap[key];
+    const savedJobId = savedJobsMap[key];
+
+    if (isSaved && savedJobId) {
+      // Optimistic Unsave
+      const prevMap = { ...savedJobsMap };
+      const newMap = { ...savedJobsMap };
+      delete newMap[key];
+      setSavedJobsMap(newMap);
+      
+      toast.success('Job removed from saved list');
+
+      try {
+        await api.deleteSavedJob(savedJobId);
+      } catch (err: any) {
+        // Rollback
+        setSavedJobsMap(prevMap);
+        toast.error(err.message || 'Failed to remove saved job.');
+      }
+    } else {
+      // Optimistic Save
+      const tempId = `temp-${Date.now()}`;
+      const prevMap = { ...savedJobsMap };
+      const newMap = { ...savedJobsMap, [key]: tempId };
+      setSavedJobsMap(newMap);
+      
+      toast.success('Job saved successfully');
+
+      try {
+        const res = await api.saveJob({
+          id: jobId,
+          source,
+          title: job.title,
+          company: job.company,
+          companyLogo: job.companyLogo,
+          companyDomain: job.companyDomain,
+          location: job.location,
+          country: job.country,
+          workMode: job.workMode,
+          employmentType: job.employmentType,
+          experience: job.experience,
+          salaryMin: job.salaryMin,
+          salaryMax: job.salaryMax,
+          currency: job.currency,
+          salaryText: job.salaryText,
+          skills: job.skills,
+          description: job.description,
+          postedAt: job.postedAt,
+          postedText: job.postedText,
+          sourceUrl: job.sourceUrl || job.applyUrl,
+          analysisData: analysisData // Preserve AI insights if present!
+        });
+        if (res.status === 'success' && res.data) {
+          setSavedJobsMap(prev => ({
+            ...prev,
+            [key]: res.data._id
+          }));
+          setSavedJobsStatuses(prev => ({
+            ...prev,
+            [res.data._id]: res.data.status
+          }));
+        }
+      } catch (err: any) {
+        // Rollback
+        setSavedJobsMap(prevMap);
+        toast.error(err.message || 'Failed to save job.');
+      }
+    }
+  };
+
+  const handleUpdateSavedJobStatus = async (jobId: string, newStatus: string) => {
+    // Find the savedJobId from map
+    const key = Object.keys(savedJobsMap).find(k => savedJobsMap[k] === jobId) || '';
+    const savedJobId = savedJobsMap[key] || jobId;
+
+    const prevStatuses = { ...savedJobsStatuses };
+    setSavedJobsStatuses(prev => ({ ...prev, [savedJobId]: newStatus }));
+    toast.success(`Application status updated to ${newStatus}`);
+
+    try {
+      await api.updateSavedJobStatus(savedJobId, newStatus);
+    } catch (err: any) {
+      // Rollback
+      setSavedJobsStatuses(prevStatuses);
+      toast.error(err.message || 'Failed to update job status.');
+    }
+  };
 
   // Groq Analysis State
   const [analysisData, setAnalysisData] = useState<any>(null);
@@ -847,6 +982,7 @@ export default function JobsPage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             {recommendedJobs.map((job) => {
               const badge = getMatchScoreBadge(job);
+              const isSaved = !!savedJobsMap[`${job.source || 'JSearch'}_${job.id}`];
               return (
                 <Card 
                   key={`rec-${job.id}`}
@@ -854,13 +990,29 @@ export default function JobsPage() {
                   className="bg-zinc-900/20 hover:bg-zinc-900/50 border border-zinc-900 p-4 rounded-lg cursor-pointer transition-all space-y-3 hover:border-zinc-800"
                 >
                   <div className="flex items-start justify-between gap-2">
-                    <div className="space-y-0.5 min-w-0">
+                    <div className="space-y-0.5 min-w-0 flex-1">
                       <h4 className="font-bold text-sm text-white truncate">{job.title}</h4>
                       <p className="text-xs text-zinc-400 truncate">{job.company}</p>
                     </div>
-                    <Badge variant="outline" className={`text-[10px] shrink-0 ${badge.color}`}>
-                      {badge.label}
-                    </Badge>
+                    <div className="flex items-center gap-1.5 shrink-0">
+                      <Button
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          handleToggleSaveJob(job);
+                        }}
+                        variant="outline"
+                        className={`size-6 p-0 border rounded-md cursor-pointer transition-colors ${
+                          isSaved
+                            ? 'border-emerald-500/20 bg-emerald-500/5 text-emerald-400 hover:bg-emerald-500/10'
+                            : 'border-zinc-850 bg-zinc-900 hover:bg-zinc-800 text-zinc-455 hover:text-white'
+                        }`}
+                      >
+                        <Bookmark className={`size-3 ${isSaved ? 'fill-emerald-400 text-emerald-400' : 'text-zinc-500'}`} />
+                      </Button>
+                      <Badge variant="outline" className={`text-[10px] ${badge.color}`}>
+                        {badge.label}
+                      </Badge>
+                    </div>
                   </div>
 
                   <div className="flex items-center gap-3 text-[11px] text-zinc-400 font-mono">
@@ -987,12 +1139,28 @@ export default function JobsPage() {
                         <span className="text-zinc-500 font-mono text-[10px]">{job.postedText}</span>
                       </div>
 
-                      <Button 
-                        onClick={() => handleOpenJobDetails(job)}
-                        className="h-8 px-3.5 bg-zinc-900 hover:bg-zinc-800 text-white text-xs font-semibold border border-zinc-800 rounded cursor-pointer"
-                      >
-                        View Job
-                      </Button>
+                      <div className="flex items-center gap-2">
+                        <Button
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            handleToggleSaveJob(job);
+                          }}
+                          variant="outline"
+                          className={`size-8 p-0 border rounded cursor-pointer transition-colors ${
+                            savedJobsMap[`${job.source || 'JSearch'}_${job.id}`]
+                              ? 'border-emerald-500/20 bg-emerald-500/5 text-emerald-400 hover:bg-emerald-500/10'
+                              : 'border-zinc-800 bg-zinc-900 hover:bg-zinc-800 text-zinc-400 hover:text-white'
+                          }`}
+                        >
+                          <Bookmark className={`size-4 ${savedJobsMap[`${job.source || 'JSearch'}_${job.id}`] ? 'fill-emerald-400 text-emerald-400' : 'text-zinc-400'}`} />
+                        </Button>
+                        <Button 
+                          onClick={() => handleOpenJobDetails(job)}
+                          className="h-8 px-3.5 bg-zinc-900 hover:bg-zinc-800 text-white text-xs font-semibold border border-zinc-800 rounded cursor-pointer"
+                        >
+                          View Job
+                        </Button>
+                      </div>
                     </div>
 
                     {/* Required Skills Badges */}
@@ -1145,9 +1313,44 @@ export default function JobsPage() {
                     </div>
                   </div>
                   
-                  {/* Score Indicator Ring */}
+                  {/* Score Indicator Ring & Actions */}
                   <div className="flex items-center gap-3 shrink-0 self-center">
-                    <div className="relative size-12 flex items-center justify-center">
+                    {/* Status Select if saved */}
+                    {isJobSaved(selectedJob.id) && (
+                      <Select
+                        value={getSavedJobStatus(selectedJob.id)}
+                        onValueChange={(status) => handleUpdateSavedJobStatus(selectedJob.id, status)}
+                      >
+                        <SelectTrigger className="h-9 w-[110px] bg-zinc-900/60 border-zinc-850 text-[11px] text-zinc-300 hover:text-white rounded cursor-pointer font-bold">
+                          <SelectValue placeholder="Status" />
+                        </SelectTrigger>
+                        <SelectContent className="bg-zinc-900 border-zinc-850 text-zinc-200">
+                          <SelectItem value="Saved">Saved</SelectItem>
+                          <SelectItem value="Applied">Applied</SelectItem>
+                          <SelectItem value="Assessment">Assessment</SelectItem>
+                          <SelectItem value="Interview">Interview</SelectItem>
+                          <SelectItem value="Offer">Offer</SelectItem>
+                          <SelectItem value="Rejected">Rejected</SelectItem>
+                          <SelectItem value="Withdrawn">Withdrawn</SelectItem>
+                        </SelectContent>
+                      </Select>
+                    )}
+
+                    {/* Bookmark Toggle Button */}
+                    <Button
+                      onClick={() => handleToggleSaveJob(selectedJob)}
+                      variant="outline"
+                      className={`h-9 px-3 text-xs font-semibold rounded cursor-pointer flex items-center gap-1.5 transition-colors ${
+                        isJobSaved(selectedJob.id)
+                          ? 'border-emerald-500/20 bg-emerald-500/5 text-emerald-400 hover:bg-emerald-500/10'
+                          : 'border-zinc-800 bg-zinc-900 hover:bg-zinc-800 text-zinc-300 hover:text-white'
+                      }`}
+                    >
+                      <Bookmark className={`size-4 ${isJobSaved(selectedJob.id) ? 'fill-emerald-400 text-emerald-400' : 'text-zinc-400'}`} />
+                      <span className="hidden sm:inline">{isJobSaved(selectedJob.id) ? 'Saved' : 'Save Job'}</span>
+                    </Button>
+
+                    <div className="relative size-12 flex items-center justify-center shrink-0">
                       <svg className="size-full -rotate-90">
                         <circle 
                           cx="24" cy="24" r="20" 
@@ -1166,7 +1369,7 @@ export default function JobsPage() {
                         {score}%
                       </span>
                     </div>
-                    <div className="text-right hidden sm:block">
+                    <div className="text-right hidden sm:block shrink-0">
                       <div className="text-[10px] font-bold text-white uppercase tracking-wider">Skill Match</div>
                       <div className="text-[9px] text-emerald-400 font-medium font-mono">Alignment</div>
                     </div>
@@ -1310,24 +1513,27 @@ export default function JobsPage() {
                                       ))}
                                       <Label
                                         content={({ viewBox }) => {
-                                          if (viewBox && "cx" in viewBox && "cy" in viewBox) {
+                                          const vb = viewBox as any;
+                                          if (vb && vb.cx !== undefined && vb.cy !== undefined) {
+                                            const cx = vb.cx;
+                                            const cy = vb.cy;
                                             return (
                                               <text
-                                                x={viewBox.cx}
-                                                y={viewBox.cy}
+                                                x={cx}
+                                                y={cy}
                                                 textAnchor="middle"
                                                 dominantBaseline="middle"
                                               >
                                                 <tspan
-                                                  x={viewBox.cx}
-                                                  y={viewBox.cy - 2}
+                                                  x={cx}
+                                                  y={cy - 2}
                                                   className="fill-white text-xl font-bold font-mono font-black"
                                                 >
                                                   {totalSkills > 0 ? `${score}%` : "0%"}
                                                 </tspan>
                                                 <tspan
-                                                  x={viewBox.cx}
-                                                  y={(viewBox.cy || 0) + 16}
+                                                  x={cx}
+                                                  y={cy + 16}
                                                   className="fill-zinc-400 text-[9px] uppercase font-bold tracking-widest font-mono"
                                                 >
                                                   Skill Match

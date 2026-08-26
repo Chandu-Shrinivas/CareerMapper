@@ -1,4 +1,5 @@
 import type { ApiResult, Skill, CareerProfile, AnalysisStageId, DomainId, ProficiencyLevel, CareerMatch } from '../types';
+import { authService } from './auth';
 
 export const BACKEND_URL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:5000';
 const ML_URL = import.meta.env.VITE_ML_BASE_URL || 'http://localhost:8000';
@@ -324,6 +325,100 @@ export const api = {
     if (!response.ok) {
       const errBody = await response.json().catch(() => ({}));
       throw new Error(errBody.error || 'Failed to get response from AI Assistant.');
+    }
+    return response.json();
+  },
+
+  /**
+   * Save a job snapshot to MongoDB
+   */
+  async saveJob(job: any): Promise<any> {
+    const email = authService.getSession().user?.email || '';
+    const response = await fetch(`${BACKEND_URL}/jobs/saved`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'X-User-Email': email
+      },
+      body: JSON.stringify(job)
+    });
+    if (!response.ok) {
+      const errBody = await response.json().catch(() => ({}));
+      throw new Error(errBody.error || 'Failed to save job.');
+    }
+    return response.json();
+  },
+
+  /**
+   * Retrieve all saved jobs for current user
+   */
+  async getSavedJobs(): Promise<any> {
+    const email = authService.getSession().user?.email || '';
+    const response = await fetch(`${BACKEND_URL}/jobs/saved`, {
+      method: 'GET',
+      headers: {
+        'X-User-Email': email
+      }
+    });
+    if (!response.ok) {
+      const errBody = await response.json().catch(() => ({}));
+      throw new Error(errBody.error || 'Failed to retrieve saved jobs.');
+    }
+    return response.json();
+  },
+
+  /**
+   * Update tracking status of a saved job
+   */
+  async updateSavedJobStatus(savedJobId: string, status: string): Promise<any> {
+    const email = authService.getSession().user?.email || '';
+    const response = await fetch(`${BACKEND_URL}/jobs/saved/${savedJobId}/status`, {
+      method: 'PATCH',
+      headers: {
+        'Content-Type': 'application/json',
+        'X-User-Email': email
+      },
+      body: JSON.stringify({ status })
+    });
+    if (!response.ok) {
+      const errBody = await response.json().catch(() => ({}));
+      throw new Error(errBody.error || 'Failed to update job status.');
+    }
+    return response.json();
+  },
+
+  /**
+   * Remove a job from saved jobs list
+   */
+  async deleteSavedJob(savedJobId: string): Promise<any> {
+    const email = authService.getSession().user?.email || '';
+    const response = await fetch(`${BACKEND_URL}/jobs/saved/${savedJobId}`, {
+      method: 'DELETE',
+      headers: {
+        'X-User-Email': email
+      }
+    });
+    if (!response.ok) {
+      const errBody = await response.json().catch(() => ({}));
+      throw new Error(errBody.error || 'Failed to remove saved job.');
+    }
+    return response.json();
+  },
+
+  /**
+   * Retrieve Application Tracker summary metrics and lists
+   */
+  async getTrackerSummary(): Promise<any> {
+    const email = authService.getSession().user?.email || '';
+    const response = await fetch(`${BACKEND_URL}/jobs/tracker`, {
+      method: 'GET',
+      headers: {
+        'X-User-Email': email
+      }
+    });
+    if (!response.ok) {
+      const errBody = await response.json().catch(() => ({}));
+      throw new Error(errBody.error || 'Failed to retrieve application tracker data.');
     }
     return response.json();
   }

@@ -9,8 +9,11 @@ import Dashboard from './pages/Dashboard';
 import CareerPaths from './pages/CareerPaths';
 import SkillsInventory from './pages/SkillsInventory';
 import JobsPage from './pages/JobsPage';
+import SavedJobsPage from './pages/SavedJobsPage';
+import ApplicationTrackerPage from './pages/ApplicationTrackerPage';
 import WorkspaceLayout from './components/layout/WorkspaceLayout';
 import { useAuth } from './hooks/useAuth';
+import { Toaster } from './components/ui/sonner';
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -91,12 +94,15 @@ export default function App() {
           <Route path="/career-paths" element={<ProtectedRoute><WorkspaceLayout><CareerPaths /></WorkspaceLayout></ProtectedRoute>} />
           <Route path="/skills" element={<ProtectedRoute><WorkspaceLayout><SkillsInventory /></WorkspaceLayout></ProtectedRoute>} />
           <Route path="/jobs" element={<ProtectedRoute><WorkspaceLayout><JobsPage /></WorkspaceLayout></ProtectedRoute>} />
+          <Route path="/saved-jobs" element={<ProtectedRoute><WorkspaceLayout><SavedJobsPage /></WorkspaceLayout></ProtectedRoute>} />
+          <Route path="/tracker" element={<ProtectedRoute><WorkspaceLayout><ApplicationTrackerPage /></WorkspaceLayout></ProtectedRoute>} />
           <Route path="/profile" element={<ProtectedRoute><WorkspaceLayout><Dashboard /></WorkspaceLayout></ProtectedRoute>} />
           
           {/* Fallback */}
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </main>
+      <Toaster position="top-right" theme="dark" closeButton />
     </div>
   );
 }

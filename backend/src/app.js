@@ -6,6 +6,7 @@ import resumeRoutes from './routes/resume.routes.js';
 import roleRoutes from './routes/role.routes.js';
 import jobRoutes from './routes/job.routes.js';
 import chatRoutes from './routes/chat.routes.js';
+import savedJobRoutes from './routes/savedJob.routes.js';
 
 const app = express();
 
@@ -23,5 +24,6 @@ app.use('/', resumeRoutes);
 app.use('/', roleRoutes);
 app.use('/', jobRoutes);
 app.use('/', chatRoutes);
+app.use('/', savedJobRoutes);
 
 export default app;

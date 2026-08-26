@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate, useLocation, useSearchParams } from 'react-router-dom';
 import { 
-  BarChart2, Compass, Layers, Briefcase, Settings, HelpCircle, LogOut, User, ChevronDown
+  BarChart2, Compass, Layers, Briefcase, Settings, HelpCircle, LogOut, User, ChevronDown, Bookmark, ClipboardList
 } from 'lucide-react';
 import { Avatar, AvatarFallback } from '../ui/avatar';
-import { Badge } from '../ui/badge';
 import { Separator } from '../ui/separator';
 import { 
   DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuLabel, DropdownMenuSeparator, DropdownMenuTrigger 
@@ -38,13 +37,11 @@ export default function WorkspaceLayout({ children }: { children: React.ReactNod
   const [profile, setProfile] = useState<any>(null);
 
   useEffect(() => {
-    const rawDraft = localStorage.getItem(DRAFT_KEY);
-    if (rawDraft) {
-      try {
-        setProfile(JSON.parse(rawDraft));
-      } catch (e) {}
-    }
-  }, [location]);
+    try {
+      const raw = localStorage.getItem(DRAFT_KEY);
+      if (raw) setProfile(JSON.parse(raw));
+    } catch (e) {}
+  }, []);
 
   const handleSignOut = () => {
     authService.clearSession();
@@ -93,6 +90,20 @@ export default function WorkspaceLayout({ children }: { children: React.ReactNod
       icon: Briefcase,
       active: location.pathname === '/jobs',
       disabled: false 
+    },
+    { 
+      label: 'Saved Jobs', 
+      path: '/saved-jobs', 
+      icon: Bookmark,
+      active: location.pathname === '/saved-jobs',
+      disabled: false 
+    },
+    { 
+      label: 'Tracker', 
+      path: '/tracker', 
+      icon: ClipboardList,
+      active: location.pathname === '/tracker',
+      disabled: false 
     }
   ];
 
@@ -113,6 +124,8 @@ export default function WorkspaceLayout({ children }: { children: React.ReactNod
     if (location.pathname === '/career-paths') return 'Career Paths';
     if (location.pathname === '/skills') return 'Skills Inventory';
     if (location.pathname === '/jobs') return 'Job Intelligence & Search';
+    if (location.pathname === '/saved-jobs') return 'Saved Jobs';
+    if (location.pathname === '/tracker') return 'Application Tracker';
     return 'CareerMapper';
   };
 

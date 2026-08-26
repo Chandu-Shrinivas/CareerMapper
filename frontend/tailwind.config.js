@@ -88,19 +88,19 @@ export default {
   		},
   		fontFamily: {
   			display: [
-  				'Plus Jakarta Sans"',
+  				'Plus Jakarta Sans',
   				'Fraunces',
   				'Georgia',
   				'serif'
   			],
   			sans: [
   				'Inter',
-  				'IBM Plex Sans"',
+  				'IBM Plex Sans',
   				'system-ui',
   				'sans-serif'
   			],
   			mono: [
-  				'IBM Plex Mono"',
+  				'IBM Plex Mono',
   				'monospace'
   			]
   		},
