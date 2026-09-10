@@ -4,12 +4,12 @@ import { DEVSECOPS_SVG_DATASET, DEVSECOPS_SVG_VIEWBOX } from '../../data/devSecO
 
 interface SvgRoadmapWrapperProps {
   onNodeStatusChange?: () => void;
-  onSelectNode?: (nodeId: string) => void;
+  selectedNodeId?: string | null;
 }
 
 export const DevSecOpsSvgRoadmap: React.FC<SvgRoadmapWrapperProps> = ({
   onNodeStatusChange,
-  onSelectNode
+  selectedNodeId
 }) => {
   return (
     <GenericSvgRoadmap
@@ -18,7 +18,7 @@ export const DevSecOpsSvgRoadmap: React.FC<SvgRoadmapWrapperProps> = ({
       viewBox={DEVSECOPS_SVG_VIEWBOX}
       dataset={DEVSECOPS_SVG_DATASET}
       onNodeStatusChange={onNodeStatusChange}
-      onSelectNode={onSelectNode}
+      selectedNodeId={selectedNodeId}
     />
   );
 };

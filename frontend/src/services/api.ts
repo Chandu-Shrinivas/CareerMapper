@@ -346,7 +346,11 @@ export const api = {
       const errBody = await response.json().catch(() => ({}));
       throw new Error(errBody.error || 'Failed to save job.');
     }
-    return response.json();
+    const resData = await response.json();
+    if (typeof window !== 'undefined') {
+      window.dispatchEvent(new Event('savedJobsUpdated'));
+    }
+    return resData;
   },
 
   /**
@@ -384,7 +388,11 @@ export const api = {
       const errBody = await response.json().catch(() => ({}));
       throw new Error(errBody.error || 'Failed to update job status.');
     }
-    return response.json();
+    const resData = await response.json();
+    if (typeof window !== 'undefined') {
+      window.dispatchEvent(new Event('savedJobsUpdated'));
+    }
+    return resData;
   },
 
   /**
@@ -402,7 +410,11 @@ export const api = {
       const errBody = await response.json().catch(() => ({}));
       throw new Error(errBody.error || 'Failed to remove saved job.');
     }
-    return response.json();
+    const resData = await response.json();
+    if (typeof window !== 'undefined') {
+      window.dispatchEvent(new Event('savedJobsUpdated'));
+    }
+    return resData;
   },
 
   /**
@@ -954,6 +966,22 @@ export const api = {
         category: 'AI & Data',
         icon: 'BarChart',
         nodeCount: 20
+      },
+      {
+        slug: 'ios',
+        title: 'iOS Developer',
+        description: 'Step by step guide to becoming an iOS developer in 2026',
+        category: 'Mobile',
+        icon: 'Smartphone',
+        nodeCount: 170
+      },
+      {
+        slug: 'blockchain',
+        title: 'Blockchain Developer',
+        description: 'Step by step guide to becoming a blockchain developer in 2026.',
+        category: 'Engineering',
+        icon: 'Layers',
+        nodeCount: 128
       }
     ];
 

@@ -4,12 +4,12 @@ import { AI_ENGINEER_SVG_DATASET, AI_ENGINEER_SVG_VIEWBOX } from '../../data/aiE
 
 interface SvgRoadmapWrapperProps {
   onNodeStatusChange?: () => void;
-  onSelectNode?: (nodeId: string) => void;
+  selectedNodeId?: string | null;
 }
 
 export const AiEngineerSvgRoadmap: React.FC<SvgRoadmapWrapperProps> = ({
   onNodeStatusChange,
-  onSelectNode
+  selectedNodeId
 }) => {
   return (
     <GenericSvgRoadmap
@@ -18,7 +18,7 @@ export const AiEngineerSvgRoadmap: React.FC<SvgRoadmapWrapperProps> = ({
       viewBox={AI_ENGINEER_SVG_VIEWBOX}
       dataset={AI_ENGINEER_SVG_DATASET}
       onNodeStatusChange={onNodeStatusChange}
-      onSelectNode={onSelectNode}
+      selectedNodeId={selectedNodeId}
     />
   );
 };

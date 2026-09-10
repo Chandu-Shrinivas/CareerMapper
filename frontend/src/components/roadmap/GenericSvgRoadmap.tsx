@@ -51,13 +51,13 @@ export const GenericSvgRoadmap: React.FC<GenericSvgRoadmapProps> = ({
   // Sync drawer when selectedNodeId changes from parent header
   useEffect(() => {
     if (!selectedNodeId) return;
-    const target = dataset.find(item => item.kind === 'g' && item.dataNodeId === selectedNodeId);
+    const target = dataset.find(item => item.kind === 'g' && (item as any).dataNodeId === selectedNodeId) as SvgNodeGroup | undefined;
     if (target && target.dataNodeId) {
       const nodeTitle = target.dataTitle || extractTextFromChildren(target.children) || 'Roadmap Topic';
       setSelectedDrawerNode({
         id: target.dataNodeId,
         title: nodeTitle,
-        type: target.dataType || 'topic',
+        type: (target.dataType as any) || 'topic',
         parentId: target.dataParentId ?? undefined,
         parentTitle: target.dataParentTitle ?? undefined,
         status: nodeStatuses[target.dataNodeId] || 'default'

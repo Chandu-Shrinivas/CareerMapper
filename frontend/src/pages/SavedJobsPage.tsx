@@ -49,6 +49,13 @@ export default function SavedJobsPage() {
 
   useEffect(() => {
     fetchJobs();
+    const handleSync = () => {
+      fetchJobs();
+    };
+    window.addEventListener('savedJobsUpdated', handleSync);
+    return () => {
+      window.removeEventListener('savedJobsUpdated', handleSync);
+    };
   }, []);
 
   const handleRemoveSavedJob = async (savedJobId: string) => {

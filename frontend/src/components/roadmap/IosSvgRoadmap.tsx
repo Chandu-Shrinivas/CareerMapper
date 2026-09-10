@@ -1,26 +1,26 @@
 import React from 'react';
 import { GenericSvgRoadmap } from './GenericSvgRoadmap';
-import { FRONTEND_SVG_DATASET, FRONTEND_SVG_VIEWBOX } from '../../data/frontendSvgData';
+import { IOS_SVG_DATASET, IOS_SVG_VIEWBOX } from '../../data/iosSvgData';
 
 interface SvgRoadmapWrapperProps {
   onNodeStatusChange?: () => void;
   selectedNodeId?: string | null;
 }
 
-export const FrontendSvgRoadmap: React.FC<SvgRoadmapWrapperProps> = ({
+export const IosSvgRoadmap: React.FC<SvgRoadmapWrapperProps> = ({
   onNodeStatusChange,
   selectedNodeId
 }) => {
   return (
     <GenericSvgRoadmap
-      roadmapId="frontend"
-      title="Frontend Developer"
-      viewBox={FRONTEND_SVG_VIEWBOX}
-      dataset={FRONTEND_SVG_DATASET}
+      roadmapId="ios"
+      title="iOS Developer"
+      viewBox={IOS_SVG_VIEWBOX}
+      dataset={IOS_SVG_DATASET}
       onNodeStatusChange={onNodeStatusChange}
       selectedNodeId={selectedNodeId}
     />
   );
 };
 
-export default FrontendSvgRoadmap;
+export default IosSvgRoadmap;

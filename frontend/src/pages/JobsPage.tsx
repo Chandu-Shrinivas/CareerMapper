@@ -810,13 +810,22 @@ export default function JobsPage() {
             </p>
           </div>
 
-          {/* Refresh Controls */}
+          {/* Header Controls: Saved Jobs & Refresh */}
           <div className="flex items-center gap-3">
             {jobsData?.generatedAt && (
               <span className="text-[10px] font-mono text-zinc-500 hidden sm:inline-block">
                 Jobs · Updated {getRelativeTimeString(jobsData.generatedAt)}
               </span>
             )}
+
+            <Button
+              onClick={() => navigate('/saved-jobs')}
+              variant="outline"
+              className="h-8 px-3 bg-zinc-900 hover:bg-zinc-800 text-zinc-200 border border-zinc-800 text-xs font-semibold rounded cursor-pointer gap-1.5"
+            >
+              <Bookmark className="size-3.5 text-amber-400" />
+              <span>Saved Jobs</span>
+            </Button>
 
             <Button
               disabled={jobsLoading}

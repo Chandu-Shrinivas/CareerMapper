@@ -56,3 +56,11 @@ export function getNavigationConfig(nodeId?: string, linkUrl?: string, _title?: 
   }
   return undefined;
 }
+
+export function getRoadmapDefinitionBySlug(_slug: string) {
+  try {
+    return null;
+  } catch (e) {
+    return null;
+  }
+}
