@@ -4,12 +4,12 @@ import { FRONTEND_SVG_DATASET, FRONTEND_SVG_VIEWBOX } from '../../data/frontendS
 
 interface SvgRoadmapWrapperProps {
   onNodeStatusChange?: () => void;
-  selectedNodeId?: string | null;
+  onSelectNode?: (nodeId: string) => void;
 }
 
 export const FrontendSvgRoadmap: React.FC<SvgRoadmapWrapperProps> = ({
   onNodeStatusChange,
-  selectedNodeId
+  onSelectNode
 }) => {
   return (
     <GenericSvgRoadmap
@@ -18,7 +18,7 @@ export const FrontendSvgRoadmap: React.FC<SvgRoadmapWrapperProps> = ({
       viewBox={FRONTEND_SVG_VIEWBOX}
       dataset={FRONTEND_SVG_DATASET}
       onNodeStatusChange={onNodeStatusChange}
-      selectedNodeId={selectedNodeId}
+      onSelectNode={onSelectNode}
     />
   );
 };

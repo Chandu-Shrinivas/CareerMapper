@@ -4,12 +4,12 @@ import { AI_DATA_SCIENTIST_SVG_DATASET, AI_DATA_SCIENTIST_SVG_VIEWBOX } from '..
 
 interface SvgRoadmapWrapperProps {
   onNodeStatusChange?: () => void;
-  selectedNodeId?: string | null;
+  onSelectNode?: (nodeId: string) => void;
 }
 
 export const AiDataScientistSvgRoadmap: React.FC<SvgRoadmapWrapperProps> = ({
   onNodeStatusChange,
-  selectedNodeId
+  onSelectNode
 }) => {
   return (
     <GenericSvgRoadmap
@@ -18,7 +18,7 @@ export const AiDataScientistSvgRoadmap: React.FC<SvgRoadmapWrapperProps> = ({
       viewBox={AI_DATA_SCIENTIST_SVG_VIEWBOX}
       dataset={AI_DATA_SCIENTIST_SVG_DATASET}
       onNodeStatusChange={onNodeStatusChange}
-      selectedNodeId={selectedNodeId}
+      onSelectNode={onSelectNode}
     />
   );
 };

@@ -20,12 +20,10 @@ export interface SvgCircle {
 }
 
 export interface SvgChildElement {
-  kind?: string;
   tag: string;
   id?: string | null;
   x?: string | number | null;
   y?: string | number | null;
-  dy?: string | number | null;
   width?: string | number | null;
   height?: string | number | null;
   rx?: string | number | null;
@@ -53,7 +51,6 @@ export interface SvgChildElement {
   dataParentId?: string | null;
   dataParentTitle?: string | null;
   dataLink?: string | null;
-  [key: string]: any;
   tspans?: Array<{
     x?: string | null;
     y?: string | null;
@@ -62,7 +59,7 @@ export interface SvgChildElement {
     dominantBaseline?: string | null;
     fontSize?: string | null;
     fill?: string | null;
-    text?: string;
+    text: string;
   }>;
   children?: SvgChildElement[];
 }

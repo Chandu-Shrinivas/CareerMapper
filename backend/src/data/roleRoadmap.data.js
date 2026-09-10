@@ -694,5 +694,27 @@ export const ROLE_ROADMAPS_DATA = [
         resources: [{ title: 'Apple SwiftUI Tutorials', url: 'https://developer.apple.com/tutorials/swiftui', type: 'Guide' }]
       }
     ]
+  },
+
+  {
+    slug: 'blockchain-developer',
+    title: 'Blockchain Developer',
+    description: 'Step by step guide to becoming a blockchain developer in 2026.',
+    category: 'Engineering',
+    icon: 'Layers',
+    nodes: [
+      {
+        id: 'blockchain-introduction',
+        title: 'Introduction to Blockchain',
+        description: 'Understand what blockchain is, decentralization, consensus algorithms, cryptography, and smart contracts.',
+        whyItMatters: 'Foundational concepts for Web3 and decentralized software engineering.',
+        category: 'FOUNDATION',
+        difficulty: 'Beginner',
+        estimatedHours: 20,
+        prerequisites: [],
+        subtopics: ['What is Blockchain', 'Decentralization', 'Cryptography & Hashing', 'Smart Contracts Basics'],
+        resources: [{ title: 'Ethereum Official Docs', url: 'https://ethereum.org/en/developers/docs/', type: 'Doc' }]
+      }
+    ]
   }
 ];

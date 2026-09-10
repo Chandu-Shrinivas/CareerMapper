@@ -5,11 +5,13 @@ import { BLOCKCHAIN_SVG_DATASET, BLOCKCHAIN_SVG_VIEWBOX } from '../../data/block
 interface SvgRoadmapWrapperProps {
   onNodeStatusChange?: () => void;
   selectedNodeId?: string | null;
+  onSelectNode?: (nodeId: string) => void;
 }
 
 export const BlockchainSvgRoadmap: React.FC<SvgRoadmapWrapperProps> = ({
   onNodeStatusChange,
-  selectedNodeId
+  selectedNodeId,
+  onSelectNode
 }) => {
   return (
     <GenericSvgRoadmap
@@ -19,6 +21,7 @@ export const BlockchainSvgRoadmap: React.FC<SvgRoadmapWrapperProps> = ({
       dataset={BLOCKCHAIN_SVG_DATASET}
       onNodeStatusChange={onNodeStatusChange}
       selectedNodeId={selectedNodeId}
+      onSelectNode={onSelectNode}
     />
   );
 };

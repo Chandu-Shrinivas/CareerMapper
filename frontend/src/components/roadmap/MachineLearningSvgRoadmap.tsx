@@ -4,12 +4,12 @@ import { MACHINE_LEARNING_SVG_DATASET, MACHINE_LEARNING_SVG_VIEWBOX } from '../.
 
 interface SvgRoadmapWrapperProps {
   onNodeStatusChange?: () => void;
-  selectedNodeId?: string | null;
+  onSelectNode?: (nodeId: string) => void;
 }
 
 export const MachineLearningSvgRoadmap: React.FC<SvgRoadmapWrapperProps> = ({
   onNodeStatusChange,
-  selectedNodeId
+  onSelectNode
 }) => {
   return (
     <GenericSvgRoadmap
@@ -18,7 +18,7 @@ export const MachineLearningSvgRoadmap: React.FC<SvgRoadmapWrapperProps> = ({
       viewBox={MACHINE_LEARNING_SVG_VIEWBOX}
       dataset={MACHINE_LEARNING_SVG_DATASET}
       onNodeStatusChange={onNodeStatusChange}
-      selectedNodeId={selectedNodeId}
+      onSelectNode={onSelectNode}
     />
   );
 };

@@ -17,8 +17,8 @@ import { POSTGRESQL_DBA_ROADMAP_DEFINITION } from '../data/postgresqlDbaRoadmapD
 import { DEVSECOPS_ROADMAP_DEFINITION } from '../data/devSecOpsRoadmapDefinition';
 import { MACHINE_LEARNING_ROADMAP_DEFINITION } from '../data/machineLearningRoadmapDefinition';
 import { AI_DATA_SCIENTIST_ROADMAP_DEFINITION } from '../data/aiDataScientistRoadmapDefinition';
-import { IOS_ROADMAP_DEFINITION } from '../data/iosRoadmapDefinition';
 import { BLOCKCHAIN_ROADMAP_DEFINITION } from '../data/blockchainRoadmapDefinition';
+import { IOS_ROADMAP_DEFINITION } from '../data/iosRoadmapDefinition';
 
 import { FRONTEND_SVG_DATASET } from '../data/frontendSvgData';
 import { BACKEND_SVG_DATASET } from '../data/backendSvgData';
@@ -32,8 +32,8 @@ import { DATA_ENGINEER_SVG_DATASET } from '../data/dataEngineerSvgData';
 import { POSTGRESQL_DBA_SVG_DATASET } from '../data/postgresqlDbaSvgData';
 import { MACHINE_LEARNING_SVG_DATASET } from '../data/machineLearningSvgData';
 import { AI_DATA_SCIENTIST_SVG_DATASET } from '../data/aiDataScientistSvgData';
-import { IOS_SVG_DATASET } from '../data/iosSvgData';
 import { BLOCKCHAIN_SVG_DATASET } from '../data/blockchainSvgData';
+import { IOS_SVG_DATASET } from '../data/iosSvgData';
 import type { SvgElementItem } from '../data/frontendSvgData';
 
 import type { RoadmapDefinition } from '../types/roadmap';
@@ -49,8 +49,8 @@ import DataEngineerSvgRoadmap from '../components/roadmap/DataEngineerSvgRoadmap
 import PostgreSqlDbaSvgRoadmap from '../components/roadmap/PostgreSqlDbaSvgRoadmap';
 import MachineLearningSvgRoadmap from '../components/roadmap/MachineLearningSvgRoadmap';
 import AiDataScientistSvgRoadmap from '../components/roadmap/AiDataScientistSvgRoadmap';
-import IosSvgRoadmap from '../components/roadmap/IosSvgRoadmap';
 import BlockchainSvgRoadmap from '../components/roadmap/BlockchainSvgRoadmap';
+import IosSvgRoadmap from '../components/roadmap/IosSvgRoadmap';
 
 import { RoadmapDetailDrawer, type DrawerNodeData } from '../components/roadmap/RoadmapDetailDrawer';
 import { RoadmapProgressStore, type NodeStatus } from '../services/RoadmapProgressStore';
@@ -90,12 +90,12 @@ const ROADMAP_REGISTRY: Record<string, RoadmapDefinition> = {
   'ai-data-scientist-roadmap': AI_DATA_SCIENTIST_ROADMAP_DEFINITION,
   'data-scientist': AI_DATA_SCIENTIST_ROADMAP_DEFINITION,
   'data-scientist-roadmap': AI_DATA_SCIENTIST_ROADMAP_DEFINITION,
-  'ios': IOS_ROADMAP_DEFINITION,
-  'ios-developer': IOS_ROADMAP_DEFINITION,
-  'ios-roadmap': IOS_ROADMAP_DEFINITION,
   'blockchain': BLOCKCHAIN_ROADMAP_DEFINITION,
   'blockchain-developer': BLOCKCHAIN_ROADMAP_DEFINITION,
   'blockchain-roadmap': BLOCKCHAIN_ROADMAP_DEFINITION,
+  'ios': IOS_ROADMAP_DEFINITION,
+  'ios-developer': IOS_ROADMAP_DEFINITION,
+  'ios-roadmap': IOS_ROADMAP_DEFINITION,
 };
 
 const SVG_DATASET_MAP: Record<string, SvgElementItem[]> = {
@@ -131,12 +131,12 @@ const SVG_DATASET_MAP: Record<string, SvgElementItem[]> = {
   'ai-data-scientist-roadmap': AI_DATA_SCIENTIST_SVG_DATASET,
   'data-scientist': AI_DATA_SCIENTIST_SVG_DATASET,
   'data-scientist-roadmap': AI_DATA_SCIENTIST_SVG_DATASET,
-  'ios': IOS_SVG_DATASET,
-  'ios-developer': IOS_SVG_DATASET,
-  'ios-roadmap': IOS_SVG_DATASET,
   'blockchain': BLOCKCHAIN_SVG_DATASET,
   'blockchain-developer': BLOCKCHAIN_SVG_DATASET,
   'blockchain-roadmap': BLOCKCHAIN_SVG_DATASET,
+  'ios': IOS_SVG_DATASET,
+  'ios-developer': IOS_SVG_DATASET,
+  'ios-roadmap': IOS_SVG_DATASET,
 };
 
 function getTrackableSvgNodes(dataset?: SvgElementItem[]) {
@@ -445,8 +445,8 @@ export default function RoleRoadmapDetailPage() {
   const isPostgreSqlDba = s === 'postgresql-dba' || s === 'postgresql' || s === 'postgresql-dba-roadmap';
   const isMachineLearning = s === 'machine-learning' || s === 'machine-learning-roadmap' || s === 'ml';
   const isAiDataScientist = s === 'ai-data-scientist' || s === 'ai-and-data-scientist' || s === 'ai-data-scientist-roadmap' || s === 'data-scientist' || s === 'data-scientist-roadmap';
-  const isIos = s === 'ios' || s === 'ios-developer' || s === 'ios-roadmap';
   const isBlockchain = s === 'blockchain' || s === 'blockchain-developer' || s === 'blockchain-roadmap';
+  const isIos = s === 'ios' || s === 'ios-developer' || s === 'ios-roadmap';
 
   const currentDataset = SVG_DATASET_MAP[s] || SVG_DATASET_MAP[roadmapData.id] || SVG_DATASET_MAP[roadmapData.slug];
   const trackableSvgNodes = getTrackableSvgNodes(currentDataset);
@@ -515,10 +515,10 @@ export default function RoleRoadmapDetailPage() {
         <MachineLearningSvgRoadmap onNodeStatusChange={handleNodeStatusChange} selectedNodeId={selectedNodeId} />
       ) : isAiDataScientist ? (
         <AiDataScientistSvgRoadmap onNodeStatusChange={handleNodeStatusChange} selectedNodeId={selectedNodeId} />
-      ) : isIos ? (
-        <IosSvgRoadmap onNodeStatusChange={handleNodeStatusChange} selectedNodeId={selectedNodeId} />
       ) : isBlockchain ? (
         <BlockchainSvgRoadmap onNodeStatusChange={handleNodeStatusChange} selectedNodeId={selectedNodeId} />
+      ) : isIos ? (
+        <IosSvgRoadmap onNodeStatusChange={handleNodeStatusChange} selectedNodeId={selectedNodeId} />
       ) : (
         <RoadmapDataListView roadmapData={roadmapData} />
       )}

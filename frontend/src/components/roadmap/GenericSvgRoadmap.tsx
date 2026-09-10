@@ -51,13 +51,13 @@ export const GenericSvgRoadmap: React.FC<GenericSvgRoadmapProps> = ({
   // Sync drawer when selectedNodeId changes from parent header
   useEffect(() => {
     if (!selectedNodeId) return;
-    const target = dataset.find(item => item.kind === 'g' && (item as any).dataNodeId === selectedNodeId) as SvgNodeGroup | undefined;
+    const target = dataset.find(item => item.kind === 'g' && item.dataNodeId === selectedNodeId);
     if (target && target.dataNodeId) {
       const nodeTitle = target.dataTitle || extractTextFromChildren(target.children) || 'Roadmap Topic';
       setSelectedDrawerNode({
         id: target.dataNodeId,
         title: nodeTitle,
-        type: (target.dataType as any) || 'topic',
+        type: target.dataType || 'topic',
         parentId: target.dataParentId ?? undefined,
         parentTitle: target.dataParentTitle ?? undefined,
         status: nodeStatuses[target.dataNodeId] || 'default'
@@ -308,7 +308,9 @@ export const GenericSvgRoadmap: React.FC<GenericSvgRoadmapProps> = ({
           textDecoration = 'line-through';
         }
 
-        if (child.tspans && child.tspans.length > 0) {
+        const tspansList = child.tspans || (child.children?.filter(c => c.tag === 'tspan') as any);
+
+        if (tspansList && tspansList.length > 0) {
           return (
             <text
               key={index}
@@ -320,7 +322,7 @@ export const GenericSvgRoadmap: React.FC<GenericSvgRoadmapProps> = ({
               dominantBaseline={child.dominantBaseline as any}
               style={{ textDecoration }}
             >
-              {child.tspans.map((ts, tsIdx) => (
+              {tspansList.map((ts: any, tsIdx: number) => (
                 <tspan
                   key={tsIdx}
                   x={ts.x ?? undefined}
@@ -332,7 +334,7 @@ export const GenericSvgRoadmap: React.FC<GenericSvgRoadmapProps> = ({
                   fill={ts.fill ?? undefined}
                   style={{ textDecoration }}
                 >
-                  {ts.text}
+                  {ts.text || (ts.children ? extractTextFromChildren(ts.children) : '')}
                 </tspan>
               ))}
             </text>
@@ -349,7 +351,7 @@ export const GenericSvgRoadmap: React.FC<GenericSvgRoadmapProps> = ({
             dominantBaseline={child.dominantBaseline as any}
             style={{ textDecoration }}
           >
-            {child.text}
+            {child.text || (child.children ? extractTextFromChildren(child.children) : '')}
           </text>
         );
       }
@@ -622,14 +624,20 @@ function parseStyleString(styleStr?: string): React.CSSProperties {
   return styleObj as React.CSSProperties;
 }
 
-function extractTextFromChildren(children: SvgChildElement[]): string {
+function extractTextFromChildren(children?: SvgChildElement[]): string {
+  if (!children || children.length === 0) return '';
+  const parts: string[] = [];
   for (const c of children) {
-    if (c.tag === 'text') {
-      if (c.text) return c.text;
-      if (c.tspans) return c.tspans.map(t => t.text).join(' ');
+    if (c.text) {
+      parts.push(c.text);
+    } else if (c.tspans && c.tspans.length > 0) {
+      parts.push(c.tspans.map(t => t.text).join(' '));
+    } else if (c.children && c.children.length > 0) {
+      const sub = extractTextFromChildren(c.children);
+      if (sub) parts.push(sub);
     }
   }
-  return '';
+  return parts.join(' ').trim();
 }
 
 export default GenericSvgRoadmap;

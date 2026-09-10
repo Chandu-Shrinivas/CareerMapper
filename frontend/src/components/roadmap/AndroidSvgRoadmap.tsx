@@ -4,12 +4,12 @@ import { ANDROID_SVG_DATASET, ANDROID_SVG_VIEWBOX } from '../../data/androidSvgD
 
 interface SvgRoadmapWrapperProps {
   onNodeStatusChange?: () => void;
-  selectedNodeId?: string | null;
+  onSelectNode?: (nodeId: string) => void;
 }
 
 export const AndroidSvgRoadmap: React.FC<SvgRoadmapWrapperProps> = ({
   onNodeStatusChange,
-  selectedNodeId
+  onSelectNode
 }) => {
   return (
     <GenericSvgRoadmap
@@ -18,7 +18,7 @@ export const AndroidSvgRoadmap: React.FC<SvgRoadmapWrapperProps> = ({
       viewBox={ANDROID_SVG_VIEWBOX}
       dataset={ANDROID_SVG_DATASET}
       onNodeStatusChange={onNodeStatusChange}
-      selectedNodeId={selectedNodeId}
+      onSelectNode={onSelectNode}
     />
   );
 };

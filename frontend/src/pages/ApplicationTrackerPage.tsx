@@ -49,13 +49,6 @@ export default function ApplicationTrackerPage() {
 
   useEffect(() => {
     fetchTrackerData();
-    const handleSync = () => {
-      fetchTrackerData();
-    };
-    window.addEventListener('savedJobsUpdated', handleSync);
-    return () => {
-      window.removeEventListener('savedJobsUpdated', handleSync);
-    };
   }, []);
 
   const handleUpdateStatus = async (savedJobId: string, newStatus: string) => {

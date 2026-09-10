@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate, useLocation, useSearchParams } from 'react-router-dom';
 import { 
-  BarChart2, Compass, Layers, Briefcase, Settings, HelpCircle, LogOut, User, ChevronDown, ClipboardList, Map, Award
+  BarChart2, Compass, Layers, Briefcase, Settings, HelpCircle, LogOut, User, ChevronDown, Bookmark, ClipboardList, Map, Award
 } from 'lucide-react';
 import { Avatar, AvatarFallback } from '../ui/avatar';
 import { Separator } from '../ui/separator';
@@ -74,8 +74,9 @@ export default function WorkspaceLayout({ children }: { children: React.ReactNod
     {
       label: 'Career',
       items: [
-        { label: 'Dashboard', path: '/dashboard', icon: BarChart2, active: location.pathname === '/dashboard' },
+        { label: 'Career Analysis', path: '/dashboard', icon: BarChart2, active: location.pathname === '/dashboard' },
         { label: 'Jobs', path: '/jobs', icon: Briefcase, active: location.pathname === '/jobs' },
+        { label: 'Saved Jobs', path: '/saved-jobs', icon: Bookmark, active: location.pathname === '/saved-jobs' },
         { label: 'Tracker', path: '/tracker', icon: ClipboardList, active: location.pathname === '/tracker' }
       ]
     },

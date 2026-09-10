@@ -4,12 +4,12 @@ import { FULLSTACK_SVG_DATASET, FULLSTACK_SVG_VIEWBOX } from '../../data/fullsta
 
 interface SvgRoadmapWrapperProps {
   onNodeStatusChange?: () => void;
-  selectedNodeId?: string | null;
+  onSelectNode?: (nodeId: string) => void;
 }
 
 export const FullstackSvgRoadmap: React.FC<SvgRoadmapWrapperProps> = ({
   onNodeStatusChange,
-  selectedNodeId
+  onSelectNode
 }) => {
   return (
     <GenericSvgRoadmap
@@ -18,7 +18,7 @@ export const FullstackSvgRoadmap: React.FC<SvgRoadmapWrapperProps> = ({
       viewBox={FULLSTACK_SVG_VIEWBOX}
       dataset={FULLSTACK_SVG_DATASET}
       onNodeStatusChange={onNodeStatusChange}
-      selectedNodeId={selectedNodeId}
+      onSelectNode={onSelectNode}
     />
   );
 };
