@@ -142,14 +142,14 @@ function PlatformButton({ plat }: { plat: PlatformDef }) {
           {/* Name below — aligned bottom-center */}
           <div className="flex items-center justify-center gap-0.5 w-full">
             <span
-              className={`text-[9.5px] font-medium leading-none tracking-tight text-center transition-colors duration-150 ${
+              className={`text-xs font-medium leading-none tracking-tight text-center transition-colors duration-150 ${
                 hovered ? 'text-white font-semibold' : 'text-zinc-400'
               }`}
             >
               {plat.name}
             </span>
             <ExternalLink
-              className={`size-2 shrink-0 transition-opacity duration-150 ${
+              className={`size-2.5 shrink-0 transition-opacity duration-150 ${
                 hovered ? 'opacity-100 text-zinc-300' : 'opacity-0 text-zinc-500'
               }`}
             />
@@ -162,14 +162,14 @@ function PlatformButton({ plat }: { plat: PlatformDef }) {
         side="top"
         className="max-w-[210px] bg-zinc-900 border border-zinc-700 text-white rounded-lg px-3 py-2 shadow-xl"
       >
-        <p className="text-[12px] font-semibold mb-0.5 flex items-center justify-between gap-2">
+        <p className="text-xs font-semibold mb-0.5 flex items-center justify-between gap-2">
           <span>{plat.name}</span>
           <ExternalLink className="size-3 text-zinc-400 shrink-0" />
         </p>
-        <p className="text-[11px] text-zinc-300 leading-snug">{plat.description}</p>
+        <p className="text-xs text-zinc-300 leading-snug">{plat.description}</p>
         <div className="flex flex-wrap gap-1 mt-1.5">
           {plat.tags.map(t => (
-            <span key={t} className="text-[9px] px-1.5 py-0.5 rounded bg-zinc-800 text-zinc-400 border border-zinc-700/60">
+            <span key={t} className="text-[10px] px-1.5 py-0.5 rounded bg-zinc-800 text-zinc-400 border border-zinc-700/60">
               {t}
             </span>
           ))}
@@ -500,6 +500,25 @@ export default function JobsPage() {
     };
   }, [activeQuery, selectedLocation, forceRefreshTrigger]);
 
+  const handlePrepareJob = async (job: any) => {
+    try {
+      toast.loading(`Generating preparation roadmap for ${job.title}...`);
+      const targetJobId = job.id || job._id;
+      const res = await api.prepareJob(targetJobId);
+      toast.dismiss();
+      toast.success('Job preparation roadmap ready!');
+      const prepId = res.data?._id || res.data?.id;
+      if (prepId) {
+        navigate(`/job-preparation/${prepId}`);
+      } else {
+        navigate('/my-roadmaps');
+      }
+    } catch (err: any) {
+      toast.dismiss();
+      toast.error(err.message || 'Failed to initialize job preparation.');
+    }
+  };
+
   // Handle Load More Jobs (Paginated API request)
   const handleLoadMoreJobs = async () => {
     if (loadingMore || !hasMore) return;
@@ -678,12 +697,12 @@ export default function JobsPage() {
   const renderFilterPanel = () => (
     <div className="space-y-6 text-xs">
       <div className="flex items-center justify-between">
-        <h3 className="font-bold text-white uppercase tracking-wider text-[11px] flex items-center gap-2">
+        <h3 className="font-bold text-white uppercase tracking-wider text-xs flex items-center gap-2">
           <Filter className="size-3.5 text-zinc-400" />
           Filter Jobs
         </h3>
         {(selectedWorkModes.length > 0 || selectedExperienceLevels.length > 0 || selectedEmploymentTypes.length > 0 || minSalaryLpa > 0) && (
-          <button onClick={clearAllFilters} className="text-[10px] text-zinc-500 hover:text-white transition-colors cursor-pointer">
+          <button onClick={clearAllFilters} className="text-xs text-zinc-500 hover:text-white transition-colors cursor-pointer">
             Reset all
           </button>
         )}
@@ -693,7 +712,7 @@ export default function JobsPage() {
 
       {/* Work Mode */}
       <div className="space-y-3">
-        <label className="font-bold text-zinc-400 uppercase tracking-widest text-[9px] block">Work Mode</label>
+        <label className="font-bold text-zinc-400 uppercase tracking-widest text-xs block">Work Mode</label>
         <div className="space-y-2">
           {['Remote', 'Hybrid', 'On-site'].map((mode) => (
             <label key={mode} className="flex items-center gap-2.5 text-zinc-300 cursor-pointer hover:text-white">
@@ -712,7 +731,7 @@ export default function JobsPage() {
 
       {/* Experience Level */}
       <div className="space-y-3">
-        <label className="font-bold text-zinc-400 uppercase tracking-widest text-[9px] block">Experience Level</label>
+        <label className="font-bold text-zinc-400 uppercase tracking-widest text-xs block">Experience Level</label>
         <div className="space-y-2">
           {['Fresher', '1-3 years', '3-5 years', '5+ years'].map((exp) => (
             <label key={exp} className="flex items-center gap-2.5 text-zinc-300 cursor-pointer hover:text-white">
@@ -731,7 +750,7 @@ export default function JobsPage() {
 
       {/* Employment Type */}
       <div className="space-y-3">
-        <label className="font-bold text-zinc-400 uppercase tracking-widest text-[9px] block">Job Type</label>
+        <label className="font-bold text-zinc-400 uppercase tracking-widest text-xs block">Job Type</label>
         <div className="space-y-2">
           {['Full-time', 'Part-time', 'Contract', 'Internship'].map((type) => (
             <label key={type} className="flex items-center gap-2.5 text-zinc-300 cursor-pointer hover:text-white">
@@ -750,7 +769,7 @@ export default function JobsPage() {
 
       {/* Minimum Salary LPA */}
       <div className="space-y-3">
-        <label className="font-bold text-zinc-400 uppercase tracking-widest text-[9px] block">Minimum Salary</label>
+        <label className="font-bold text-zinc-400 uppercase tracking-widest text-xs block">Minimum Salary</label>
         <div className="grid grid-cols-2 gap-2">
           {[
             { label: 'Any', value: 0 },
@@ -761,7 +780,7 @@ export default function JobsPage() {
             <button
               key={sal.value}
               onClick={() => setMinSalaryLpa(sal.value)}
-              className={`px-2 py-1.5 rounded border text-[10px] font-semibold transition-colors cursor-pointer ${
+              className={`px-2 py-1.5 rounded border text-xs font-semibold transition-colors cursor-pointer ${
                 minSalaryLpa === sal.value
                   ? 'bg-zinc-900 text-white border-zinc-700'
                   : 'bg-zinc-950 text-zinc-400 border-zinc-900 hover:border-zinc-800'
@@ -776,7 +795,7 @@ export default function JobsPage() {
   );
 
   return (
-    <div className="p-6 sm:p-8 max-w-[1200px] mx-auto space-y-8">
+    <div className="space-y-6">
       
       {/* 1. Header and Search Controls */}
       <div className="space-y-4">
@@ -1284,7 +1303,7 @@ export default function JobsPage() {
                       <DialogTitle className="text-base sm:text-lg md:text-xl font-bold text-white truncate leading-tight pr-4">
                         {selectedJob.title}
                       </DialogTitle>
-                      <DialogDescription className="text-[11px] sm:text-xs text-zinc-400 truncate flex items-center gap-1.5 flex-wrap">
+                      <DialogDescription className="text-xs text-zinc-400 truncate flex items-center gap-1.5 flex-wrap">
                         <span className="font-semibold text-zinc-200">{selectedJob.company}</span>
                         <span>·</span>
                         <span className="flex items-center gap-1">
@@ -1292,21 +1311,21 @@ export default function JobsPage() {
                           {selectedJob.location}, {selectedJob.country}
                         </span>
                         <span>·</span>
-                        <span className="text-[10px] text-zinc-500 font-mono">Via {selectedJob.source || 'JSearch'}</span>
+                        <span className="text-xs text-zinc-500 font-mono">Via {selectedJob.source || 'JSearch'}</span>
                       </DialogDescription>
                       
                       {/* Badge Metadata Row */}
                       <div className="flex items-center gap-1.5 text-xs flex-wrap font-mono pt-1">
-                        <Badge variant="outline" className="border-emerald-500/20 text-emerald-400 bg-emerald-500/5 text-[9.5px] sm:text-[10.5px] py-0.5 px-2 font-bold">
+                        <Badge variant="outline" className="border-emerald-500/20 text-emerald-400 bg-emerald-500/5 text-xs py-0.5 px-2 font-bold">
                           {selectedJob.salaryText || 'Salary Unspecified'}
                         </Badge>
-                        <Badge variant="outline" className="border-zinc-900 text-zinc-400 bg-zinc-900/20 text-[9.5px] sm:text-[10.5px] py-0.5 px-2">
+                        <Badge variant="outline" className="border-zinc-900 text-zinc-400 bg-zinc-900/20 text-xs py-0.5 px-2">
                           {selectedJob.workMode}
                         </Badge>
-                        <Badge variant="outline" className="border-zinc-900 text-zinc-400 bg-zinc-900/20 text-[9.5px] sm:text-[10.5px] py-0.5 px-2">
+                        <Badge variant="outline" className="border-zinc-900 text-zinc-400 bg-zinc-900/20 text-xs py-0.5 px-2">
                           {selectedJob.employmentType}
                         </Badge>
-                        <Badge variant="outline" className="border-zinc-900 text-zinc-400 bg-zinc-900/20 text-[9.5px] sm:text-[10.5px] py-0.5 px-2">
+                        <Badge variant="outline" className="border-zinc-900 text-zinc-400 bg-zinc-900/20 text-xs py-0.5 px-2">
                           {selectedJob.experience}
                         </Badge>
                       </div>
@@ -1321,7 +1340,7 @@ export default function JobsPage() {
                         value={getSavedJobStatus(selectedJob.id)}
                         onValueChange={(status) => handleUpdateSavedJobStatus(selectedJob.id, status)}
                       >
-                        <SelectTrigger className="h-9 w-[110px] bg-zinc-900/60 border-zinc-850 text-[11px] text-zinc-300 hover:text-white rounded cursor-pointer font-bold">
+                        <SelectTrigger className="h-9 w-[110px] bg-zinc-900/60 border-zinc-850 text-xs text-zinc-300 hover:text-white rounded cursor-pointer font-bold">
                           <SelectValue placeholder="Status" />
                         </SelectTrigger>
                         <SelectContent className="bg-zinc-900 border-zinc-850 text-zinc-200">
@@ -1336,17 +1355,19 @@ export default function JobsPage() {
                       </Select>
                     )}
 
-                    {/* Bookmark Toggle Button */}
+                    <Button 
+                      onClick={() => handlePrepareJob(selectedJob)}
+                      className="h-9 px-4 bg-white hover:bg-zinc-200 text-zinc-950 font-bold text-xs rounded-md flex items-center gap-1.5 cursor-pointer shadow"
+                    >
+                      <span>Prepare for Role →</span>
+                    </Button>
+
                     <Button
                       onClick={() => handleToggleSaveJob(selectedJob)}
                       variant="outline"
-                      className={`h-9 px-3 text-xs font-semibold rounded cursor-pointer flex items-center gap-1.5 transition-colors ${
-                        isJobSaved(selectedJob.id)
-                          ? 'border-emerald-500/20 bg-emerald-500/5 text-emerald-400 hover:bg-emerald-500/10'
-                          : 'border-zinc-800 bg-zinc-900 hover:bg-zinc-800 text-zinc-300 hover:text-white'
-                      }`}
+                      className="h-9 px-3 border-zinc-800 text-zinc-300 hover:text-white hover:bg-zinc-900 text-xs font-bold rounded-md flex items-center gap-1.5 cursor-pointer"
                     >
-                      <Bookmark className={`size-4 ${isJobSaved(selectedJob.id) ? 'fill-emerald-400 text-emerald-400' : 'text-zinc-400'}`} />
+                      <Bookmark className={`size-3.5 ${isJobSaved(selectedJob.id) ? 'fill-emerald-400 text-emerald-400' : ''}`} />
                       <span className="hidden sm:inline">{isJobSaved(selectedJob.id) ? 'Saved' : 'Save Job'}</span>
                     </Button>
 
@@ -1658,7 +1679,13 @@ export default function JobsPage() {
                                   </div>
                                 </div>
 
-                                <div className="pt-2 flex justify-end">
+                                <div className="pt-2 flex justify-end gap-2.5">
+                                  <Button 
+                                    onClick={() => navigate('/interview-prep')}
+                                    className="h-8 px-4 text-xs bg-white hover:bg-zinc-200 text-zinc-950 font-bold cursor-pointer shadow"
+                                  >
+                                    Prepare for Role →
+                                  </Button>
                                   <Button 
                                     onClick={handleImproveSkillsClick}
                                     variant="outline" 

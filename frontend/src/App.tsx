@@ -11,6 +11,11 @@ import SkillsInventory from './pages/SkillsInventory';
 import JobsPage from './pages/JobsPage';
 import SavedJobsPage from './pages/SavedJobsPage';
 import ApplicationTrackerPage from './pages/ApplicationTrackerPage';
+import RoleRoadmapsPage from './pages/RoleRoadmapsPage';
+import RoleRoadmapDetailPage from './pages/RoleRoadmapDetailPage';
+import MyRoadmapsPage from './pages/MyRoadmapsPage';
+import JobPreparationDetailPage from './pages/JobPreparationDetailPage';
+import InterviewPrepPage from './pages/InterviewPrepPage';
 import WorkspaceLayout from './components/layout/WorkspaceLayout';
 import { useAuth } from './hooks/useAuth';
 import { Toaster } from './components/ui/sonner';
@@ -91,11 +96,18 @@ export default function App() {
 
           {/* Protected Routes */}
           <Route path="/dashboard" element={<ProtectedRoute><WorkspaceLayout><Dashboard /></WorkspaceLayout></ProtectedRoute>} />
+          <Route path="/role-roadmaps" element={<ProtectedRoute><WorkspaceLayout><RoleRoadmapsPage /></WorkspaceLayout></ProtectedRoute>} />
+          <Route path="/role-roadmaps/:slug" element={<ProtectedRoute><WorkspaceLayout><RoleRoadmapDetailPage /></WorkspaceLayout></ProtectedRoute>} />
+          <Route path="/career-roadmap/:slug" element={<ProtectedRoute><WorkspaceLayout><RoleRoadmapDetailPage /></WorkspaceLayout></ProtectedRoute>} />
+          <Route path="/my-roadmaps" element={<ProtectedRoute><WorkspaceLayout><MyRoadmapsPage /></WorkspaceLayout></ProtectedRoute>} />
+          <Route path="/job-preparation/:id" element={<ProtectedRoute><WorkspaceLayout><JobPreparationDetailPage /></WorkspaceLayout></ProtectedRoute>} />
           <Route path="/career-paths" element={<ProtectedRoute><WorkspaceLayout><CareerPaths /></WorkspaceLayout></ProtectedRoute>} />
           <Route path="/skills" element={<ProtectedRoute><WorkspaceLayout><SkillsInventory /></WorkspaceLayout></ProtectedRoute>} />
           <Route path="/jobs" element={<ProtectedRoute><WorkspaceLayout><JobsPage /></WorkspaceLayout></ProtectedRoute>} />
           <Route path="/saved-jobs" element={<ProtectedRoute><WorkspaceLayout><SavedJobsPage /></WorkspaceLayout></ProtectedRoute>} />
           <Route path="/tracker" element={<ProtectedRoute><WorkspaceLayout><ApplicationTrackerPage /></WorkspaceLayout></ProtectedRoute>} />
+          <Route path="/roadmap" element={<Navigate to="/role-roadmaps" replace />} />
+          <Route path="/interview-prep" element={<ProtectedRoute><WorkspaceLayout><InterviewPrepPage /></WorkspaceLayout></ProtectedRoute>} />
           <Route path="/profile" element={<ProtectedRoute><WorkspaceLayout><Dashboard /></WorkspaceLayout></ProtectedRoute>} />
           
           {/* Fallback */}

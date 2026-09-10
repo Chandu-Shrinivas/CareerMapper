@@ -213,3 +213,58 @@ export interface MarketAnalysisData {
   sources: SourceCitation[];
   userGap: UserGap;
 }
+
+// -------- Role Roadmap Interactive Graph Types --------
+
+export interface NodePosition {
+  x: number;
+  y: number;
+}
+
+export type RoadmapNodeStatus = 'COMPLETED' | 'IN_PROGRESS' | 'AVAILABLE' | 'LOCKED';
+export type MatchStatus = 'MATCHED' | 'GAP' | 'WEAK';
+
+export interface ResourceLink {
+  title: string;
+  url: string;
+  type?: 'Doc' | 'Article' | 'Video' | 'Course' | 'Guide';
+}
+
+export interface RoleRoadmapNode {
+  id: string;
+  title: string;
+  description: string;
+  category: string;
+  difficulty: 'Beginner' | 'Intermediate' | 'Advanced';
+  estimatedHours?: number;
+  whyItMatters?: string;
+  prerequisites?: string[];
+  childrenIds?: string[];
+  subtopics?: string[];
+  resources?: ResourceLink[];
+  status?: RoadmapNodeStatus;
+  userMatch?: MatchStatus;
+  position?: NodePosition;
+  jobRelevance?: 'High' | 'Medium' | 'Essential' | 'Recommended';
+  isOfficialTarget?: boolean;
+}
+
+export interface RoadmapEdge {
+  id: string;
+  source: string;
+  target: string;
+  label?: string;
+  type?: 'default' | 'recommended' | 'optional';
+}
+
+export interface RoleRoadmapGraph {
+  slug: string;
+  title: string;
+  description: string;
+  category: string;
+  icon?: string;
+  nodes: RoleRoadmapNode[];
+  edges: RoadmapEdge[];
+  canvasWidth?: number;
+  canvasHeight?: number;
+}

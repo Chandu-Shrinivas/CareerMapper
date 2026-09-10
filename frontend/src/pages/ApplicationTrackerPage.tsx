@@ -150,7 +150,7 @@ export default function ApplicationTrackerPage() {
               <DialogTitle className="text-base sm:text-lg md:text-xl font-bold text-white truncate pr-4 leading-tight">
                 {selectedJob.title}
               </DialogTitle>
-              <DialogDescription className="text-[11px] sm:text-xs text-zinc-400 truncate flex items-center gap-1.5 flex-wrap">
+              <DialogDescription className="text-xs text-zinc-400 truncate flex items-center gap-1.5 flex-wrap">
                 <span className="font-semibold text-zinc-200">{selectedJob.company}</span>
                 <span>·</span>
                 <span className="flex items-center gap-1">
@@ -158,7 +158,7 @@ export default function ApplicationTrackerPage() {
                   {selectedJob.location}, {selectedJob.country}
                 </span>
                 <span>·</span>
-                <span className="text-[10px] text-zinc-500 font-mono">Via {selectedJob.source || 'JSearch'}</span>
+                <span className="text-xs text-zinc-500 font-mono">Via {selectedJob.source || 'JSearch'}</span>
               </DialogDescription>
             </div>
           </div>
@@ -171,7 +171,7 @@ export default function ApplicationTrackerPage() {
                 setSelectedJob((prev: any) => ({ ...prev, status }));
               }}
             >
-              <SelectTrigger className="h-9 w-[110px] bg-zinc-900/60 border-zinc-850 text-[11px] text-zinc-300 hover:text-white rounded cursor-pointer font-bold">
+              <SelectTrigger className="h-9 w-[110px] bg-zinc-900/60 border-zinc-850 text-xs text-zinc-300 hover:text-white rounded cursor-pointer font-bold">
                 <SelectValue placeholder="Status" />
               </SelectTrigger>
               <SelectContent className="bg-zinc-900 border-zinc-850 text-zinc-200">
@@ -192,7 +192,7 @@ export default function ApplicationTrackerPage() {
                   strokeDashoffset={125.6 - (125.6 * score) / 100}
                 />
               </svg>
-              <span className="absolute text-[10.5px] font-mono font-black text-emerald-400">{score}%</span>
+              <span className="absolute text-xs font-mono font-bold text-emerald-400">{score}%</span>
             </div>
           </div>
         </DialogHeader>
@@ -207,10 +207,10 @@ export default function ApplicationTrackerPage() {
                   {/* Timeline point */}
                   <span className="absolute -left-[21px] size-2.5 rounded-full bg-emerald-500 border border-zinc-950" />
                   <div className="flex items-center gap-2">
-                    <Badge variant="outline" className={`text-[10px] py-0 px-2 font-mono ${getStatusColor(hist.status)}`}>
+                    <Badge variant="outline" className={`text-xs py-0 px-2 font-mono ${getStatusColor(hist.status)}`}>
                       {hist.status}
                     </Badge>
-                    <span className="text-[10px] text-zinc-500 font-mono">
+                    <span className="text-xs text-zinc-500 font-mono">
                       {new Date(hist.updatedAt).toLocaleDateString('en-US', { month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit' })}
                     </span>
                   </div>
@@ -227,25 +227,23 @@ export default function ApplicationTrackerPage() {
         </div>
       </DialogContent>
     );
-  };
-
-  const renderKanbanView = () => {
+  };  const renderKanbanView = () => {
     if (!trackerData) return null;
 
     return (
-      <div className="overflow-x-auto custom-scrollbar pb-4 flex gap-4 items-start select-none">
+      <div className="overflow-x-auto custom-scrollbar pb-4 flex gap-4 items-start select-none w-full">
         {COLUMNS.map(col => {
           const colJobs = trackerData.jobs.filter((j: any) => j.status === col);
           return (
             <div 
               key={col} 
-              className="w-72 shrink-0 bg-zinc-900/10 border border-zinc-900/80 rounded-lg p-3 flex flex-col max-h-[70vh] overflow-hidden space-y-3"
+              className="w-72 shrink-0 bg-zinc-900/10 border border-zinc-900/85 rounded-xl p-3 flex flex-col max-h-[70vh] overflow-hidden space-y-3"
             >
               {/* Column Header */}
               <div className="flex items-center justify-between px-1">
                 <div className="flex items-center gap-2">
                   <span className="text-xs font-bold text-white tracking-wide">{col}</span>
-                  <Badge variant="secondary" className="h-5 px-1.5 text-[9px] bg-zinc-900 text-zinc-400 font-mono">
+                  <Badge variant="secondary" className="h-5 px-1.5 text-xs bg-zinc-900 text-zinc-400 font-mono font-bold">
                     {colJobs.length}
                   </Badge>
                 </div>
@@ -254,7 +252,7 @@ export default function ApplicationTrackerPage() {
               {/* Column Scrollable Body */}
               <div className="flex-1 overflow-y-auto custom-scrollbar space-y-2.5 pr-0.5">
                 {colJobs.length === 0 ? (
-                  <div className="p-6 border border-dashed border-zinc-900 rounded-md text-center text-[11px] text-zinc-650 italic">
+                  <div className="p-6 border border-dashed border-zinc-900 rounded-lg text-center text-xs text-zinc-500 italic">
                     No jobs here
                   </div>
                 ) : (
@@ -267,15 +265,15 @@ export default function ApplicationTrackerPage() {
                           setSelectedJob(job);
                           setDetailModalOpen(true);
                         }}
-                        className="p-3 bg-zinc-950 hover:bg-zinc-900/40 border border-zinc-900 hover:border-zinc-800 transition-all cursor-pointer rounded space-y-3"
+                        className="p-3 bg-zinc-950 hover:bg-zinc-900/40 border border-zinc-900 hover:border-zinc-800 transition-all cursor-pointer rounded-lg space-y-3"
                       >
                         <div className="flex items-start gap-2.5 justify-between">
                           <CompanyLogo 
                             companyName={job.company} 
                             companyLogo={job.companyLogo} 
-                            className="size-8"
+                            className="size-8 rounded"
                           />
-                          <Badge variant="outline" className={`text-[9px] shrink-0 font-bold font-mono px-1.5 ${matchColor}`}>
+                          <Badge variant="outline" className={`text-xs shrink-0 font-bold font-mono px-1.5 ${matchColor}`}>
                             {job.matchScore}% Match
                           </Badge>
                         </div>
@@ -284,10 +282,10 @@ export default function ApplicationTrackerPage() {
                           <h4 className="font-bold text-xs text-white truncate hover:text-emerald-400 leading-tight">
                             {job.title}
                           </h4>
-                          <p className="text-[11px] text-zinc-400 truncate">{job.company}</p>
+                          <p className="text-xs text-zinc-400 truncate">{job.company}</p>
                         </div>
 
-                        <div className="flex items-center justify-between text-[9px] text-zinc-500 border-t border-zinc-900/60 pt-2 font-mono">
+                        <div className="flex items-center justify-between text-xs text-zinc-500 border-t border-zinc-900/60 pt-2 font-mono">
                           <span className="truncate max-w-[120px]">{job.location}</span>
                           <span className="flex items-center gap-0.5">
                             <Clock className="size-2.5" />
@@ -301,12 +299,12 @@ export default function ApplicationTrackerPage() {
                             value={job.status}
                             onValueChange={(status) => handleUpdateStatus(job._id, status)}
                           >
-                            <SelectTrigger className="h-7 w-full bg-zinc-900/80 border-zinc-850 text-[10px] text-zinc-400 font-semibold cursor-pointer py-0">
+                            <SelectTrigger className="h-7 w-full bg-zinc-900/80 border-zinc-850 text-xs text-zinc-400 font-semibold cursor-pointer py-0">
                               <SelectValue placeholder="Move Status" />
                             </SelectTrigger>
                             <SelectContent className="bg-zinc-900 border-zinc-850 text-zinc-200">
                               {COLUMNS.map(o => (
-                                <SelectItem key={o} value={o} className="text-[10.5px]">{o}</SelectItem>
+                                <SelectItem key={o} value={o} className="text-xs">{o}</SelectItem>
                               ))}
                             </SelectContent>
                           </Select>
@@ -327,11 +325,11 @@ export default function ApplicationTrackerPage() {
     if (!trackerData) return null;
 
     return (
-      <Card className="bg-zinc-900/10 border border-zinc-900 rounded-lg overflow-hidden">
+      <Card className="bg-zinc-900/10 border border-zinc-900 rounded-xl overflow-hidden shadow-sm">
         <div className="overflow-x-auto">
           <table className="w-full text-left border-collapse text-xs">
             <thead>
-              <tr className="border-b border-zinc-900 text-zinc-400 font-mono uppercase text-[10px] tracking-wider bg-zinc-950/40">
+              <tr className="border-b border-zinc-900 text-zinc-400 font-mono uppercase text-xs tracking-wider bg-zinc-950/40">
                 <th className="p-4 font-semibold">Job Title & Company</th>
                 <th className="p-4 font-semibold">Location</th>
                 <th className="p-4 font-semibold">Match score</th>
@@ -354,10 +352,10 @@ export default function ApplicationTrackerPage() {
                   >
                     <td className="p-4">
                       <div className="flex items-center gap-3">
-                        <CompanyLogo companyName={job.company} companyLogo={job.companyLogo} className="size-9 shrink-0" />
+                        <CompanyLogo companyName={job.company} companyLogo={job.companyLogo} className="size-9 shrink-0 rounded" />
                         <div className="min-w-0">
                           <h4 className="font-bold text-white group-hover:text-emerald-400 truncate">{job.title}</h4>
-                          <p className="text-[11px] text-zinc-400 truncate mt-0.5">{job.company}</p>
+                          <p className="text-xs text-zinc-400 truncate mt-0.5">{job.company}</p>
                         </div>
                       </div>
                     </td>
@@ -372,7 +370,7 @@ export default function ApplicationTrackerPage() {
                         value={job.status}
                         onValueChange={(status) => handleUpdateStatus(job._id, status)}
                       >
-                        <SelectTrigger className={`h-8 w-28 text-[11px] font-semibold border rounded cursor-pointer ${getStatusColor(job.status)}`}>
+                        <SelectTrigger className={`h-8 w-28 text-xs font-semibold border rounded cursor-pointer ${getStatusColor(job.status)}`}>
                           <SelectValue placeholder="Status" />
                         </SelectTrigger>
                         <SelectContent className="bg-zinc-900 border-zinc-850 text-zinc-200">
@@ -385,7 +383,7 @@ export default function ApplicationTrackerPage() {
                     <td className="p-4">
                       <div className="flex items-center gap-1 flex-wrap">
                         {job.statusHistory && job.statusHistory.slice(-3).map((h: any, idx: number) => (
-                          <div key={idx} className="flex items-center gap-1 text-[10px] text-zinc-500 font-mono">
+                          <div key={idx} className="flex items-center gap-1 text-xs text-zinc-500 font-mono">
                             <span className="font-semibold text-zinc-400">{h.status}</span>
                             <span>({formatDate(h.updatedAt)})</span>
                             {idx < Math.min(job.statusHistory.length, 3) - 1 && <ArrowRight className="size-2.5 text-zinc-650" />}
@@ -397,7 +395,7 @@ export default function ApplicationTrackerPage() {
                       <div className="flex items-center justify-end gap-2">
                         {job.sourceUrl && (
                           <a href={job.sourceUrl} target="_blank" rel="noopener noreferrer">
-                            <Button variant="outline" className="h-7 size-7 p-0 border border-zinc-900 bg-zinc-950 text-zinc-400 hover:text-white rounded cursor-pointer">
+                            <Button variant="outline" className="h-7 w-7 p-0 border border-zinc-900 bg-zinc-950 text-zinc-400 hover:text-white rounded cursor-pointer flex items-center justify-center">
                               <ExternalLink className="size-3" />
                             </Button>
                           </a>
@@ -407,7 +405,7 @@ export default function ApplicationTrackerPage() {
                             setSelectedJob(job);
                             setDetailModalOpen(true);
                           }}
-                          className="h-7 px-2.5 bg-zinc-900 border border-zinc-800 hover:bg-zinc-800 text-white font-bold text-[10.5px] rounded cursor-pointer"
+                          className="h-7 px-2.5 bg-zinc-900 border border-zinc-800 hover:bg-zinc-800 text-white font-bold text-xs rounded cursor-pointer"
                         >
                           View
                         </Button>
@@ -427,29 +425,55 @@ export default function ApplicationTrackerPage() {
     if (!trackerData) return null;
     const { summary } = trackerData;
 
-    const statsConfig = [
+    // Active applications combines Applied + Assessment
+    const activeApps = (summary.Applied || 0) + (summary.Assessment || 0);
+
+    const mainStats = [
       { label: 'Total Tracked', val: summary.total, color: 'text-white' },
-      { label: 'Saved', val: summary.Saved, color: 'text-zinc-400' },
-      { label: 'Applied', val: summary.Applied, color: 'text-blue-400' },
-      { label: 'Assessment', val: summary.Assessment, color: 'text-purple-400' },
-      { label: 'In Interview', val: summary.Interview, color: 'text-amber-400' },
-      { label: 'Offers Secured', val: summary.Offer, color: 'text-emerald-400' },
-      { label: 'Rejected', val: summary.Rejected, color: 'text-red-400' }
+      { label: 'Saved Jobs', val: summary.Saved || 0, color: 'text-zinc-400' },
+      { label: 'Active Apps', val: activeApps, color: 'text-blue-400', sub: `Applied: ${summary.Applied || 0} · Test: ${summary.Assessment || 0}` },
+      { label: 'Interviews', val: summary.Interview || 0, color: 'text-amber-400' },
+      { label: 'Offers', val: summary.Offer || 0, color: 'text-emerald-400' }
     ];
 
     return (
-      <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-7 gap-3">
-        {statsConfig.map((stat, idx) => (
-          <Card key={idx} className="bg-zinc-900/10 border border-zinc-900 p-4 rounded-lg flex flex-col justify-between space-y-1">
-            <span className="text-[10px] uppercase font-bold tracking-wider text-zinc-500 font-mono">
-              {stat.label}
-            </span>
-            <span className={`text-xl sm:text-2xl font-black font-mono leading-none ${stat.color}`}>
-              {stat.val}
-            </span>
-          </Card>
-        ))}
-      </div>
+      <Card className="bg-card border-zinc-900 p-4 sm:p-5 rounded-xl flex flex-col md:flex-row md:items-center justify-between gap-4 shadow-sm">
+        {/* Main 5 columns */}
+        <div className="grid grid-cols-2 sm:grid-cols-5 gap-4 flex-1">
+          {mainStats.map((stat, idx) => (
+            <div key={idx} className="flex flex-col space-y-1 border-r border-zinc-900/60 last:border-r-0 pr-2">
+              <span className="text-xs uppercase font-semibold tracking-wider text-zinc-500">
+                {stat.label}
+              </span>
+              <div className="flex items-baseline gap-1.5">
+                <span className={`text-xl sm:text-2xl font-bold font-mono leading-none ${stat.color}`}>
+                  {stat.val}
+                </span>
+              </div>
+              {stat.sub && (
+                <span className="text-xs text-zinc-500 font-mono font-medium truncate">{stat.sub}</span>
+              )}
+            </div>
+          ))}
+        </div>
+
+        {/* Secondary status outcomes */}
+        <div className="flex flex-row md:flex-col items-center md:items-end justify-between md:justify-center gap-2 border-t md:border-t-0 md:border-l border-zinc-900/60 pt-3 md:pt-0 md:pl-5 shrink-0">
+          <div className="text-xs font-semibold text-zinc-500 uppercase tracking-wider md:mb-1">
+            Outcomes
+          </div>
+          <div className="flex items-center gap-3">
+            <div className="flex items-center gap-1.5 text-xs text-zinc-400">
+              <span className="size-2 rounded-full bg-red-500" />
+              <span>Rejected: <strong className="font-mono text-white">{summary.Rejected || 0}</strong></span>
+            </div>
+            <div className="flex items-center gap-1.5 text-xs text-zinc-400">
+              <span className="size-2 rounded-full bg-zinc-600" />
+              <span>Withdrawn: <strong className="font-mono text-white">{summary.Withdrawn || 0}</strong></span>
+            </div>
+          </div>
+        </div>
+      </Card>
     );
   };
 
@@ -516,7 +540,7 @@ export default function ApplicationTrackerPage() {
                 </TabsTrigger>
               </TabsList>
               
-              <span className="text-[10px] text-zinc-500 font-mono">
+              <span className="text-xs text-zinc-500 font-mono">
                 Last updated: {formatDate(new Date().toISOString())}
               </span>
             </div>

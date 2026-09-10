@@ -84,6 +84,25 @@ export default function SavedJobsPage() {
     }
   };
 
+  const handlePrepareJob = async (jobItem: any) => {
+    try {
+      toast.loading('Generating job preparation roadmap...');
+      const targetJobId = jobItem.jobId || jobItem.id || jobItem._id;
+      const res = await api.prepareJob(targetJobId);
+      toast.dismiss();
+      toast.success('Job preparation roadmap ready!');
+      const prepId = res.data?._id || res.data?.id;
+      if (prepId) {
+        navigate(`/job-preparation/${prepId}`);
+      } else {
+        navigate('/my-roadmaps');
+      }
+    } catch (err: any) {
+      toast.dismiss();
+      toast.error(err.message || 'Failed to initialize job preparation.');
+    }
+  };
+
   const getMatchScoreBadge = (job: any) => {
     const score = job.matchScore || 0;
     if (score >= 85) return { color: 'border-emerald-500/20 text-emerald-400 bg-emerald-500/5', label: 'Strong Match' };
@@ -163,7 +182,7 @@ export default function SavedJobsPage() {
               <DialogTitle className="text-base sm:text-lg md:text-xl font-bold text-white truncate pr-4 leading-tight">
                 {selectedJob.title}
               </DialogTitle>
-              <DialogDescription className="text-[11px] sm:text-xs text-zinc-400 truncate flex items-center gap-1.5 flex-wrap">
+              <DialogDescription className="text-xs text-zinc-400 truncate flex items-center gap-1.5 flex-wrap">
                 <span className="font-semibold text-zinc-200">{selectedJob.company}</span>
                 <span>·</span>
                 <span className="flex items-center gap-1">
@@ -171,20 +190,20 @@ export default function SavedJobsPage() {
                   {selectedJob.location}, {selectedJob.country}
                 </span>
                 <span>·</span>
-                <span className="text-[10px] text-zinc-500 font-mono">Via {selectedJob.source || 'JSearch'}</span>
+                <span className="text-xs text-zinc-500 font-mono">Via {selectedJob.source || 'JSearch'}</span>
               </DialogDescription>
 
               <div className="flex items-center gap-1.5 text-xs flex-wrap font-mono pt-1">
-                <Badge variant="outline" className="border-emerald-500/20 text-emerald-400 bg-emerald-500/5 text-[9.5px] sm:text-[10.5px] py-0.5 px-2 font-bold">
+                <Badge variant="outline" className="border-emerald-500/20 text-emerald-400 bg-emerald-500/5 text-xs py-0.5 px-2 font-bold">
                   {selectedJob.salaryText || 'Salary Unspecified'}
                 </Badge>
-                <Badge variant="outline" className="border-zinc-900 text-zinc-400 bg-zinc-900/20 text-[9.5px] sm:text-[10.5px] py-0.5 px-2">
+                <Badge variant="outline" className="border-zinc-900 text-zinc-400 bg-zinc-900/20 text-xs py-0.5 px-2">
                   {selectedJob.workMode}
                 </Badge>
-                <Badge variant="outline" className="border-zinc-900 text-zinc-400 bg-zinc-900/20 text-[9.5px] sm:text-[10.5px] py-0.5 px-2">
+                <Badge variant="outline" className="border-zinc-900 text-zinc-400 bg-zinc-900/20 text-xs py-0.5 px-2">
                   {selectedJob.employmentType}
                 </Badge>
-                <Badge variant="outline" className="border-zinc-900 text-zinc-400 bg-zinc-900/20 text-[9.5px] sm:text-[10.5px] py-0.5 px-2">
+                <Badge variant="outline" className="border-zinc-900 text-zinc-400 bg-zinc-900/20 text-xs py-0.5 px-2">
                   {selectedJob.experience}
                 </Badge>
               </div>
@@ -200,7 +219,7 @@ export default function SavedJobsPage() {
                 setSelectedJob((prev: any) => ({ ...prev, status }));
               }}
             >
-              <SelectTrigger className="h-9 w-[110px] bg-zinc-900/60 border-zinc-850 text-[11px] text-zinc-300 hover:text-white rounded cursor-pointer font-bold">
+              <SelectTrigger className="h-9 w-[110px] bg-zinc-900/60 border-zinc-850 text-xs text-zinc-300 hover:text-white rounded cursor-pointer font-bold">
                 <SelectValue placeholder="Status" />
               </SelectTrigger>
               <SelectContent className="bg-zinc-900 border-zinc-850 text-zinc-200">
@@ -236,7 +255,7 @@ export default function SavedJobsPage() {
                   strokeDashoffset={125.6 - (125.6 * score) / 100}
                 />
               </svg>
-              <span className="absolute text-[10.5px] font-mono font-black text-emerald-400">{score}%</span>
+              <span className="absolute text-xs font-mono font-bold text-emerald-400">{score}%</span>
             </div>
           </div>
         </DialogHeader>
@@ -276,7 +295,7 @@ export default function SavedJobsPage() {
                                   <tspan x={viewBox.cx} y={viewBox.cy} className="fill-white text-xl font-bold font-mono">
                                     {score}%
                                   </tspan>
-                                  <tspan x={viewBox.cx} y={(viewBox.cy || 0) + 16} className="fill-zinc-500 text-[10px] uppercase font-bold tracking-wider">
+                                  <tspan x={viewBox.cx} y={(viewBox.cy || 0) + 16} className="fill-zinc-500 text-xs uppercase font-bold tracking-wider">
                                     Match
                                   </tspan>
                                 </text>
@@ -295,7 +314,7 @@ export default function SavedJobsPage() {
                     <h4 className="text-xs text-zinc-400 font-medium">Matched Skills ({matchedSkillsToDisplay.length})</h4>
                     <div className="flex flex-wrap gap-1.5 mt-1.5">
                       {matchedSkillsToDisplay.slice(0, 8).map((s: any) => (
-                        <Badge key={s} variant="secondary" className="bg-emerald-950/20 text-emerald-400 border border-emerald-900/30 text-[10px] py-0.5 px-2">
+                        <Badge key={s} variant="secondary" className="bg-emerald-950/20 text-emerald-400 border border-emerald-900/30 text-xs py-0.5 px-2">
                           {s}
                         </Badge>
                       ))}
@@ -306,7 +325,7 @@ export default function SavedJobsPage() {
                       <h4 className="text-xs text-zinc-400 font-medium">Skills to Strengthen ({missingSkillsToDisplay.length})</h4>
                       <div className="flex flex-wrap gap-1.5 mt-1.5">
                         {missingSkillsToDisplay.slice(0, 8).map((s: any) => (
-                          <Badge key={s} variant="secondary" className="bg-amber-950/20 text-amber-400 border border-amber-900/30 text-[10px] py-0.5 px-2">
+                          <Badge key={s} variant="secondary" className="bg-amber-950/20 text-amber-400 border border-amber-900/30 text-xs py-0.5 px-2">
                             {s}
                           </Badge>
                         ))}
@@ -332,7 +351,7 @@ export default function SavedJobsPage() {
                 {selectedJob.skills.map((skill: any) => {
                   const skillName = typeof skill === 'object' && skill !== null ? skill.display || skill.canonical : skill;
                   return (
-                    <Badge key={skillName} variant="secondary" className="bg-zinc-900 text-zinc-300 border border-zinc-800 text-[10.5px] py-1 px-2.5 flex items-center gap-1.5">
+                    <Badge key={skillName} variant="secondary" className="bg-zinc-900 text-zinc-300 border border-zinc-800 text-xs py-1 px-2.5 flex items-center gap-1.5">
                       <SkillIcon skill={skill} className="size-3.5 text-zinc-500" />
                       <span>{skillName}</span>
                     </Badge>
@@ -342,17 +361,23 @@ export default function SavedJobsPage() {
             </div>
           )}
 
-          {/* Apply Button */}
-          {selectedJob.sourceUrl && (
-            <div className="pt-4 flex justify-end">
+          {/* Prepare & Apply Buttons */}
+          <div className="pt-4 flex items-center justify-end gap-3 flex-wrap">
+            <Button 
+              onClick={() => handlePrepareJob(selectedJob)}
+              className="h-10 px-5 bg-white hover:bg-zinc-200 text-zinc-950 font-bold text-xs rounded flex items-center gap-2 cursor-pointer shadow"
+            >
+              <span>Prepare for this Role →</span>
+            </Button>
+            {selectedJob.sourceUrl && (
               <a href={selectedJob.sourceUrl} target="_blank" rel="noopener noreferrer">
                 <Button className="h-10 px-6 bg-emerald-500 text-zinc-950 font-bold hover:bg-emerald-400 text-xs rounded flex items-center gap-2 cursor-pointer">
                   <span>Apply on Publisher Site</span>
                   <ExternalLink className="size-4" />
                 </Button>
               </a>
-            </div>
-          )}
+            )}
+          </div>
         </div>
       </DialogContent>
     );
@@ -445,13 +470,13 @@ export default function SavedJobsPage() {
                       </div>
                     </div>
                     
-                    <Badge variant="outline" className={`text-[10px] font-bold shrink-0 ${badge.color}`}>
+                    <Badge variant="outline" className={`text-xs font-bold shrink-0 ${badge.color}`}>
                       {badge.label} (Score: {job.matchScore}%)
                     </Badge>
                   </div>
 
                   {/* Metadata Row */}
-                  <div className="flex items-center gap-2.5 text-[11px] text-zinc-400 flex-wrap font-mono">
+                  <div className="flex items-center gap-2.5 text-xs text-zinc-400 flex-wrap font-mono">
                     <span className="flex items-center gap-1">
                       <MapPin className="size-3 text-zinc-500" />
                       {job.location}
@@ -465,7 +490,7 @@ export default function SavedJobsPage() {
                   </div>
 
                   {/* Date details */}
-                  <div className="flex items-center justify-between text-[10px] text-zinc-500 border-t border-zinc-900/60 pt-3">
+                  <div className="flex items-center justify-between text-xs text-zinc-500 border-t border-zinc-900/60 pt-3">
                     <span className="flex items-center gap-1">
                       <Clock className="size-3" />
                       Saved {getRelativeTimeString(job.savedAt)}
@@ -478,12 +503,12 @@ export default function SavedJobsPage() {
                 <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 pt-1 border-t border-zinc-900/60">
                   {/* Status Dropdown */}
                   <div className="flex items-center gap-2">
-                    <span className="text-[10px] text-zinc-500 font-mono uppercase font-bold">Status:</span>
+                    <span className="text-xs text-zinc-500 font-mono uppercase font-bold">Status:</span>
                     <Select
                       value={job.status}
                       onValueChange={(val) => handleUpdateStatus(job._id, val)}
                     >
-                      <SelectTrigger className={`h-8 w-28 text-[11px] font-semibold border rounded cursor-pointer ${getStatusBadgeStyle(job.status)}`}>
+                      <SelectTrigger className={`h-8 w-28 text-xs font-semibold border rounded cursor-pointer ${getStatusBadgeStyle(job.status)}`}>
                         <SelectValue placeholder="Status" />
                       </SelectTrigger>
                       <SelectContent className="bg-zinc-900 border-zinc-850 text-zinc-200">
@@ -514,7 +539,7 @@ export default function SavedJobsPage() {
                       <a href={job.sourceUrl} target="_blank" rel="noopener noreferrer">
                         <Button
                           variant="outline"
-                          className="h-8 px-2.5 border border-zinc-800 bg-zinc-900 text-zinc-300 hover:text-white text-[11px] rounded cursor-pointer"
+                          className="h-8 px-2.5 border border-zinc-800 bg-zinc-900 text-zinc-300 hover:text-white text-xs rounded cursor-pointer"
                         >
                           <ExternalLink className="size-3 mr-1" />
                           Apply
@@ -528,7 +553,7 @@ export default function SavedJobsPage() {
                         setSelectedJob(job);
                         setDetailModalOpen(true);
                       }}
-                      className="h-8 px-2.5 bg-white text-zinc-950 hover:bg-zinc-200 font-bold text-[11px] rounded cursor-pointer"
+                      className="h-8 px-2.5 bg-white text-zinc-950 hover:bg-zinc-200 font-bold text-xs rounded cursor-pointer"
                     >
                       Details
                     </Button>

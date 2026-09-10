@@ -514,8 +514,14 @@ export const AIAssistant: React.FC = () => {
 
     let careerProfile = null;
     try {
-      const raw = localStorage.getItem('careerProfile');
-      if (raw) careerProfile = JSON.parse(raw);
+      const raw = localStorage.getItem('careerProfile') || localStorage.getItem('cm_career_profile');
+      if (raw) {
+        careerProfile = JSON.parse(raw);
+      } else if (userProfile) {
+        careerProfile = { 
+          recommendations: userProfile.recommendations || (userProfile.topMatch ? [userProfile.topMatch] : []) 
+        };
+      }
     } catch (e) {}
 
     let currentJob = null;
@@ -524,7 +530,13 @@ export const AIAssistant: React.FC = () => {
       if (raw) currentJob = JSON.parse(raw);
     } catch (e) {}
 
-    return { userProfile, careerProfile, currentJob };
+    let activeTargetRole = null;
+    try {
+      const raw = localStorage.getItem('cm_target_role');
+      if (raw) activeTargetRole = JSON.parse(raw);
+    } catch (e) {}
+
+    return { userProfile, careerProfile, currentJob, activeTargetRole };
   };
 
   const handleSend = async (textToSend?: string) => {
@@ -764,7 +776,7 @@ export const AIAssistant: React.FC = () => {
       {/* Desktop Chat Panel Overlay */}
       {!isMobile && isOpen && (
         <div 
-          className="fixed bottom-24 right-6 w-[420px] h-[640px] bg-zinc-950 border border-zinc-900 rounded-2xl shadow-[0_20px_50px_rgba(0,0,0,0.6)] flex flex-col overflow-hidden z-50 transition-all duration-200 select-text"
+          className="fixed bottom-24 right-6 w-[420px] max-h-[82vh] h-[640px] bg-zinc-950 border border-zinc-900 rounded-2xl shadow-[0_20px_50px_rgba(0,0,0,0.6)] flex flex-col overflow-hidden z-50 transition-all duration-200 select-text"
           role="dialog"
           aria-label="AI Career Assistant Chat"
         >

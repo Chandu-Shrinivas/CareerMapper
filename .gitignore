@@ -13,5 +13,7 @@ env/
 .pytest_cache/
 .venv311/
 
-
 frontend/.git_bak/
+**/scratch/
+.agents/
+

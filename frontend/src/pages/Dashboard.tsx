@@ -1,7 +1,8 @@
 import { useState, useEffect, useRef } from 'react';
 import { useNavigate, useSearchParams } from 'react-router-dom';
 import { 
-  ArrowLeft, AlertCircle, Building2, Search, Check, Loader2, Circle, RotateCw, Briefcase
+  ArrowLeft, AlertCircle, Building2, Search, Check, Loader2, Circle, RotateCw, Briefcase,
+  Compass, Layers, TrendingUp
 } from 'lucide-react';
 import { gsap } from 'gsap';
 import { 
@@ -15,6 +16,7 @@ import { Progress } from '../components/ui/progress';
 import { Tabs, TabsList, TabsTrigger, TabsContent } from '../components/ui/tabs';
 import { ChartContainer, ChartTooltip, ChartTooltipContent } from '../components/ui/chart';
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from '../components/ui/dialog';
+import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetDescription, SheetTrigger } from '../components/ui/sheet';
 import { authService } from '../services/auth';
 import { api } from '../services/api';
 import { SkillIcon } from '../components/SkillIcon';
@@ -438,7 +440,7 @@ export default function Dashboard() {
   const otherMatches = recommendations.slice(1);
 
   return (
-    <div className="flex-1 w-full bg-zinc-955 p-6 sm:p-8" ref={dashboardRef}>
+    <div className="space-y-6" ref={dashboardRef}>
       {loading ? (
         /* Skeletons */
         <div className="space-y-8 max-w-[1000px] mx-auto">
@@ -510,18 +512,48 @@ export default function Dashboard() {
                 <span className="text-[10px] font-mono text-zinc-500 block uppercase">IT · {marketData?.country || 'India'}</span>
               </div>
               
-              <div className="grid grid-cols-3 gap-6 sm:gap-8 items-center pt-2 md:pt-0">
-                <div className="space-y-0.5">
-                  <span className="text-[9px] font-bold text-zinc-500 uppercase tracking-widest block">Role Match</span>
-                  <span className="font-mono text-sm sm:text-base font-extrabold text-white">{activeRoleMatch.matchScore}%</span>
+              <div className="flex flex-col sm:flex-row items-start sm:items-center gap-6">
+                <div className="grid grid-cols-3 gap-6 sm:gap-8 items-center pt-2 md:pt-0">
+                  <div className="space-y-0.5">
+                    <span className="text-[9px] font-bold text-zinc-500 uppercase tracking-widest block">Role Match</span>
+                    <span className="font-mono text-sm sm:text-base font-extrabold text-white">{activeRoleMatch.matchScore}%</span>
+                  </div>
+                  <div className="space-y-0.5">
+                    <span className="text-[9px] font-bold text-zinc-500 uppercase tracking-widest block">Market Status</span>
+                    <span className="text-xs sm:text-sm font-extrabold text-emerald-400 capitalize">{marketData?.demand?.status || 'Growing'}</span>
+                  </div>
+                  <div className="space-y-0.5">
+                    <span className="text-[9px] font-bold text-zinc-500 uppercase tracking-widest block">Readiness</span>
+                    <span className="font-mono text-sm sm:text-base font-extrabold text-white">{marketData?.userGap?.marketReadiness || 0}%</span>
+                  </div>
                 </div>
-                <div className="space-y-0.5">
-                  <span className="text-[9px] font-bold text-zinc-500 uppercase tracking-widest block">Market Status</span>
-                  <span className="text-xs sm:text-sm font-extrabold text-emerald-400 capitalize">{marketData?.demand?.status || 'Growing'}</span>
-                </div>
-                <div className="space-y-0.5">
-                  <span className="text-[9px] font-bold text-zinc-500 uppercase tracking-widest block">Readiness</span>
-                  <span className="font-mono text-sm sm:text-base font-extrabold text-white">{marketData?.userGap?.marketReadiness || 0}%</span>
+
+                <div className="hidden sm:block h-8 w-px bg-zinc-850" />
+
+                <div className="flex flex-wrap items-center gap-2.5 shrink-0">
+                  <Button 
+                    onClick={() => {
+                      if (activeRoleMatch?.roleTitle) {
+                        localStorage.setItem('cm_target_role', activeRoleMatch.roleTitle);
+                      }
+                      navigate(`/roadmap?role=${encodeURIComponent(activeRoleMatch?.roleTitle || '')}`);
+                    }}
+                    className="bg-white hover:bg-zinc-200 text-zinc-950 font-bold text-xs h-9 px-3.5 rounded-md cursor-pointer flex items-center gap-1.5 shadow"
+                  >
+                    Launch Mission Control →
+                  </Button>
+                  <Button 
+                    onClick={() => {
+                      if (activeRoleMatch?.roleTitle) {
+                        localStorage.setItem('cm_target_role', activeRoleMatch.roleTitle);
+                      }
+                      navigate(`/interview-prep?role=${encodeURIComponent(activeRoleMatch?.roleTitle || '')}`);
+                    }}
+                    variant="outline"
+                    className="border-zinc-800 hover:bg-zinc-900 text-zinc-300 font-bold text-xs h-9 px-3.5 rounded-md cursor-pointer flex items-center gap-1.5"
+                  >
+                    Interview Prep →
+                  </Button>
                 </div>
               </div>
             </div>
@@ -1516,231 +1548,309 @@ export default function Dashboard() {
 
         </div>
       ) : (
-        
-        /* ==========================================
-           MAIN CAREER ANALYSIS DASHBOARD OVERVIEW
-           ========================================== */
-        <div className="space-y-6 max-w-[1000px] mx-auto">
+        <div className="max-w-4xl mx-auto space-y-6 w-full animate-fade">
           
           <div className="space-y-1">
             <h1 className="text-2xl font-bold tracking-tight text-white leading-tight">Career Analysis</h1>
-            <p className="text-xs text-zinc-400">Understand where your current skills can take you.</p>
+            <p className="text-sm text-zinc-400">Understand where your current skills can take you.</p>
           </div>
 
-          {/* Compact Profile summary horizontal bar */}
-          <div className="p-4 bg-zinc-900/10 border border-zinc-900 rounded-md flex flex-wrap items-center justify-between gap-4 text-xs font-semibold text-zinc-400 animate-profile">
-            <div className="flex flex-wrap items-center gap-x-4 gap-y-1">
-              <span>YOUR PROFILE</span>
-              <span className="text-zinc-700">|</span>
-              <span><strong className="text-white uppercase">{profile?.domain?.label || 'IT'}</strong> · {profile?.domain?.confidence || 0}% confidence</span>
-              <span className="text-zinc-700">|</span>
-              <span>{totalSkillsCount} skills ({getSkillsSummary()})</span>
-            </div>
-            <div className="flex items-center gap-3">
-              <Badge variant="outline" className="bg-emerald-500/10 text-emerald-400 border-emerald-500/20 text-[9px] uppercase font-bold py-0.5 px-2">
-                Profile Complete
-              </Badge>
-              <Button onClick={handleEditSkills} className="h-7 px-3 bg-zinc-900 hover:bg-zinc-800 text-zinc-300 font-bold border border-zinc-800 rounded text-[10px] cursor-pointer">
-                Edit profile
-              </Button>
-            </div>
-          </div>
-
-          {/* Matches column - Emphasizing #1 recommendation first, followed by others in list */}
-          <div className="space-y-6">
-            
-            <div className="flex items-center justify-between animate-fade pt-2">
+          {/* 4 Top KPI Cards */}
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            {/* Card 1: Domain */}
+            <Card className="p-4 bg-card border-zinc-900 rounded-xl flex flex-col justify-between h-28 shadow-sm">
+              <div className="flex items-center justify-between space-y-0 pb-1">
+                <span className="text-xs font-semibold text-zinc-500 uppercase tracking-wider">Career Domain</span>
+                <Compass className="size-4 text-emerald-500" />
+              </div>
               <div className="space-y-0.5">
-                <h2 className="font-display text-[10px] font-bold text-zinc-500 uppercase tracking-widest">Your Career Matches</h2>
-                <p className="text-xs text-zinc-400">Explore the roles that best align with your current profile.</p>
+                <div className="text-lg font-bold tracking-tight text-white uppercase">{profile?.domain?.label || 'IT'}</div>
+                <p className="text-xs text-muted-foreground">{profile?.domain?.confidence || 0}% match confidence</p>
+              </div>
+            </Card>
+
+            {/* Card 2: Skills */}
+            <Card className="p-4 bg-card border-zinc-900 rounded-xl flex flex-col justify-between h-28 shadow-sm">
+              <div className="flex items-center justify-between space-y-0 pb-1">
+                <span className="text-xs font-semibold text-zinc-500 uppercase tracking-wider">Skills Portfolio</span>
+                <Layers className="size-4 text-emerald-500" />
+              </div>
+              <div className="space-y-0.5">
+                <div className="text-lg font-bold tracking-tight text-white">{totalSkillsCount} Verified</div>
+                <p className="text-xs text-muted-foreground truncate">{getSkillsSummary()}</p>
+              </div>
+            </Card>
+
+            {/* Card 3: Top Match */}
+            <Card className="p-4 bg-card border-zinc-900 rounded-xl flex flex-col justify-between h-28 shadow-sm">
+              <div className="flex items-center justify-between space-y-0 pb-1">
+                <span className="text-xs font-semibold text-zinc-500 uppercase tracking-wider">Top Recommendation</span>
+                <Briefcase className="size-4 text-emerald-500" />
+              </div>
+              <div className="space-y-0.5">
+                <div className="text-lg font-bold tracking-tight text-white truncate capitalize">{recommendedRole ? recommendedRole.roleTitle : 'N/A'}</div>
+                <p className="text-xs text-muted-foreground">{recommendedRole ? `${recommendedRole.matchScore}% alignment` : 'No matches yet'}</p>
+              </div>
+            </Card>
+
+            {/* Card 4: Match Level */}
+            <Card className="p-4 bg-card border-zinc-900 rounded-xl flex flex-col justify-between h-28 shadow-sm">
+              <div className="flex items-center justify-between space-y-0 pb-1">
+                <span className="text-xs font-semibold text-zinc-500 uppercase tracking-wider">Readiness Score</span>
+                <TrendingUp className="size-4 text-emerald-500" />
+              </div>
+              <div className="space-y-0.5">
+                <div className="text-lg font-bold tracking-tight text-white">{recommendedRole ? `${recommendedRole.matchScore}%` : 'N/A'}</div>
+                <p className="text-xs text-muted-foreground">Based on top track</p>
+              </div>
+            </Card>
+          </div>
+
+          {/* Primary Workspace: Career Tracks */}
+          <div className="space-y-6">
+            <div className="flex items-center justify-between flex-wrap gap-4 pb-2 border-b border-zinc-900">
+              <div className="space-y-1">
+                <h2 className="text-sm font-semibold text-zinc-400 uppercase tracking-wider">Your Career Matches</h2>
+                <p className="text-xs text-muted-foreground">Roles that align best with your current profile</p>
               </div>
               
-              {/* Compact comparison progress meter trigger */}
-              <div className="flex items-center gap-1.5 text-[11px] font-bold text-zinc-400">
-                <span>Sorted by:</span>
-                <Badge variant="outline" className="text-[10px] font-semibold border-zinc-800 text-white bg-zinc-900/40">Best Match</Badge>
+              <div className="flex items-center gap-3">
+                {/* Skill Inventory Trigger Button */}
+                <Sheet>
+                  <SheetTrigger asChild>
+                    <Button variant="outline" className="h-8 px-3 border-zinc-800 hover:bg-zinc-900 hover:text-white font-semibold text-xs flex items-center gap-2 cursor-pointer">
+                      <Layers className="size-3.5 text-zinc-400" />
+                      <span>Skill Inventory ({totalSkillsCount})</span>
+                    </Button>
+                  </SheetTrigger>
+                  <SheetContent className="bg-zinc-950 border-zinc-900 text-zinc-100 p-6 flex flex-col h-full w-full sm:max-w-md">
+                    <SheetHeader className="pb-4 border-b border-zinc-900">
+                      <SheetTitle className="text-base font-bold text-white uppercase tracking-wider">Skill Inventory</SheetTitle>
+                      <SheetDescription className="text-xs text-zinc-450">
+                        {totalSkillsCount} verified {totalSkillsCount === 1 ? 'skill' : 'skills'} in your career profile
+                      </SheetDescription>
+                    </SheetHeader>
+                    
+                    {/* Scrollable list */}
+                    <div className="flex-1 overflow-y-auto py-4 space-y-6 custom-scrollbar">
+                      {['expert', 'advanced', 'intermediate', 'beginner'].map((level) => {
+                        const list = profile?.skills?.filter((s: Skill) => s.proficiency.toLowerCase() === level) || [];
+                        if (list.length === 0) return null;
+                        return (
+                          <div key={level} className="space-y-2">
+                            <div className="flex items-center justify-between text-xs border-b border-zinc-900/60 pb-1.5">
+                              <span className="font-bold text-zinc-400 capitalize">{level}</span>
+                              <Badge variant="secondary" className="h-5 px-1.5 text-[10px] bg-zinc-900 text-zinc-400 font-mono font-bold">
+                                {list.length}
+                              </Badge>
+                            </div>
+                            <div className="flex flex-wrap gap-2 pt-1">
+                              {list.map((skill: Skill) => (
+                                <Badge 
+                                  key={skill.id} 
+                                  variant="secondary" 
+                                  className="bg-zinc-900/80 text-zinc-300 border border-zinc-800/60 text-xs py-1 px-2.5 flex items-center gap-1.5"
+                                >
+                                  <SkillIcon skill={skill.name} className="size-3.5" />
+                                  <span>{skill.name}</span>
+                                </Badge>
+                              ))}
+                            </div>
+                          </div>
+                        );
+                      })}
+                      {(!profile?.skills || profile.skills.length === 0) && (
+                        <p className="text-xs text-zinc-500 text-center py-8">No skills registered yet.</p>
+                      )}
+                    </div>
+
+                    <div className="pt-4 border-t border-zinc-900 flex justify-end">
+                      <Button onClick={handleEditSkills} className="w-full bg-white hover:bg-zinc-200 text-zinc-950 font-bold text-xs h-9 rounded cursor-pointer">
+                        Edit Profile & Skills
+                      </Button>
+                    </div>
+                  </SheetContent>
+                </Sheet>
+
+                <div className="flex items-center gap-1.5 text-xs font-medium text-muted-foreground">
+                  <span>Sorted by:</span>
+                  <Badge variant="outline" className="text-[10px] font-semibold border-zinc-800 text-white bg-zinc-900/40">Best Match</Badge>
+                </div>
               </div>
             </div>
 
             {/* Recommended Role (#1 Featured Recommendation) */}
             {recommendedRole && (
-              <div className="space-y-2.5 animate-card">
-                <span className="text-[10px] font-bold text-zinc-500 uppercase tracking-widest block">Recommended role</span>
-                
-                <Card className="bg-zinc-900/30 border border-zinc-700 hover:border-zinc-600 hover:bg-zinc-900/40 transition-all duration-300 shadow-lg rounded-lg flex flex-col justify-between">
-                  <div className="p-6 space-y-5">
-                    {/* Header */}
-                    <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-3 border-b border-zinc-900">
-                      <div className="space-y-1">
-                        <div className="flex items-center gap-2.5">
-                          <h3 className="text-lg font-bold text-white tracking-tight capitalize">{recommendedRole.roleTitle}</h3>
-                          <Badge variant="outline" className="bg-zinc-900 text-zinc-300 text-[10px] capitalize border-zinc-800 px-2 py-0.5">
-                            Domain: {recommendedRole.domain}
-                          </Badge>
-                        </div>
-                        <p className="text-xs text-zinc-400 italic">
-                          "Strong alignment with your current skill profile."
-                        </p>
-                      </div>
-                      <div className="flex items-center gap-3">
-                        <span className="font-mono text-lg font-extrabold text-white">{recommendedRole.matchScore}% Match</span>
-                        <Badge variant="outline" className={`text-[9.5px] uppercase font-bold px-2 py-0.5 rounded ${getMatchCategory(recommendedRole.matchScore).color}`}>
-                          {getMatchCategory(recommendedRole.matchScore).label}
+              <Card className="bg-card border-zinc-900 shadow-md rounded-xl flex flex-col justify-between overflow-hidden">
+                <div className="p-6 space-y-5">
+                  {/* Header */}
+                  <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-4 border-b border-zinc-900">
+                    <div className="space-y-1">
+                      <div className="flex items-center gap-2.5 flex-wrap">
+                        <h3 className="text-lg font-bold text-white tracking-tight capitalize">{recommendedRole.roleTitle}</h3>
+                        <Badge variant="outline" className="bg-zinc-950 text-zinc-400 text-xs capitalize border-zinc-900 px-2 py-0.5">
+                          Domain: {recommendedRole.domain}
+                        </Badge>
+                        <Badge variant="outline" className="bg-emerald-500/10 text-emerald-400 text-[10px] uppercase font-bold border-emerald-500/20 px-2 py-0.5">
+                          Top Match
                         </Badge>
                       </div>
+                      <p className="text-xs text-zinc-400 italic">
+                        "Strong alignment with your current skill profile."
+                      </p>
                     </div>
+                    <div className="flex items-center gap-3 shrink-0">
+                      <span className="font-mono text-lg font-extrabold text-white">{recommendedRole.matchScore}% Match</span>
+                      <Badge variant="outline" className={`text-xs uppercase font-bold px-2.5 py-0.5 rounded ${getMatchCategory(recommendedRole.matchScore).color}`}>
+                        {getMatchCategory(recommendedRole.matchScore).label}
+                      </Badge>
+                    </div>
+                  </div>
 
-                    {/* Matched Skills */}
-                    <div className="space-y-2.5">
-                      <span className="text-[10px] font-bold text-zinc-500 uppercase tracking-widest block">Matched Skills</span>
-                      <div className="flex flex-wrap gap-2">
-                        {recommendedRole.matchedSkills.map((s) => (
+                  {/* Matched Skills */}
+                  <div className="space-y-2">
+                    <span className="text-xs font-semibold text-zinc-500 uppercase tracking-wider block">Matched Skills</span>
+                    <div className="flex flex-wrap gap-1.5">
+                      {recommendedRole.matchedSkills.map((s) => (
+                        <Badge 
+                          key={s.skillId} 
+                          variant="secondary" 
+                          className="bg-zinc-950 text-zinc-300 border border-zinc-900/60 text-xs py-1 px-2.5 font-medium rounded flex items-center gap-1.5"
+                        >
+                          <SkillIcon skill={s.skillRaw || s.skillName} className="size-3.5" />
+                          <span>{s.skillName}</span>
+                        </Badge>
+                      ))}
+                    </div>
+                  </div>
+
+                  {/* Gaps */}
+                  <div className="space-y-2">
+                    <span className="text-xs font-semibold text-zinc-500 uppercase tracking-wider block">Skills to Strengthen</span>
+                    <div className="flex flex-wrap gap-1.5">
+                      {recommendedRole.gaps && recommendedRole.gaps.length > 0 ? (
+                        recommendedRole.gaps.map((s) => (
                           <Badge 
-                            key={s.skillId} 
-                            variant="secondary" 
-                            className="bg-zinc-900 text-zinc-100 border border-zinc-800 text-xs h-9 px-3.5 font-semibold rounded flex items-center gap-1.5"
+                            key={s.skillName} 
+                            variant="outline" 
+                            className="bg-transparent text-zinc-500 border border-zinc-900 border-dashed text-xs py-1 px-2.5 font-medium rounded flex items-center gap-1.5"
                           >
                             <SkillIcon skill={s.skillRaw || s.skillName} className="size-3.5" />
-                            <span>{s.skillName} (✓)</span>
+                            <span>{s.skillName}</span>
                           </Badge>
-                        ))}
-                      </div>
-                    </div>
-
-                    {/* Gaps */}
-                    <div className="space-y-2.5">
-                      <span className="text-[10px] font-bold text-zinc-500 uppercase tracking-widest block">Skills to Strengthen</span>
-                      <div className="flex flex-wrap gap-2">
-                        {recommendedRole.gaps && recommendedRole.gaps.length > 0 ? (
-                          recommendedRole.gaps.map((s) => (
-                            <Badge 
-                              key={s.skillName} 
-                              variant="outline" 
-                              className="bg-transparent text-zinc-500 border border-zinc-800 border-dashed text-xs h-9 px-3.5 font-semibold rounded flex items-center gap-1.5"
-                            >
-                              <SkillIcon skill={s.skillRaw || s.skillName} className="size-3.5" />
-                              <span>{s.skillName}</span>
-                            </Badge>
-                          ))
-                        ) : (
-                          <span className="text-xs text-zinc-500">No missing gaps identified!</span>
-                        )}
-                      </div>
+                        ))
+                      ) : (
+                        <span className="text-xs text-emerald-400">✓ No missing gaps identified!</span>
+                      )}
                     </div>
                   </div>
+                </div>
 
-                  <div className="p-6 pt-0 flex items-center justify-end gap-3">
-                    <Button 
-                      onClick={() => navigate(`/jobs?query=${encodeURIComponent(getSlug(recommendedRole.roleTitle))}`)}
-                      variant="outline"
-                      className="border-zinc-800 hover:bg-zinc-800 text-zinc-300 font-bold text-xs h-9 px-4 rounded transition-colors cursor-pointer"
-                    >
-                      <Briefcase className="mr-1.5 size-3.5 text-zinc-400" />
-                      View Jobs →
-                    </Button>
-                    <Button 
-                      onClick={() => setSearchParams({ role: getSlug(recommendedRole.roleTitle) })}
-                      className="bg-white hover:bg-zinc-200 text-zinc-950 font-bold text-xs h-9 px-4 rounded transition-colors cursor-pointer"
-                    >
-                      Explore role →
-                    </Button>
-                  </div>
-                </Card>
-              </div>
+                <div className="p-6 pt-0 border-t border-zinc-900 bg-zinc-950/20 flex items-center justify-end gap-3">
+                  <Button 
+                    onClick={() => navigate(`/jobs?query=${encodeURIComponent(getSlug(recommendedRole.roleTitle))}`)}
+                    variant="outline"
+                    className="border-zinc-800 hover:bg-zinc-800 text-zinc-300 font-bold text-xs h-9 px-4 rounded transition-colors cursor-pointer"
+                  >
+                    <Briefcase className="mr-1.5 size-4 text-zinc-400" />
+                    View Jobs
+                  </Button>
+                  <Button 
+                    onClick={() => setSearchParams({ role: getSlug(recommendedRole.roleTitle) })}
+                    className="bg-white hover:bg-zinc-200 text-zinc-950 font-bold text-xs h-9 px-4 rounded transition-colors cursor-pointer"
+                  >
+                    Explore Role →
+                  </Button>
+                </div>
+              </Card>
             )}
 
-            {/* Other matches section */}
+            {/* Other Matches */}
             {otherMatches.length > 0 && (
-              <div className="space-y-3.5 pt-4 animate-card">
-                <span className="text-[10px] font-bold text-zinc-500 uppercase tracking-widest block">Other Matches</span>
-                
-                <div className="space-y-4">
-                  {otherMatches.map((match) => {
-                    const cat = getMatchCategory(match.matchScore);
-                    const slug = getSlug(match.roleTitle);
-                    
-                    return (
-                      <Card key={match.roleTitle} className="bg-zinc-900/20 border border-zinc-900 hover:border-zinc-800 hover:bg-zinc-900/30 transition-all duration-300 shadow rounded-lg flex flex-col justify-between">
-                        <div className="p-6 space-y-4">
-                          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-3 border-b border-zinc-900/60">
-                            <div className="space-y-0.5">
-                              <h3 className="text-base font-bold text-white tracking-tight capitalize">{match.roleTitle}</h3>
-                              <p className="text-[11px] text-zinc-400 italic">
-                                "Alignment with your current skill profile."
-                              </p>
-                            </div>
-                            <div className="flex items-center gap-3">
-                              <span className="font-mono text-sm font-bold text-white">{match.matchScore}% Match</span>
-                              <Badge variant="outline" className={`text-[8.5px] uppercase font-bold px-1.5 py-px rounded ${cat.color}`}>
-                                {cat.label}
-                              </Badge>
-                            </div>
+              <div className="space-y-4">
+                {otherMatches.map((match) => {
+                  const cat = getMatchCategory(match.matchScore);
+                  const slug = getSlug(match.roleTitle);
+                  
+                  return (
+                    <Card key={match.roleTitle} className="bg-card border-zinc-900 hover:border-zinc-800 transition-all duration-300 shadow rounded-xl flex flex-col justify-between overflow-hidden">
+                      <div className="p-6 space-y-4">
+                        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-3 border-b border-zinc-900/60">
+                          <div className="space-y-0.5">
+                            <h3 className="text-base font-bold text-white tracking-tight capitalize">{match.roleTitle}</h3>
+                            <p className="text-xs text-zinc-500 italic">
+                              "Alignment with your current skill profile."
+                            </p>
                           </div>
+                          <div className="flex items-center gap-3 shrink-0">
+                            <span className="font-mono text-sm font-semibold text-white">{match.matchScore}% Match</span>
+                            <Badge variant="outline" className={`text-[10px] uppercase font-bold px-2 py-0.5 rounded ${cat.color}`}>
+                              {cat.label}
+                            </Badge>
+                          </div>
+                        </div>
 
-                          {/* Matched list */}
-                          <div className="space-y-2">
-                            <span className="text-[9px] font-bold text-zinc-500 uppercase tracking-widest block">Matched Skills</span>
-                            <div className="flex flex-wrap gap-1.5">
-                              {match.matchedSkills.map((s) => (
+                        {/* Matched list */}
+                        <div className="space-y-2">
+                          <span className="text-xs font-semibold text-zinc-500 uppercase tracking-wider block">Matched Skills</span>
+                          <div className="flex flex-wrap gap-1.5">
+                            {match.matchedSkills.map((s) => (
+                              <Badge 
+                                key={s.skillId} 
+                                variant="secondary" 
+                                className="bg-zinc-950 text-zinc-300 border border-zinc-900/60 text-xs py-0.5 px-2.5 font-medium rounded flex items-center gap-1"
+                              >
+                                <SkillIcon skill={s.skillName} className="size-3" />
+                                <span>{s.skillName}</span>
+                              </Badge>
+                            ))}
+                          </div>
+                        </div>
+
+                        {/* Gaps list */}
+                        <div className="space-y-2">
+                          <span className="text-xs font-semibold text-zinc-500 uppercase tracking-wider block">Skills to Strengthen</span>
+                          <div className="flex flex-wrap gap-1.5">
+                            {match.gaps && match.gaps.length > 0 ? (
+                              match.gaps.map((s) => (
                                 <Badge 
-                                  key={s.skillId} 
-                                  variant="secondary" 
-                                  className="bg-zinc-900 text-zinc-300 border border-zinc-800 text-[11px] h-8 px-3 font-semibold rounded flex items-center gap-1.5"
+                                  key={s.skillName} 
+                                  variant="outline" 
+                                  className="bg-transparent text-zinc-500 border border-zinc-900 border-dashed text-xs py-0.5 px-2.5 font-medium rounded flex items-center gap-1"
                                 >
                                   <SkillIcon skill={s.skillName} className="size-3" />
-                                  <span>{s.skillName} (✓)</span>
+                                  <span>{s.skillName}</span>
                                 </Badge>
-                              ))}
-                            </div>
-                          </div>
-
-                          {/* Gaps list */}
-                          <div className="space-y-2">
-                            <span className="text-[9px] font-bold text-zinc-500 uppercase tracking-widest block">Skills to Strengthen</span>
-                            <div className="flex flex-wrap gap-1.5">
-                              {match.gaps && match.gaps.length > 0 ? (
-                                match.gaps.map((s) => (
-                                  <Badge 
-                                    key={s.skillName} 
-                                    variant="outline" 
-                                    className="bg-transparent text-zinc-500 border border-zinc-800 border-dashed text-[11px] h-8 px-3 font-semibold rounded flex items-center gap-1.5"
-                                  >
-                                    <SkillIcon skill={s.skillName} className="size-3" />
-                                    <span>{s.skillName}</span>
-                                  </Badge>
-                                ))
-                              ) : (
-                                <span className="text-xs text-zinc-500">No missing gaps identified!</span>
-                              )}
-                            </div>
+                              ))
+                            ) : (
+                              <span className="text-xs text-emerald-400">✓ No missing gaps identified!</span>
+                            )}
                           </div>
                         </div>
+                      </div>
 
-                        <div className="p-6 pt-0 flex items-center justify-end gap-3">
-                          <Button 
-                            onClick={() => navigate(`/jobs?query=${encodeURIComponent(slug)}`)}
-                            variant="outline"
-                            className="border-zinc-800 hover:bg-zinc-800 text-zinc-300 font-bold text-xs h-8 px-3 rounded transition-colors cursor-pointer"
-                          >
-                            <Briefcase className="mr-1.5 size-3.5 text-zinc-400" />
-                            View Jobs →
-                          </Button>
-                          <Button 
-                            onClick={() => setSearchParams({ role: slug })}
-                            className="bg-zinc-900 hover:bg-zinc-800 text-zinc-300 font-bold border border-zinc-800 text-xs h-8 px-4 rounded transition-colors cursor-pointer"
-                          >
-                            Explore role →
-                          </Button>
-                        </div>
-                      </Card>
-                    );
-                  })}
-                </div>
+                      <div className="p-6 pt-0 border-t border-zinc-900 bg-zinc-950/20 flex items-center justify-end gap-3">
+                        <Button 
+                          onClick={() => navigate(`/jobs?query=${encodeURIComponent(slug)}`)}
+                          variant="outline"
+                          className="border-zinc-800 hover:bg-zinc-800 text-zinc-300 font-bold text-xs h-8 px-3 rounded transition-colors cursor-pointer"
+                        >
+                          <Briefcase className="mr-1.5 size-3.5 text-zinc-400" />
+                          View Jobs
+                        </Button>
+                        <Button 
+                          onClick={() => setSearchParams({ role: slug })}
+                          className="bg-zinc-900 hover:bg-zinc-800 text-zinc-300 font-bold border border-zinc-800 text-xs h-8 px-3 rounded transition-colors cursor-pointer"
+                        >
+                          Explore Role
+                        </Button>
+                      </div>
+                    </Card>
+                  );
+                })}
               </div>
             )}
-
           </div>
-
         </div>
       )}
       <Dialog open={evidenceModalOpen} onOpenChange={setEvidenceModalOpen}>

@@ -29,7 +29,7 @@ export const api = {
     onStageChange?: (stageId: AnalysisStageId, status: 'pending' | 'active' | 'done' | 'error') => void
   ): Promise<CareerProfile> {
     const stages: AnalysisStageId[] = ['reading', 'extracting', 'proficiency', 'domain', 'matching'];
-    
+
     // Helper to simulate smooth stage transitions for the extraction pipeline UI
     const triggerStages = async () => {
       for (const stage of stages) {
@@ -187,7 +187,7 @@ export const api = {
       skills: (domainData.skills || []).map((s: any, idx: number) => {
         const levelLower = (s.level || 'intermediate').toLowerCase();
         const proficiency: ProficiencyLevel = levelMap[levelLower] || 'intermediate';
-        
+
         // Preserve user source details if it matches the original skill list
         const matchedOrig = skills.find(orig => orig.name.toLowerCase() === s.name.toLowerCase());
         const source = matchedOrig ? matchedOrig.source : 'manual';
@@ -421,5 +421,626 @@ export const api = {
       throw new Error(errBody.error || 'Failed to retrieve application tracker data.');
     }
     return response.json();
+  },
+
+  /**
+   * Get skill verification for a specific skill gap
+   */
+  async getSkillVerification(roadmapId: string, skillId: string): Promise<any> {
+    const email = authService.getSession().user?.email || '';
+    const response = await fetch(`${BACKEND_URL}/roadmap/${roadmapId}/skills/${encodeURIComponent(skillId)}/verification`, {
+      method: 'GET',
+      headers: {
+        'X-User-Email': email
+      }
+    });
+    if (!response.ok) {
+      const errBody = await response.json().catch(() => ({}));
+      throw new Error(errBody.error || 'Failed to retrieve skill verification.');
+    }
+    return response.json();
+  },
+
+  async verifySkill(roadmapId: string, skillId: string): Promise<any> {
+    const email = authService.getSession().user?.email || '';
+    const response = await fetch(`${BACKEND_URL}/roadmap/${roadmapId}/skills/${encodeURIComponent(skillId)}/verify`, {
+      method: 'POST',
+      headers: {
+        'X-User-Email': email
+      }
+    });
+    if (!response.ok) {
+      const errBody = await response.json().catch(() => ({}));
+      throw new Error(errBody.error || 'Failed to verify skill.');
+    }
+    return response.json();
+  },
+
+  async recalculateVerification(roadmapId: string, skillId: string): Promise<any> {
+    return this.verifySkill(roadmapId, skillId);
+  },
+
+  /**
+   * Get authenticated user's active target role from MongoDB
+   */
+  async getActiveTargetRole(): Promise<any> {
+    const email = authService.getSession().user?.email || '';
+    const response = await fetch(`${BACKEND_URL}/user/target-role`, {
+      headers: {
+        'X-User-Email': email
+      }
+    });
+    if (!response.ok) {
+      return null;
+    }
+    return response.json();
+  },
+
+  /**
+   * Single Source of Truth Setter: Persist active target role to MongoDB
+   */
+  async setActiveTargetRole(payload: {
+    roleTitle: string;
+    company?: string;
+    domain?: string;
+    matchScore?: number;
+    matchedSkills?: string[];
+    skillsToStrengthen?: string[];
+    source?: string;
+  }): Promise<any> {
+    const email = authService.getSession().user?.email || '';
+    const response = await fetch(`${BACKEND_URL}/user/target-role`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'X-User-Email': email
+      },
+      body: JSON.stringify(payload)
+    });
+    if (!response.ok) {
+      const errBody = await response.json().catch(() => ({}));
+      throw new Error(errBody.error || 'Failed to save active target role.');
+    }
+    return response.json();
+  },
+
+  /**
+   * Generate a roadmap for a target role & company
+   */
+  async generateRoadmap(payload: { targetRole: string; company?: string; domain?: string; userSkills?: any[] }): Promise<any> {
+    const email = authService.getSession().user?.email || '';
+    const bodyPayload = {
+      targetRole: payload.targetRole,
+      company: payload.company || 'Target Company',
+      domain: payload.domain || 'Technology',
+      userSkills: payload.userSkills || [],
+      targetRoleParams: {
+        targetRole: payload.targetRole,
+        company: payload.company || 'Target Company',
+        domain: payload.domain || 'Technology',
+        userSkills: payload.userSkills || []
+      }
+    };
+    const response = await fetch(`${BACKEND_URL}/roadmap/generate`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'X-User-Email': email
+      },
+      body: JSON.stringify(bodyPayload)
+    });
+    if (!response.ok) {
+      const errBody = await response.json().catch(() => ({}));
+      throw new Error(errBody.error || 'Failed to generate roadmap.');
+    }
+    return response.json();
+  },
+
+  /**
+   * Get all roadmaps for current user
+   */
+  async getRoadmaps(userId: string): Promise<any> {
+    const response = await fetch(`${BACKEND_URL}/roadmap?userId=${encodeURIComponent(userId)}`);
+    if (!response.ok) {
+      const errBody = await response.json().catch(() => ({}));
+      throw new Error(errBody.error || 'Failed to retrieve roadmaps.');
+    }
+    return response.json();
+  },
+
+  /**
+   * Get aggregated roadmap experience details (Module 14)
+   */
+  async getRoadmapExperience(roadmapId: string): Promise<any> {
+    const email = authService.getSession().user?.email || '';
+    const response = await fetch(`${BACKEND_URL}/roadmap/${roadmapId}/experience`, {
+      method: 'GET',
+      headers: {
+        'X-User-Email': email
+      }
+    });
+    if (!response.ok) {
+      const errBody = await response.json().catch(() => ({}));
+      throw new Error(errBody.error || 'Failed to retrieve roadmap experience.');
+    }
+    return response.json();
+  },
+
+  /**
+   * Get deterministic next action (Module 14)
+   */
+  async getRoadmapNextAction(roadmapId: string): Promise<any> {
+    const email = authService.getSession().user?.email || '';
+    const response = await fetch(`${BACKEND_URL}/roadmap/${roadmapId}/next-action`, {
+      method: 'GET',
+      headers: {
+        'X-User-Email': email
+      }
+    });
+    if (!response.ok) {
+      const errBody = await response.json().catch(() => ({}));
+      throw new Error(errBody.error || 'Failed to retrieve next action.');
+    }
+    return response.json();
+  },
+
+  /**
+   * Get progress/gamification summary metrics (Module 14)
+   */
+  async getRoadmapProgress(roadmapId: string): Promise<any> {
+    const email = authService.getSession().user?.email || '';
+    const response = await fetch(`${BACKEND_URL}/roadmap/${roadmapId}/progress`, {
+      method: 'GET',
+      headers: {
+        'X-User-Email': email
+      }
+    });
+    if (!response.ok) {
+      const errBody = await response.json().catch(() => ({}));
+      throw new Error(errBody.error || 'Failed to retrieve roadmap progress.');
+    }
+    return response.json();
+  },
+
+  /**
+   * Generate assessment checkpoint on-demand (Module 11)
+   */
+  async generateAssessment(roadmapId: string, skillIds: string[]): Promise<any> {
+    const email = authService.getSession().user?.email || '';
+    const response = await fetch(`${BACKEND_URL}/roadmap/${roadmapId}/assessments/generate`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'X-User-Email': email
+      },
+      body: JSON.stringify({ skillIds, refresh: true })
+    });
+    if (!response.ok) {
+      const errBody = await response.json().catch(() => ({}));
+      throw new Error(errBody.error || 'Failed to generate assessment checkpoint.');
+    }
+    return response.json();
+  },
+
+  /**
+   * Fetch assessment questions and description
+   */
+  async getAssessmentDetails(assessmentId: string): Promise<any> {
+    const email = authService.getSession().user?.email || '';
+    const response = await fetch(`${BACKEND_URL}/assessments/${assessmentId}`, {
+      method: 'GET',
+      headers: {
+        'X-User-Email': email
+      }
+    });
+    if (!response.ok) {
+      const errBody = await response.json().catch(() => ({}));
+      throw new Error(errBody.error || 'Failed to fetch assessment details.');
+    }
+    return response.json();
+  },
+
+  /**
+   * Start a new attempt session for an assessment
+   */
+  async startAssessmentAttempt(assessmentId: string): Promise<any> {
+    const email = authService.getSession().user?.email || '';
+    const response = await fetch(`${BACKEND_URL}/assessments/${assessmentId}/start`, {
+      method: 'POST',
+      headers: {
+        'X-User-Email': email
+      }
+    });
+    if (!response.ok) {
+      const errBody = await response.json().catch(() => ({}));
+      throw new Error(errBody.error || 'Failed to start assessment attempt.');
+    }
+    return response.json();
+  },
+
+  /**
+   * Submit and grade an assessment attempt
+   */
+  async submitAssessmentAttempt(assessmentId: string, attemptId: string, answers: any[]): Promise<any> {
+    const email = authService.getSession().user?.email || '';
+    const response = await fetch(`${BACKEND_URL}/assessments/${assessmentId}/submit`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'X-User-Email': email
+      },
+      body: JSON.stringify({ attemptId, answers })
+    });
+    if (!response.ok) {
+      const errBody = await response.json().catch(() => ({}));
+      throw new Error(errBody.error || 'Failed to grade and submit assessment.');
+    }
+    return response.json();
+  },
+
+  /**
+   * Submit link/URL evidence for a project (Module 10)
+   */
+  async submitProjectEvidence(roadmapId: string, projectId: string, title: string, description: string, url: string): Promise<any> {
+    const email = authService.getSession().user?.email || '';
+    const response = await fetch(`${BACKEND_URL}/roadmap/${roadmapId}/evidence`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'X-User-Email': email
+      },
+      body: JSON.stringify({
+        projectId,
+        type: 'github_repo',
+        title,
+        description,
+        url
+      })
+    });
+    if (!response.ok) {
+      const errBody = await response.json().catch(() => ({}));
+      throw new Error(errBody.error || 'Failed to submit evidence.');
+    }
+    return response.json();
+  },
+
+  /**
+   * Update status of a learning mission (REST Mutation)
+   */
+  async updateMissionStatus(roadmapId: string, missionId: string, status: string): Promise<any> {
+    const email = authService.getSession().user?.email || '';
+    const response = await fetch(`${BACKEND_URL}/roadmap/${roadmapId}/missions/${missionId}`, {
+      method: 'PATCH',
+      headers: {
+        'Content-Type': 'application/json',
+        'X-User-Email': email
+      },
+      body: JSON.stringify({ status })
+    });
+    if (!response.ok) {
+      const errBody = await response.json().catch(() => ({}));
+      throw new Error(errBody.error || 'Failed to update mission status.');
+    }
+    return response.json();
+  },
+
+  /**
+   * Recalculate adaptive roadmap layout (Module 13)
+   */
+  async recalculateRoadmap(roadmapId: string, params?: any): Promise<any> {
+    const email = authService.getSession().user?.email || '';
+    const response = await fetch(`${BACKEND_URL}/roadmap/${roadmapId}/recalculate`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'X-User-Email': email
+      },
+      body: JSON.stringify(params || {})
+    });
+    if (!response.ok) {
+      const errBody = await response.json().catch(() => ({}));
+      throw new Error(errBody.error || 'Failed to recalculate roadmap.');
+    }
+    return response.json();
+  },
+
+  /**
+   * Fetch cached interview prep details (Module 16 - ZERO AI call on load)
+   */
+  async getInterviewPrep(roadmapId: string): Promise<any> {
+    const email = authService.getSession().user?.email || '';
+    const response = await fetch(`${BACKEND_URL}/roadmap/${roadmapId}/interview-prep`, {
+      method: 'GET',
+      headers: {
+        'X-User-Email': email
+      }
+    });
+    if (!response.ok) {
+      const errBody = await response.json().catch(() => ({}));
+      throw new Error(errBody.error || 'Failed to retrieve interview prep.');
+    }
+    return response.json();
+  },
+
+  /**
+   * Explicitly generate/refresh interview prep details (Module 16 - AI allowed on explicit action)
+   */
+  async generateInterviewPrep(roadmapId: string): Promise<any> {
+    const email = authService.getSession().user?.email || '';
+    const response = await fetch(`${BACKEND_URL}/roadmap/${roadmapId}/interview-prep/generate`, {
+      method: 'POST',
+      headers: {
+        'X-User-Email': email
+      }
+    });
+    if (!response.ok) {
+      const errBody = await response.json().catch(() => ({}));
+      throw new Error(errBody.error || 'Failed to generate interview prep.');
+    }
+    return response.json();
+  },
+
+  /**
+   * Start an adaptive interview simulation session (Module 16)
+   */
+  async startInterviewSimulation(roadmapId: string, mode: string = 'Mixed'): Promise<any> {
+    const email = authService.getSession().user?.email || '';
+    const response = await fetch(`${BACKEND_URL}/roadmap/${roadmapId}/interview-simulation/start`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'X-User-Email': email
+      },
+      body: JSON.stringify({ mode })
+    });
+    if (!response.ok) {
+      const errBody = await response.json().catch(() => ({}));
+      throw new Error(errBody.error || 'Failed to start interview simulation.');
+    }
+    return response.json();
+  },
+
+  /**
+   * Submit an answer to a simulation question (Module 16)
+   */
+  async respondToSimulationQuestion(sessionId: string, questionId: string, userAnswer: string): Promise<any> {
+    const email = authService.getSession().user?.email || '';
+    const response = await fetch(`${BACKEND_URL}/interview-simulation/${sessionId}/respond`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'X-User-Email': email
+      },
+      body: JSON.stringify({ questionId, userAnswer })
+    });
+    if (!response.ok) {
+      const errBody = await response.json().catch(() => ({}));
+      throw new Error(errBody.error || 'Failed to submit simulation response.');
+    }
+    return response.json();
+  },
+
+  /**
+   * Complete an interview simulation session (Module 16)
+   */
+  async completeInterviewSimulation(sessionId: string): Promise<any> {
+    const email = authService.getSession().user?.email || '';
+    const response = await fetch(`${BACKEND_URL}/interview-simulation/${sessionId}/complete`, {
+      method: 'POST',
+      headers: {
+        'X-User-Email': email
+      }
+    });
+    if (!response.ok) {
+      const errBody = await response.json().catch(() => ({}));
+      throw new Error(errBody.error || 'Failed to complete simulation session.');
+    }
+    return response.json();
+  },
+
+  /**
+   * Prepare for a Saved Job (Module 16)
+   */
+  async prepareSavedJob(savedJobId: string): Promise<any> {
+    const email = authService.getSession().user?.email || '';
+    const response = await fetch(`${BACKEND_URL}/saved-jobs/${savedJobId}/prepare`, {
+      method: 'POST',
+      headers: {
+        'X-User-Email': email
+      }
+    });
+    if (!response.ok) {
+      const errBody = await response.json().catch(() => ({}));
+      throw new Error(errBody.error || 'Failed to initialize interview prep for saved job.');
+    }
+    return response.json();
+  },
+
+  // ---------------- SYSTEM 1: ROLE-BASED ROADMAPS ----------------
+  async getRoleRoadmaps(category?: string): Promise<any> {
+    const defaultRoadmaps = [
+      {
+        slug: 'frontend',
+        title: 'Frontend Developer',
+        description: 'Step-by-step guide to becoming a modern Frontend developer (HTML, CSS, JavaScript, React, etc.)',
+        category: 'Engineering',
+        icon: 'Layout',
+        nodeCount: 156
+      },
+      {
+        slug: 'backend',
+        title: 'Backend Developer',
+        description: 'Step-by-step guide to becoming a modern Backend developer (Node.js, PostgreSQL, APIs, Caching, etc.)',
+        category: 'Engineering',
+        icon: 'Server',
+        nodeCount: 225
+      },
+      {
+        slug: 'fullstack',
+        title: 'Full Stack Developer',
+        description: 'Step-by-step guide to becoming a modern Full Stack developer (Frontend + Backend + DevOps fundamentals)',
+        category: 'Engineering',
+        icon: 'Layers',
+        nodeCount: 79
+      },
+      {
+        slug: 'devops',
+        title: 'DevOps Roadmap',
+        description: 'Step by step guide for DevOps, SRE or any other Operations Role in 2026',
+        category: 'Infrastructure',
+        icon: 'Cloud',
+        nodeCount: 171
+      },
+      {
+        slug: 'android',
+        title: 'Android Developer',
+        description: 'Step by step guide to becoming an Android developer in 2026',
+        category: 'Mobile',
+        icon: 'Smartphone',
+        nodeCount: 157
+      },
+      {
+        slug: 'ai-engineer',
+        title: 'AI Engineer',
+        description: 'Step by step guide to becoming an AI Engineer in 2026',
+        category: 'AI & Data',
+        icon: 'Cpu',
+        nodeCount: 104
+      },
+      {
+        slug: 'data-analyst',
+        title: 'Data Analyst',
+        description: 'Step by step guide to becoming a Data Analyst in 2026',
+        category: 'AI & Data',
+        icon: 'BarChart',
+        nodeCount: 78
+      },
+      {
+        slug: 'devsecops',
+        title: 'DevSecOps',
+        description: 'Step by step guide to becoming a DevSecOps Expert in 2026',
+        category: 'Security',
+        icon: 'Shield',
+        nodeCount: 65
+      },
+      {
+        slug: 'data-engineer',
+        title: 'Data Engineer',
+        description: 'Step by step guide to becoming a Data Engineer in 2026',
+        category: 'AI & Data',
+        icon: 'Database',
+        nodeCount: 26
+      },
+      {
+        slug: 'postgresql-dba',
+        title: 'PostgreSQL DBA',
+        description: 'Step by step guide to becoming a modern PostgreSQL DB Administrator in 2026',
+        category: 'Infrastructure',
+        icon: 'Database',
+        nodeCount: 45
+      },
+      {
+        slug: 'machine-learning',
+        title: 'Machine Learning',
+        description: 'Step by step guide to becoming a Machine Learning Engineer in 2026',
+        category: 'AI & Data',
+        icon: 'Cpu',
+        nodeCount: 24
+      },
+      {
+        slug: 'data-scientist',
+        title: 'Data Scientist',
+        description: 'Step by step guide to becoming a Data Scientist in 2026',
+        category: 'AI & Data',
+        icon: 'BarChart',
+        nodeCount: 20
+      }
+    ];
+
+    try {
+      const query = category ? `?category=${encodeURIComponent(category)}` : '';
+      const response = await fetch(`${BACKEND_URL}/role-roadmaps${query}`);
+      if (response.ok) {
+        return await response.json();
+      }
+    } catch (e) {
+      console.warn('[API] Backend role-roadmaps unavailable, using client-side roadmaps fallback.');
+    }
+
+    return {
+      status: 'success',
+      data: category && category !== 'ALL'
+        ? defaultRoadmaps.filter(r => r.category.toUpperCase() === category.toUpperCase())
+        : defaultRoadmaps
+    };
+  },
+
+  async getRoleRoadmapBySlug(slug: string): Promise<any> {
+    try {
+      const email = authService.getSession().user?.email || '';
+      const response = await fetch(`${BACKEND_URL}/role-roadmaps/${slug}`, {
+        headers: { 'X-User-Email': email }
+      });
+      if (response.ok) return await response.json();
+    } catch (e) {
+      console.warn('[API] Backend role-roadmap details unavailable, using client-side fallback.');
+    }
+    return { status: 'success', data: { slug } };
+  },
+
+  // ---------------- SYSTEM 2: JOB PREPARATION ROADMAPS ----------------
+  async getJobPreparations(): Promise<any> {
+    const email = authService.getSession().user?.email || '';
+    const response = await fetch(`${BACKEND_URL}/job-prep`, {
+      headers: { 'X-User-Email': email }
+    });
+    if (!response.ok) throw new Error('Failed to fetch job preparations.');
+    return response.json();
+  },
+
+  async getJobPreparationById(id: string): Promise<any> {
+    const email = authService.getSession().user?.email || '';
+    const response = await fetch(`${BACKEND_URL}/job-prep/${id}`, {
+      headers: { 'X-User-Email': email }
+    });
+    if (!response.ok) throw new Error('Failed to fetch job preparation detail.');
+    return response.json();
+  },
+
+  async prepareJob(jobId: string): Promise<any> {
+    const email = authService.getSession().user?.email || '';
+    const response = await fetch(`${BACKEND_URL}/job-prep/generate`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'X-User-Email': email
+      },
+      body: JSON.stringify({ jobId })
+    });
+    if (!response.ok) throw new Error('Failed to initialize job preparation.');
+    return response.json();
+  },
+
+  async togglePreparationTask(prepId: string, taskId: string): Promise<any> {
+    const email = authService.getSession().user?.email || '';
+    const response = await fetch(`${BACKEND_URL}/job-prep/${prepId}/tasks/${taskId}/toggle`, {
+      method: 'POST',
+      headers: { 'X-User-Email': email }
+    });
+    if (!response.ok) throw new Error('Failed to toggle task progress.');
+    return response.json();
+  },
+
+  // Job Interview Prep Aliases
+  async getJobInterviewPrep(prepId: string): Promise<any> {
+    return this.getInterviewPrep(prepId);
+  },
+
+  async startJobInterviewSimulation(prepId: string, mode?: string): Promise<any> {
+    return this.startInterviewSimulation(prepId, mode);
+  },
+
+  async respondJobInterviewSimulation(sessionId: string, questionId: string, userAnswer: string): Promise<any> {
+    return this.respondToSimulationQuestion(sessionId, questionId, userAnswer);
   }
 };
