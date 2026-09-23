@@ -5,6 +5,7 @@ import { Button } from '../components/ui/button';
 import { Input } from '../components/ui/input';
 import { Label } from '../components/ui/label';
 import { authService } from '../services/auth';
+import { Logo } from '../components/brand/Logo';
 
 export default function SignIn() {
   const navigate = useNavigate();
@@ -57,8 +58,8 @@ export default function SignIn() {
     <div className="flex min-h-screen w-full bg-background">
       {/* Left Column - Desktop Brand Panel */}
       <div className="hidden w-1/2 flex-col justify-between bg-zinc-950 p-16 text-zinc-50 lg:flex border-r border-border">
-        <div className="font-display text-xl font-bold tracking-tight">
-          CareerMapper
+        <div>
+          <Logo size="lg" textClassName="text-xl text-white font-bold" />
         </div>
         
         <div className="max-w-md space-y-6">

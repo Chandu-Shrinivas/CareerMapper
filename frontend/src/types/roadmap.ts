@@ -1,11 +1,11 @@
-export type NodeType = 'main' | 'topic' | 'subtopic' | 'navigation' | 'special';
+export type NodeType = 'main' | 'topic' | 'subtopic' | 'navigation' | 'special' | 'horizontal' | 'vertical' | 'section' | 'label' | 'title' | 'linksgroup' | 'paragraph' | 'button' | 'chapter' | 'todo' | 'todo-checkbox' | (string & {});
 
 export type NodeStatus = 'default' | 'learning' | 'done' | 'skipped';
 
 export type ResourceType = 'documentation' | 'article' | 'video' | 'course' | 'guide' | 'project';
 
 export interface Resource {
-  id: string;
+  id?: string;
   title: string;
   url: string;
   type: ResourceType;
@@ -74,6 +74,8 @@ export interface RoadmapDefinition {
   title: string;
   version?: string;
   description?: string;
+  category?: string;
+  prerequisites?: string[];
 
   nodes: RoadmapNode[];
   edges?: any[];

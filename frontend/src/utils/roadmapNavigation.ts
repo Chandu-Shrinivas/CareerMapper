@@ -15,6 +15,8 @@ export const NAVIGATION_MAP: Record<string, NavigationRouteConfig> = {
   'k4hMVVBMatedUq5EKiMo4': { route: '/role-roadmaps/prompt-engineering' }, // Prompt Engineering
   'vpimgXt10UQFBDVHR21IU': { route: '/role-roadmaps/ai-agents' }, // AI Agents
   'MfErpYwkJ0wiWJZEUVfrb': { route: '/role-roadmaps/frontend' }, // Visit Beginner Friendly Version
+  'OIcmPSbdsuWapb6HZ4BEi': { route: '/role-roadmaps/software-architect' }, // Software Architect button
+  'CH_K6mmFX_GdSzi2n1ID7': { route: '/role-roadmaps/system-design' }, // System Design button
   '2zqZkyVgigifcRS1H7F_b': { route: 'https://roadmap.sh', isExternal: true }, // roadmap.sh button
   'w4AronIkLVW4DiB8BB_cE': { route: 'https://roadmap.sh/frontend/projects?difficulty=beginner', isExternal: true },
   'cSn0Mp45AKmj-bn-b-j_I': { route: 'https://roadmap.sh/frontend/projects?difficulty=intermediate', isExternal: true },
@@ -38,10 +40,26 @@ export const NAVIGATION_MAP: Record<string, NavigationRouteConfig> = {
 
   // PostgreSQL DBA Roadmap buttons & links
   'gC8lsIdYLRzo3HzwVqtm1': { route: '/role-roadmaps/mongodb' },
-  'uSLzfLPXxS5-P7ozscvjZ': { route: '/role-roadmaps/backend' },
+  'uSLzfLPXxS5-P7ozscvjZ': { route: '/role-roadmaps/devops' },
   '7RR4BlugrhJQpI0MeMj8V': { route: '/role-roadmaps/devops' },
   'dA8pyw5Eq2PCZrMKfg5qH': { route: '/role-roadmaps/mongodb' },
   'Wf1doH-r2O2KQg10KlDTg': { route: '/role-roadmaps/backend' },
+
+  // Forward Deployed Engineer buttons & links
+  'snDv-9nuGy5mkeOl-_S42': { route: '/role-roadmaps/linux' },
+  'cb67_B_KzR89lpYM292Q1': { route: '/role-roadmaps/frontend' },
+  'j8UBiuflu5tWiOWDJnA-U': { route: '/role-roadmaps/backend' },
+  'cm5mtbXDu0_LRGHJC49cd': { route: '/role-roadmaps/datastructures-and-algorithms' },
+  'lN5Z_UILjs_ahEwsBcjXZ': { route: '/role-roadmaps/system-design' },
+  '90TU702898q1eQ9X-tVfd': { route: '/role-roadmaps/ai-engineer' },
+  'wGWfChyM1wjKO6e--NhC3': { route: '/role-roadmaps/devops' },
+  'sQsxo9QyLKZyhMnFUcxhS': { route: '/role-roadmaps/frontend' },
+  'DezWXw5LWeP1S5Sosj90S': { route: '/role-roadmaps/backend' },
+  'DsvdvpHWD0FgTjdkSJ9Uu': { route: '/role-roadmaps/ai-engineer' },
+  'iEl2hP_MdzYqgWJV_gVVr': { route: '/role-roadmaps/frontend' },
+  'lsjRtZzxtjHQAeSZ315FT': { route: '/role-roadmaps/backend' },
+  'cND6oioo5hp5JBK_9s1_K': { route: '/role-roadmaps/devops' },
+  '1ImiuCrnV_OgsFT-lgzps': { route: '/role-roadmaps/linux' },
 };
 
 export function getNavigationConfig(nodeId?: string, linkUrl?: string, _title?: string): NavigationRouteConfig | undefined {

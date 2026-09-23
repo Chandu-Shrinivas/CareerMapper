@@ -8,7 +8,7 @@ import { config } from '../config/env.js';
  * @param {string} text Normalized skill profile text.
  * @returns {Promise<object>} Model classification result or fallback response.
  */
-export const predict = async (text) => {
+export const predict = async (text, domain = null) => {
   if (!text || typeof text !== 'string' || !text.trim()) {
     return {
       success: false,
@@ -19,7 +19,8 @@ export const predict = async (text) => {
   
   try {
     const response = await axios.post(`${config.mlServiceUrl}/predict`, {
-      text: text
+      text: text,
+      domain: domain
     }, {
       timeout: 1000 // 1000ms timeout protection per requirements
     });
@@ -36,3 +37,4 @@ export const predict = async (text) => {
     };
   }
 };
+

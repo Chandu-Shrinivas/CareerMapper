@@ -1,0 +1,29 @@
+import React from 'react';
+import { GenericSvgRoadmap } from './GenericSvgRoadmap';
+import { ASPNET_CORE_SVG_DATASET, ASPNET_CORE_SVG_VIEWBOX } from '../../data/aspnetCoreSvgData';
+
+interface SvgRoadmapWrapperProps {
+  onNodeStatusChange?: () => void;
+  onSelectNode?: (nodeId: string) => void;
+  selectedNodeId?: string | null;
+}
+
+export const AspnetCoreSvgRoadmap: React.FC<SvgRoadmapWrapperProps> = ({
+  onNodeStatusChange,
+  onSelectNode,
+  selectedNodeId
+}) => {
+  return (
+    <GenericSvgRoadmap
+      roadmapId="aspnet-core"
+      title="ASP.NET Core Developer"
+      viewBox={ASPNET_CORE_SVG_VIEWBOX}
+      dataset={ASPNET_CORE_SVG_DATASET}
+      onNodeStatusChange={onNodeStatusChange}
+      onSelectNode={onSelectNode}
+      selectedNodeId={selectedNodeId}
+    />
+  );
+};
+
+export default AspnetCoreSvgRoadmap;

@@ -417,7 +417,7 @@
     }
   },
   "Accountant": {
-    "domain": "BCom",
+    "domain": "B.Com",
     "skills": {
       "tally": 4,
       "accounting": 4,
@@ -431,7 +431,7 @@
     }
   },
   "Financial Analyst": {
-    "domain": "BCom",
+    "domain": "B.Com",
     "skills": {
       "finance": 4,
       "financial modeling": 4,
@@ -445,7 +445,7 @@
     }
   },
   "Tax Consultant": {
-    "domain": "BCom",
+    "domain": "B.Com",
     "skills": {
       "income tax": 4,
       "gst": 4,
@@ -459,7 +459,7 @@
     }
   },
   "Auditor": {
-    "domain": "BCom",
+    "domain": "B.Com",
     "skills": {
       "auditing": 4,
       "financial statements": 4,
@@ -473,7 +473,7 @@
     }
   },
   "Finance Executive": {
-    "domain": "BCom",
+    "domain": "B.Com",
     "skills": {
       "financial reporting": 4,
       "accounts payable": 4,
@@ -488,7 +488,7 @@
     }
   },
   "Bookkeeper": {
-    "domain": "BCom",
+    "domain": "B.Com",
     "skills": {
       "bookkeeping": 4,
       "tally prime": 4,
@@ -500,6 +500,120 @@
       "gst": 1,
       "excel": 1,
       "zoho books": 1
+    }
+  },
+  "Structural Engineer": {
+    "domain": "Civil",
+    "skills": {
+      "staad pro": 4,
+      "structural analysis": 4,
+      "etabs": 4,
+      "autocad": 3,
+      "revit": 3,
+      "concrete technology": 3,
+      "rcc": 3,
+      "steel design": 3
+    }
+  },
+  "Civil Site Engineer": {
+    "domain": "Civil",
+    "skills": {
+      "construction management": 4,
+      "site supervision": 4,
+      "building codes": 4,
+      "concrete technology": 3,
+      "surveying": 3,
+      "estimating and costing": 2,
+      "autocad": 2
+    }
+  },
+  "Construction Project Engineer": {
+    "domain": "Civil",
+    "skills": {
+      "construction management": 4,
+      "primavera p6": 4,
+      "site supervision": 4,
+      "building codes": 3,
+      "estimating and costing": 3,
+      "autocad": 2,
+      "boq": 2
+    }
+  },
+  "Quantity Surveyor": {
+    "domain": "Civil",
+    "skills": {
+      "estimating and costing": 4,
+      "boq": 4,
+      "quantity takeoff": 4,
+      "rate analysis": 3,
+      "bar bending schedule": 3,
+      "construction management": 3,
+      "autocad": 2
+    }
+  },
+  "Geotechnical Engineer": {
+    "domain": "Civil",
+    "skills": {
+      "geotechnical engineering": 4,
+      "soil mechanics": 4,
+      "foundation engineering": 4,
+      "structural analysis": 3,
+      "surveying": 3,
+      "total station": 2
+    }
+  },
+  "Transportation Engineer": {
+    "domain": "Civil",
+    "skills": {
+      "highway engineering": 4,
+      "pavement engineering": 4,
+      "traffic engineering": 4,
+      "gis": 3,
+      "surveying": 3,
+      "autocad": 2
+    }
+  },
+  "Software Architect": {
+    "domain": "IT",
+    "skills": {
+      "system design": 4,
+      "microservices": 4,
+      "architecture": 4,
+      "cloud computing": 3,
+      "security": 3,
+      "design patterns": 3,
+      "api": 3
+    }
+  },
+  "Electrical Design Engineer": {
+    "domain": "Electrical",
+    "skills": {
+      "autocad electrical": 4,
+      "transformer design": 4,
+      "switchgear": 4,
+      "power systems": 3,
+      "motor control": 3,
+      "single line diagrams": 3
+    }
+  },
+  "Power Systems Engineer": {
+    "domain": "Electrical",
+    "skills": {
+      "power systems": 4,
+      "etap": 4,
+      "grid integration": 4,
+      "simulink": 3,
+      "high voltage": 3
+    }
+  },
+  "PLC Automation Engineer": {
+    "domain": "Electrical",
+    "skills": {
+      "plc": 4,
+      "scada": 4,
+      "motor control": 4,
+      "electrical machines": 3,
+      "control systems": 3
     }
   }
 }

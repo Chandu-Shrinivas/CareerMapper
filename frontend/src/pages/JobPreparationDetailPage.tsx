@@ -1,17 +1,19 @@
 import { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { 
-  ArrowLeft, Award, CheckSquare, Square, 
-  MapPin, Briefcase, ArrowRight, AlertTriangle
+  ArrowLeft, Award, CheckCircle2, RefreshCw, 
+  MapPin, Briefcase, ArrowRight, AlertTriangle, Layers, BookOpen, Target
 } from 'lucide-react';
 import { toast } from 'sonner';
 import { Card } from '../components/ui/card';
 import { Badge } from '../components/ui/badge';
-import { Progress } from '../components/ui/progress';
 import { Button } from '../components/ui/button';
 import { Skeleton } from '../components/ui/skeleton';
+import { Tabs, TabsList, TabsTrigger, TabsContent } from '../components/ui/tabs';
 import { CompanyLogo } from '../components/CompanyLogo';
 import { api } from '../services/api';
+import { JobPreparationRoadmapView, type JobNodeStatus } from '../components/roadmap/JobPreparationRoadmapView';
+import { ReadinessBreakdownModal } from '../components/roadmap/ReadinessBreakdownModal';
 
 export default function JobPreparationDetailPage() {
   const { id } = useParams<{ id: string }>();
@@ -20,7 +22,9 @@ export default function JobPreparationDetailPage() {
   const [prep, setPrep] = useState<any>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
-  const [, setTogglingTaskId] = useState<string | null>(null);
+  const [showReadinessModal, setShowReadinessModal] = useState(false);
+  const [reanalyzing, setReanalyzing] = useState(false);
+  const [recalculating, setRecalculating] = useState(false);
 
   const fetchPrepDetail = async () => {
     if (!id) return;
@@ -45,27 +49,48 @@ export default function JobPreparationDetailPage() {
     fetchPrepDetail();
   }, [id]);
 
-  const handleToggleTask = async (taskId: string) => {
-    if (!id) return;
+  const handleNodeStatusChange = async (nodeId: string, newStatus: JobNodeStatus) => {
+    if (!id || !prep) return;
     try {
-      setTogglingTaskId(taskId);
-      const res = await api.togglePreparationTask(id, taskId);
-      toast.success(res.newStatus === 'COMPLETED' ? 'Task marked complete!' : 'Task marked pending.');
-
-      if (prep) {
-        const updatedTasks = res.tasks || prep.tasks.map((t: any) => t.id === taskId ? { ...t, status: res.newStatus } : t);
-        setPrep({
-          ...prep,
-          completedTasks: res.completedTasks,
-          totalTasks: res.totalTasks,
-          progressPercentage: res.progressPercentage,
-          tasks: updatedTasks
-        });
+      const res = await api.togglePreparationNode(id, nodeId, newStatus);
+      if (res.status === 'success' && res.data) {
+        setPrep(res.data);
+        toast.success(`Node status updated to ${newStatus}`);
       }
     } catch (err: any) {
-      toast.error(err.message || 'Failed to update task.');
+      toast.error(err.message || 'Failed to update node status.');
+    }
+  };
+
+  const handleRecalculateReadiness = async () => {
+    if (!id) return;
+    try {
+      setRecalculating(true);
+      const res = await api.recalculateReadiness(id);
+      if (res.status === 'success' && res.data) {
+        setPrep({ ...prep, readiness: res.data });
+        toast.success('Readiness score recalculated deterministically!');
+      }
+    } catch (err: any) {
+      toast.error(err.message || 'Recalculation failed.');
     } finally {
-      setTogglingTaskId(null);
+      setRecalculating(false);
+    }
+  };
+
+  const handleReanalyzeJob = async () => {
+    if (!id) return;
+    try {
+      setReanalyzing(true);
+      const res = await api.reanalyzeJob(id);
+      if (res.status === 'success') {
+        toast.success('Re-analysis complete! Check updated preparation requirements.');
+        fetchPrepDetail();
+      }
+    } catch (err: any) {
+      toast.error(err.message || 'Re-analysis failed.');
+    } finally {
+      setReanalyzing(false);
     }
   };
 
@@ -94,13 +119,15 @@ export default function JobPreparationDetailPage() {
     );
   }
 
-  const tasksByPhase: Record<string, any[]> = {};
-  (prep.phases || []).forEach((phase: any) => {
-    tasksByPhase[phase.phaseId] = (prep.tasks || []).filter((t: any) => t.phaseId === phase.phaseId);
-  });
+  const overallReadiness = prep.readiness?.overallReadiness ?? 50;
+  const criticalGapsCount = (prep.readiness?.missingRequirements || []).filter((r: any) => r.importance === 'critical').length;
+  const requiredGapsCount = (prep.readiness?.missingRequirements || []).filter((r: any) => r.importance === 'required').length;
+
+  const matchedSkills = prep.readiness?.matchedRequirements || [];
+  const learnedNodes = (prep.nodes || []).filter((n: any) => n.status === 'done');
 
   return (
-    <div className="p-4 sm:p-6 md:p-8 space-y-8 max-w-6xl mx-auto animate-fadeIn">
+    <div className="p-4 sm:p-6 md:p-8 space-y-8 max-w-7xl mx-auto animate-fadeIn">
       {/* Top Back Navigation */}
       <button
         onClick={() => navigate('/my-roadmaps')}
@@ -109,7 +136,7 @@ export default function JobPreparationDetailPage() {
         <ArrowLeft className="size-4" /> Back to My Roadmaps
       </button>
 
-      {/* Header Card */}
+      {/* Job Details Header Card */}
       <Card className="bg-zinc-950/90 border border-zinc-800 rounded-2xl p-6 space-y-6 shadow-xl">
         <div className="flex flex-wrap items-start justify-between gap-4">
           <div className="flex items-start gap-4 min-w-0">
@@ -120,7 +147,7 @@ export default function JobPreparationDetailPage() {
             />
             <div className="space-y-1 min-w-0">
               <Badge className="bg-emerald-500/15 border-emerald-500/40 text-emerald-400 font-mono text-[10px] uppercase">
-                JOB-SPECIFIC PREPARATION ROADMAP
+                MY JOB PREPARATION ROADMAP
               </Badge>
               <h1 className="text-2xl sm:text-3xl font-black text-white tracking-tight">
                 {prep.jobTitle}
@@ -137,18 +164,22 @@ export default function JobPreparationDetailPage() {
             </div>
           </div>
 
-          <div className="flex items-center gap-3">
-            <div className="bg-zinc-900 border border-zinc-800 px-4 py-3 rounded-2xl text-right min-w-[140px]">
-              <span className="text-[10px] font-bold text-zinc-500 uppercase tracking-widest block">Readiness Score</span>
+          <div className="flex items-center gap-3 flex-wrap justify-end">
+            {/* Readiness Button opening Modal */}
+            <button
+              onClick={() => setShowReadinessModal(true)}
+              className="bg-zinc-900 hover:bg-zinc-850 border border-zinc-800 px-4 py-2.5 rounded-2xl text-right cursor-pointer transition-colors group"
+            >
+              <span className="text-[9px] font-bold text-zinc-500 uppercase tracking-widest block group-hover:text-emerald-400">Why {overallReadiness}%?</span>
               <span className="font-mono text-xl font-black text-emerald-400 flex items-center gap-1.5 justify-end">
                 <Award className="size-5 text-emerald-400" />
-                {prep.readinessScore}%
+                {overallReadiness}% Ready
               </span>
-            </div>
+            </button>
 
             <Button
               onClick={() => navigate(`/interview-prep?prepId=${prep._id}`)}
-              className="bg-white hover:bg-zinc-200 text-zinc-950 font-bold text-xs h-12 px-5 rounded-2xl shadow cursor-pointer flex items-center gap-2"
+              className="bg-white hover:bg-zinc-200 text-zinc-950 font-bold text-xs h-11 px-4 rounded-xl shadow cursor-pointer flex items-center gap-2"
             >
               <span>Interview Prep</span>
               <ArrowRight className="size-4" />
@@ -156,113 +187,138 @@ export default function JobPreparationDetailPage() {
           </div>
         </div>
 
-        {/* Skill Gap Analysis Summary */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 p-4 bg-zinc-900/40 border border-zinc-900 rounded-xl">
-          <div className="space-y-2">
-            <span className="text-[10px] font-bold text-emerald-400 uppercase tracking-wider block">
-              ✓ Matched Skills ({prep.matchedSkills?.length || 0})
-            </span>
-            <div className="flex flex-wrap gap-1.5">
-              {(prep.matchedSkills || []).map((skill: string) => (
-                <Badge key={skill} variant="outline" className="border-emerald-500/30 text-emerald-300 bg-emerald-500/5 text-xs py-0.5 px-2">
-                  ✓ {skill}
-                </Badge>
-              ))}
-            </div>
+        {/* Gap Summary Row */}
+        <div className="flex items-center justify-between flex-wrap gap-4 pt-4 border-t border-zinc-900 text-xs">
+          <div className="flex items-center gap-4 text-zinc-400 font-mono text-[11px] flex-wrap">
+            <span className="text-rose-400 font-bold">Critical Gaps: {criticalGapsCount}</span>
+            <span>·</span>
+            <span className="text-amber-400 font-bold">Required Gaps: {requiredGapsCount}</span>
+            <span>·</span>
+            <span className="text-emerald-400 font-bold">Matched: {matchedSkills.length}</span>
           </div>
 
-          <div className="space-y-2">
-            <span className="text-[10px] font-bold text-amber-400 uppercase tracking-wider block">
-              🔴 Skills to Strengthen / Gaps ({prep.missingSkills?.length || 0})
-            </span>
-            <div className="flex flex-wrap gap-1.5">
-              {(prep.missingSkills || []).map((skill: string) => (
-                <Badge key={skill} variant="outline" className="border-amber-500/30 text-amber-300 bg-amber-500/5 text-xs py-0.5 px-2">
-                  🔴 {skill}
-                </Badge>
-              ))}
-            </div>
+          <div className="flex items-center gap-2">
+            <Button
+              variant="outline"
+              size="sm"
+              onClick={handleRecalculateReadiness}
+              disabled={recalculating}
+              className="border-zinc-800 text-zinc-300 text-[11px] h-8 font-mono"
+            >
+              <RefreshCw className={`size-3 mr-1 ${recalculating ? 'animate-spin' : ''}`} />
+              Recalculate Readiness
+            </Button>
+            <Button
+              variant="outline"
+              size="sm"
+              onClick={handleReanalyzeJob}
+              disabled={reanalyzing}
+              className="border-zinc-800 text-zinc-300 text-[11px] h-8 font-mono"
+            >
+              <RefreshCw className={`size-3 mr-1 ${reanalyzing ? 'animate-spin' : ''}`} />
+              Re-analyze Job
+            </Button>
           </div>
-        </div>
-
-        {/* Overall Completion Progress */}
-        <div className="space-y-2 pt-2 border-t border-zinc-900">
-          <div className="flex justify-between items-center text-xs font-mono">
-            <span className="text-zinc-400 font-bold uppercase tracking-wider">Preparation Completion</span>
-            <span className="text-emerald-400 font-black">{prep.completedTasks} / {prep.totalTasks} Tasks ({prep.progressPercentage}%)</span>
-          </div>
-          <Progress value={prep.progressPercentage} className="h-2.5 bg-zinc-900" />
         </div>
       </Card>
 
-      {/* Phased Action Roadmap Tasks */}
-      <div className="space-y-6">
-        <h2 className="text-lg font-bold text-white tracking-tight flex items-center gap-2">
-          <Briefcase className="size-5 text-emerald-400" />
-          Phased Preparation Action Roadmap
-        </h2>
+      {/* Main Feature Tabs */}
+      <Tabs defaultValue="roadmap" className="space-y-6">
+        <TabsList className="bg-zinc-950 border border-zinc-850 p-1 rounded-xl">
+          <TabsTrigger value="roadmap" className="text-xs font-bold font-mono">
+            🗺️ Preparation Roadmap
+          </TabsTrigger>
+          <TabsTrigger value="skills" className="text-xs font-bold font-mono">
+            📚 Skills Learned ({learnedNodes.length})
+          </TabsTrigger>
+          <TabsTrigger value="interview" className="text-xs font-bold font-mono">
+            🎯 Interview Mapping ({prep.interviewQuestions?.length || 0})
+          </TabsTrigger>
+        </TabsList>
 
-        {(prep.phases || []).map((phase: any) => {
-          const phaseTasks = tasksByPhase[phase.phaseId] || [];
-          if (phaseTasks.length === 0) return null;
+        {/* Tab 1: Roadmap View */}
+        <TabsContent value="roadmap" className="space-y-6">
+          <JobPreparationRoadmapView
+            nodes={prep.nodes || []}
+            edges={prep.edges || []}
+            nodeStatuses={prep.nodeStatuses || {}}
+            onNodeStatusChange={handleNodeStatusChange}
+          />
+        </TabsContent>
 
-          return (
-            <Card key={phase.phaseId} className="p-6 bg-zinc-950/60 border border-zinc-900 rounded-2xl space-y-4 shadow-lg">
-              <div className="flex items-center justify-between border-b border-zinc-900 pb-3">
-                <div>
-                  <h3 className="text-base font-bold text-white tracking-tight">{phase.title}</h3>
-                  <p className="text-xs text-zinc-400">{phase.description}</p>
+        {/* Tab 2: Skills Learned */}
+        <TabsContent value="skills" className="space-y-6">
+          <Card className="p-6 bg-zinc-950/70 border border-zinc-900 rounded-2xl space-y-6">
+            <div className="space-y-4">
+              <h3 className="text-sm font-bold text-white uppercase tracking-wider flex items-center gap-2">
+                <CheckCircle2 className="size-4 text-emerald-400" />
+                Already Matched Profile Skills ({matchedSkills.length})
+              </h3>
+              <div className="flex flex-wrap gap-2">
+                {matchedSkills.map((req: any) => (
+                  <Badge key={req.id || req.name} variant="outline" className="border-emerald-500/30 text-emerald-300 bg-emerald-500/5 text-xs py-1 px-3">
+                    ✓ {req.name || req}
+                  </Badge>
+                ))}
+              </div>
+            </div>
+
+            <div className="space-y-4 pt-4 border-t border-zinc-900">
+              <h3 className="text-sm font-bold text-white uppercase tracking-wider flex items-center gap-2">
+                <BookOpen className="size-4 text-amber-400" />
+                Skills Learned During Preparation ({learnedNodes.length})
+              </h3>
+              <div className="flex flex-wrap gap-2">
+                {learnedNodes.length > 0 ? (
+                  learnedNodes.map((n: any) => (
+                    <Badge key={n.id} variant="outline" className="border-amber-500/30 text-amber-300 bg-amber-500/5 text-xs py-1 px-3">
+                      ✓ {n.title}
+                    </Badge>
+                  ))
+                ) : (
+                  <p className="text-xs text-zinc-500 italic">No nodes completed during job preparation yet.</p>
+                )}
+              </div>
+            </div>
+          </Card>
+        </TabsContent>
+
+        {/* Tab 3: Interview Mapping */}
+        <TabsContent value="interview" className="space-y-6">
+          <Card className="p-6 bg-zinc-950/70 border border-zinc-900 rounded-2xl space-y-4">
+            <h3 className="text-base font-bold text-white tracking-tight flex items-center gap-2">
+              <Target className="size-4 text-emerald-400" />
+              Targeted Interview Questions for {prep.jobTitle}
+            </h3>
+            <div className="space-y-3">
+              {(prep.interviewQuestions || []).map((q: any) => (
+                <div key={q.questionId} className="p-4 bg-zinc-900/40 border border-zinc-800 rounded-xl space-y-2">
+                  <div className="flex items-center justify-between gap-2">
+                    <span className="text-xs font-bold text-white">{q.question}</span>
+                    <Badge variant="outline" className="border-zinc-800 text-zinc-400 font-mono text-[9px]">
+                      {q.difficulty}
+                    </Badge>
+                  </div>
+                  {q.answerGuide && (
+                    <p className="text-xs text-zinc-400 leading-relaxed bg-zinc-950 p-2.5 rounded-lg border border-zinc-900">
+                      💡 <strong>Answer Guide:</strong> {q.answerGuide}
+                    </p>
+                  )}
                 </div>
-                <Badge variant="outline" className="border-zinc-800 text-zinc-400 font-mono text-[10px]">
-                  Est. {phase.estimatedDays} Days
-                </Badge>
-              </div>
+              ))}
+            </div>
+          </Card>
+        </TabsContent>
+      </Tabs>
 
-              <div className="space-y-3">
-                {phaseTasks.map((task: any) => {
-                  const isDone = task.status === 'COMPLETED';
-
-                  return (
-                    <div
-                      key={task.id}
-                      onClick={() => handleToggleTask(task.id)}
-                      className={`p-4 rounded-xl border transition-all cursor-pointer flex items-start gap-3.5 ${
-                        isDone 
-                          ? 'bg-emerald-950/20 border-emerald-500/30 text-zinc-300' 
-                          : 'bg-zinc-900/40 border-zinc-850 hover:border-zinc-750 text-white'
-                      }`}
-                    >
-                      <button className="mt-0.5 text-emerald-400 shrink-0">
-                        {isDone ? <CheckSquare className="size-5 text-emerald-400" /> : <Square className="size-5 text-zinc-600" />}
-                      </button>
-
-                      <div className="space-y-1 flex-1 min-w-0">
-                        <div className="flex items-center gap-2 flex-wrap">
-                          <span className={`text-xs font-bold ${isDone ? 'line-through text-zinc-500' : 'text-white'}`}>
-                            {task.title}
-                          </span>
-                          <Badge variant="outline" className={`text-[9px] py-0 px-1.5 font-mono ${
-                            task.priority === 'CRITICAL' ? 'border-rose-500/30 text-rose-400 bg-rose-500/5' :
-                            task.priority === 'HIGH' ? 'border-amber-500/30 text-amber-400 bg-amber-500/5' :
-                            'border-zinc-800 text-zinc-400'
-                          }`}>
-                            {task.priority}
-                          </Badge>
-                        </div>
-                        <p className="text-xs text-zinc-400 leading-relaxed">{task.description}</p>
-                      </div>
-
-                      <span className="text-[10px] font-mono text-zinc-500 shrink-0 self-center">
-                        {task.estimatedTime}
-                      </span>
-                    </div>
-                  );
-                })}
-              </div>
-            </Card>
-          );
-        })}
-      </div>
+      {/* Readiness Score Explainability Modal */}
+      <ReadinessBreakdownModal
+        open={showReadinessModal}
+        onOpenChange={setShowReadinessModal}
+        readiness={prep.readiness}
+        jobTitle={prep.jobTitle}
+        company={prep.company}
+      />
     </div>
   );
 }

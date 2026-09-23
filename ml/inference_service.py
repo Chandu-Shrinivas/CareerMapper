@@ -1,6 +1,7 @@
 import os
 import sys
 import uvicorn
+from typing import Optional
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel, Field
 
@@ -34,18 +35,22 @@ except Exception as e:
     print(f"Warning: could not pre-load models at startup: {e}")
 
 class PredictionRequest(BaseModel):
-    text: str = Field(..., description="Raw text describing technical profile/skills", example="react html css javascript web developer")
+    text: str = Field(..., description="Raw text describing profile/skills", example="react html css javascript web developer")
+    domain: Optional[str] = Field(None, description="Domain identifier (IT, ECE, Mechanical, MBA, B.Com, Civil)", example="IT")
 
 @app.get("/health")
 async def health_check():
-    """Service health status check endpoint."""
+    """Service health status check endpoint for all 6 domain models."""
     try:
-        # Re-verify model paths and loading
-        guard._load_models()
+        loaded_domains = {}
+        for dom in ['IT', 'ECE', 'Mechanical', 'MBA', 'B.Com', 'Civil']:
+            mod = guard._load_domain_model(dom)
+            loaded_domains[dom] = len(mod['class_names'])
+            
         return {
             "status": "healthy",
-            "model": "LinearSVC",
-            "classes_loaded": len(guard.clf.classes_)
+            "model_type": "LinearSVC",
+            "supported_domains": loaded_domains
         }
     except Exception as e:
         return {
@@ -56,13 +61,12 @@ async def health_check():
 @app.post("/predict")
 async def predict_role(request: PredictionRequest):
     """
-    Predicts top 3 matched IT roles safely based on technical skill input.
+    Predicts top matched roles safely based on profile text and domain routing.
     """
-    res = guard.predict_safe(request.text)
-    
-    # Return structured output directly (including fallback status, error messages, and Top-K predictions)
+    res = guard.predict_safe(request.text, domain=request.domain)
     return res
 
 if __name__ == "__main__":
-    # Standard independent port run
     uvicorn.run("inference_service:app", host="127.0.0.1", port=8000, reload=False)
+
+

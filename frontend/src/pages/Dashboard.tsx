@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from 'react';
 import { useNavigate, useSearchParams } from 'react-router-dom';
 import { 
   ArrowLeft, AlertCircle, Building2, Search, Check, Loader2, Circle, RotateCw, Briefcase,
-  Compass, Layers, TrendingUp
+  Compass, Layers, TrendingUp, MapPin
 } from 'lucide-react';
 import { gsap } from 'gsap';
 import { 
@@ -21,6 +21,7 @@ import { authService } from '../services/auth';
 import { api } from '../services/api';
 import { SkillIcon } from '../components/SkillIcon';
 import type { Skill, CareerMatch, SkillMatch, SkillGapEntry } from '../types';
+import { getCanonicalRoleName, getRoleRoadmap, hasRoleRoadmap } from '../utils/roleResolver';
 
 const DRAFT_KEY = 'cm_profile_draft';
 
@@ -107,6 +108,28 @@ export default function Dashboard() {
     } catch {
       navigate('/onboarding');
     }
+
+    const handleProfileUpdate = () => {
+      const draftRaw = localStorage.getItem(DRAFT_KEY) || localStorage.getItem('careerProfile');
+      if (draftRaw) {
+        try {
+          const updatedDraft = JSON.parse(draftRaw);
+          setProfile(updatedDraft);
+        } catch (e) {}
+      }
+    };
+
+    window.addEventListener('cm_skills_updated', handleProfileUpdate);
+    window.addEventListener('careerProfileUpdated', handleProfileUpdate);
+    window.addEventListener('cm_roadmap_progress_changed', handleProfileUpdate);
+    window.addEventListener('storage', handleProfileUpdate);
+
+    return () => {
+      window.removeEventListener('cm_skills_updated', handleProfileUpdate);
+      window.removeEventListener('careerProfileUpdated', handleProfileUpdate);
+      window.removeEventListener('cm_roadmap_progress_changed', handleProfileUpdate);
+      window.removeEventListener('storage', handleProfileUpdate);
+    };
   }, [navigate]);
 
   // Dynamic recommendations fetch
@@ -482,79 +505,92 @@ export default function Dashboard() {
               Back to Career Analysis
             </button>
             
-            <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 p-6 bg-zinc-900/10 border border-zinc-900 rounded-lg">
-              <div className="space-y-1.5">
-                <div className="flex items-center gap-3 flex-wrap">
-                  <h1 className="text-xl font-bold text-white tracking-tight capitalize">{activeRoleMatch.roleTitle}</h1>
-                  
-                  <button
-                    disabled={marketLoading}
-                    onClick={handleManualRefresh}
-                    className="inline-flex items-center gap-1.5 text-[11px] font-medium px-2.5 py-1 bg-zinc-900 hover:bg-zinc-800 text-zinc-300 hover:text-white border border-zinc-800 rounded-md transition-colors disabled:opacity-50 cursor-pointer"
-                    title="Force fresh market research using live web grounding"
-                  >
-                    <RotateCw className={`size-3 text-zinc-400 ${marketLoading ? 'animate-spin' : ''}`} />
-                    <span>{marketLoading && isForcedRefresh ? 'Refreshing...' : 'Refresh market data'}</span>
-                  </button>
+            <div className="p-6 bg-zinc-900/10 border border-zinc-900 rounded-lg space-y-4">
+              {/* Top Row: Role Title, Metadata & Metrics */}
+              <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-4 pb-4 border-b border-zinc-900/60">
+                <div className="space-y-1.5 min-w-0">
+                  <div className="flex items-center gap-3 flex-wrap">
+                    <h1 className="text-xl sm:text-2xl font-bold text-white tracking-tight capitalize">{getCanonicalRoleName(activeRoleMatch.roleTitle)}</h1>
+                    
+                    <button
+                      disabled={marketLoading}
+                      onClick={handleManualRefresh}
+                      className="inline-flex items-center gap-1.5 text-[11px] font-medium px-2.5 py-1 bg-zinc-900 hover:bg-zinc-800 text-zinc-300 hover:text-white border border-zinc-800 rounded-md transition-colors disabled:opacity-50 cursor-pointer shrink-0"
+                      title="Force fresh market research using live web grounding"
+                    >
+                      <RotateCw className={`size-3 text-zinc-400 ${marketLoading ? 'animate-spin' : ''}`} />
+                      <span>{marketLoading && isForcedRefresh ? 'Refreshing...' : 'Refresh market data'}</span>
+                    </button>
 
-                  {marketData?.generatedAt && (
-                    <span className="text-[10px] font-mono text-zinc-500">
-                      Market data · Updated {getRelativeTimeString(marketData.generatedAt)}
-                    </span>
-                  )}
+                    {marketData?.generatedAt && (
+                      <span className="text-[10px] font-mono text-zinc-500 whitespace-nowrap">
+                        Market data · Updated {getRelativeTimeString(marketData.generatedAt)}
+                      </span>
+                    )}
 
-                  {staleWarning && (
-                    <span className="text-[10px] font-mono text-amber-400 bg-amber-950/50 border border-amber-800/60 px-2 py-0.5 rounded">
-                      Unable to refresh · Showing cached data
-                    </span>
-                  )}
+                    {staleWarning && (
+                      <span className="text-[10px] font-mono text-amber-400 bg-amber-950/50 border border-amber-800/60 px-2 py-0.5 rounded whitespace-nowrap">
+                        Unable to refresh · Showing cached data
+                      </span>
+                    )}
+                  </div>
+                  <span className="text-[10px] font-mono text-zinc-500 block uppercase">{activeRoleMatch.domain || 'IT'} · {marketData?.country || 'India'}</span>
                 </div>
-                <span className="text-[10px] font-mono text-zinc-500 block uppercase">IT · {marketData?.country || 'India'}</span>
-              </div>
-              
-              <div className="flex flex-col sm:flex-row items-start sm:items-center gap-6">
-                <div className="grid grid-cols-3 gap-6 sm:gap-8 items-center pt-2 md:pt-0">
-                  <div className="space-y-0.5">
-                    <span className="text-[9px] font-bold text-zinc-500 uppercase tracking-widest block">Role Match</span>
+                
+                {/* Metrics Section: Protected from Flexbox Compression */}
+                <div className="flex items-center gap-6 sm:gap-8 shrink-0 pt-2 lg:pt-0">
+                  <div className="space-y-0.5 min-w-[70px]">
+                    <span className="text-[9px] font-bold text-zinc-500 uppercase tracking-widest block whitespace-nowrap">Role Match</span>
                     <span className="font-mono text-sm sm:text-base font-extrabold text-white">{activeRoleMatch.matchScore}%</span>
                   </div>
-                  <div className="space-y-0.5">
-                    <span className="text-[9px] font-bold text-zinc-500 uppercase tracking-widest block">Market Status</span>
-                    <span className="text-xs sm:text-sm font-extrabold text-emerald-400 capitalize">{marketData?.demand?.status || 'Growing'}</span>
+                  <div className="space-y-0.5 min-w-[85px]">
+                    <span className="text-[9px] font-bold text-zinc-500 uppercase tracking-widest block whitespace-nowrap">Market Status</span>
+                    <span className="text-xs sm:text-sm font-extrabold text-emerald-400 capitalize whitespace-nowrap">{marketData?.demand?.status || 'Growing'}</span>
                   </div>
-                  <div className="space-y-0.5">
-                    <span className="text-[9px] font-bold text-zinc-500 uppercase tracking-widest block">Readiness</span>
+                  <div className="space-y-0.5 min-w-[70px]">
+                    <span className="text-[9px] font-bold text-zinc-500 uppercase tracking-widest block whitespace-nowrap">Readiness</span>
                     <span className="font-mono text-sm sm:text-base font-extrabold text-white">{marketData?.userGap?.marketReadiness || 0}%</span>
                   </div>
                 </div>
+              </div>
 
-                <div className="hidden sm:block h-8 w-px bg-zinc-850" />
-
-                <div className="flex flex-wrap items-center gap-2.5 shrink-0">
+              {/* Bottom Row: Action Buttons */}
+              <div className="flex flex-wrap items-center justify-end gap-2.5 pt-1">
+                {hasRoleRoadmap(activeRoleMatch.roleTitle) && (
                   <Button 
                     onClick={() => {
-                      if (activeRoleMatch?.roleTitle) {
-                        localStorage.setItem('cm_target_role', activeRoleMatch.roleTitle);
-                      }
-                      navigate(`/roadmap?role=${encodeURIComponent(activeRoleMatch?.roleTitle || '')}`);
+                      const roadmapMatch = getRoleRoadmap(activeRoleMatch.roleTitle);
+                      if (roadmapMatch) navigate(roadmapMatch.route);
                     }}
-                    className="bg-white hover:bg-zinc-200 text-zinc-950 font-bold text-xs h-9 px-3.5 rounded-md cursor-pointer flex items-center gap-1.5 shadow"
+                    className="bg-emerald-500 hover:bg-emerald-400 text-zinc-950 font-bold text-xs h-9 px-3.5 rounded-md cursor-pointer flex items-center gap-1.5 shadow"
                   >
-                    Launch Mission Control →
+                    <MapPin className="size-3.5" />
+                    Prepare with Roadmap →
                   </Button>
-                  <Button 
-                    onClick={() => {
-                      if (activeRoleMatch?.roleTitle) {
-                        localStorage.setItem('cm_target_role', activeRoleMatch.roleTitle);
-                      }
-                      navigate(`/interview-prep?role=${encodeURIComponent(activeRoleMatch?.roleTitle || '')}`);
-                    }}
-                    variant="outline"
-                    className="border-zinc-800 hover:bg-zinc-900 text-zinc-300 font-bold text-xs h-9 px-3.5 rounded-md cursor-pointer flex items-center gap-1.5"
-                  >
-                    Interview Prep →
-                  </Button>
-                </div>
+                )}
+                <Button 
+                  onClick={() => {
+                    if (activeRoleMatch?.roleTitle) {
+                      localStorage.setItem('cm_target_role', activeRoleMatch.roleTitle);
+                    }
+                    navigate(`/roadmap?role=${encodeURIComponent(activeRoleMatch?.roleTitle || '')}`);
+                  }}
+                  className="bg-white hover:bg-zinc-200 text-zinc-950 font-bold text-xs h-9 px-3.5 rounded-md cursor-pointer flex items-center gap-1.5 shadow"
+                >
+                  Launch Mission Control →
+                </Button>
+                <Button 
+                  onClick={() => {
+                    if (activeRoleMatch?.roleTitle) {
+                      localStorage.setItem('cm_target_role', activeRoleMatch.roleTitle);
+                    }
+                    navigate(`/interview-prep?role=${encodeURIComponent(activeRoleMatch?.roleTitle || '')}`);
+                  }}
+                  variant="outline"
+                  className="border-zinc-800 hover:bg-zinc-900 text-zinc-300 font-bold text-xs h-9 px-3.5 rounded-md cursor-pointer flex items-center gap-1.5"
+                >
+                  Interview Prep →
+                </Button>
               </div>
             </div>
           </div>
@@ -1687,7 +1723,7 @@ export default function Dashboard() {
                   <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-4 border-b border-zinc-900">
                     <div className="space-y-1">
                       <div className="flex items-center gap-2.5 flex-wrap">
-                        <h3 className="text-lg font-bold text-white tracking-tight capitalize">{recommendedRole.roleTitle}</h3>
+                        <h3 className="text-lg font-bold text-white tracking-tight capitalize">{getCanonicalRoleName(recommendedRole.roleTitle)}</h3>
                         <Badge variant="outline" className="bg-zinc-950 text-zinc-400 text-xs capitalize border-zinc-900 px-2 py-0.5">
                           Domain: {recommendedRole.domain}
                         </Badge>
@@ -1746,7 +1782,7 @@ export default function Dashboard() {
                   </div>
                 </div>
 
-                <div className="p-6 pt-0 border-t border-zinc-900 bg-zinc-950/20 flex items-center justify-end gap-3">
+                <div className="p-6 pt-0 border-t border-zinc-900 bg-zinc-950/20 flex flex-wrap items-center justify-end gap-3">
                   <Button 
                     onClick={() => navigate(`/jobs?query=${encodeURIComponent(getSlug(recommendedRole.roleTitle))}`)}
                     variant="outline"
@@ -1757,10 +1793,23 @@ export default function Dashboard() {
                   </Button>
                   <Button 
                     onClick={() => setSearchParams({ role: getSlug(recommendedRole.roleTitle) })}
-                    className="bg-white hover:bg-zinc-200 text-zinc-950 font-bold text-xs h-9 px-4 rounded transition-colors cursor-pointer"
+                    variant="outline"
+                    className="border-zinc-800 hover:bg-zinc-800 text-zinc-300 font-bold text-xs h-9 px-4 rounded transition-colors cursor-pointer"
                   >
                     Explore Role →
                   </Button>
+                  {hasRoleRoadmap(recommendedRole.roleTitle) && (
+                    <Button 
+                      onClick={() => {
+                        const roadmapMatch = getRoleRoadmap(recommendedRole.roleTitle);
+                        if (roadmapMatch) navigate(roadmapMatch.route);
+                      }}
+                      className="bg-emerald-500 hover:bg-emerald-400 text-zinc-950 font-bold text-xs h-9 px-4 rounded transition-colors cursor-pointer flex items-center gap-1.5 shadow"
+                    >
+                      <MapPin className="size-4" />
+                      Prepare with Roadmap →
+                    </Button>
+                  )}
                 </div>
               </Card>
             )}
@@ -1777,7 +1826,7 @@ export default function Dashboard() {
                       <div className="p-6 space-y-4">
                         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-3 border-b border-zinc-900/60">
                           <div className="space-y-0.5">
-                            <h3 className="text-base font-bold text-white tracking-tight capitalize">{match.roleTitle}</h3>
+                            <h3 className="text-base font-bold text-white tracking-tight capitalize">{getCanonicalRoleName(match.roleTitle)}</h3>
                             <p className="text-xs text-zinc-500 italic">
                               "Alignment with your current skill profile."
                             </p>
@@ -1829,7 +1878,7 @@ export default function Dashboard() {
                         </div>
                       </div>
 
-                      <div className="p-6 pt-0 border-t border-zinc-900 bg-zinc-950/20 flex items-center justify-end gap-3">
+                      <div className="p-6 pt-0 border-t border-zinc-900 bg-zinc-950/20 flex flex-wrap items-center justify-end gap-3">
                         <Button 
                           onClick={() => navigate(`/jobs?query=${encodeURIComponent(slug)}`)}
                           variant="outline"
@@ -1840,10 +1889,23 @@ export default function Dashboard() {
                         </Button>
                         <Button 
                           onClick={() => setSearchParams({ role: slug })}
+                          variant="outline"
                           className="bg-zinc-900 hover:bg-zinc-800 text-zinc-300 font-bold border border-zinc-800 text-xs h-8 px-3 rounded transition-colors cursor-pointer"
                         >
                           Explore Role
                         </Button>
+                        {hasRoleRoadmap(match.roleTitle) && (
+                          <Button 
+                            onClick={() => {
+                              const roadmapMatch = getRoleRoadmap(match.roleTitle);
+                              if (roadmapMatch) navigate(roadmapMatch.route);
+                            }}
+                            className="bg-emerald-500 hover:bg-emerald-400 text-zinc-950 font-bold text-xs h-8 px-3 rounded transition-colors cursor-pointer flex items-center gap-1.5 shadow"
+                          >
+                            <MapPin className="size-3" />
+                            Prepare with Roadmap →
+                          </Button>
+                        )}
                       </div>
                     </Card>
                   );

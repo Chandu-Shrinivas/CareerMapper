@@ -19,6 +19,21 @@ import { MACHINE_LEARNING_ROADMAP_DEFINITION } from '../data/machineLearningRoad
 import { AI_DATA_SCIENTIST_ROADMAP_DEFINITION } from '../data/aiDataScientistRoadmapDefinition';
 import { BLOCKCHAIN_ROADMAP_DEFINITION } from '../data/blockchainRoadmapDefinition';
 import { IOS_ROADMAP_DEFINITION } from '../data/iosRoadmapDefinition';
+import { SOFTWARE_ARCHITECT_ROADMAP_DEFINITION } from '../data/softwareArchitectRoadmapDefinition';
+import { QA_ENGINEER_ROADMAP_DEFINITION } from '../data/qaEngineerRoadmapDefinition';
+import { CYBER_SECURITY_ROADMAP_DEFINITION } from '../data/cyberSecurityRoadmapDefinition';
+import { API_DESIGN_ROADMAP_DEFINITION } from '../data/apiDesignRoadmapDefinition';
+import { TECHNICAL_WRITER_ROADMAP_DEFINITION } from '../data/technicalWriterRoadmapDefinition';
+import { UX_DESIGN_ROADMAP_DEFINITION } from '../data/uxDesignRoadmapDefinition';
+import { GAME_DEVELOPER_ROADMAP_DEFINITION } from '../data/gameDeveloperRoadmapDefinition';
+import { PRODUCT_MANAGER_ROADMAP_DEFINITION } from '../data/productManagerRoadmapDefinition';
+import { MLOPS_ROADMAP_DEFINITION } from '../data/mlopsRoadmapDefinition';
+import { SYSTEM_DESIGN_ROADMAP_DEFINITION } from '../data/systemDesignRoadmapDefinition';
+import { ENGINEERING_MANAGER_ROADMAP_DEFINITION } from '../data/engineeringManagerRoadmapDefinition';
+import { FORWARD_DEPLOYED_ENGINEER_ROADMAP_DEFINITION } from '../data/forwardDeployedEngineerRoadmapDefinition';
+import { ASPNET_CORE_ROADMAP_DEFINITION } from '../data/aspnetCoreRoadmapDefinition';
+import { DATASTRUCTURES_AND_ALGORITHMS_ROADMAP_DEFINITION } from '../data/datastructuresAndAlgorithmsRoadmapDefinition';
+
 
 import { FRONTEND_SVG_DATASET } from '../data/frontendSvgData';
 import { BACKEND_SVG_DATASET } from '../data/backendSvgData';
@@ -34,6 +49,20 @@ import { MACHINE_LEARNING_SVG_DATASET } from '../data/machineLearningSvgData';
 import { AI_DATA_SCIENTIST_SVG_DATASET } from '../data/aiDataScientistSvgData';
 import { BLOCKCHAIN_SVG_DATASET } from '../data/blockchainSvgData';
 import { IOS_SVG_DATASET } from '../data/iosSvgData';
+import { SOFTWARE_ARCHITECT_SVG_DATASET } from '../data/softwareArchitectSvgData';
+import { QA_ENGINEER_SVG_DATASET } from '../data/qaEngineerSvgData';
+import { CYBER_SECURITY_SVG_DATASET } from '../data/cyberSecuritySvgData';
+import { API_DESIGN_SVG_DATASET } from '../data/apiDesignSvgData';
+import { TECHNICAL_WRITER_SVG_DATASET } from '../data/technicalWriterSvgData';
+import { UX_DESIGN_SVG_DATASET } from '../data/uxDesignSvgData';
+import { GAME_DEVELOPER_SVG_DATASET } from '../data/gameDeveloperSvgData';
+import { PRODUCT_MANAGER_SVG_DATASET } from '../data/productManagerSvgData';
+import { MLOPS_SVG_DATASET } from '../data/mlopsSvgData';
+import { SYSTEM_DESIGN_SVG_DATASET } from '../data/systemDesignSvgData';
+import { ENGINEERING_MANAGER_SVG_DATASET } from '../data/engineeringManagerSvgData';
+import { FORWARD_DEPLOYED_ENGINEER_SVG_DATASET } from '../data/forwardDeployedEngineerSvgData';
+import { ASPNET_CORE_SVG_DATASET } from '../data/aspnetCoreSvgData';
+import { DATASTRUCTURES_AND_ALGORITHMS_SVG_DATASET } from '../data/datastructuresAndAlgorithmsSvgData';
 import type { SvgElementItem } from '../data/frontendSvgData';
 
 import type { RoadmapDefinition } from '../types/roadmap';
@@ -51,10 +80,25 @@ import MachineLearningSvgRoadmap from '../components/roadmap/MachineLearningSvgR
 import AiDataScientistSvgRoadmap from '../components/roadmap/AiDataScientistSvgRoadmap';
 import BlockchainSvgRoadmap from '../components/roadmap/BlockchainSvgRoadmap';
 import IosSvgRoadmap from '../components/roadmap/IosSvgRoadmap';
+import SoftwareArchitectSvgRoadmap from '../components/roadmap/SoftwareArchitectSvgRoadmap';
+import QaEngineerSvgRoadmap from '../components/roadmap/QaEngineerSvgRoadmap';
+import CyberSecuritySvgRoadmap from '../components/roadmap/CyberSecuritySvgRoadmap';
+import ApiDesignSvgRoadmap from '../components/roadmap/ApiDesignSvgRoadmap';
+import TechnicalWriterSvgRoadmap from '../components/roadmap/TechnicalWriterSvgRoadmap';
+import UxDesignSvgRoadmap from '../components/roadmap/UxDesignSvgRoadmap';
+import GameDeveloperSvgRoadmap from '../components/roadmap/GameDeveloperSvgRoadmap';
+import ProductManagerSvgRoadmap from '../components/roadmap/ProductManagerSvgRoadmap';
+import MlopsSvgRoadmap from '../components/roadmap/MlopsSvgRoadmap';
+import SystemDesignSvgRoadmap from '../components/roadmap/SystemDesignSvgRoadmap';
+import EngineeringManagerSvgRoadmap from '../components/roadmap/EngineeringManagerSvgRoadmap';
+import ForwardDeployedEngineerSvgRoadmap from '../components/roadmap/ForwardDeployedEngineerSvgRoadmap';
+import AspnetCoreSvgRoadmap from '../components/roadmap/AspnetCoreSvgRoadmap';
+import DatastructuresAndAlgorithmsSvgRoadmap from '../components/roadmap/DatastructuresAndAlgorithmsSvgRoadmap';
 
 import { RoadmapDetailDrawer, type DrawerNodeData } from '../components/roadmap/RoadmapDetailDrawer';
 import { RoadmapProgressStore, type NodeStatus } from '../services/RoadmapProgressStore';
 import { RoadmapProgressSummary } from '../components/roadmap/RoadmapProgressSummary';
+import { SkillsLearnedAccordion } from '../components/roadmap/SkillsLearnedAccordion';
 import { calculateRoadmapProgress } from '../utils/roadmapProgressCalculator';
 
 const ROADMAP_REGISTRY: Record<string, RoadmapDefinition> = {
@@ -96,6 +140,46 @@ const ROADMAP_REGISTRY: Record<string, RoadmapDefinition> = {
   'ios': IOS_ROADMAP_DEFINITION,
   'ios-developer': IOS_ROADMAP_DEFINITION,
   'ios-roadmap': IOS_ROADMAP_DEFINITION,
+  'software-architect': SOFTWARE_ARCHITECT_ROADMAP_DEFINITION,
+  'software-architect-roadmap': SOFTWARE_ARCHITECT_ROADMAP_DEFINITION,
+  'qa': QA_ENGINEER_ROADMAP_DEFINITION,
+  'qa-engineer': QA_ENGINEER_ROADMAP_DEFINITION,
+  'qa-roadmap': QA_ENGINEER_ROADMAP_DEFINITION,
+  'cyber-security': CYBER_SECURITY_ROADMAP_DEFINITION,
+  'cyber-security-expert': CYBER_SECURITY_ROADMAP_DEFINITION,
+  'cybersecurity': CYBER_SECURITY_ROADMAP_DEFINITION,
+  'cyber-security-engineer': CYBER_SECURITY_ROADMAP_DEFINITION,
+  'api-design': API_DESIGN_ROADMAP_DEFINITION,
+  'api-design-roadmap': API_DESIGN_ROADMAP_DEFINITION,
+  'technical-writer': TECHNICAL_WRITER_ROADMAP_DEFINITION,
+  'technical-writer-roadmap': TECHNICAL_WRITER_ROADMAP_DEFINITION,
+  'ux-design': UX_DESIGN_ROADMAP_DEFINITION,
+  'ux-design-roadmap': UX_DESIGN_ROADMAP_DEFINITION,
+  'game-developer': GAME_DEVELOPER_ROADMAP_DEFINITION,
+  'game-developer-roadmap': GAME_DEVELOPER_ROADMAP_DEFINITION,
+  'product-manager': PRODUCT_MANAGER_ROADMAP_DEFINITION,
+  'product-manager-roadmap': PRODUCT_MANAGER_ROADMAP_DEFINITION,
+  'pm': PRODUCT_MANAGER_ROADMAP_DEFINITION,
+  'mlops': MLOPS_ROADMAP_DEFINITION,
+  'mlops-roadmap': MLOPS_ROADMAP_DEFINITION,
+  'ml-ops': MLOPS_ROADMAP_DEFINITION,
+  'system-design': SYSTEM_DESIGN_ROADMAP_DEFINITION,
+  'system-design-roadmap': SYSTEM_DESIGN_ROADMAP_DEFINITION,
+  'engineering-manager': ENGINEERING_MANAGER_ROADMAP_DEFINITION,
+  'engineering-manager-roadmap': ENGINEERING_MANAGER_ROADMAP_DEFINITION,
+  'em': ENGINEERING_MANAGER_ROADMAP_DEFINITION,
+  'forward-deployed-engineer': FORWARD_DEPLOYED_ENGINEER_ROADMAP_DEFINITION,
+  'forward-deployed': FORWARD_DEPLOYED_ENGINEER_ROADMAP_DEFINITION,
+  'fde': FORWARD_DEPLOYED_ENGINEER_ROADMAP_DEFINITION,
+  'aspnet-core': ASPNET_CORE_ROADMAP_DEFINITION,
+  'aspnet': ASPNET_CORE_ROADMAP_DEFINITION,
+  'aspnet-core-developer': ASPNET_CORE_ROADMAP_DEFINITION,
+  'asp-net-core': ASPNET_CORE_ROADMAP_DEFINITION,
+  'datastructures-and-algorithms': DATASTRUCTURES_AND_ALGORITHMS_ROADMAP_DEFINITION,
+  'datastructures': DATASTRUCTURES_AND_ALGORITHMS_ROADMAP_DEFINITION,
+  'dsa': DATASTRUCTURES_AND_ALGORITHMS_ROADMAP_DEFINITION,
+  'data-structures-and-algorithms': DATASTRUCTURES_AND_ALGORITHMS_ROADMAP_DEFINITION,
+  'dsa-roadmap': DATASTRUCTURES_AND_ALGORITHMS_ROADMAP_DEFINITION,
 };
 
 const SVG_DATASET_MAP: Record<string, SvgElementItem[]> = {
@@ -137,6 +221,46 @@ const SVG_DATASET_MAP: Record<string, SvgElementItem[]> = {
   'ios': IOS_SVG_DATASET,
   'ios-developer': IOS_SVG_DATASET,
   'ios-roadmap': IOS_SVG_DATASET,
+  'software-architect': SOFTWARE_ARCHITECT_SVG_DATASET,
+  'software-architect-roadmap': SOFTWARE_ARCHITECT_SVG_DATASET,
+  'qa': QA_ENGINEER_SVG_DATASET,
+  'qa-engineer': QA_ENGINEER_SVG_DATASET,
+  'qa-roadmap': QA_ENGINEER_SVG_DATASET,
+  'cyber-security': CYBER_SECURITY_SVG_DATASET,
+  'cyber-security-expert': CYBER_SECURITY_SVG_DATASET,
+  'cybersecurity': CYBER_SECURITY_SVG_DATASET,
+  'cyber-security-engineer': CYBER_SECURITY_SVG_DATASET,
+  'api-design': API_DESIGN_SVG_DATASET,
+  'api-design-roadmap': API_DESIGN_SVG_DATASET,
+  'technical-writer': TECHNICAL_WRITER_SVG_DATASET,
+  'technical-writer-roadmap': TECHNICAL_WRITER_SVG_DATASET,
+  'ux-design': UX_DESIGN_SVG_DATASET,
+  'ux-design-roadmap': UX_DESIGN_SVG_DATASET,
+  'game-developer': GAME_DEVELOPER_SVG_DATASET,
+  'game-developer-roadmap': GAME_DEVELOPER_SVG_DATASET,
+  'product-manager': PRODUCT_MANAGER_SVG_DATASET,
+  'product-manager-roadmap': PRODUCT_MANAGER_SVG_DATASET,
+  'pm': PRODUCT_MANAGER_SVG_DATASET,
+  'mlops': MLOPS_SVG_DATASET,
+  'mlops-roadmap': MLOPS_SVG_DATASET,
+  'ml-ops': MLOPS_SVG_DATASET,
+  'system-design': SYSTEM_DESIGN_SVG_DATASET,
+  'system-design-roadmap': SYSTEM_DESIGN_SVG_DATASET,
+  'engineering-manager': ENGINEERING_MANAGER_SVG_DATASET,
+  'engineering-manager-roadmap': ENGINEERING_MANAGER_SVG_DATASET,
+  'em': ENGINEERING_MANAGER_SVG_DATASET,
+  'forward-deployed-engineer': FORWARD_DEPLOYED_ENGINEER_SVG_DATASET,
+  'forward-deployed': FORWARD_DEPLOYED_ENGINEER_SVG_DATASET,
+  'fde': FORWARD_DEPLOYED_ENGINEER_SVG_DATASET,
+  'aspnet-core': ASPNET_CORE_SVG_DATASET,
+  'aspnet': ASPNET_CORE_SVG_DATASET,
+  'aspnet-core-developer': ASPNET_CORE_SVG_DATASET,
+  'asp-net-core': ASPNET_CORE_SVG_DATASET,
+  'datastructures-and-algorithms': DATASTRUCTURES_AND_ALGORITHMS_SVG_DATASET,
+  'datastructures': DATASTRUCTURES_AND_ALGORITHMS_SVG_DATASET,
+  'dsa': DATASTRUCTURES_AND_ALGORITHMS_SVG_DATASET,
+  'data-structures-and-algorithms': DATASTRUCTURES_AND_ALGORITHMS_SVG_DATASET,
+  'dsa-roadmap': DATASTRUCTURES_AND_ALGORITHMS_SVG_DATASET,
 };
 
 function getTrackableSvgNodes(dataset?: SvgElementItem[]) {
@@ -366,7 +490,8 @@ function RoadmapDataListView({ roadmapData }: { roadmapData: RoadmapDefinition }
             const { nextStatus, allStatuses } = RoadmapProgressStore.toggleStatus(
               roadmapData.slug,
               selectedDrawerNode.id,
-              status
+              status,
+              roadmapData
             );
             setNodeStatuses({ ...allStatuses });
             setSelectedDrawerNode(prev => prev ? { ...prev, status: nextStatus } : null);
@@ -447,6 +572,20 @@ export default function RoleRoadmapDetailPage() {
   const isAiDataScientist = s === 'ai-data-scientist' || s === 'ai-and-data-scientist' || s === 'ai-data-scientist-roadmap' || s === 'data-scientist' || s === 'data-scientist-roadmap';
   const isBlockchain = s === 'blockchain' || s === 'blockchain-developer' || s === 'blockchain-roadmap';
   const isIos = s === 'ios' || s === 'ios-developer' || s === 'ios-roadmap';
+  const isSoftwareArchitect = s === 'software-architect' || s === 'software-architect-roadmap';
+  const isQaEngineer = s === 'qa' || s === 'qa-engineer' || s === 'qa-roadmap';
+  const isCyberSecurity = s === 'cyber-security' || s === 'cyber-security-expert' || s === 'cybersecurity' || s === 'cyber-security-engineer';
+  const isApiDesign = s === 'api-design' || s === 'api-design-roadmap';
+  const isTechnicalWriter = s === 'technical-writer' || s === 'technical-writer-roadmap';
+  const isUxDesign = s === 'ux-design' || s === 'ux-design-roadmap';
+  const isGameDeveloper = s === 'game-developer' || s === 'game-developer-roadmap';
+  const isProductManager = s === 'product-manager' || s === 'product-manager-roadmap' || s === 'pm';
+  const isMlops = s === 'mlops' || s === 'mlops-roadmap' || s === 'ml-ops';
+  const isSystemDesign = s === 'system-design' || s === 'system-design-roadmap';
+  const isEngineeringManager = s === 'engineering-manager' || s === 'engineering-manager-roadmap' || s === 'em';
+  const isForwardDeployedEngineer = s === 'forward-deployed-engineer' || s === 'forward-deployed' || s === 'fde';
+  const isAspnetCore = s === 'aspnet-core' || s === 'aspnet' || s === 'aspnet-core-developer' || s === 'asp-net-core';
+  const isDatastructuresAndAlgorithms = s === 'datastructures-and-algorithms' || s === 'datastructures' || s === 'dsa' || s === 'data-structures-and-algorithms' || s === 'dsa-roadmap';
 
   const currentDataset = SVG_DATASET_MAP[s] || SVG_DATASET_MAP[roadmapData.id] || SVG_DATASET_MAP[roadmapData.slug];
   const trackableSvgNodes = getTrackableSvgNodes(currentDataset);
@@ -458,7 +597,7 @@ export default function RoleRoadmapDetailPage() {
   };
 
   const handleResetProgress = () => {
-    const emptyStatuses = RoadmapProgressStore.resetProgress(roadmapData.id);
+    const emptyStatuses = RoadmapProgressStore.resetProgress(roadmapData.id, roadmapData.slug);
     setNodeStatuses(emptyStatuses);
     setLastUpdated(null);
   };
@@ -490,6 +629,9 @@ export default function RoleRoadmapDetailPage() {
         onSelectNode={handleSelectNode}
       />
 
+      {/* Collapsible Skills Learned Section (Collapsed by default) */}
+      <SkillsLearnedAccordion nodeStatuses={nodeStatuses} roadmapId={roadmapData.id} />
+
       {/* SVG vs Data ListView Renderer */}
       {isBackend ? (
         <BackendSvgRoadmap onNodeStatusChange={handleNodeStatusChange} selectedNodeId={selectedNodeId} />
@@ -519,6 +661,34 @@ export default function RoleRoadmapDetailPage() {
         <BlockchainSvgRoadmap onNodeStatusChange={handleNodeStatusChange} selectedNodeId={selectedNodeId} />
       ) : isIos ? (
         <IosSvgRoadmap onNodeStatusChange={handleNodeStatusChange} selectedNodeId={selectedNodeId} />
+      ) : isSoftwareArchitect ? (
+        <SoftwareArchitectSvgRoadmap onNodeStatusChange={handleNodeStatusChange} selectedNodeId={selectedNodeId} />
+      ) : isQaEngineer ? (
+        <QaEngineerSvgRoadmap onNodeStatusChange={handleNodeStatusChange} selectedNodeId={selectedNodeId} />
+      ) : isCyberSecurity ? (
+        <CyberSecuritySvgRoadmap onNodeStatusChange={handleNodeStatusChange} selectedNodeId={selectedNodeId} />
+      ) : isApiDesign ? (
+        <ApiDesignSvgRoadmap onNodeStatusChange={handleNodeStatusChange} selectedNodeId={selectedNodeId} />
+      ) : isTechnicalWriter ? (
+        <TechnicalWriterSvgRoadmap onNodeStatusChange={handleNodeStatusChange} selectedNodeId={selectedNodeId} />
+      ) : isUxDesign ? (
+        <UxDesignSvgRoadmap onNodeStatusChange={handleNodeStatusChange} selectedNodeId={selectedNodeId} />
+      ) : isGameDeveloper ? (
+        <GameDeveloperSvgRoadmap onNodeStatusChange={handleNodeStatusChange} selectedNodeId={selectedNodeId} />
+      ) : isProductManager ? (
+        <ProductManagerSvgRoadmap onNodeStatusChange={handleNodeStatusChange} selectedNodeId={selectedNodeId} />
+      ) : isMlops ? (
+        <MlopsSvgRoadmap onNodeStatusChange={handleNodeStatusChange} selectedNodeId={selectedNodeId} />
+      ) : isSystemDesign ? (
+        <SystemDesignSvgRoadmap onNodeStatusChange={handleNodeStatusChange} selectedNodeId={selectedNodeId} />
+      ) : isEngineeringManager ? (
+        <EngineeringManagerSvgRoadmap onNodeStatusChange={handleNodeStatusChange} selectedNodeId={selectedNodeId} />
+      ) : isForwardDeployedEngineer ? (
+        <ForwardDeployedEngineerSvgRoadmap onNodeStatusChange={handleNodeStatusChange} selectedNodeId={selectedNodeId} />
+      ) : isAspnetCore ? (
+        <AspnetCoreSvgRoadmap onNodeStatusChange={handleNodeStatusChange} selectedNodeId={selectedNodeId} />
+      ) : isDatastructuresAndAlgorithms ? (
+        <DatastructuresAndAlgorithmsSvgRoadmap onNodeStatusChange={handleNodeStatusChange} selectedNodeId={selectedNodeId} />
       ) : (
         <RoadmapDataListView roadmapData={roadmapData} />
       )}

@@ -9,6 +9,8 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
     "stroke": "#2b78e4",
     "strokeWidth": "3.5",
     "strokeDasharray": "0",
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
     "dataEdgeId": "xy-edge__7aSscXd-UMNWOX7A_vxYhx2-fY8LEcCRTKUVEqLH1Qlc0w1"
   },
   {
@@ -17,6 +19,8 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
     "stroke": "#2b78e4",
     "strokeWidth": "3.5",
     "strokeDasharray": "0.8 8",
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
     "dataEdgeId": "xy-edge__fY8LEcCRTKUVEqLH1Qlc0z2-3BxbkrBp8veZj38zdwN8sy2"
   },
   {
@@ -25,6 +29,8 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
     "stroke": "#2b78e4",
     "strokeWidth": "3.5",
     "strokeDasharray": "0.8 8",
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
     "dataEdgeId": "xy-edge__fY8LEcCRTKUVEqLH1Qlc0z2-jJukG4XxfFcID_VlQKqe-y1"
   },
   {
@@ -33,6 +39,8 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
     "stroke": "#2b78e4",
     "strokeWidth": "3.5",
     "strokeDasharray": "0.8 8",
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
     "dataEdgeId": "xy-edge__WSYIFni7G2C9Jr0pwuamiz2-GN6SnI7RXIeW8JeD-qORWy1"
   },
   {
@@ -41,6 +49,8 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
     "stroke": "#2b78e4",
     "strokeWidth": "3.5",
     "strokeDasharray": "0",
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
     "dataEdgeId": "xy-edge__5DiaZkljhHAGPi9DkaH3bx2-d-aZ5nQDWiMmqeMIodZzJw2"
   },
   {
@@ -49,6 +59,8 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
     "stroke": "#2b78e4",
     "strokeWidth": "3.5",
     "strokeDasharray": "0.8 8",
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
     "dataEdgeId": "xy-edge__5DiaZkljhHAGPi9DkaH3bw2-3BxbkrBp8veZj38zdwN8sx1"
   },
   {
@@ -57,6 +69,8 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
     "stroke": "#2b78e4",
     "strokeWidth": "3.5",
     "strokeDasharray": "0",
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
     "dataEdgeId": "xy-edge__rzhVFzl5H5MWtcvr8ayRky2-5DiaZkljhHAGPi9DkaH3bz1"
   },
   {
@@ -65,6 +79,8 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
     "stroke": "#2b78e4",
     "strokeWidth": "3.5",
     "strokeDasharray": "0",
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
     "dataEdgeId": "xy-edge__d-aZ5nQDWiMmqeMIodZzJx2-rzhVFzl5H5MWtcvr8ayRkw2"
   },
   {
@@ -73,6 +89,8 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
     "stroke": "#2b78e4",
     "strokeWidth": "3.5",
     "strokeDasharray": "0.8 8",
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
     "dataEdgeId": "xy-edge__rzhVFzl5H5MWtcvr8ayRkz2-P32Rmnln5NCFWz4LP0k05y2"
   },
   {
@@ -81,6 +99,8 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
     "stroke": "#2b78e4",
     "strokeWidth": "3.5",
     "strokeDasharray": "0.8 8",
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
     "dataEdgeId": "xy-edge__rzhVFzl5H5MWtcvr8ayRkz2-p8q1Gtt9x19jw5_-YjAGhy1"
   },
   {
@@ -89,6 +109,8 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
     "stroke": "#2b78e4",
     "strokeWidth": "3.5",
     "strokeDasharray": "0.8 8",
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
     "dataEdgeId": "xy-edge__rzhVFzl5H5MWtcvr8ayRkz2-DUIrJwuYHlhJvZJT2acaYy2"
   },
   {
@@ -97,6 +119,8 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
     "stroke": "#2b78e4",
     "strokeWidth": "3.5",
     "strokeDasharray": "0.8 8",
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
     "dataEdgeId": "xy-edge__rzhVFzl5H5MWtcvr8ayRkz2-P576TdYcbE6v3RpJntiKwy1"
   },
   {
@@ -105,6 +129,8 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
     "stroke": "#2b78e4",
     "strokeWidth": "3.5",
     "strokeDasharray": "0.8 8",
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
     "dataEdgeId": "xy-edge__rzhVFzl5H5MWtcvr8ayRkz2-7o6g0wQxHH9i9MMCoDq2Cy2"
   },
   {
@@ -113,6 +139,8 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
     "stroke": "#2b78e4",
     "strokeWidth": "3.5",
     "strokeDasharray": "0.8 8",
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
     "dataEdgeId": "xy-edge__5DiaZkljhHAGPi9DkaH3bx2-P32Rmnln5NCFWz4LP0k05w1"
   },
   {
@@ -121,6 +149,8 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
     "stroke": "#2b78e4",
     "strokeWidth": "3.5",
     "strokeDasharray": "0",
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
     "dataEdgeId": "xy-edge__5DiaZkljhHAGPi9DkaH3bz2-rzhVFzl5H5MWtcvr8ayRky1"
   },
   {
@@ -129,6 +159,8 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
     "stroke": "#2b78e4",
     "strokeWidth": "3.5",
     "strokeDasharray": "0.8 8",
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
     "dataEdgeId": "xy-edge__rzhVFzl5H5MWtcvr8ayRkw2-WLlZE_vto-CYY5GLV_w7ox2"
   },
   {
@@ -137,6 +169,8 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
     "stroke": "#2b78e4",
     "strokeWidth": "3.5",
     "strokeDasharray": "0",
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
     "dataEdgeId": "xy-edge__AvbMQ5vY3ip1oX_6Yq4iex2-hWA7RtuqltMTmHdcCnmESw2"
   },
   {
@@ -145,6 +179,8 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
     "stroke": "#2b78e4",
     "strokeWidth": "3.5",
     "strokeDasharray": "0",
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
     "dataEdgeId": "xy-edge__rzhVFzl5H5MWtcvr8ayRkz2-hWA7RtuqltMTmHdcCnmESy1"
   },
   {
@@ -153,6 +189,8 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
     "stroke": "#2b78e4",
     "strokeWidth": "3.5",
     "strokeDasharray": "0",
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
     "dataEdgeId": "xy-edge__nN9BumBHi-c9HKFlgL2GHx2-rzhVFzl5H5MWtcvr8ayRkw1"
   },
   {
@@ -161,6 +199,8 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
     "stroke": "#2b78e4",
     "strokeWidth": "3.5",
     "strokeDasharray": "0",
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
     "dataEdgeId": "xy-edge__AvbMQ5vY3ip1oX_6Yq4iey2-tP0oBkjvJC9hrtARkgLonz2"
   },
   {
@@ -169,6 +209,8 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
     "stroke": "#2b78e4",
     "strokeWidth": "3.5",
     "strokeDasharray": "0",
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
     "dataEdgeId": "xy-edge__rzhVFzl5H5MWtcvr8ayRkx2-xScVB1Swn0AWGTrAE0DFRw2"
   },
   {
@@ -177,6 +219,8 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
     "stroke": "#2b78e4",
     "strokeWidth": "3.5",
     "strokeDasharray": "0",
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
     "dataEdgeId": "xy-edge__-oRH7LgigHcfBkNF1xwxhx2-rzhVFzl5H5MWtcvr8ayRkw1"
   },
   {
@@ -185,6 +229,8 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
     "stroke": "#2b78e4",
     "strokeWidth": "3.5",
     "strokeDasharray": "0",
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
     "dataEdgeId": "xy-edge__zdv96JeIxVl1ToieWcoAzy2--oRH7LgigHcfBkNF1xwxhz1"
   },
   {
@@ -193,6 +239,8 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
     "stroke": "#2b78e4",
     "strokeWidth": "3.5",
     "strokeDasharray": "0.8 8",
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
     "dataEdgeId": "xy-edge__gKu6tnpTO2PhDDMYp2u7Fy2-xGO1X9aZRgKcgzi6r1xq8z1"
   },
   {
@@ -201,6 +249,8 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
     "stroke": "#2b78e4",
     "strokeWidth": "3.5",
     "strokeDasharray": "0.8 8",
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
     "dataEdgeId": "xy-edge__gKu6tnpTO2PhDDMYp2u7Fy2-S6kkjbImrp1fl3S6_2Uqxz1"
   },
   {
@@ -209,6 +259,8 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
     "stroke": "#2b78e4",
     "strokeWidth": "3.5",
     "strokeDasharray": "0.8 8",
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
     "dataEdgeId": "xy-edge__NOJ-uL1ABewYriqMDVZ3Mz2-gKu6tnpTO2PhDDMYp2u7Fy1"
   },
   {
@@ -217,6 +269,8 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
     "stroke": "#2b78e4",
     "strokeWidth": "3.5",
     "strokeDasharray": "0.8 8",
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
     "dataEdgeId": "xy-edge__0-6BV-MggAyD7g3JH45B7z2-gKu6tnpTO2PhDDMYp2u7Fy2"
   },
   {
@@ -225,6 +279,8 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
     "stroke": "#2b78e4",
     "strokeWidth": "3.5",
     "strokeDasharray": "0.8 8",
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
     "dataEdgeId": "xy-edge__1kOOEtDdcj3mrmFql2pU0z2-gKu6tnpTO2PhDDMYp2u7Fy2"
   },
   {
@@ -233,6 +289,8 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
     "stroke": "#2b78e4",
     "strokeWidth": "3.5",
     "strokeDasharray": "0.8 8",
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
     "dataEdgeId": "xy-edge__vQI-4uFQJ6694nm1SCpDRx2-K-x_L3z8JTSHwtTeHm4EGw1"
   },
   {
@@ -241,6 +299,8 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
     "stroke": "#2b78e4",
     "strokeWidth": "3.5",
     "strokeDasharray": "0",
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
     "dataEdgeId": "xy-edge__U4LGIEE3igeE5Ed3EWzsuz2-NTjpKlN0f93p9iSToXhNWy2"
   },
   {
@@ -249,6 +309,8 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
     "stroke": "#2b78e4",
     "strokeWidth": "3.5",
     "strokeDasharray": "0.8 8",
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
     "dataEdgeId": "xy-edge__hWA7RtuqltMTmHdcCnmESx2-dEFLBGpiH6nbSMeR7ecaTw1"
   },
   {
@@ -257,6 +319,8 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
     "stroke": "#2b78e4",
     "strokeWidth": "3.5",
     "strokeDasharray": "0",
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
     "dataEdgeId": "xy-edge__AvbMQ5vY3ip1oX_6Yq4iew2-qDn1elMoPIBgQSCWiYkLIx2"
   },
   {
@@ -265,6 +329,8 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
     "stroke": "#2b78e4",
     "strokeWidth": "3.5",
     "strokeDasharray": "0",
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
     "dataEdgeId": "xy-edge__zdv96JeIxVl1ToieWcoAzx2-rzhVFzl5H5MWtcvr8ayRkw1"
   },
   {
@@ -273,6 +339,8 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
     "stroke": "#2b78e4",
     "strokeWidth": "3.5",
     "strokeDasharray": "0",
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
     "dataEdgeId": "xy-edge__wHlEinHuRARp5OfSulpA-x2-N_vLjBVdsGsoePtqlqh2ww1"
   },
   {
@@ -281,6 +349,8 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
     "stroke": "#2b78e4",
     "strokeWidth": "3.5",
     "strokeDasharray": "0",
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
     "dataEdgeId": "xy-edge__N_vLjBVdsGsoePtqlqh2wx2-5DiaZkljhHAGPi9DkaH3bw2"
   },
   {
@@ -289,6 +359,8 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
     "stroke": "#2b78e4",
     "strokeWidth": "3.5",
     "strokeDasharray": "0",
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
     "dataEdgeId": "xy-edge__Ns2zKn8BL_kTEI6O65pCpx2-ZVbnAF9I1r8qWFFYG6nXvw2"
   },
   {
@@ -297,6 +369,8 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
     "stroke": "#2b78e4",
     "strokeWidth": "3.5",
     "strokeDasharray": "0.8 8",
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
     "dataEdgeId": "xy-edge__ZVbnAF9I1r8qWFFYG6nXvz2--W2uAccH7Y2XIwhfl9mDFy2"
   },
   {
@@ -305,6 +379,8 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
     "stroke": "#2b78e4",
     "strokeWidth": "3.5",
     "strokeDasharray": "0.8 8",
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
     "dataEdgeId": "xy-edge__ZVbnAF9I1r8qWFFYG6nXvz2-bIhGv4886V4RWJD3tX0a0y1"
   },
   {
@@ -313,6 +389,8 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
     "stroke": "#2b78e4",
     "strokeWidth": "3.5",
     "strokeDasharray": "0.8 8",
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
     "dataEdgeId": "xy-edge__ZVbnAF9I1r8qWFFYG6nXvz2-5xxAg18h74pDAUPy6P8NQy1"
   },
   {
@@ -321,6 +399,8 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
     "stroke": "#2b78e4",
     "strokeWidth": "3.5",
     "strokeDasharray": "0.8 8",
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
     "dataEdgeId": "xy-edge__ZVbnAF9I1r8qWFFYG6nXvz2-Ddhph9saFgfMi-uUFGK75y1"
   },
   {
@@ -329,6 +409,8 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
     "stroke": "#2b78e4",
     "strokeWidth": "3.5",
     "strokeDasharray": "0.8 8",
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
     "dataEdgeId": "xy-edge__ZVbnAF9I1r8qWFFYG6nXvz2-m4vmnxRMBf7zwNnwrMEnky1"
   },
   {
@@ -337,6 +419,8 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
     "stroke": "#2b78e4",
     "strokeWidth": "3.5",
     "strokeDasharray": "0.8 8",
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
     "dataEdgeId": "xy-edge__ZVbnAF9I1r8qWFFYG6nXvz2-vBnqnIh_xSn0OuY9oQ5e-y1"
   },
   {
@@ -345,6 +429,8 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
     "stroke": "#2b78e4",
     "strokeWidth": "3.5",
     "strokeDasharray": "0",
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
     "dataEdgeId": "xy-edge__ZVbnAF9I1r8qWFFYG6nXvx2-D1vCHxbpoDqeieiZGC5Kpw2"
   },
   {
@@ -353,6 +439,8 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
     "stroke": "#2b78e4",
     "strokeWidth": "3.5",
     "strokeDasharray": "0",
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
     "dataEdgeId": "xy-edge__D1vCHxbpoDqeieiZGC5Kpy2-ajKU5CPlbn7BbWHEhUNaBz1"
   },
   {
@@ -361,6 +449,8 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
     "stroke": "#2b78e4",
     "strokeWidth": "3.5",
     "strokeDasharray": "0",
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
     "dataEdgeId": "xy-edge__ajKU5CPlbn7BbWHEhUNaBx2-cffITx6oAcnvJlK1VLdi8w2"
   },
   {
@@ -369,6 +459,8 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
     "stroke": "#2b78e4",
     "strokeWidth": "3.5",
     "strokeDasharray": "0.8 8",
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
     "dataEdgeId": "xy-edge__cffITx6oAcnvJlK1VLdi8x2-x7vlCNAxfJzobj9HcTaJyw1"
   },
   {
@@ -377,6 +469,8 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
     "stroke": "#2b78e4",
     "strokeWidth": "3.5",
     "strokeDasharray": "0",
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
     "dataEdgeId": "xy-edge__cffITx6oAcnvJlK1VLdi8z2-gKu6tnpTO2PhDDMYp2u7Fy2"
   },
   {
@@ -385,6 +479,8 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
     "stroke": "#2b78e4",
     "strokeWidth": "3.5",
     "strokeDasharray": "0.8 8",
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
     "dataEdgeId": "xy-edge__gKu6tnpTO2PhDDMYp2u7Fx2-xGO1X9aZRgKcgzi6r1xq8w1"
   },
   {
@@ -393,6 +489,8 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
     "stroke": "#2b78e4",
     "strokeWidth": "3.5",
     "strokeDasharray": "0",
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
     "dataEdgeId": "xy-edge__gKu6tnpTO2PhDDMYp2u7Fz2-7rjXtHQhJF6B4iytzS6uuy1"
   },
   {
@@ -401,6 +499,8 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
     "stroke": "#2b78e4",
     "strokeWidth": "3.5",
     "strokeDasharray": "0",
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
     "dataEdgeId": "xy-edge__CBSGvGPoI53p7BezXNm6My2-vQI-4uFQJ6694nm1SCpDRz1"
   },
   {
@@ -409,6 +509,8 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
     "stroke": "#2b78e4",
     "strokeWidth": "3.5",
     "strokeDasharray": "0",
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
     "dataEdgeId": "xy-edge__vQI-4uFQJ6694nm1SCpDRy2-6pRmzfpARAApr1JRCC7f5w2"
   },
   {
@@ -417,6 +519,8 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
     "stroke": "#2b78e4",
     "strokeWidth": "3.5",
     "strokeDasharray": "0",
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
     "dataEdgeId": "xy-edge__EtU_9MOklVBvnvyg30Yfxz2-GdPSm-37Qw8J7uNj9XWYJy2"
   },
   {
@@ -425,6 +529,8 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
     "stroke": "#2b78e4",
     "strokeWidth": "3.5",
     "strokeDasharray": "0",
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
     "dataEdgeId": "xy-edge__vmERbhRIevLLNc7Ny2pWpx2-5dKl6SUQhOsZfUtVR5hzww1"
   },
   {
@@ -433,6 +539,8 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
     "stroke": "#2b78e4",
     "strokeWidth": "3.5",
     "strokeDasharray": "0",
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
     "dataEdgeId": "xy-edge__GdPSm-37Qw8J7uNj9XWYJx2-99TI95HVGrXIYr-PIDxhCw2"
   },
   {
@@ -441,6 +549,8 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
     "stroke": "#2b78e4",
     "strokeWidth": "3.5",
     "strokeDasharray": "0.8 8",
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
     "dataEdgeId": "xy-edge__5dKl6SUQhOsZfUtVR5hzwz2-oyL0M2OP4NTNbIO3zq-Hzy1"
   },
   {
@@ -449,6 +559,8 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
     "stroke": "#2b78e4",
     "strokeWidth": "3.5",
     "strokeDasharray": "0.8 8",
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
     "dataEdgeId": "xy-edge__5dKl6SUQhOsZfUtVR5hzwz2-anEGWHVpcp75e3jQrj_LZy1"
   },
   {
@@ -457,6 +569,8 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
     "stroke": "#2b78e4",
     "strokeWidth": "3.5",
     "strokeDasharray": "0.8 8",
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
     "dataEdgeId": "xy-edge__5dKl6SUQhOsZfUtVR5hzwz2-FdNY8QUbPPpeHFgD8TTaDy1"
   },
   {
@@ -465,6 +579,8 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
     "stroke": "#2b78e4",
     "strokeWidth": "3.5",
     "strokeDasharray": "0.8 8",
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
     "dataEdgeId": "xy-edge__5dKl6SUQhOsZfUtVR5hzwz2-3wib9UH0_OLhKjqKoZEMvy1"
   },
   {
@@ -473,6 +589,8 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
     "stroke": "#2b78e4",
     "strokeWidth": "3.5",
     "strokeDasharray": "0",
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
     "dataEdgeId": "xy-edge__5dKl6SUQhOsZfUtVR5hzwx2-0hi0LdCtj9Paimgfc-l1Ow2"
   },
   {
@@ -481,6 +599,8 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
     "stroke": "#2b78e4",
     "strokeWidth": "3.5",
     "strokeDasharray": "0.8 8",
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
     "dataEdgeId": "xy-edge__0hi0LdCtj9Paimgfc-l1Oz2-vRS7DW2WUaXiHk9oJgg3zy1"
   },
   {
@@ -489,6 +609,8 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
     "stroke": "#2b78e4",
     "strokeWidth": "3.5",
     "strokeDasharray": "0.8 8",
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
     "dataEdgeId": "xy-edge__0hi0LdCtj9Paimgfc-l1Oz2-GKMhIXEuSKdW75-24Zopby1"
   },
   {
@@ -497,6 +619,8 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
     "stroke": "#2b78e4",
     "strokeWidth": "3.5",
     "strokeDasharray": "0",
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
     "dataEdgeId": "xy-edge__0hi0LdCtj9Paimgfc-l1Oy2-PSDG8k44DbOiMrSYsQ0Rxz1"
   },
   {
@@ -505,6 +629,8 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
     "stroke": "#2b78e4",
     "strokeWidth": "3.5",
     "strokeDasharray": "0",
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
     "dataEdgeId": "xy-edge__4dxZmLg0UEaaVEORupOOCz2-A_Kx3pEj0jpnLJzdOpcQ9y1"
   },
   {
@@ -513,6 +639,8 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
     "stroke": "#2b78e4",
     "strokeWidth": "3.5",
     "strokeDasharray": "0",
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
     "dataEdgeId": "xy-edge__A_Kx3pEj0jpnLJzdOpcQ9z2-_Z2miSW4PwILMRtBFajBny1"
   },
   {
@@ -521,6 +649,8 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
     "stroke": "#2b78e4",
     "strokeWidth": "3.5",
     "strokeDasharray": "0.8 8",
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
     "dataEdgeId": "xy-edge__BtO2wH7YYqE25HShI6sd9y2-I-GEE7PvpQmhQSfZmxqwAz1"
   },
   {
@@ -529,6 +659,8 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
     "stroke": "#2b78e4",
     "strokeWidth": "3.5",
     "strokeDasharray": "0.8 8",
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
     "dataEdgeId": "xy-edge__BtO2wH7YYqE25HShI6sd9y2-YWxSI45e5K_4YOrvmh6LVz1"
   },
   {
@@ -537,6 +669,8 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
     "stroke": "#2b78e4",
     "strokeWidth": "3.5",
     "strokeDasharray": "0",
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
     "dataEdgeId": "xy-edge__gCGHtxqD4V_Ite_AXMspfy2-H0cscBaExZPNZuFubBUv7z1"
   },
   {
@@ -545,6 +679,8 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
     "stroke": "#2b78e4",
     "strokeWidth": "3.5",
     "strokeDasharray": "0",
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
     "dataEdgeId": "xy-edge__H0cscBaExZPNZuFubBUv7y2--tzeA13f2jYDm4aO5JciTw1"
   },
   {
@@ -553,6 +689,8 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
     "stroke": "#2b78e4",
     "strokeWidth": "3.5",
     "strokeDasharray": "0.8 8",
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
     "dataEdgeId": "xy-edge__-tzeA13f2jYDm4aO5JciTz2-oTKC1o1OOnPiTh60a8yVcy1"
   },
   {
@@ -561,6 +699,8 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
     "stroke": "#2b78e4",
     "strokeWidth": "3.5",
     "strokeDasharray": "0.8 8",
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
     "dataEdgeId": "xy-edge__-tzeA13f2jYDm4aO5JciTz2-rDIg16eb6B6um1P8uMy51y1"
   },
   {
@@ -569,6 +709,8 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
     "stroke": "#2b78e4",
     "strokeWidth": "3.5",
     "strokeDasharray": "0.8 8",
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
     "dataEdgeId": "xy-edge__-tzeA13f2jYDm4aO5JciTz2-J1aGPkZqDZfUwpVmC88ALy2"
   },
   {
@@ -577,6 +719,8 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
     "stroke": "#2b78e4",
     "strokeWidth": "3.5",
     "strokeDasharray": "0",
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
     "dataEdgeId": "xy-edge__-tzeA13f2jYDm4aO5JciTx2-kvf2CUKBe4qSbZla4Brh3w2"
   },
   {
@@ -585,6 +729,8 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
     "stroke": "#2b78e4",
     "strokeWidth": "3.5",
     "strokeDasharray": "0",
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
     "dataEdgeId": "xy-edge__kvf2CUKBe4qSbZla4Brh3z2-IR0wVIcu1MxOOBiLBnn8Sy1"
   },
   {
@@ -593,6 +739,8 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
     "stroke": "#2b78e4",
     "strokeWidth": "3.5",
     "strokeDasharray": "0",
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
     "dataEdgeId": "xy-edge__IR0wVIcu1MxOOBiLBnn8Sz2-2eiJQUo9lA32lOTR6kbBpy1"
   },
   {
@@ -601,348 +749,352 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
     "stroke": "#2b78e4",
     "strokeWidth": "3.5",
     "strokeDasharray": "0",
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
     "dataEdgeId": "xy-edge__JVXe2QDQaqiJYPupIMhWey2-Tv3sZvus76dmu0X9AqCIUz1"
   },
   {
     "kind": "g",
-    "children": [
-      {
-        "tag": "line",
-        "x1": "-179.13678599861362",
-        "y1": "4336.840756570174",
-        "x2": "-179.13678599861362",
-        "y2": "4435.840756570174",
-        "style": "stroke-linecap: round; stroke-width: 3.65; stroke: #2B78E4; stroke-dasharray: 0;"
-      }
-    ],
     "dataNodeId": "cEqaGDCSHcziRkbYub-nL",
-    "dataType": "vertical"
-  },
-  {
-    "kind": "g",
+    "dataType": "vertical",
     "children": [
       {
         "tag": "line",
-        "x1": "242.59010183215503",
-        "y1": "4316.900127048074",
-        "x2": "242.59010183215503",
-        "y2": "4425.900127048074",
-        "style": "stroke-linecap: round; stroke-width: 3.5; stroke: #2B78E4; stroke-dasharray: 0.8 8;"
+        "x1": -179.13678599861362,
+        "y1": 4336.840756570174,
+        "x2": -179.13678599861362,
+        "y2": 4435.840756570174,
+        "style": "stroke-linecap: round; stroke-width: 3.65; stroke: #2B78E4; stroke-dasharray: 0;"
       }
-    ],
+    ]
+  },
+  {
+    "kind": "g",
     "dataNodeId": "NPwtRNBoFScSbN6uNo-r5",
-    "dataType": "vertical"
-  },
-  {
-    "kind": "g",
+    "dataType": "vertical",
     "children": [
       {
         "tag": "line",
-        "x1": "242.59010183215503",
-        "y1": "4230.900127048074",
-        "x2": "242.59010183215503",
-        "y2": "4326.900127048074",
-        "style": "stroke-linecap: round; stroke-width: 3.65; stroke: #2B78E4; stroke-dasharray: 0;"
+        "x1": 242.59010183215503,
+        "y1": 4316.900127048074,
+        "x2": 242.59010183215503,
+        "y2": 4425.900127048074,
+        "style": "stroke-linecap: round; stroke-width: 3.5; stroke: #2B78E4; stroke-dasharray: 0.8 8;"
       }
-    ],
+    ]
+  },
+  {
+    "kind": "g",
     "dataNodeId": "gBE8BENsb4ufx8LIDajfW",
-    "dataType": "vertical"
-  },
-  {
-    "kind": "g",
+    "dataType": "vertical",
     "children": [
       {
         "tag": "line",
-        "x1": "214.09010183215503",
-        "y1": "3790.1562291401465",
-        "x2": "214.09010183215503",
-        "y2": "3897.1562291401465",
-        "style": "stroke-linecap: round; stroke-width: 3.5; stroke: #2B78E4; stroke-dasharray: 0.8 8;"
+        "x1": 242.59010183215503,
+        "y1": 4230.900127048074,
+        "x2": 242.59010183215503,
+        "y2": 4326.900127048074,
+        "style": "stroke-linecap: round; stroke-width: 3.65; stroke: #2B78E4; stroke-dasharray: 0;"
       }
-    ],
+    ]
+  },
+  {
+    "kind": "g",
     "dataNodeId": "doQmzhu5Lc0_T_HhY_ZRQ",
-    "dataType": "vertical"
-  },
-  {
-    "kind": "g",
+    "dataType": "vertical",
     "children": [
       {
         "tag": "line",
-        "x1": "212.73681648400486",
-        "y1": "3410.1562291401465",
-        "x2": "212.73681648400486",
-        "y2": "3790.1562291401465",
-        "style": "stroke-linecap: round; stroke-width: 3.65; stroke: #2B78E4; stroke-dasharray: 0;"
+        "x1": 214.09010183215503,
+        "y1": 3790.1562291401465,
+        "x2": 214.09010183215503,
+        "y2": 3897.1562291401465,
+        "style": "stroke-linecap: round; stroke-width: 3.5; stroke: #2B78E4; stroke-dasharray: 0.8 8;"
       }
-    ],
+    ]
+  },
+  {
+    "kind": "g",
     "dataNodeId": "Dg-BWXbboOxih40Zsbx1w",
-    "dataType": "vertical"
-  },
-  {
-    "kind": "g",
+    "dataType": "vertical",
     "children": [
       {
         "tag": "line",
-        "x1": "-567.877244443855",
-        "y1": "3410.1562291401465",
-        "x2": "-567.877244443855",
-        "y2": "3522.1562291401465",
-        "style": "stroke-linecap: round; stroke-width: 3.5; stroke: #2B78E4; stroke-dasharray: 0.8 8;"
+        "x1": 212.73681648400486,
+        "y1": 3410.1562291401465,
+        "x2": 212.73681648400486,
+        "y2": 3790.1562291401465,
+        "style": "stroke-linecap: round; stroke-width: 3.65; stroke: #2B78E4; stroke-dasharray: 0;"
       }
-    ],
+    ]
+  },
+  {
+    "kind": "g",
     "dataNodeId": "ojcgfvfZH0b9HPCzyrr76",
-    "dataType": "vertical"
-  },
-  {
-    "kind": "g",
+    "dataType": "vertical",
     "children": [
       {
         "tag": "line",
-        "x1": "-567.877244443855",
-        "y1": "3290.1562291401465",
-        "x2": "-567.877244443855",
-        "y2": "3410.1562291401465",
-        "style": "stroke-linecap: round; stroke-width: 3.65; stroke: #2B78E4; stroke-dasharray: 0;"
+        "x1": -567.877244443855,
+        "y1": 3410.1562291401465,
+        "x2": -567.877244443855,
+        "y2": 3522.1562291401465,
+        "style": "stroke-linecap: round; stroke-width: 3.5; stroke: #2B78E4; stroke-dasharray: 0.8 8;"
       }
-    ],
+    ]
+  },
+  {
+    "kind": "g",
     "dataNodeId": "cbnLwCjLf_psaeZi-iYp8",
-    "dataType": "vertical"
-  },
-  {
-    "kind": "g",
+    "dataType": "vertical",
     "children": [
       {
         "tag": "line",
-        "x1": "-575.8002543352859",
-        "y1": "2873.468418061569",
-        "x2": "-575.8002543352859",
-        "y2": "2967.468418061569",
-        "style": "stroke-linecap: round; stroke-width: 3.5; stroke: #2B78E4; stroke-dasharray: 0.8 8;"
+        "x1": -567.877244443855,
+        "y1": 3290.1562291401465,
+        "x2": -567.877244443855,
+        "y2": 3410.1562291401465,
+        "style": "stroke-linecap: round; stroke-width: 3.65; stroke: #2B78E4; stroke-dasharray: 0;"
       }
-    ],
+    ]
+  },
+  {
+    "kind": "g",
     "dataNodeId": "OtUNfcDZePAfofunkmrhT",
-    "dataType": "vertical"
-  },
-  {
-    "kind": "g",
+    "dataType": "vertical",
     "children": [
       {
         "tag": "line",
-        "x1": "-574.5286124480216",
-        "y1": "2783.468418061569",
-        "x2": "-574.5286124480216",
-        "y2": "2873.468418061569",
-        "style": "stroke-linecap: round; stroke-width: 3.65; stroke: #2B78E4; stroke-dasharray: 0;"
+        "x1": -575.8002543352859,
+        "y1": 2873.468418061569,
+        "x2": -575.8002543352859,
+        "y2": 2967.468418061569,
+        "style": "stroke-linecap: round; stroke-width: 3.5; stroke: #2B78E4; stroke-dasharray: 0.8 8;"
       }
-    ],
+    ]
+  },
+  {
+    "kind": "g",
     "dataNodeId": "PqMBUlZoOdcug-UAFsLJb",
-    "dataType": "vertical"
-  },
-  {
-    "kind": "g",
+    "dataType": "vertical",
     "children": [
       {
         "tag": "line",
-        "x1": "222.59010183215503",
-        "y1": "2590.662863314189",
-        "x2": "222.59010183215503",
-        "y2": "2689.662863314189",
-        "style": "stroke-linecap: round; stroke-width: 3.5; stroke: #2B78E4; stroke-dasharray: 0.8 8;"
-      }
-    ],
-    "dataNodeId": "zHP366x1cR1wN-vPiYHhZ",
-    "dataType": "vertical"
-  },
-  {
-    "kind": "g",
-    "children": [
-      {
-        "tag": "line",
-        "x1": "222.59010183215503",
-        "y1": "2200.0427068474123",
-        "x2": "222.59010183215503",
-        "y2": "2585.0427068474123",
+        "x1": -574.5286124480216,
+        "y1": 2783.468418061569,
+        "x2": -574.5286124480216,
+        "y2": 2873.468418061569,
         "style": "stroke-linecap: round; stroke-width: 3.65; stroke: #2B78E4; stroke-dasharray: 0;"
       }
-    ],
+    ]
+  },
+  {
+    "kind": "g",
+    "dataNodeId": "zHP366x1cR1wN-vPiYHhZ",
+    "dataType": "vertical",
+    "children": [
+      {
+        "tag": "line",
+        "x1": 222.59010183215503,
+        "y1": 2590.662863314189,
+        "x2": 222.59010183215503,
+        "y2": 2689.662863314189,
+        "style": "stroke-linecap: round; stroke-width: 3.5; stroke: #2B78E4; stroke-dasharray: 0.8 8;"
+      }
+    ]
+  },
+  {
+    "kind": "g",
     "dataNodeId": "7IJICU4JD1nx6U_RBSzP5",
-    "dataType": "vertical"
-  },
-  {
-    "kind": "g",
+    "dataType": "vertical",
     "children": [
       {
         "tag": "line",
-        "x1": "-114.5721339272493",
-        "y1": "3408.99034192284",
-        "x2": "-114.5721339272493",
-        "y2": "3476.99034192284",
-        "style": "stroke-linecap: round; stroke-width: 3.5; stroke: #2B78E4; stroke-dasharray: 0.8 8;"
+        "x1": 222.59010183215503,
+        "y1": 2200.0427068474123,
+        "x2": 222.59010183215503,
+        "y2": 2585.0427068474123,
+        "style": "stroke-linecap: round; stroke-width: 3.65; stroke: #2B78E4; stroke-dasharray: 0;"
       }
-    ],
+    ]
+  },
+  {
+    "kind": "g",
     "dataNodeId": "-QuPBTN17APQs_K_5dthH",
-    "dataType": "vertical"
-  },
-  {
-    "kind": "g",
+    "dataType": "vertical",
     "children": [
       {
         "tag": "line",
-        "x1": "-242.22471681944066",
-        "y1": "3408.99034192284",
-        "x2": "-242.22471681944066",
-        "y2": "3496.99034192284",
+        "x1": -114.5721339272493,
+        "y1": 3408.99034192284,
+        "x2": -114.5721339272493,
+        "y2": 3476.99034192284,
         "style": "stroke-linecap: round; stroke-width: 3.5; stroke: #2B78E4; stroke-dasharray: 0.8 8;"
       }
-    ],
+    ]
+  },
+  {
+    "kind": "g",
     "dataNodeId": "Th-lcjV757LPbE9-GiV0n",
-    "dataType": "vertical"
-  },
-  {
-    "kind": "g",
+    "dataType": "vertical",
     "children": [
       {
         "tag": "line",
-        "x1": "-84.07226604893799",
-        "y1": "3800.9417330113006",
-        "x2": "-84.07226604893799",
-        "y2": "3890.9417330113006",
+        "x1": -242.22471681944066,
+        "y1": 3408.99034192284,
+        "x2": -242.22471681944066,
+        "y2": 3496.99034192284,
         "style": "stroke-linecap: round; stroke-width: 3.5; stroke: #2B78E4; stroke-dasharray: 0.8 8;"
       }
-    ],
+    ]
+  },
+  {
+    "kind": "g",
     "dataNodeId": "psWP39v7s4pzceS0Md_LC",
-    "dataType": "vertical"
-  },
-  {
-    "kind": "g",
+    "dataType": "vertical",
     "children": [
       {
         "tag": "line",
-        "x1": "-176.87702399003763",
-        "y1": "3800.9417330113006",
-        "x2": "-176.87702399003763",
-        "y2": "3904.9417330113006",
+        "x1": -84.07226604893799,
+        "y1": 3800.9417330113006,
+        "x2": -84.07226604893799,
+        "y2": 3890.9417330113006,
         "style": "stroke-linecap: round; stroke-width: 3.5; stroke: #2B78E4; stroke-dasharray: 0.8 8;"
       }
-    ],
+    ]
+  },
+  {
+    "kind": "g",
     "dataNodeId": "xLcOV9sOrq1NqJ1pryE-Z",
-    "dataType": "vertical"
-  },
-  {
-    "kind": "g",
+    "dataType": "vertical",
     "children": [
       {
         "tag": "line",
-        "x1": "-266.87702399003757",
-        "y1": "3800.9417330113006",
-        "x2": "-266.87702399003757",
-        "y2": "3901.9417330113006",
+        "x1": -176.87702399003763,
+        "y1": 3800.9417330113006,
+        "x2": -176.87702399003763,
+        "y2": 3904.9417330113006,
         "style": "stroke-linecap: round; stroke-width: 3.5; stroke: #2B78E4; stroke-dasharray: 0.8 8;"
       }
-    ],
+    ]
+  },
+  {
+    "kind": "g",
     "dataNodeId": "l4tmzOF538jdw5JxxLSHG",
-    "dataType": "vertical"
-  },
-  {
-    "kind": "g",
+    "dataType": "vertical",
     "children": [
       {
         "tag": "line",
-        "x1": "-511.32973733769404",
-        "y1": "1426.414507233565",
-        "x2": "-511.32973733769404",
-        "y2": "1491.414507233565",
+        "x1": -266.87702399003757,
+        "y1": 3800.9417330113006,
+        "x2": -266.87702399003757,
+        "y2": 3901.9417330113006,
         "style": "stroke-linecap: round; stroke-width: 3.5; stroke: #2B78E4; stroke-dasharray: 0.8 8;"
       }
-    ],
+    ]
+  },
+  {
+    "kind": "g",
     "dataNodeId": "684iPXqT5NHpzH0dlad9X",
-    "dataType": "vertical"
-  },
-  {
-    "kind": "g",
+    "dataType": "vertical",
     "children": [
       {
         "tag": "line",
-        "x1": "-643.2201625137221",
-        "y1": "1426.414507233565",
-        "x2": "-643.2201625137221",
-        "y2": "1491.414507233565",
+        "x1": -511.32973733769404,
+        "y1": 1426.414507233565,
+        "x2": -511.32973733769404,
+        "y2": 1491.414507233565,
         "style": "stroke-linecap: round; stroke-width: 3.5; stroke: #2B78E4; stroke-dasharray: 0.8 8;"
       }
-    ],
+    ]
+  },
+  {
+    "kind": "g",
     "dataNodeId": "UPQHSVwx7SxxAdnf7qfom",
-    "dataType": "vertical"
-  },
-  {
-    "kind": "g",
+    "dataType": "vertical",
     "children": [
       {
         "tag": "line",
-        "x1": "-503.0286124480216",
-        "y1": "1241.6199189960987",
-        "x2": "-503.0286124480216",
-        "y2": "1306.6199189960987",
+        "x1": -643.2201625137221,
+        "y1": 1426.414507233565,
+        "x2": -643.2201625137221,
+        "y2": 1491.414507233565,
         "style": "stroke-linecap: round; stroke-width: 3.5; stroke: #2B78E4; stroke-dasharray: 0.8 8;"
       }
-    ],
+    ]
+  },
+  {
+    "kind": "g",
     "dataNodeId": "Jkl-KlZvQU3RqJAM93A9n",
-    "dataType": "vertical"
-  },
-  {
-    "kind": "g",
+    "dataType": "vertical",
     "children": [
       {
         "tag": "line",
-        "x1": "-639.1105876897502",
-        "y1": "1241.6199189960987",
-        "x2": "-639.1105876897502",
-        "y2": "1306.6199189960987",
+        "x1": -503.0286124480216,
+        "y1": 1241.6199189960987,
+        "x2": -503.0286124480216,
+        "y2": 1306.6199189960987,
         "style": "stroke-linecap: round; stroke-width: 3.5; stroke: #2B78E4; stroke-dasharray: 0.8 8;"
       }
-    ],
+    ]
+  },
+  {
+    "kind": "g",
     "dataNodeId": "MfIHWV_un6KsJxM8yKNDx",
-    "dataType": "vertical"
-  },
-  {
-    "kind": "g",
+    "dataType": "vertical",
     "children": [
       {
         "tag": "line",
-        "x1": "-90.1381872719935",
-        "y1": "1083.800858623439",
-        "x2": "-90.1381872719935",
-        "y2": "1148.800858623439",
+        "x1": -639.1105876897502,
+        "y1": 1241.6199189960987,
+        "x2": -639.1105876897502,
+        "y2": 1306.6199189960987,
         "style": "stroke-linecap: round; stroke-width: 3.5; stroke: #2B78E4; stroke-dasharray: 0.8 8;"
       }
-    ],
+    ]
+  },
+  {
+    "kind": "g",
     "dataNodeId": "UnCK701KLCuDm02-rRA-A",
-    "dataType": "vertical"
-  },
-  {
-    "kind": "g",
+    "dataType": "vertical",
     "children": [
       {
         "tag": "line",
-        "x1": "-259.1381872719935",
-        "y1": "1074.800858623439",
-        "x2": "-259.1381872719935",
-        "y2": "1139.800858623439",
+        "x1": -90.1381872719935,
+        "y1": 1083.800858623439,
+        "x2": -90.1381872719935,
+        "y2": 1148.800858623439,
         "style": "stroke-linecap: round; stroke-width: 3.5; stroke: #2B78E4; stroke-dasharray: 0.8 8;"
       }
-    ],
-    "dataNodeId": "1Yrc0ZVM3XjZuCm_Us-s0",
-    "dataType": "vertical"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "1Yrc0ZVM3XjZuCm_Us-s0",
+    "dataType": "vertical",
+    "children": [
+      {
+        "tag": "line",
+        "x1": -259.1381872719935,
+        "y1": 1074.800858623439,
+        "x2": -259.1381872719935,
+        "y2": 1139.800858623439,
+        "style": "stroke-linecap: round; stroke-width: 3.5; stroke: #2B78E4; stroke-dasharray: 0.8 8;"
+      }
+    ]
+  },
+  {
+    "kind": "g",
+    "dataNodeId": "AvbMQ5vY3ip1oX_6Yq4ie",
+    "dataType": "paragraph",
     "children": [
       {
         "tag": "rect",
-        "x": "62.84010183215503",
-        "y": "758.4254066561159",
-        "width": "305",
-        "height": "70.5",
-        "rx": "5",
+        "x": 62.84010183215503,
+        "y": 758.4254066561159,
+        "width": 305,
+        "height": 70.5,
+        "rx": 5,
         "fill": "transparent",
         "stroke": "transparent",
         "strokeWidth": "2.5"
@@ -952,163 +1104,170 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
         "fill": "black",
         "tspans": [
           {
-            "text": "Programming Fundamentals ",
-            "x": "80.09010183215503",
-            "y": "789.4254066561159",
-            "dy": "0",
+            "text": "Programming Fundamentals",
+            "x": 80.09010183215503,
+            "y": 789.4254066561159,
+            "dy": 0,
             "textAnchor": "start",
             "dominantBaseline": "middle",
             "fontSize": "20"
           }
         ]
       }
-    ],
-    "dataNodeId": "AvbMQ5vY3ip1oX_6Yq4ie",
-    "dataType": "paragraph"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "9CPcys38Ir077u37jFe02",
+    "dataType": "section",
     "children": [
       {
         "tag": "rect",
-        "x": "-709.7881872719935",
-        "y": "-148.2492517776511",
-        "width": "298.3",
-        "height": "114.3",
-        "rx": "5",
+        "x": -709.7881872719935,
+        "y": -148.2492517776511,
+        "width": 298.3,
+        "height": 114.3,
+        "rx": 5,
         "fill": "#ffffff",
         "stroke": "#000000",
         "strokeWidth": "2.7"
       },
       {
         "tag": "text",
-        "x": "-711.1381872719935",
-        "y": "-157.5992517776511",
+        "x": -711.1381872719935,
+        "y": -157.5992517776511,
+        "r": "left",
         "fill": "black",
-        "fontSize": "17",
         "textAnchor": "left",
         "dominantBaseline": "auto",
+        "fontSize": "17",
         "tspans": [
-          {}
+          {
+            "text": ""
+          }
         ]
       }
-    ],
-    "dataNodeId": "9CPcys38Ir077u37jFe02",
-    "dataType": "section"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "7aSscXd-UMNWOX7A_vxYh",
+    "dataType": "title",
+    "dataTitle": "Machine Learning",
     "children": [
       {
         "tag": "text",
-        "x": "-174.6381872719935",
-        "y": "1.4007482223489092",
+        "x": -174.6381872719935,
+        "y": 1.4007482223489092,
+        "r": "middle",
         "fill": "black",
-        "fontSize": "28",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
+        "fontSize": "28",
         "tspans": [
           {
             "text": "Machine Learning"
           }
         ]
       }
-    ],
-    "dataNodeId": "7aSscXd-UMNWOX7A_vxYh",
-    "dataType": "title",
-    "dataTitle": "Machine Learning"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "_LvWarjrzvIOi8StMezyM",
+    "dataType": "vertical",
     "children": [
       {
         "tag": "line",
-        "x1": "-174.6381872719935",
-        "y1": "-135.5992517776511",
-        "x2": "-174.6381872719935",
-        "y2": "-33.59925177765109",
+        "x1": -174.6381872719935,
+        "y1": -135.5992517776511,
+        "x2": -174.6381872719935,
+        "y2": -33.59925177765109,
         "style": "stroke-linecap: round; stroke-width: 3.5; stroke: #2B78E4; stroke-dasharray: 0.8 8;"
       }
-    ],
-    "dataNodeId": "_LvWarjrzvIOi8StMezyM",
-    "dataType": "vertical"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "JqcGwkk1cuTnXA8SHpTKr",
+    "dataType": "label",
     "children": [
       {
         "tag": "text",
-        "x": "-612.6381872719935",
-        "y": "-110.59925177765109",
+        "x": -612.6381872719935,
+        "y": -110.59925177765109,
+        "r": "left",
         "fill": "black",
-        "fontSize": "17",
         "textAnchor": "left",
         "dominantBaseline": "auto",
+        "fontSize": "17",
         "tspans": [
           {
             "text": "Pre-requisites"
           }
         ]
       }
-    ],
-    "dataNodeId": "JqcGwkk1cuTnXA8SHpTKr",
-    "dataType": "label"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "PUVM4XqV7j5nXBAbIAKwG",
+    "dataType": "button",
+    "dataLink": "https://roadmap.sh/python-data-analysis",
     "children": [
       {
         "tag": "rect",
-        "x": "-698.2881872719935",
-        "y": "-91.2492517776511",
-        "width": "274.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": -698.2881872719935,
+        "y": -91.2492517776511,
+        "width": 274.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#E3E3E3",
         "stroke": "#E3E3E3",
         "strokeWidth": "2.7"
       },
       {
         "tag": "text",
-        "x": "-561.1381872719935",
-        "y": "-65.94925177765109",
+        "x": -561.1381872719935,
+        "y": -65.94925177765109,
+        "r": "middle",
         "fill": "#000000",
-        "fontSize": "17",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
+        "fontSize": "17",
         "tspans": [
           {
             "text": "Python Roadmap"
           }
         ]
       }
-    ],
-    "dataNodeId": "PUVM4XqV7j5nXBAbIAKwG",
-    "dataType": "button",
-    "dataLink": "https://roadmap.sh/python-data-analysis"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "iAWm99EoRnpzLlw6XDuaf",
+    "dataType": "linksgroup",
     "children": [
       {
         "tag": "rect",
-        "x": "-709.7881872719935",
-        "y": "-20.88418241086125",
-        "width": "301.3",
-        "height": "160.3",
-        "rx": "5",
+        "x": -709.7881872719935,
+        "y": -20.88418241086125,
+        "width": 301.3,
+        "height": 160.3,
+        "rx": 5,
         "fill": "white",
         "stroke": "black",
         "strokeWidth": "2.7"
       },
       {
         "tag": "text",
-        "x": "-687.1381872719935",
-        "y": "6.765817589138749",
+        "x": -687.1381872719935,
+        "y": 6.765817589138749,
+        "r": "left",
         "fill": "black",
-        "fontSize": "16",
         "textAnchor": "left",
         "dominantBaseline": "middle",
+        "fontSize": "16",
         "tspans": [
           {
             "text": "Related Roadmaps"
@@ -1116,127 +1275,142 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
         ]
       },
       {
-        "tag": "g",
-        "children": [
-          {
-            "tag": "circle",
-            "cx": "-678.6381872719935",
-            "cy": "45.26581758913875",
-            "r": "9.5",
-            "fill": "#6b7280",
-            "id": "icon-link"
-          },
-          {
-            "tag": "path",
-            "d": "M-682.6381872719935 45.26581758913875L-680.1381872719935 48.26581758913875 -675.1381872719935 43.26581758913875",
-            "fill": "none",
-            "stroke": "#fff",
-            "strokeWidth": "2",
-            "strokeLinecap": "round",
-            "strokeLinejoin": "round"
-          },
-          {
-            "tag": "text",
-            "x": "-661.1381872719935",
-            "y": "46.76581758913875",
-            "fill": "black",
-            "fontSize": "16",
-            "textAnchor": "left",
-            "dominantBaseline": "middle",
-            "tspans": [
-              {
-                "text": "AI Engineer Roadmap"
-              }
-            ]
-          }
-        ]
+        "tag": "circle",
+        "x": -678.6381872719935,
+        "y": 45.26581758913875,
+        "cx": -678.6381872719935,
+        "cy": 45.26581758913875,
+        "r": 9.5,
+        "fill": "#6b7280",
+        "id": "icon-link",
+        "d": "icon-link"
       },
       {
-        "tag": "g",
-        "children": [
-          {
-            "tag": "circle",
-            "cx": "-678.6381872719935",
-            "cy": "75.26581758913875",
-            "r": "9.5",
-            "fill": "#6b7280",
-            "id": "icon-link"
-          },
-          {
-            "tag": "path",
-            "d": "M-682.6381872719935 75.26581758913875L-680.1381872719935 78.26581758913875 -675.1381872719935 73.26581758913875",
-            "fill": "none",
-            "stroke": "#fff",
-            "strokeWidth": "2",
-            "strokeLinecap": "round",
-            "strokeLinejoin": "round"
-          },
-          {
-            "tag": "text",
-            "x": "-661.1381872719935",
-            "y": "76.76581758913875",
-            "fill": "black",
-            "fontSize": "16",
-            "textAnchor": "left",
-            "dominantBaseline": "middle",
-            "tspans": [
-              {
-                "text": "MLOps Roadmap"
-              }
-            ]
-          }
-        ]
+        "tag": "path",
+        "width": 2,
+        "fill": "none",
+        "stroke": "#fff",
+        "strokeWidth": "2",
+        "d": "M-682.6381872719935 45.26581758913875L-680.1381872719935 48.26581758913875 -675.1381872719935 43.26581758913875"
       },
       {
-        "tag": "g",
-        "children": [
+        "tag": "text",
+        "x": -661.1381872719935,
+        "y": 46.76581758913875,
+        "r": "left",
+        "fill": "black",
+        "textAnchor": "left",
+        "dominantBaseline": "middle",
+        "fontSize": "16",
+        "tspans": [
           {
-            "tag": "circle",
-            "cx": "-678.6381872719935",
-            "cy": "105.26581758913875",
-            "r": "9.5",
-            "fill": "#6b7280",
-            "id": "icon-link"
-          },
-          {
-            "tag": "path",
-            "d": "M-682.6381872719935 105.26581758913875L-680.1381872719935 108.26581758913875 -675.1381872719935 103.26581758913875",
-            "fill": "none",
-            "stroke": "#fff",
-            "strokeWidth": "2",
-            "strokeLinecap": "round",
-            "strokeLinejoin": "round"
-          },
-          {
-            "tag": "text",
-            "x": "-661.1381872719935",
-            "y": "106.76581758913875",
-            "fill": "black",
-            "fontSize": "16",
-            "textAnchor": "left",
-            "dominantBaseline": "middle",
-            "tspans": [
-              {
-                "text": "AI and Data Scientist Roadm..."
-              }
-            ]
+            "text": "AI Engineer Roadmap"
           }
         ]
       }
-    ],
-    "dataNodeId": "iAWm99EoRnpzLlw6XDuaf",
-    "dataType": "linksgroup"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "JgDMCkyrhYOqMWSQpf8XB",
+    "dataType": "link-item",
+    "dataParentId": "iAWm99EoRnpzLlw6XDuaf",
+    "dataLink": "https://roadmap.sh/mlops",
+    "children": [
+      {
+        "tag": "circle",
+        "x": -678.6381872719935,
+        "y": 75.26581758913875,
+        "cx": -678.6381872719935,
+        "cy": 75.26581758913875,
+        "r": 9.5,
+        "fill": "#6b7280",
+        "id": "icon-link",
+        "d": "icon-link"
+      },
+      {
+        "tag": "path",
+        "width": 2,
+        "fill": "none",
+        "stroke": "#fff",
+        "strokeWidth": "2",
+        "d": "M-682.6381872719935 75.26581758913875L-680.1381872719935 78.26581758913875 -675.1381872719935 73.26581758913875"
+      },
+      {
+        "tag": "text",
+        "x": -661.1381872719935,
+        "y": 76.76581758913875,
+        "r": "left",
+        "fill": "black",
+        "textAnchor": "left",
+        "dominantBaseline": "middle",
+        "fontSize": "16",
+        "tspans": [
+          {
+            "text": "MLOps Roadmap"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "kind": "g",
+    "dataNodeId": "zQY2A8kksRwc7J98ijx52",
+    "dataType": "link-item",
+    "dataParentId": "iAWm99EoRnpzLlw6XDuaf",
+    "dataLink": "https://roadmap.sh/ai-data-scientist",
+    "children": [
+      {
+        "tag": "circle",
+        "x": -678.6381872719935,
+        "y": 105.26581758913875,
+        "cx": -678.6381872719935,
+        "cy": 105.26581758913875,
+        "r": 9.5,
+        "fill": "#6b7280",
+        "id": "icon-link",
+        "d": "icon-link"
+      },
+      {
+        "tag": "path",
+        "width": 2,
+        "fill": "none",
+        "stroke": "#fff",
+        "strokeWidth": "2",
+        "d": "M-682.6381872719935 105.26581758913875L-680.1381872719935 108.26581758913875 -675.1381872719935 103.26581758913875"
+      },
+      {
+        "tag": "text",
+        "x": -661.1381872719935,
+        "y": 106.76581758913875,
+        "r": "left",
+        "fill": "black",
+        "textAnchor": "left",
+        "dominantBaseline": "middle",
+        "fontSize": "16",
+        "tspans": [
+          {
+            "text": "AI and Data Scientist Roadm..."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "kind": "g",
+    "dataNodeId": "MEL6y3vwiqwAV6FQihF34",
+    "dataType": "topic",
+    "dataTitle": "Introduction",
+    "dataParentId": "7aSscXd-UMNWOX7A_vxYh",
+    "dataParentTitle": "Machine Learning",
     "children": [
       {
         "tag": "rect",
-        "x": "-269.2881872719935",
-        "y": "142.11581758913874",
-        "width": "189.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": -269.2881872719935,
+        "y": 142.11581758913874,
+        "width": 189.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#fdff00",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -1244,35 +1418,36 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "-174.6381872719935",
-        "y": "167.41581758913875",
+        "x": -174.6381872719935,
+        "y": 167.41581758913875,
+        "r": "middle",
         "fill": "#000000",
-        "fontSize": "17",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
+        "fontSize": "17",
         "tspans": [
           {
             "text": "Introduction"
           }
         ]
       }
-    ],
-    "dataNodeId": "MEL6y3vwiqwAV6FQihF34",
-    "dataType": "topic",
-    "dataTitle": "Introduction",
-    "dataParentId": "7aSscXd-UMNWOX7A_vxYh",
-    "dataParentTitle": "Machine Learning"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "GHO6lN3GTiIRH1P70IRaZ",
+    "dataType": "subtopic",
+    "dataTitle": "ML Engineer vs AI Engineer",
+    "dataParentId": "MEL6y3vwiqwAV6FQihF34",
+    "dataParentTitle": "Introduction",
     "children": [
       {
         "tag": "rect",
-        "x": "55.51221816805975",
-        "y": "142.11581758913874",
-        "width": "288.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": 55.51221816805975,
+        "y": 142.11581758913874,
+        "width": 288.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#ffe599",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -1280,35 +1455,36 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "199.66221816805975",
-        "y": "167.41581758913875",
+        "x": 199.66221816805975,
+        "y": 167.41581758913875,
+        "r": "middle",
         "fill": "#000000",
-        "fontSize": "17",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
+        "fontSize": "17",
         "tspans": [
           {
             "text": "ML Engineer vs AI Engineer"
           }
         ]
       }
-    ],
-    "dataNodeId": "GHO6lN3GTiIRH1P70IRaZ",
-    "dataType": "subtopic",
-    "dataTitle": "ML Engineer vs AI Engineer",
-    "dataParentId": "MEL6y3vwiqwAV6FQihF34",
-    "dataParentTitle": "Introduction"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "BzZd-d5t63dY97SRSIb0J",
+    "dataType": "subtopic",
+    "dataTitle": "Skills and Responsibilities",
+    "dataParentId": "MEL6y3vwiqwAV6FQihF34",
+    "dataParentTitle": "Introduction",
     "children": [
       {
         "tag": "rect",
-        "x": "55.51221816805975",
-        "y": "194.11581758913874",
-        "width": "288.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": 55.51221816805975,
+        "y": 194.11581758913874,
+        "width": 288.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#ffe599",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -1316,35 +1492,36 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "199.66221816805975",
-        "y": "219.41581758913875",
+        "x": 199.66221816805975,
+        "y": 219.41581758913875,
+        "r": "middle",
         "fill": "#000000",
-        "fontSize": "17",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
+        "fontSize": "17",
         "tspans": [
           {
             "text": "Skills and Responsibilities"
           }
         ]
       }
-    ],
-    "dataNodeId": "BzZd-d5t63dY97SRSIb0J",
-    "dataType": "subtopic",
-    "dataTitle": "Skills and Responsibilities",
-    "dataParentId": "MEL6y3vwiqwAV6FQihF34",
-    "dataParentTitle": "Introduction"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "FgzPlLUfGdlZPvPku0-Xl",
+    "dataType": "subtopic",
+    "dataTitle": "What is an ML Engineer?",
+    "dataParentId": "MEL6y3vwiqwAV6FQihF34",
+    "dataParentTitle": "Introduction",
     "children": [
       {
         "tag": "rect",
-        "x": "55.51221816805975",
-        "y": "90.11581758913874",
-        "width": "288.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": 55.51221816805975,
+        "y": 90.11581758913874,
+        "width": 288.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#ffe599",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -1352,35 +1529,33 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "199.66221816805975",
-        "y": "115.41581758913875",
+        "x": 199.66221816805975,
+        "y": 115.41581758913875,
+        "r": "middle",
         "fill": "#000000",
-        "fontSize": "17",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
+        "fontSize": "17",
         "tspans": [
           {
             "text": "What is an ML Engineer?"
           }
         ]
       }
-    ],
-    "dataNodeId": "FgzPlLUfGdlZPvPku0-Xl",
-    "dataType": "subtopic",
-    "dataTitle": "What is an ML Engineer?",
-    "dataParentId": "MEL6y3vwiqwAV6FQihF34",
-    "dataParentTitle": "Introduction"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "iQi7BVBigtFDZTMno2Kbq",
+    "dataType": "paragraph",
     "children": [
       {
         "tag": "rect",
-        "x": "-318.3881872719935",
-        "y": "268.22552751650323",
-        "width": "290",
-        "height": "64.5",
-        "rx": "5",
+        "x": -318.3881872719935,
+        "y": 268.22552751650323,
+        "width": 290,
+        "height": 64.5,
+        "rx": 5,
         "fill": "transparent",
         "stroke": "transparent",
         "strokeWidth": "2.5"
@@ -1390,30 +1565,33 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
         "fill": "#000000",
         "tspans": [
           {
-            "text": "Mathematical Foundations ",
-            "x": "-174.6381872719935",
-            "y": "299.22552751650323",
-            "dy": "0",
+            "text": "Mathematical Foundations",
+            "x": -174.6381872719935,
+            "y": 299.22552751650323,
+            "dy": 0,
             "textAnchor": "middle",
             "dominantBaseline": "middle",
             "fontSize": "20"
           }
         ]
       }
-    ],
-    "dataNodeId": "iQi7BVBigtFDZTMno2Kbq",
-    "dataType": "paragraph"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "83UDoO1vC0LjL-qpI0Jh-",
+    "dataType": "topic",
+    "dataTitle": "Linear Algebra",
+    "dataParentId": "iQi7BVBigtFDZTMno2Kbq",
+    "dataParentTitle": "Mathematical Foundations ",
     "children": [
       {
         "tag": "rect",
-        "x": "-269.2881872719935",
-        "y": "415.1487045866041",
-        "width": "189.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": -269.2881872719935,
+        "y": 415.1487045866041,
+        "width": 189.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#fdff00",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -1421,35 +1599,36 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "-174.6381872719935",
-        "y": "440.44870458660404",
+        "x": -174.6381872719935,
+        "y": 440.44870458660404,
+        "r": "middle",
         "fill": "#000000",
-        "fontSize": "17",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
+        "fontSize": "17",
         "tspans": [
           {
             "text": "Linear Algebra"
           }
         ]
       }
-    ],
-    "dataNodeId": "83UDoO1vC0LjL-qpI0Jh-",
-    "dataType": "topic",
-    "dataTitle": "Linear Algebra",
-    "dataParentId": "iQi7BVBigtFDZTMno2Kbq",
-    "dataParentTitle": "Mathematical Foundations "
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "wHlEinHuRARp5OfSulpA-",
+    "dataType": "topic",
+    "dataTitle": "Calculus",
+    "dataParentId": "83UDoO1vC0LjL-qpI0Jh-",
+    "dataParentTitle": "Linear Algebra",
     "children": [
       {
         "tag": "rect",
-        "x": "-709.7881872719935",
-        "y": "415.1487045866041",
-        "width": "278.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": -709.7881872719935,
+        "y": 415.1487045866041,
+        "width": 278.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#fdff00",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -1457,35 +1636,34 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "-570.6381872719935",
-        "y": "440.44870458660404",
+        "x": -570.6381872719935,
+        "y": 440.44870458660404,
+        "r": "middle",
         "fill": "#000000",
-        "fontSize": "17",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
+        "fontSize": "17",
         "tspans": [
           {
             "text": "Calculus"
           }
         ]
       }
-    ],
-    "dataNodeId": "wHlEinHuRARp5OfSulpA-",
-    "dataType": "topic",
-    "dataTitle": "Calculus",
-    "dataParentId": "83UDoO1vC0LjL-qpI0Jh-",
-    "dataParentTitle": "Linear Algebra"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "jJukG4XxfFcID_VlQKqe-",
+    "dataType": "subtopic",
+    "dataTitle": "Chain rule of derivation",
     "children": [
       {
         "tag": "rect",
-        "x": "-709.7881872719935",
-        "y": "253.06843073801528",
-        "width": "278.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": -709.7881872719935,
+        "y": 253.06843073801528,
+        "width": 278.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#ffe599",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -1493,33 +1671,36 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "-570.6381872719935",
-        "y": "278.36843073801526",
+        "x": -570.6381872719935,
+        "y": 278.36843073801526,
+        "r": "middle",
         "fill": "#000000",
-        "fontSize": "17",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
+        "fontSize": "17",
         "tspans": [
           {
             "text": "Chain rule of derivation"
           }
         ]
       }
-    ],
-    "dataNodeId": "jJukG4XxfFcID_VlQKqe-",
-    "dataType": "subtopic",
-    "dataTitle": "Chain rule of derivation"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "3BxbkrBp8veZj38zdwN8s",
+    "dataType": "subtopic",
+    "dataTitle": "Gradient, Jacobian, Hessian",
+    "dataParentId": "wHlEinHuRARp5OfSulpA-",
+    "dataParentTitle": "Calculus",
     "children": [
       {
         "tag": "rect",
-        "x": "-709.7881872719935",
-        "y": "305.0684307380153",
-        "width": "278.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": -709.7881872719935,
+        "y": 305.0684307380153,
+        "width": 278.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#ffe599",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -1527,35 +1708,34 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "-570.6381872719935",
-        "y": "330.36843073801526",
+        "x": -570.6381872719935,
+        "y": 330.36843073801526,
+        "r": "middle",
         "fill": "#000000",
-        "fontSize": "17",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
+        "fontSize": "17",
         "tspans": [
           {
             "text": "Gradient, Jacobian, Hessian"
           }
         ]
       }
-    ],
-    "dataNodeId": "3BxbkrBp8veZj38zdwN8s",
-    "dataType": "subtopic",
-    "dataTitle": "Gradient, Jacobian, Hessian",
-    "dataParentId": "wHlEinHuRARp5OfSulpA-",
-    "dataParentTitle": "Calculus"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "GN6SnI7RXIeW8JeD-qORW",
+    "dataType": "subtopic",
+    "dataTitle": "Derivatives, Partial Derivatives",
     "children": [
       {
         "tag": "rect",
-        "x": "-709.7881872719935",
-        "y": "201.06843073801528",
-        "width": "278.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": -709.7881872719935,
+        "y": 201.06843073801528,
+        "width": 278.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#ffe599",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -1563,33 +1743,36 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "-570.6381872719935",
-        "y": "226.3684307380153",
+        "x": -570.6381872719935,
+        "y": 226.3684307380153,
+        "r": "middle",
         "fill": "#000000",
-        "fontSize": "17",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
+        "fontSize": "17",
         "tspans": [
           {
             "text": "Derivatives, Partial Derivatives"
           }
         ]
       }
-    ],
-    "dataNodeId": "GN6SnI7RXIeW8JeD-qORW",
-    "dataType": "subtopic",
-    "dataTitle": "Derivatives, Partial Derivatives"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "d7J8GEkut61NDGRzROJoP",
+    "dataType": "subtopic",
+    "dataTitle": "Scalars, Vectors, Tensors",
+    "dataParentId": "83UDoO1vC0LjL-qpI0Jh-",
+    "dataParentTitle": "Linear Algebra",
     "children": [
       {
         "tag": "rect",
-        "x": "55.51221816805975",
-        "y": "362.8426955731004",
-        "width": "288.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": 55.51221816805975,
+        "y": 362.8426955731004,
+        "width": 288.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#ffe599",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -1597,35 +1780,36 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "199.66221816805975",
-        "y": "388.14269557310035",
+        "x": 199.66221816805975,
+        "y": 388.14269557310035,
+        "r": "middle",
         "fill": "#000000",
-        "fontSize": "17",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
+        "fontSize": "17",
         "tspans": [
           {
             "text": "Scalars, Vectors, Tensors"
           }
         ]
       }
-    ],
-    "dataNodeId": "d7J8GEkut61NDGRzROJoP",
-    "dataType": "subtopic",
-    "dataTitle": "Scalars, Vectors, Tensors",
-    "dataParentId": "83UDoO1vC0LjL-qpI0Jh-",
-    "dataParentTitle": "Linear Algebra"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "yGs2h10gZcO4GMaWfI3uW",
+    "dataType": "subtopic",
+    "dataTitle": "Singular Value Decomposition",
+    "dataParentId": "83UDoO1vC0LjL-qpI0Jh-",
+    "dataParentTitle": "Linear Algebra",
     "children": [
       {
         "tag": "rect",
-        "x": "55.51221816805975",
-        "y": "414.8426955731004",
-        "width": "288.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": 55.51221816805975,
+        "y": 414.8426955731004,
+        "width": 288.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#ffe599",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -1633,35 +1817,36 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "199.66221816805975",
-        "y": "440.14269557310035",
+        "x": 199.66221816805975,
+        "y": 440.14269557310035,
+        "r": "middle",
         "fill": "#000000",
-        "fontSize": "17",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
+        "fontSize": "17",
         "tspans": [
           {
             "text": "Singular Value Decomposition"
           }
         ]
       }
-    ],
-    "dataNodeId": "yGs2h10gZcO4GMaWfI3uW",
-    "dataType": "subtopic",
-    "dataTitle": "Singular Value Decomposition",
-    "dataParentId": "83UDoO1vC0LjL-qpI0Jh-",
-    "dataParentTitle": "Linear Algebra"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "1IhaXJxNREq2HA1nT-lMM",
+    "dataType": "subtopic",
+    "dataTitle": "Matrix &amp; Matrix Operations",
+    "dataParentId": "83UDoO1vC0LjL-qpI0Jh-",
+    "dataParentTitle": "Linear Algebra",
     "children": [
       {
         "tag": "rect",
-        "x": "55.51221816805975",
-        "y": "310.8426955731004",
-        "width": "288.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": 55.51221816805975,
+        "y": 310.8426955731004,
+        "width": 288.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#ffe599",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -1669,35 +1854,36 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "199.66221816805975",
-        "y": "336.14269557310035",
+        "x": 199.66221816805975,
+        "y": 336.14269557310035,
+        "r": "middle",
         "fill": "#000000",
-        "fontSize": "17",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
+        "fontSize": "17",
         "tspans": [
           {
-            "text": "Matrix & Matrix Operations"
+            "text": "Matrix &amp; Matrix Operations"
           }
         ]
       }
-    ],
-    "dataNodeId": "1IhaXJxNREq2HA1nT-lMM",
-    "dataType": "subtopic",
-    "dataTitle": "Matrix & Matrix Operations",
-    "dataParentId": "83UDoO1vC0LjL-qpI0Jh-",
-    "dataParentTitle": "Linear Algebra"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "3p98Uwf8gyALDr-89lBEZ",
+    "dataType": "subtopic",
+    "dataTitle": "Eigenvalues, Diagonalization",
+    "dataParentId": "83UDoO1vC0LjL-qpI0Jh-",
+    "dataParentTitle": "Linear Algebra",
     "children": [
       {
         "tag": "rect",
-        "x": "55.51221816805975",
-        "y": "518.8426955731004",
-        "width": "288.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": 55.51221816805975,
+        "y": 518.8426955731004,
+        "width": 288.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#ffe599",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -1705,35 +1891,36 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "199.66221816805975",
-        "y": "544.1426955731004",
+        "x": 199.66221816805975,
+        "y": 544.1426955731004,
+        "r": "middle",
         "fill": "#000000",
-        "fontSize": "17",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
+        "fontSize": "17",
         "tspans": [
           {
             "text": "Eigenvalues, Diagonalization"
           }
         ]
       }
-    ],
-    "dataNodeId": "3p98Uwf8gyALDr-89lBEZ",
-    "dataType": "subtopic",
-    "dataTitle": "Eigenvalues, Diagonalization",
-    "dataParentId": "83UDoO1vC0LjL-qpI0Jh-",
-    "dataParentTitle": "Linear Algebra"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "XmnWnPE1sVXheuc-M_Ew7",
+    "dataType": "subtopic",
+    "dataTitle": "Determinants, inverse of Matrix",
+    "dataParentId": "83UDoO1vC0LjL-qpI0Jh-",
+    "dataParentTitle": "Linear Algebra",
     "children": [
       {
         "tag": "rect",
-        "x": "55.51221816805975",
-        "y": "466.8426955731004",
-        "width": "288.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": 55.51221816805975,
+        "y": 466.8426955731004,
+        "width": 288.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#ffe599",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -1741,35 +1928,36 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "199.66221816805975",
-        "y": "492.14269557310035",
+        "x": 199.66221816805975,
+        "y": 492.14269557310035,
+        "r": "middle",
         "fill": "#000000",
-        "fontSize": "17",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
+        "fontSize": "17",
         "tspans": [
           {
             "text": "Determinants, inverse of Matrix"
           }
         ]
       }
-    ],
-    "dataNodeId": "XmnWnPE1sVXheuc-M_Ew7",
-    "dataType": "subtopic",
-    "dataTitle": "Determinants, inverse of Matrix",
-    "dataParentId": "83UDoO1vC0LjL-qpI0Jh-",
-    "dataParentTitle": "Linear Algebra"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "5DiaZkljhHAGPi9DkaH3b",
+    "dataType": "topic",
+    "dataTitle": "Statistics",
+    "dataParentId": "N_vLjBVdsGsoePtqlqh2w",
+    "dataParentTitle": "Discrete Mathematics",
     "children": [
       {
         "tag": "rect",
-        "x": "-709.7881872719935",
-        "y": "771.5295741993549",
-        "width": "278.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": -709.7881872719935,
+        "y": 771.5295741993549,
+        "width": 278.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#fdff00",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -1777,35 +1965,34 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "-570.6381872719935",
-        "y": "796.8295741993549",
+        "x": -570.6381872719935,
+        "y": 796.8295741993549,
+        "r": "middle",
         "fill": "#000000",
-        "fontSize": "17",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
+        "fontSize": "17",
         "tspans": [
           {
             "text": "Statistics"
           }
         ]
       }
-    ],
-    "dataNodeId": "5DiaZkljhHAGPi9DkaH3b",
-    "dataType": "topic",
-    "dataTitle": "Statistics",
-    "dataParentId": "N_vLjBVdsGsoePtqlqh2w",
-    "dataParentTitle": "Discrete Mathematics"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "p8q1Gtt9x19jw5_-YjAGh",
+    "dataType": "subtopic",
+    "dataTitle": "Basics of Probability",
     "children": [
       {
         "tag": "rect",
-        "x": "-323.2881872719935",
-        "y": "526.0316408194883",
-        "width": "297.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": -323.2881872719935,
+        "y": 526.0316408194883,
+        "width": 297.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#ffe599",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -1813,33 +2000,34 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "-174.6381872719935",
-        "y": "551.3316408194883",
+        "x": -174.6381872719935,
+        "y": 551.3316408194883,
+        "r": "middle",
         "fill": "#000000",
-        "fontSize": "17",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
+        "fontSize": "17",
         "tspans": [
           {
             "text": "Basics of Probability"
           }
         ]
       }
-    ],
-    "dataNodeId": "p8q1Gtt9x19jw5_-YjAGh",
-    "dataType": "subtopic",
-    "dataTitle": "Basics of Probability"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "ZaoZ2XxicKuTDn4uxe52L",
+    "dataType": "subtopic",
+    "dataTitle": "Descriptive Statistics",
     "children": [
       {
         "tag": "rect",
-        "x": "-709.7881872719935",
-        "y": "911.875735365193",
-        "width": "278.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": -709.7881872719935,
+        "y": 911.875735365193,
+        "width": 278.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#ffe599",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -1847,33 +2035,36 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "-570.6381872719935",
-        "y": "937.175735365193",
+        "x": -570.6381872719935,
+        "y": 937.175735365193,
+        "r": "middle",
         "fill": "#000000",
-        "fontSize": "17",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
+        "fontSize": "17",
         "tspans": [
           {
             "text": "Descriptive Statistics"
           }
         ]
       }
-    ],
-    "dataNodeId": "ZaoZ2XxicKuTDn4uxe52L",
-    "dataType": "subtopic",
-    "dataTitle": "Descriptive Statistics"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "P32Rmnln5NCFWz4LP0k05",
+    "dataType": "subtopic",
+    "dataTitle": "Basic concepts",
+    "dataParentId": "5DiaZkljhHAGPi9DkaH3b",
+    "dataParentTitle": "Statistics",
     "children": [
       {
         "tag": "rect",
-        "x": "-709.7881872719935",
-        "y": "859.875735365193",
-        "width": "278.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": -709.7881872719935,
+        "y": 859.875735365193,
+        "width": 278.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#ffe599",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -1881,35 +2072,36 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "-570.6381872719935",
-        "y": "885.175735365193",
+        "x": -570.6381872719935,
+        "y": 885.175735365193,
+        "r": "middle",
         "fill": "#000000",
-        "fontSize": "17",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
+        "fontSize": "17",
         "tspans": [
           {
             "text": "Basic concepts"
           }
         ]
       }
-    ],
-    "dataNodeId": "P32Rmnln5NCFWz4LP0k05",
-    "dataType": "subtopic",
-    "dataTitle": "Basic concepts",
-    "dataParentId": "5DiaZkljhHAGPi9DkaH3b",
-    "dataParentTitle": "Statistics"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "WLlZE_vto-CYY5GLV_w7o",
+    "dataType": "subtopic",
+    "dataTitle": "Types of Distribution",
+    "dataParentId": "tP0oBkjvJC9hrtARkgLon",
+    "dataParentTitle": "Probability",
     "children": [
       {
         "tag": "rect",
-        "x": "-323.2881872719935",
-        "y": "682.0316408194883",
-        "width": "297.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": -323.2881872719935,
+        "y": 682.0316408194883,
+        "width": 297.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#ffe599",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -1917,35 +2109,34 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "-174.6381872719935",
-        "y": "707.3316408194883",
+        "x": -174.6381872719935,
+        "y": 707.3316408194883,
+        "r": "middle",
         "fill": "#000000",
-        "fontSize": "17",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
+        "fontSize": "17",
         "tspans": [
           {
             "text": "Types of Distribution"
           }
         ]
       }
-    ],
-    "dataNodeId": "WLlZE_vto-CYY5GLV_w7o",
-    "dataType": "subtopic",
-    "dataTitle": "Types of Distribution",
-    "dataParentId": "tP0oBkjvJC9hrtARkgLon",
-    "dataParentTitle": "Probability"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "P576TdYcbE6v3RpJntiKw",
+    "dataType": "subtopic",
+    "dataTitle": "Random Variances, PDFs",
     "children": [
       {
         "tag": "rect",
-        "x": "-323.2881872719935",
-        "y": "630.0316408194883",
-        "width": "297.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": -323.2881872719935,
+        "y": 630.0316408194883,
+        "width": 297.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#ffe599",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -1953,33 +2144,34 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "-174.6381872719935",
-        "y": "655.3316408194883",
+        "x": -174.6381872719935,
+        "y": 655.3316408194883,
+        "r": "middle",
         "fill": "#000000",
-        "fontSize": "17",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
+        "fontSize": "17",
         "tspans": [
           {
             "text": "Random Variances, PDFs"
           }
         ]
       }
-    ],
-    "dataNodeId": "P576TdYcbE6v3RpJntiKw",
-    "dataType": "subtopic",
-    "dataTitle": "Random Variances, PDFs"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "7o6g0wQxHH9i9MMCoDq2C",
+    "dataType": "subtopic",
+    "dataTitle": "Bayes Theorem",
     "children": [
       {
         "tag": "rect",
-        "x": "-323.2881872719935",
-        "y": "578.0316408194883",
-        "width": "297.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": -323.2881872719935,
+        "y": 578.0316408194883,
+        "width": 297.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#ffe599",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -1987,33 +2179,34 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "-174.6381872719935",
-        "y": "603.3316408194883",
+        "x": -174.6381872719935,
+        "y": 603.3316408194883,
+        "r": "middle",
         "fill": "#000000",
-        "fontSize": "17",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
+        "fontSize": "17",
         "tspans": [
           {
             "text": "Bayes Theorem"
           }
         ]
       }
-    ],
-    "dataNodeId": "7o6g0wQxHH9i9MMCoDq2C",
-    "dataType": "subtopic",
-    "dataTitle": "Bayes Theorem"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "DUIrJwuYHlhJvZJT2acaY",
+    "dataType": "subtopic",
+    "dataTitle": "Inferential Statistics",
     "children": [
       {
         "tag": "rect",
-        "x": "-709.7881872719935",
-        "y": "1015.875735365193",
-        "width": "278.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": -709.7881872719935,
+        "y": 1015.875735365193,
+        "width": 278.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#ffe599",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -2021,33 +2214,34 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "-570.6381872719935",
-        "y": "1041.175735365193",
+        "x": -570.6381872719935,
+        "y": 1041.175735365193,
+        "r": "middle",
         "fill": "#000000",
-        "fontSize": "17",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
+        "fontSize": "17",
         "tspans": [
           {
             "text": "Inferential Statistics"
           }
         ]
       }
-    ],
-    "dataNodeId": "DUIrJwuYHlhJvZJT2acaY",
-    "dataType": "subtopic",
-    "dataTitle": "Inferential Statistics"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "MYZUJ1uHIaRd1Gb4ORzwG",
+    "dataType": "subtopic",
+    "dataTitle": "Graphs &amp; Charts",
     "children": [
       {
         "tag": "rect",
-        "x": "-709.7881872719935",
-        "y": "963.875735365193",
-        "width": "278.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": -709.7881872719935,
+        "y": 963.875735365193,
+        "width": 278.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#ffe599",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -2055,33 +2249,36 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "-570.6381872719935",
-        "y": "989.175735365193",
+        "x": -570.6381872719935,
+        "y": 989.175735365193,
+        "r": "middle",
         "fill": "#000000",
-        "fontSize": "17",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
+        "fontSize": "17",
         "tspans": [
           {
-            "text": "Graphs & Charts"
+            "text": "Graphs &amp; Charts"
           }
         ]
       }
-    ],
-    "dataNodeId": "MYZUJ1uHIaRd1Gb4ORzwG",
-    "dataType": "subtopic",
-    "dataTitle": "Graphs & Charts"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "tP0oBkjvJC9hrtARkgLon",
+    "dataType": "topic",
+    "dataTitle": "Probability",
+    "dataParentId": "5DiaZkljhHAGPi9DkaH3b",
+    "dataParentTitle": "Statistics",
     "children": [
       {
         "tag": "rect",
-        "x": "-266.2881872719935",
-        "y": "770.5254066561159",
-        "width": "183.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": -266.2881872719935,
+        "y": 770.5254066561159,
+        "width": 183.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#fdff00",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -2089,35 +2286,36 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "-174.6381872719935",
-        "y": "795.8254066561159",
+        "x": -174.6381872719935,
+        "y": 795.8254066561159,
+        "r": "middle",
         "fill": "#000000",
-        "fontSize": "17",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
+        "fontSize": "17",
         "tspans": [
           {
             "text": "Probability"
           }
         ]
       }
-    ],
-    "dataNodeId": "tP0oBkjvJC9hrtARkgLon",
-    "dataType": "topic",
-    "dataTitle": "Probability",
-    "dataParentId": "5DiaZkljhHAGPi9DkaH3b",
-    "dataParentTitle": "Statistics"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "N_vLjBVdsGsoePtqlqh2w",
+    "dataType": "topic",
+    "dataTitle": "Discrete Mathematics",
+    "dataParentId": "wHlEinHuRARp5OfSulpA-",
+    "dataParentTitle": "Calculus",
     "children": [
       {
         "tag": "rect",
-        "x": "-709.7881872719935",
-        "y": "608.6021846096073",
-        "width": "278.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": -709.7881872719935,
+        "y": 608.6021846096073,
+        "width": 278.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#fdff00",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -2125,35 +2323,36 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "-570.6381872719935",
-        "y": "633.9021846096073",
+        "x": -570.6381872719935,
+        "y": 633.9021846096073,
+        "r": "middle",
         "fill": "#000000",
-        "fontSize": "17",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
+        "fontSize": "17",
         "tspans": [
           {
             "text": "Discrete Mathematics"
           }
         ]
       }
-    ],
-    "dataNodeId": "N_vLjBVdsGsoePtqlqh2w",
-    "dataType": "topic",
-    "dataTitle": "Discrete Mathematics",
-    "dataParentId": "wHlEinHuRARp5OfSulpA-",
-    "dataParentTitle": "Calculus"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "qDn1elMoPIBgQSCWiYkLI",
+    "dataType": "topic",
+    "dataTitle": "Python",
+    "dataParentId": "AvbMQ5vY3ip1oX_6Yq4ie",
+    "dataParentTitle": "Programming Fundamentals ",
     "children": [
       {
         "tag": "rect",
-        "x": "79.44010183215502",
-        "y": "657.6021846096073",
-        "width": "269.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": 79.44010183215502,
+        "y": 657.6021846096073,
+        "width": 269.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#fdff00",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -2161,35 +2360,36 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "214.09010183215503",
-        "y": "682.9021846096073",
+        "x": 214.09010183215503,
+        "y": 682.9021846096073,
+        "r": "middle",
         "fill": "#000000",
-        "fontSize": "17",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
+        "fontSize": "17",
         "tspans": [
           {
             "text": "Python"
           }
         ]
       }
-    ],
-    "dataNodeId": "qDn1elMoPIBgQSCWiYkLI",
-    "dataType": "topic",
-    "dataTitle": "Python",
-    "dataParentId": "AvbMQ5vY3ip1oX_6Yq4ie",
-    "dataParentTitle": "Programming Fundamentals "
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "hWA7RtuqltMTmHdcCnmES",
+    "dataType": "topic",
+    "dataTitle": "Basic Syntax",
+    "dataParentId": "AvbMQ5vY3ip1oX_6Yq4ie",
+    "dataParentTitle": "Programming Fundamentals ",
     "children": [
       {
         "tag": "rect",
-        "x": "87.44010183215502",
-        "y": "886.1508586234389",
-        "width": "253.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": 87.44010183215502,
+        "y": 886.1508586234389,
+        "width": 253.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#fdff00",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -2197,35 +2397,36 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "214.09010183215503",
-        "y": "911.4508586234389",
+        "x": 214.09010183215503,
+        "y": 911.4508586234389,
+        "r": "middle",
         "fill": "#000000",
-        "fontSize": "17",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
+        "fontSize": "17",
         "tspans": [
           {
             "text": "Basic Syntax"
           }
         ]
       }
-    ],
-    "dataNodeId": "hWA7RtuqltMTmHdcCnmES",
-    "dataType": "topic",
-    "dataTitle": "Basic Syntax",
-    "dataParentId": "AvbMQ5vY3ip1oX_6Yq4ie",
-    "dataParentTitle": "Programming Fundamentals "
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "dEFLBGpiH6nbSMeR7ecaT",
+    "dataType": "subtopic",
+    "dataTitle": "Variables and Data Types",
+    "dataParentId": "hWA7RtuqltMTmHdcCnmES",
+    "dataParentTitle": "Basic Syntax",
     "children": [
       {
         "tag": "rect",
-        "x": "87.44010183215502",
-        "y": "1003.1508586234389",
-        "width": "253.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": 87.44010183215502,
+        "y": 1003.1508586234389,
+        "width": 253.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#ffe599",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -2233,35 +2434,34 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "214.09010183215503",
-        "y": "1028.450858623439",
+        "x": 214.09010183215503,
+        "y": 1028.450858623439,
+        "r": "middle",
         "fill": "#000000",
-        "fontSize": "17",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
+        "fontSize": "17",
         "tspans": [
           {
             "text": "Variables and Data Types"
           }
         ]
       }
-    ],
-    "dataNodeId": "dEFLBGpiH6nbSMeR7ecaT",
-    "dataType": "subtopic",
-    "dataTitle": "Variables and Data Types",
-    "dataParentId": "hWA7RtuqltMTmHdcCnmES",
-    "dataParentTitle": "Basic Syntax"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "NP1kjSk0ujU0Gx-ajNHlR",
+    "dataType": "subtopic",
+    "dataTitle": "Conditionals",
     "children": [
       {
         "tag": "rect",
-        "x": "87.44010183215502",
-        "y": "1162.1508586234388",
-        "width": "253.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": 87.44010183215502,
+        "y": 1162.1508586234388,
+        "width": 253.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#ffe599",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -2269,33 +2469,34 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "214.09010183215503",
-        "y": "1187.450858623439",
+        "x": 214.09010183215503,
+        "y": 1187.450858623439,
+        "r": "middle",
         "fill": "#000000",
-        "fontSize": "17",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
+        "fontSize": "17",
         "tspans": [
           {
             "text": "Conditionals"
           }
         ]
       }
-    ],
-    "dataNodeId": "NP1kjSk0ujU0Gx-ajNHlR",
-    "dataType": "subtopic",
-    "dataTitle": "Conditionals"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "R9DQNc0AyAQ2HLpP4HOk6",
+    "dataType": "subtopic",
+    "dataTitle": "Data Structures",
     "children": [
       {
         "tag": "rect",
-        "x": "87.44010183215502",
-        "y": "1056.1508586234388",
-        "width": "253.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": 87.44010183215502,
+        "y": 1056.1508586234388,
+        "width": 253.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#ffe599",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -2303,33 +2504,34 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "214.09010183215503",
-        "y": "1081.450858623439",
+        "x": 214.09010183215503,
+        "y": 1081.450858623439,
+        "r": "middle",
         "fill": "#000000",
-        "fontSize": "17",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
+        "fontSize": "17",
         "tspans": [
           {
             "text": "Data Structures"
           }
         ]
       }
-    ],
-    "dataNodeId": "R9DQNc0AyAQ2HLpP4HOk6",
-    "dataType": "subtopic",
-    "dataTitle": "Data Structures"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "fNTb9y3zs1HPYclAmu_Wv",
+    "dataType": "subtopic",
+    "dataTitle": "Exceptions",
     "children": [
       {
         "tag": "rect",
-        "x": "87.44010183215502",
-        "y": "1215.1508586234388",
-        "width": "253.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": 87.44010183215502,
+        "y": 1215.1508586234388,
+        "width": 253.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#ffe599",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -2337,33 +2539,34 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "214.09010183215503",
-        "y": "1240.450858623439",
+        "x": 214.09010183215503,
+        "y": 1240.450858623439,
+        "r": "middle",
         "fill": "#000000",
-        "fontSize": "17",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
+        "fontSize": "17",
         "tspans": [
           {
             "text": "Exceptions"
           }
         ]
       }
-    ],
-    "dataNodeId": "fNTb9y3zs1HPYclAmu_Wv",
-    "dataType": "subtopic",
-    "dataTitle": "Exceptions"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "-DJgS6l2qngfwurExlmmT",
+    "dataType": "subtopic",
+    "dataTitle": "Functions, Builtin Functions",
     "children": [
       {
         "tag": "rect",
-        "x": "87.44010183215502",
-        "y": "1268.1508586234388",
-        "width": "253.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": 87.44010183215502,
+        "y": 1268.1508586234388,
+        "width": 253.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#ffe599",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -2371,33 +2574,34 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "214.09010183215503",
-        "y": "1293.450858623439",
+        "x": 214.09010183215503,
+        "y": 1293.450858623439,
+        "r": "middle",
         "fill": "#000000",
-        "fontSize": "17",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
+        "fontSize": "17",
         "tspans": [
           {
             "text": "Functions, Builtin Functions"
           }
         ]
       }
-    ],
-    "dataNodeId": "-DJgS6l2qngfwurExlmmT",
-    "dataType": "subtopic",
-    "dataTitle": "Functions, Builtin Functions"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "Dvy7BnNzK55qbh_SgOk8m",
+    "dataType": "subtopic",
+    "dataTitle": "Loops",
     "children": [
       {
         "tag": "rect",
-        "x": "87.44010183215502",
-        "y": "1109.1508586234388",
-        "width": "253.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": 87.44010183215502,
+        "y": 1109.1508586234388,
+        "width": 253.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#ffe599",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -2405,33 +2609,34 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "214.09010183215503",
-        "y": "1134.450858623439",
+        "x": 214.09010183215503,
+        "y": 1134.450858623439,
+        "r": "middle",
         "fill": "#000000",
-        "fontSize": "17",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
+        "fontSize": "17",
         "tspans": [
           {
             "text": "Loops"
           }
         ]
       }
-    ],
-    "dataNodeId": "Dvy7BnNzK55qbh_SgOk8m",
-    "dataType": "subtopic",
-    "dataTitle": "Loops"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "nN9BumBHi-c9HKFlgL2GH",
+    "dataType": "topic",
+    "dataTitle": "Object Oriented Programming",
     "children": [
       {
         "tag": "rect",
-        "x": "-323.2881872719935",
-        "y": "886.1508586234389",
-        "width": "297.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": -323.2881872719935,
+        "y": 886.1508586234389,
+        "width": 297.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#fdff00",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -2439,33 +2644,36 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "-174.6381872719935",
-        "y": "911.4508586234389",
+        "x": -174.6381872719935,
+        "y": 911.4508586234389,
+        "r": "middle",
         "fill": "#000000",
-        "fontSize": "17",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
+        "fontSize": "17",
         "tspans": [
           {
             "text": "Object Oriented Programming"
           }
         ]
       }
-    ],
-    "dataNodeId": "nN9BumBHi-c9HKFlgL2GH",
-    "dataType": "topic",
-    "dataTitle": "Object Oriented Programming"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "ybqwtlHG4HMm5lyUKW2SO",
+    "dataType": "topic",
+    "dataTitle": "Essential libraries",
+    "dataParentId": "nN9BumBHi-c9HKFlgL2GH",
+    "dataParentTitle": "Object Oriented Programming",
     "children": [
       {
         "tag": "rect",
-        "x": "-323.2881872719935",
-        "y": "1128.953609662992",
-        "width": "297.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": -323.2881872719935,
+        "y": 1128.953609662992,
+        "width": 297.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#fdff00",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -2473,35 +2681,34 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "-174.6381872719935",
-        "y": "1154.2536096629922",
+        "x": -174.6381872719935,
+        "y": 1154.2536096629922,
+        "r": "middle",
         "fill": "#000000",
-        "fontSize": "17",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
+        "fontSize": "17",
         "tspans": [
           {
             "text": "Essential libraries"
           }
         ]
       }
-    ],
-    "dataNodeId": "ybqwtlHG4HMm5lyUKW2SO",
-    "dataType": "topic",
-    "dataTitle": "Essential libraries",
-    "dataParentId": "nN9BumBHi-c9HKFlgL2GH",
-    "dataParentTitle": "Object Oriented Programming"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "nKE9sO-f2fdMiuLu2xby1",
+    "dataType": "subtopic",
+    "dataTitle": "Numpy",
     "children": [
       {
         "tag": "rect",
-        "x": "-324.2881872719935",
-        "y": "987.1508586234389",
-        "width": "128.3",
-        "height": "47.3",
-        "rx": "5",
+        "x": -324.2881872719935,
+        "y": 987.1508586234389,
+        "width": 128.3,
+        "height": 47.3,
+        "rx": 5,
         "fill": "#ffe599",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -2509,33 +2716,34 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "-260.1381872719935",
-        "y": "1012.9508586234389",
+        "x": -260.1381872719935,
+        "y": 1012.9508586234389,
+        "r": "middle",
         "fill": "#000000",
-        "fontSize": "17",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
+        "fontSize": "17",
         "tspans": [
           {
             "text": "Numpy"
           }
         ]
       }
-    ],
-    "dataNodeId": "nKE9sO-f2fdMiuLu2xby1",
-    "dataType": "subtopic",
-    "dataTitle": "Numpy"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "PnOoShqB3z4LuUvp0Gh2e",
+    "dataType": "subtopic",
+    "dataTitle": "Pandas",
     "children": [
       {
         "tag": "rect",
-        "x": "-324.2881872719935",
-        "y": "1041.1508586234388",
-        "width": "128.3",
-        "height": "47.3",
-        "rx": "5",
+        "x": -324.2881872719935,
+        "y": 1041.1508586234388,
+        "width": 128.3,
+        "height": 47.3,
+        "rx": 5,
         "fill": "#ffe599",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -2543,33 +2751,34 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "-260.1381872719935",
-        "y": "1066.950858623439",
+        "x": -260.1381872719935,
+        "y": 1066.950858623439,
+        "r": "middle",
         "fill": "#000000",
-        "fontSize": "17",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
+        "fontSize": "17",
         "tspans": [
           {
             "text": "Pandas"
           }
         ]
       }
-    ],
-    "dataNodeId": "PnOoShqB3z4LuUvp0Gh2e",
-    "dataType": "subtopic",
-    "dataTitle": "Pandas"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "OXbATvlhBXTQ1iRGwPUfb",
+    "dataType": "subtopic",
+    "dataTitle": "Matplotlib",
     "children": [
       {
         "tag": "rect",
-        "x": "-154.2881872719935",
-        "y": "984.1591937099168",
-        "width": "128.3",
-        "height": "47.3",
-        "rx": "5",
+        "x": -154.2881872719935,
+        "y": 984.1591937099168,
+        "width": 128.3,
+        "height": 47.3,
+        "rx": 5,
         "fill": "#ffe599",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -2577,33 +2786,34 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "-90.1381872719935",
-        "y": "1009.9591937099168",
+        "x": -90.1381872719935,
+        "y": 1009.9591937099168,
+        "r": "middle",
         "fill": "#000000",
-        "fontSize": "17",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
+        "fontSize": "17",
         "tspans": [
           {
             "text": "Matplotlib"
           }
         ]
       }
-    ],
-    "dataNodeId": "OXbATvlhBXTQ1iRGwPUfb",
-    "dataType": "subtopic",
-    "dataTitle": "Matplotlib"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "VYVLUxhp3XxxknNr5V966",
+    "dataType": "subtopic",
+    "dataTitle": "Seaborn",
     "children": [
       {
         "tag": "rect",
-        "x": "-154.2881872719935",
-        "y": "1038.1591937099167",
-        "width": "128.3",
-        "height": "47.3",
-        "rx": "5",
+        "x": -154.2881872719935,
+        "y": 1038.1591937099167,
+        "width": 128.3,
+        "height": 47.3,
+        "rx": 5,
         "fill": "#ffe599",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -2611,33 +2821,33 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "-90.1381872719935",
-        "y": "1063.959193709917",
+        "x": -90.1381872719935,
+        "y": 1063.959193709917,
+        "r": "middle",
         "fill": "#000000",
-        "fontSize": "17",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
+        "fontSize": "17",
         "tspans": [
           {
             "text": "Seaborn"
           }
         ]
       }
-    ],
-    "dataNodeId": "VYVLUxhp3XxxknNr5V966",
-    "dataType": "subtopic",
-    "dataTitle": "Seaborn"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "FACaPgaf1EZRCYqh_yQlE",
+    "dataType": "paragraph",
     "children": [
       {
         "tag": "rect",
-        "x": "-264.3881872719935",
-        "y": "1276.050858623439",
-        "width": "182",
-        "height": "62.5",
-        "rx": "5",
+        "x": -264.3881872719935,
+        "y": 1276.050858623439,
+        "width": 182,
+        "height": 62.5,
+        "rx": 5,
         "fill": "transparent",
         "stroke": "transparent",
         "strokeWidth": "2.5"
@@ -2648,29 +2858,32 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
         "tspans": [
           {
             "text": "Data Collection",
-            "x": "-174.6381872719935",
-            "y": "1307.050858623439",
-            "dy": "0",
+            "x": -174.6381872719935,
+            "y": 1307.050858623439,
+            "dy": 0,
             "textAnchor": "middle",
             "dominantBaseline": "middle",
             "fontSize": "20"
           }
         ]
       }
-    ],
-    "dataNodeId": "FACaPgaf1EZRCYqh_yQlE",
-    "dataType": "paragraph"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "-oRH7LgigHcfBkNF1xwxh",
+    "dataType": "topic",
+    "dataTitle": "Data Sources",
+    "dataParentId": "FACaPgaf1EZRCYqh_yQlE",
+    "dataParentTitle": "Data Collection",
     "children": [
       {
         "tag": "rect",
-        "x": "-709.027244443855",
-        "y": "1284.1508586234388",
-        "width": "266.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": -709.027244443855,
+        "y": 1284.1508586234388,
+        "width": 266.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#fdff00",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -2678,35 +2891,34 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "-575.877244443855",
-        "y": "1309.450858623439",
+        "x": -575.877244443855,
+        "y": 1309.450858623439,
+        "r": "middle",
         "fill": "#000000",
-        "fontSize": "17",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
+        "fontSize": "17",
         "tspans": [
           {
             "text": "Data Sources"
           }
         ]
       }
-    ],
-    "dataNodeId": "-oRH7LgigHcfBkNF1xwxh",
-    "dataType": "topic",
-    "dataTitle": "Data Sources",
-    "dataParentId": "FACaPgaf1EZRCYqh_yQlE",
-    "dataParentTitle": "Data Collection"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "VdMhrAi48V-JXw544YTKI",
+    "dataType": "subtopic",
+    "dataTitle": "Databases (SQL, No-SQL)",
     "children": [
       {
         "tag": "rect",
-        "x": "-708.4176696198831",
-        "y": "1103.3032523294319",
-        "width": "264.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": -708.4176696198831,
+        "y": 1103.3032523294319,
+        "width": 264.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#ffe599",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -2714,33 +2926,34 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "-576.2676696198831",
-        "y": "1128.603252329432",
+        "x": -576.2676696198831,
+        "y": 1128.603252329432,
+        "r": "middle",
         "fill": "#000000",
-        "fontSize": "17",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
+        "fontSize": "17",
         "tspans": [
           {
             "text": "Databases (SQL, No-SQL)"
           }
         ]
       }
-    ],
-    "dataNodeId": "VdMhrAi48V-JXw544YTKI",
-    "dataType": "subtopic",
-    "dataTitle": "Databases (SQL, No-SQL)"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "cxTriSZvrmXP4axKynIZW",
+    "dataType": "subtopic",
+    "dataTitle": "Internet",
     "children": [
       {
         "tag": "rect",
-        "x": "-708.2605876897502",
-        "y": "1155.3032523294319",
-        "width": "138.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": -708.2605876897502,
+        "y": 1155.3032523294319,
+        "width": 138.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#ffe599",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -2748,33 +2961,34 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "-639.1105876897502",
-        "y": "1180.603252329432",
+        "x": -639.1105876897502,
+        "y": 1180.603252329432,
+        "r": "middle",
         "fill": "#000000",
-        "fontSize": "17",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
+        "fontSize": "17",
         "tspans": [
           {
             "text": "Internet"
           }
         ]
       }
-    ],
-    "dataNodeId": "cxTriSZvrmXP4axKynIZW",
-    "dataType": "subtopic",
-    "dataTitle": "Internet"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "s-wUPMaagyRupT2RdfHks",
+    "dataType": "subtopic",
+    "dataTitle": "APIs",
     "children": [
       {
         "tag": "rect",
-        "x": "-562.1786124480216",
-        "y": "1155.3032523294319",
-        "width": "118.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": -562.1786124480216,
+        "y": 1155.3032523294319,
+        "width": 118.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#ffe599",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -2782,33 +2996,34 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "-503.0286124480216",
-        "y": "1180.603252329432",
+        "x": -503.0286124480216,
+        "y": 1180.603252329432,
+        "r": "middle",
         "fill": "#000000",
-        "fontSize": "17",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
+        "fontSize": "17",
         "tspans": [
           {
             "text": "APIs"
           }
         ]
       }
-    ],
-    "dataNodeId": "s-wUPMaagyRupT2RdfHks",
-    "dataType": "subtopic",
-    "dataTitle": "APIs"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "dJZqe47kzRqYIG-4AZTlz",
+    "dataType": "subtopic",
+    "dataTitle": "Mobile Apps",
     "children": [
       {
         "tag": "rect",
-        "x": "-708.2605876897502",
-        "y": "1208.3032523294319",
-        "width": "138.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": -708.2605876897502,
+        "y": 1208.3032523294319,
+        "width": 138.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#ffe599",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -2816,33 +3031,34 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "-639.1105876897502",
-        "y": "1233.603252329432",
+        "x": -639.1105876897502,
+        "y": 1233.603252329432,
+        "r": "middle",
         "fill": "#000000",
-        "fontSize": "17",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
+        "fontSize": "17",
         "tspans": [
           {
             "text": "Mobile Apps"
           }
         ]
       }
-    ],
-    "dataNodeId": "dJZqe47kzRqYIG-4AZTlz",
-    "dataType": "subtopic",
-    "dataTitle": "Mobile Apps"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "KeGCHoJRHp-mBX-P5to4Y",
+    "dataType": "subtopic",
+    "dataTitle": "IoT",
     "children": [
       {
         "tag": "rect",
-        "x": "-563.1786124480216",
-        "y": "1208.3032523294319",
-        "width": "120.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": -563.1786124480216,
+        "y": 1208.3032523294319,
+        "width": 120.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#ffe599",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -2850,33 +3066,36 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "-503.0286124480216",
-        "y": "1233.603252329432",
+        "x": -503.0286124480216,
+        "y": 1233.603252329432,
+        "r": "middle",
         "fill": "#000000",
-        "fontSize": "17",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
+        "fontSize": "17",
         "tspans": [
           {
             "text": "IoT"
           }
         ]
       }
-    ],
-    "dataNodeId": "KeGCHoJRHp-mBX-P5to4Y",
-    "dataType": "subtopic",
-    "dataTitle": "IoT"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "U4LGIEE3igeE5Ed3EWzsu",
+    "dataType": "topic",
+    "dataTitle": "Data Formats",
+    "dataParentId": "-oRH7LgigHcfBkNF1xwxh",
+    "dataParentTitle": "Data Sources",
     "children": [
       {
         "tag": "rect",
-        "x": "-709.027244443855",
-        "y": "1391.1495821560757",
-        "width": "266.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": -709.027244443855,
+        "y": 1391.1495821560757,
+        "width": 266.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#fdff00",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -2884,35 +3103,34 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "-575.877244443855",
-        "y": "1416.4495821560758",
+        "x": -575.877244443855,
+        "y": 1416.4495821560758,
+        "r": "middle",
         "fill": "#000000",
-        "fontSize": "17",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
+        "fontSize": "17",
         "tspans": [
           {
             "text": "Data Formats"
           }
         ]
       }
-    ],
-    "dataNodeId": "U4LGIEE3igeE5Ed3EWzsu",
-    "dataType": "topic",
-    "dataTitle": "Data Formats",
-    "dataParentId": "-oRH7LgigHcfBkNF1xwxh",
-    "dataParentTitle": "Data Sources"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "kagKVPUyLtx8UPAFjRvbN",
+    "dataType": "subtopic",
+    "dataTitle": "JSON",
     "children": [
       {
         "tag": "rect",
-        "x": "-709.3701625137221",
-        "y": "1527.451140609134",
-        "width": "132.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": -709.3701625137221,
+        "y": 1527.451140609134,
+        "width": 132.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#ffe599",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -2920,33 +3138,34 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "-643.2201625137221",
-        "y": "1552.7511406091342",
+        "x": -643.2201625137221,
+        "y": 1552.7511406091342,
+        "r": "middle",
         "fill": "#000000",
-        "fontSize": "17",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
+        "fontSize": "17",
         "tspans": [
           {
             "text": "JSON"
           }
         ]
       }
-    ],
-    "dataNodeId": "kagKVPUyLtx8UPAFjRvbN",
-    "dataType": "subtopic",
-    "dataTitle": "JSON"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "tq6WRwUpaCok9fX-0bY7m",
+    "dataType": "subtopic",
+    "dataTitle": "Parquet",
     "children": [
       {
         "tag": "rect",
-        "x": "-570.027244443855",
-        "y": "1528.6515848371491",
-        "width": "118.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": -570.027244443855,
+        "y": 1528.6515848371491,
+        "width": 118.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#ffe599",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -2954,33 +3173,34 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "-510.87724444385503",
-        "y": "1553.9515848371493",
+        "x": -510.87724444385503,
+        "y": 1553.9515848371493,
+        "r": "middle",
         "fill": "#000000",
-        "fontSize": "17",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
+        "fontSize": "17",
         "tspans": [
           {
             "text": "Parquet"
           }
         ]
       }
-    ],
-    "dataNodeId": "tq6WRwUpaCok9fX-0bY7m",
-    "dataType": "subtopic",
-    "dataTitle": "Parquet"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "MWfdLCb_w06A0jqwUJUxl",
+    "dataType": "subtopic",
+    "dataTitle": "CSV",
     "children": [
       {
         "tag": "rect",
-        "x": "-709.3701625137221",
-        "y": "1475.6515848371491",
-        "width": "132.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": -709.3701625137221,
+        "y": 1475.6515848371491,
+        "width": 132.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#ffe599",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -2988,33 +3208,34 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "-643.2201625137221",
-        "y": "1500.9515848371493",
+        "x": -643.2201625137221,
+        "y": 1500.9515848371493,
+        "r": "middle",
         "fill": "#000000",
-        "fontSize": "17",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
+        "fontSize": "17",
         "tspans": [
           {
             "text": "CSV"
           }
         ]
       }
-    ],
-    "dataNodeId": "MWfdLCb_w06A0jqwUJUxl",
-    "dataType": "subtopic",
-    "dataTitle": "CSV"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "K9Si7kJe946CcGWBGmDsZ",
+    "dataType": "subtopic",
+    "dataTitle": "Excel",
     "children": [
       {
         "tag": "rect",
-        "x": "-570.027244443855",
-        "y": "1475.6515848371491",
-        "width": "118.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": -570.027244443855,
+        "y": 1475.6515848371491,
+        "width": 118.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#ffe599",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -3022,33 +3243,34 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "-510.87724444385503",
-        "y": "1500.9515848371493",
+        "x": -510.87724444385503,
+        "y": 1500.9515848371493,
+        "r": "middle",
         "fill": "#000000",
-        "fontSize": "17",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
+        "fontSize": "17",
         "tspans": [
           {
             "text": "Excel"
           }
         ]
       }
-    ],
-    "dataNodeId": "K9Si7kJe946CcGWBGmDsZ",
-    "dataType": "subtopic",
-    "dataTitle": "Excel"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "qRHeaD2udDaItAxmiIiUg",
+    "dataType": "subtopic",
+    "dataTitle": "Other Data Formats",
     "children": [
       {
         "tag": "rect",
-        "x": "-711.027244443855",
-        "y": "1581.6515848371491",
-        "width": "259.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": -711.027244443855,
+        "y": 1581.6515848371491,
+        "width": 259.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#ffe599",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -3056,33 +3278,33 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "-581.377244443855",
-        "y": "1606.9515848371493",
+        "x": -581.377244443855,
+        "y": 1606.9515848371493,
+        "r": "middle",
         "fill": "#000000",
-        "fontSize": "17",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
+        "fontSize": "17",
         "tspans": [
           {
             "text": "Other Data Formats"
           }
         ]
       }
-    ],
-    "dataNodeId": "qRHeaD2udDaItAxmiIiUg",
-    "dataType": "subtopic",
-    "dataTitle": "Other Data Formats"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "NTjpKlN0f93p9iSToXhNW",
+    "dataType": "paragraph",
     "children": [
       {
         "tag": "rect",
-        "x": "-264.3881872719935",
-        "y": "1383.0495821560758",
-        "width": "182",
-        "height": "62.5",
-        "rx": "5",
+        "x": -264.3881872719935,
+        "y": 1383.0495821560758,
+        "width": 182,
+        "height": 62.5,
+        "rx": 5,
         "fill": "transparent",
         "stroke": "transparent",
         "strokeWidth": "2.5"
@@ -3093,29 +3315,30 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
         "tspans": [
           {
             "text": "Data Cleaning",
-            "x": "-174.6381872719935",
-            "y": "1414.0495821560758",
-            "dy": "0",
+            "x": -174.6381872719935,
+            "y": 1414.0495821560758,
+            "dy": 0,
             "textAnchor": "middle",
             "dominantBaseline": "middle",
             "fontSize": "20"
           }
         ]
       }
-    ],
-    "dataNodeId": "NTjpKlN0f93p9iSToXhNW",
-    "dataType": "paragraph"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "MdhfkuKWTDCE73hczzG3D",
+    "dataType": "topic",
+    "dataTitle": "Preprocessing Techniques",
     "children": [
       {
         "tag": "rect",
-        "x": "53.58681648400486",
-        "y": "1410.9962816581497",
-        "width": "291.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": 53.58681648400486,
+        "y": 1410.9962816581497,
+        "width": 291.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#fdff00",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -3123,33 +3346,34 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "199.23681648400486",
-        "y": "1436.2962816581498",
+        "x": 199.23681648400486,
+        "y": 1436.2962816581498,
+        "r": "middle",
         "fill": "#000000",
-        "fontSize": "17",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
+        "fontSize": "17",
         "tspans": [
           {
             "text": "Preprocessing Techniques"
           }
         ]
       }
-    ],
-    "dataNodeId": "MdhfkuKWTDCE73hczzG3D",
-    "dataType": "topic",
-    "dataTitle": "Preprocessing Techniques"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "5v0jRBYrRuVXQC90IseRG",
+    "dataType": "subtopic",
+    "dataTitle": "Data Cleaning",
     "children": [
       {
         "tag": "rect",
-        "x": "53.58681648400486",
-        "y": "1463.9962816581497",
-        "width": "291.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": 53.58681648400486,
+        "y": 1463.9962816581497,
+        "width": 291.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#ffe599",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -3157,33 +3381,34 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "199.23681648400486",
-        "y": "1489.2962816581498",
+        "x": 199.23681648400486,
+        "y": 1489.2962816581498,
+        "r": "middle",
         "fill": "#000000",
-        "fontSize": "17",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
+        "fontSize": "17",
         "tspans": [
           {
             "text": "Data Cleaning"
           }
         ]
       }
-    ],
-    "dataNodeId": "5v0jRBYrRuVXQC90IseRG",
-    "dataType": "subtopic",
-    "dataTitle": "Data Cleaning"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "y3-nWiDjlY6ZwqmxBUvhd",
+    "dataType": "subtopic",
+    "dataTitle": "Dimensionality Reduction",
     "children": [
       {
         "tag": "rect",
-        "x": "53.58681648400486",
-        "y": "1622.9962816581497",
-        "width": "291.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": 53.58681648400486,
+        "y": 1622.9962816581497,
+        "width": 291.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#ffe599",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -3191,33 +3416,34 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "199.23681648400486",
-        "y": "1648.2962816581498",
+        "x": 199.23681648400486,
+        "y": 1648.2962816581498,
+        "r": "middle",
         "fill": "#000000",
-        "fontSize": "17",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
+        "fontSize": "17",
         "tspans": [
           {
             "text": "Dimensionality Reduction"
           }
         ]
       }
-    ],
-    "dataNodeId": "y3-nWiDjlY6ZwqmxBUvhd",
-    "dataType": "subtopic",
-    "dataTitle": "Dimensionality Reduction"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "UmGdV94afOIbAL8MaxOWv",
+    "dataType": "subtopic",
+    "dataTitle": "Feature Engineering",
     "children": [
       {
         "tag": "rect",
-        "x": "53.58681648400486",
-        "y": "1516.9962816581497",
-        "width": "291.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": 53.58681648400486,
+        "y": 1516.9962816581497,
+        "width": 291.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#ffe599",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -3225,33 +3451,34 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "199.23681648400486",
-        "y": "1542.2962816581498",
+        "x": 199.23681648400486,
+        "y": 1542.2962816581498,
+        "r": "middle",
         "fill": "#000000",
-        "fontSize": "17",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
+        "fontSize": "17",
         "tspans": [
           {
             "text": "Feature Engineering"
           }
         ]
       }
-    ],
-    "dataNodeId": "UmGdV94afOIbAL8MaxOWv",
-    "dataType": "subtopic",
-    "dataTitle": "Feature Engineering"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "cigwKoltemM0q-M5O50Is",
+    "dataType": "subtopic",
+    "dataTitle": "Feature Selection",
     "children": [
       {
         "tag": "rect",
-        "x": "53.58681648400486",
-        "y": "1675.9962816581497",
-        "width": "291.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": 53.58681648400486,
+        "y": 1675.9962816581497,
+        "width": 291.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#ffe599",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -3259,33 +3486,34 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "199.23681648400486",
-        "y": "1701.2962816581498",
+        "x": 199.23681648400486,
+        "y": 1701.2962816581498,
+        "r": "middle",
         "fill": "#000000",
-        "fontSize": "17",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
+        "fontSize": "17",
         "tspans": [
           {
             "text": "Feature Selection"
           }
         ]
       }
-    ],
-    "dataNodeId": "cigwKoltemM0q-M5O50Is",
-    "dataType": "subtopic",
-    "dataTitle": "Feature Selection"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "iBkTNbk8Xz626F_a3Bo5J",
+    "dataType": "subtopic",
+    "dataTitle": "Feature Scaling &amp; Normalization",
     "children": [
       {
         "tag": "rect",
-        "x": "53.58681648400486",
-        "y": "1569.9962816581497",
-        "width": "291.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": 53.58681648400486,
+        "y": 1569.9962816581497,
+        "width": 291.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#ffe599",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -3293,33 +3521,33 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "199.23681648400486",
-        "y": "1595.2962816581498",
+        "x": 199.23681648400486,
+        "y": 1595.2962816581498,
+        "r": "middle",
         "fill": "#000000",
-        "fontSize": "17",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
+        "fontSize": "17",
         "tspans": [
           {
-            "text": "Feature Scaling & Normalization"
+            "text": "Feature Scaling &amp; Normalization"
           }
         ]
       }
-    ],
-    "dataNodeId": "iBkTNbk8Xz626F_a3Bo5J",
-    "dataType": "subtopic",
-    "dataTitle": "Feature Scaling & Normalization"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "zdv96JeIxVl1ToieWcoAz",
+    "dataType": "paragraph",
     "children": [
       {
         "tag": "rect",
-        "x": "-297.3881872719935",
-        "y": "1531.85460622576",
-        "width": "248",
-        "height": "60.5",
-        "rx": "5",
+        "x": -297.3881872719935,
+        "y": 1531.85460622576,
+        "width": 248,
+        "height": 60.5,
+        "rx": 5,
         "fill": "transparent",
         "stroke": "transparent",
         "strokeWidth": "2.5"
@@ -3330,29 +3558,32 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
         "tspans": [
           {
             "text": "Machine Learning",
-            "x": "-174.6381872719935",
-            "y": "1562.10460622576",
-            "dy": "0",
+            "x": -174.6381872719935,
+            "y": 1562.10460622576,
+            "dy": 0,
             "textAnchor": "middle",
             "dominantBaseline": "middle",
             "fontSize": "20"
           }
         ]
       }
-    ],
-    "dataNodeId": "zdv96JeIxVl1ToieWcoAz",
-    "dataType": "paragraph"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "Ns2zKn8BL_kTEI6O65pCp",
+    "dataType": "topic",
+    "dataTitle": "Types of Machine Learning",
+    "dataParentId": "Yho0zf9F-ROhEnTxRMq_M",
+    "dataParentTitle": "Semi-supervised Learning",
     "children": [
       {
         "tag": "rect",
-        "x": "-308.2881872719935",
-        "y": "1724.9962816581497",
-        "width": "267.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": -308.2881872719935,
+        "y": 1724.9962816581497,
+        "width": 267.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#fdff00",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -3360,35 +3591,36 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "-174.6381872719935",
-        "y": "1750.2962816581498",
+        "x": -174.6381872719935,
+        "y": 1750.2962816581498,
+        "r": "middle",
         "fill": "#000000",
-        "fontSize": "17",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
+        "fontSize": "17",
         "tspans": [
           {
             "text": "Types of Machine Learning"
           }
         ]
       }
-    ],
-    "dataNodeId": "Ns2zKn8BL_kTEI6O65pCp",
-    "dataType": "topic",
-    "dataTitle": "Types of Machine Learning",
-    "dataParentId": "Yho0zf9F-ROhEnTxRMq_M",
-    "dataParentTitle": "Semi-supervised Learning"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "36ryjK5isV1MD4MgZP2Jn",
+    "dataType": "subtopic",
+    "dataTitle": "Unsupervised Learning",
+    "dataParentId": "Ns2zKn8BL_kTEI6O65pCp",
+    "dataParentTitle": "Types of Machine Learning",
     "children": [
       {
         "tag": "rect",
-        "x": "-711.027244443855",
-        "y": "1723.5371024041349",
-        "width": "259.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": -711.027244443855,
+        "y": 1723.5371024041349,
+        "width": 259.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#ffe599",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -3396,35 +3628,34 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "-581.377244443855",
-        "y": "1748.837102404135",
+        "x": -581.377244443855,
+        "y": 1748.837102404135,
+        "r": "middle",
         "fill": "#000000",
-        "fontSize": "17",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
+        "fontSize": "17",
         "tspans": [
           {
             "text": "Unsupervised Learning"
           }
         ]
       }
-    ],
-    "dataNodeId": "36ryjK5isV1MD4MgZP2Jn",
-    "dataType": "subtopic",
-    "dataTitle": "Unsupervised Learning",
-    "dataParentId": "Ns2zKn8BL_kTEI6O65pCp",
-    "dataParentTitle": "Types of Machine Learning"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "Yho0zf9F-ROhEnTxRMq_M",
+    "dataType": "subtopic",
+    "dataTitle": "Semi-supervised Learning",
     "children": [
       {
         "tag": "rect",
-        "x": "-711.027244443855",
-        "y": "1776.5371024041349",
-        "width": "259.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": -711.027244443855,
+        "y": 1776.5371024041349,
+        "width": 259.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#ffe599",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -3432,33 +3663,36 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "-581.377244443855",
-        "y": "1801.837102404135",
+        "x": -581.377244443855,
+        "y": 1801.837102404135,
+        "r": "middle",
         "fill": "#000000",
-        "fontSize": "17",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
+        "fontSize": "17",
         "tspans": [
           {
             "text": "Semi-supervised Learning"
           }
         ]
       }
-    ],
-    "dataNodeId": "Yho0zf9F-ROhEnTxRMq_M",
-    "dataType": "subtopic",
-    "dataTitle": "Semi-supervised Learning"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "5MUwKGfSTKlam8KCG0A1U",
+    "dataType": "subtopic",
+    "dataTitle": "Supervised Learning",
+    "dataParentId": "Ns2zKn8BL_kTEI6O65pCp",
+    "dataParentTitle": "Types of Machine Learning",
     "children": [
       {
         "tag": "rect",
-        "x": "-711.027244443855",
-        "y": "1670.5371024041349",
-        "width": "259.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": -711.027244443855,
+        "y": 1670.5371024041349,
+        "width": 259.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#ffe599",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -3466,35 +3700,34 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "-581.377244443855",
-        "y": "1695.837102404135",
+        "x": -581.377244443855,
+        "y": 1695.837102404135,
+        "r": "middle",
         "fill": "#000000",
-        "fontSize": "17",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
+        "fontSize": "17",
         "tspans": [
           {
             "text": "Supervised Learning"
           }
         ]
       }
-    ],
-    "dataNodeId": "5MUwKGfSTKlam8KCG0A1U",
-    "dataType": "subtopic",
-    "dataTitle": "Supervised Learning",
-    "dataParentId": "Ns2zKn8BL_kTEI6O65pCp",
-    "dataParentTitle": "Types of Machine Learning"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "NC1A2SQVyc1n-KEf6yl-4",
+    "dataType": "subtopic",
+    "dataTitle": "Reinforcement Learning",
     "children": [
       {
         "tag": "rect",
-        "x": "-711.027244443855",
-        "y": "1882.5371024041349",
-        "width": "259.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": -711.027244443855,
+        "y": 1882.5371024041349,
+        "width": 259.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#ffe599",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -3502,33 +3735,34 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "-581.377244443855",
-        "y": "1907.837102404135",
+        "x": -581.377244443855,
+        "y": 1907.837102404135,
+        "r": "middle",
         "fill": "#000000",
-        "fontSize": "17",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
+        "fontSize": "17",
         "tspans": [
           {
             "text": "Reinforcement Learning"
           }
         ]
       }
-    ],
-    "dataNodeId": "NC1A2SQVyc1n-KEf6yl-4",
-    "dataType": "subtopic",
-    "dataTitle": "Reinforcement Learning"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "lgO7luG7-R_FY5nwFjRE0",
+    "dataType": "subtopic",
+    "dataTitle": "Self-supervised Learning",
     "children": [
       {
         "tag": "rect",
-        "x": "-711.027244443855",
-        "y": "1829.5371024041349",
-        "width": "259.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": -711.027244443855,
+        "y": 1829.5371024041349,
+        "width": 259.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#ffe599",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -3536,33 +3770,36 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "-581.377244443855",
-        "y": "1854.837102404135",
+        "x": -581.377244443855,
+        "y": 1854.837102404135,
+        "r": "middle",
         "fill": "#000000",
-        "fontSize": "17",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
+        "fontSize": "17",
         "tspans": [
           {
             "text": "Self-supervised Learning"
           }
         ]
       }
-    ],
-    "dataNodeId": "lgO7luG7-R_FY5nwFjRE0",
-    "dataType": "subtopic",
-    "dataTitle": "Self-supervised Learning"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "rzhVFzl5H5MWtcvr8ayRk",
+    "dataType": "topic",
+    "dataTitle": "What is Machine Learning?",
+    "dataParentId": "zdv96JeIxVl1ToieWcoAz",
+    "dataParentTitle": "Machine Learning",
     "children": [
       {
         "tag": "rect",
-        "x": "-308.2881872719935",
-        "y": "1670.5371024041349",
-        "width": "267.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": -308.2881872719935,
+        "y": 1670.5371024041349,
+        "width": 267.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#fdff00",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -3570,35 +3807,36 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "-174.6381872719935",
-        "y": "1695.837102404135",
+        "x": -174.6381872719935,
+        "y": 1695.837102404135,
+        "r": "middle",
         "fill": "#000000",
-        "fontSize": "17",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
+        "fontSize": "17",
         "tspans": [
           {
             "text": "What is Machine Learning?"
           }
         ]
       }
-    ],
-    "dataNodeId": "rzhVFzl5H5MWtcvr8ayRk",
-    "dataType": "topic",
-    "dataTitle": "What is Machine Learning?",
-    "dataParentId": "zdv96JeIxVl1ToieWcoAz",
-    "dataParentTitle": "Machine Learning"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "ajKU5CPlbn7BbWHEhUNaB",
+    "dataType": "topic",
+    "dataTitle": "What is Supervised Learning?",
+    "dataParentId": "D1vCHxbpoDqeieiZGC5Kp",
+    "dataParentTitle": "Supervised Learning",
     "children": [
       {
         "tag": "rect",
-        "x": "-704.6267424273866",
-        "y": "2030.4032715281323",
-        "width": "285.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": -704.6267424273866,
+        "y": 2030.4032715281323,
+        "width": 285.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#fdff00",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -3606,35 +3844,33 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "-561.9767424273866",
-        "y": "2055.7032715281325",
+        "x": -561.9767424273866,
+        "y": 2055.7032715281325,
+        "r": "middle",
         "fill": "#000000",
-        "fontSize": "17",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
+        "fontSize": "17",
         "tspans": [
           {
             "text": "What is Supervised Learning?"
           }
         ]
       }
-    ],
-    "dataNodeId": "ajKU5CPlbn7BbWHEhUNaB",
-    "dataType": "topic",
-    "dataTitle": "What is Supervised Learning?",
-    "dataParentId": "D1vCHxbpoDqeieiZGC5Kp",
-    "dataParentTitle": "Supervised Learning"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "D1vCHxbpoDqeieiZGC5Kp",
+    "dataType": "paragraph",
     "children": [
       {
         "tag": "rect",
-        "x": "-286.8881872719935",
-        "y": "2024.3032715281324",
-        "width": "228",
-        "height": "58.5",
-        "rx": "5",
+        "x": -286.8881872719935,
+        "y": 2024.3032715281324,
+        "width": 228,
+        "height": 58.5,
+        "rx": 5,
         "fill": "transparent",
         "stroke": "transparent",
         "strokeWidth": "2.5"
@@ -3645,29 +3881,32 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
         "tspans": [
           {
             "text": "Supervised Learning",
-            "x": "-174.1381872719935",
-            "y": "2053.5532715281324",
-            "dy": "0",
+            "x": -174.1381872719935,
+            "y": 2053.5532715281324,
+            "dy": 0,
             "textAnchor": "middle",
             "dominantBaseline": "middle",
             "fontSize": "20"
           }
         ]
       }
-    ],
-    "dataNodeId": "D1vCHxbpoDqeieiZGC5Kp",
-    "dataType": "paragraph"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "cffITx6oAcnvJlK1VLdi8",
+    "dataType": "topic",
+    "dataTitle": "Classification",
+    "dataParentId": "ajKU5CPlbn7BbWHEhUNaB",
+    "dataParentTitle": "What is Supervised Learning?",
     "children": [
       {
         "tag": "rect",
-        "x": "-704.6267424273866",
-        "y": "2147.3927068474122",
-        "width": "285.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": -704.6267424273866,
+        "y": 2147.3927068474122,
+        "width": 285.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#fdff00",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -3675,35 +3914,34 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "-561.9767424273866",
-        "y": "2172.6927068474124",
+        "x": -561.9767424273866,
+        "y": 2172.6927068474124,
+        "r": "middle",
         "fill": "#000000",
-        "fontSize": "17",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
+        "fontSize": "17",
         "tspans": [
           {
             "text": "Classification"
           }
         ]
       }
-    ],
-    "dataNodeId": "cffITx6oAcnvJlK1VLdi8",
-    "dataType": "topic",
-    "dataTitle": "Classification",
-    "dataParentId": "ajKU5CPlbn7BbWHEhUNaB",
-    "dataParentTitle": "What is Supervised Learning?"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "aHOjajXwkDMOssqW1VGrm",
+    "dataType": "subtopic",
+    "dataTitle": " Logistic Regression ",
     "children": [
       {
         "tag": "rect",
-        "x": "-704.6267424273866",
-        "y": "2304.012863314189",
-        "width": "285.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": -704.6267424273866,
+        "y": 2304.012863314189,
+        "width": 285.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#ffe599",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -3711,33 +3949,34 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "-561.9767424273866",
-        "y": "2329.312863314189",
+        "x": -561.9767424273866,
+        "y": 2329.312863314189,
+        "r": "middle",
         "fill": "#000000",
-        "fontSize": "17",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
+        "fontSize": "17",
         "tspans": [
           {
-            "text": " Logistic Regression "
+            "text": "Logistic Regression"
           }
         ]
       }
-    ],
-    "dataNodeId": "aHOjajXwkDMOssqW1VGrm",
-    "dataType": "subtopic",
-    "dataTitle": " Logistic Regression "
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "_jS66rGAWecXH3zVF-5ds",
+    "dataType": "subtopic",
+    "dataTitle": "Support Vector Machines",
     "children": [
       {
         "tag": "rect",
-        "x": "-704.6267424273866",
-        "y": "2357.012863314189",
-        "width": "285.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": -704.6267424273866,
+        "y": 2357.012863314189,
+        "width": 285.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#ffe599",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -3745,33 +3984,36 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "-561.9767424273866",
-        "y": "2382.312863314189",
+        "x": -561.9767424273866,
+        "y": 2382.312863314189,
+        "r": "middle",
         "fill": "#000000",
-        "fontSize": "17",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
+        "fontSize": "17",
         "tspans": [
           {
             "text": "Support Vector Machines"
           }
         ]
       }
-    ],
-    "dataNodeId": "_jS66rGAWecXH3zVF-5ds",
-    "dataType": "subtopic",
-    "dataTitle": "Support Vector Machines"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "x7vlCNAxfJzobj9HcTaJy",
+    "dataType": "subtopic",
+    "dataTitle": "K-Nearest Neighbors (KNN)",
+    "dataParentId": "cffITx6oAcnvJlK1VLdi8",
+    "dataParentTitle": "Classification",
     "children": [
       {
         "tag": "rect",
-        "x": "-704.6267424273866",
-        "y": "2251.012863314189",
-        "width": "285.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": -704.6267424273866,
+        "y": 2251.012863314189,
+        "width": 285.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#ffe599",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -3779,35 +4021,34 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "-561.9767424273866",
-        "y": "2276.312863314189",
+        "x": -561.9767424273866,
+        "y": 2276.312863314189,
+        "r": "middle",
         "fill": "#000000",
-        "fontSize": "17",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
+        "fontSize": "17",
         "tspans": [
           {
             "text": "K-Nearest Neighbors (KNN)"
           }
         ]
       }
-    ],
-    "dataNodeId": "x7vlCNAxfJzobj9HcTaJy",
-    "dataType": "subtopic",
-    "dataTitle": "K-Nearest Neighbors (KNN)",
-    "dataParentId": "cffITx6oAcnvJlK1VLdi8",
-    "dataParentTitle": "Classification"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "JuTTbL_pm1ltGvhUsIzQd",
+    "dataType": "subtopic",
+    "dataTitle": "Gradient Boosting Machines",
     "children": [
       {
         "tag": "rect",
-        "x": "-704.6267424273866",
-        "y": "2463.012863314189",
-        "width": "285.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": -704.6267424273866,
+        "y": 2463.012863314189,
+        "width": 285.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#ffe599",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -3815,33 +4056,34 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "-561.9767424273866",
-        "y": "2488.312863314189",
+        "x": -561.9767424273866,
+        "y": 2488.312863314189,
+        "r": "middle",
         "fill": "#000000",
-        "fontSize": "17",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
+        "fontSize": "17",
         "tspans": [
           {
             "text": "Gradient Boosting Machines"
           }
         ]
       }
-    ],
-    "dataNodeId": "JuTTbL_pm1ltGvhUsIzQd",
-    "dataType": "subtopic",
-    "dataTitle": "Gradient Boosting Machines"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "arlmRF5pYglsbHb-HR-2x",
+    "dataType": "subtopic",
+    "dataTitle": "Decision Trees, Random Forest",
     "children": [
       {
         "tag": "rect",
-        "x": "-704.6267424273866",
-        "y": "2410.012863314189",
-        "width": "285.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": -704.6267424273866,
+        "y": 2410.012863314189,
+        "width": 285.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#ffe599",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -3849,33 +4091,36 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "-561.9767424273866",
-        "y": "2435.312863314189",
+        "x": -561.9767424273866,
+        "y": 2435.312863314189,
+        "r": "middle",
         "fill": "#000000",
-        "fontSize": "17",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
+        "fontSize": "17",
         "tspans": [
           {
             "text": "Decision Trees, Random Forest"
           }
         ]
       }
-    ],
-    "dataNodeId": "arlmRF5pYglsbHb-HR-2x",
-    "dataType": "subtopic",
-    "dataTitle": "Decision Trees, Random Forest"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "gKu6tnpTO2PhDDMYp2u7F",
+    "dataType": "topic",
+    "dataTitle": "Regression",
+    "dataParentId": "cffITx6oAcnvJlK1VLdi8",
+    "dataParentTitle": "Classification",
     "children": [
       {
         "tag": "rect",
-        "x": "-283.26971806659117",
-        "y": "2147.3927068474122",
-        "width": "205.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": -283.26971806659117,
+        "y": 2147.3927068474122,
+        "width": 205.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#fdff00",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -3883,35 +4128,36 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "-180.6197180665912",
-        "y": "2172.6927068474124",
+        "x": -180.6197180665912,
+        "y": 2172.6927068474124,
+        "r": "middle",
         "fill": "#000000",
-        "fontSize": "17",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
+        "fontSize": "17",
         "tspans": [
           {
             "text": "Regression"
           }
         ]
       }
-    ],
-    "dataNodeId": "gKu6tnpTO2PhDDMYp2u7F",
-    "dataType": "topic",
-    "dataTitle": "Regression",
-    "dataParentId": "cffITx6oAcnvJlK1VLdi8",
-    "dataParentTitle": "Classification"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "xGO1X9aZRgKcgzi6r1xq8",
+    "dataType": "subtopic",
+    "dataTitle": "Linear Regression",
+    "dataParentId": "gKu6tnpTO2PhDDMYp2u7F",
+    "dataParentTitle": "Regression",
     "children": [
       {
         "tag": "rect",
-        "x": "-301.76971806659117",
-        "y": "2255.122092054328",
-        "width": "242.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": -301.76971806659117,
+        "y": 2255.122092054328,
+        "width": 242.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#ffe599",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -3919,35 +4165,34 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "-180.6197180665912",
-        "y": "2280.422092054328",
+        "x": -180.6197180665912,
+        "y": 2280.422092054328,
+        "r": "middle",
         "fill": "#000000",
-        "fontSize": "17",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
+        "fontSize": "17",
         "tspans": [
           {
             "text": "Linear Regression"
           }
         ]
       }
-    ],
-    "dataNodeId": "xGO1X9aZRgKcgzi6r1xq8",
-    "dataType": "subtopic",
-    "dataTitle": "Linear Regression",
-    "dataParentId": "gKu6tnpTO2PhDDMYp2u7F",
-    "dataParentTitle": "Regression"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "hfr2MU8QkVt9KhVi1Okpv",
+    "dataType": "subtopic",
+    "dataTitle": "Polynomial Regression",
     "children": [
       {
         "tag": "rect",
-        "x": "-301.76971806659117",
-        "y": "2308.122092054328",
-        "width": "242.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": -301.76971806659117,
+        "y": 2308.122092054328,
+        "width": 242.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#ffe599",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -3955,33 +4200,33 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "-180.6197180665912",
-        "y": "2333.422092054328",
+        "x": -180.6197180665912,
+        "y": 2333.422092054328,
+        "r": "middle",
         "fill": "#000000",
-        "fontSize": "17",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
+        "fontSize": "17",
         "tspans": [
           {
             "text": "Polynomial Regression"
           }
         ]
       }
-    ],
-    "dataNodeId": "hfr2MU8QkVt9KhVi1Okpv",
-    "dataType": "subtopic",
-    "dataTitle": "Polynomial Regression"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "7rjXtHQhJF6B4iytzS6uu",
+    "dataType": "paragraph",
     "children": [
       {
         "tag": "rect",
-        "x": "96.34010183215503",
-        "y": "2135.2927068474123",
-        "width": "255",
-        "height": "70.5",
-        "rx": "5",
+        "x": 96.34010183215503,
+        "y": 2135.2927068474123,
+        "width": 255,
+        "height": 70.5,
+        "rx": 5,
         "fill": "transparent",
         "stroke": "transparent",
         "strokeWidth": "2.5"
@@ -3992,29 +4237,30 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
         "tspans": [
           {
             "text": "Unsupervised Learning",
-            "x": "222.59010183215503",
-            "y": "2166.2927068474123",
-            "dy": "0",
+            "x": 222.59010183215503,
+            "y": 2166.2927068474123,
+            "dy": 0,
             "textAnchor": "middle",
             "dominantBaseline": "middle",
             "fontSize": "20"
           }
         ]
       }
-    ],
-    "dataNodeId": "7rjXtHQhJF6B4iytzS6uu",
-    "dataType": "paragraph"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "9oWdnQd-vwVJi62JQLgJ5",
+    "dataType": "topic",
+    "dataTitle": "What is Unsupervised Learning?",
     "children": [
       {
         "tag": "rect",
-        "x": "56.58681648400486",
-        "y": "2365.122092054328",
-        "width": "291.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": 56.58681648400486,
+        "y": 2365.122092054328,
+        "width": 291.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#fdff00",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -4022,33 +4268,34 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "202.23681648400486",
-        "y": "2390.422092054328",
+        "x": 202.23681648400486,
+        "y": 2390.422092054328,
+        "r": "middle",
         "fill": "#000000",
-        "fontSize": "17",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
+        "fontSize": "17",
         "tspans": [
           {
             "text": "What is Unsupervised Learning?"
           }
         ]
       }
-    ],
-    "dataNodeId": "9oWdnQd-vwVJi62JQLgJ5",
-    "dataType": "topic",
-    "dataTitle": "What is Unsupervised Learning?"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "CBSGvGPoI53p7BezXNm6M",
+    "dataType": "topic",
+    "dataTitle": "Clustering",
     "children": [
       {
         "tag": "rect",
-        "x": "122.01350622372476",
-        "y": "2574.474898905572",
-        "width": "222.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": 122.01350622372476,
+        "y": 2574.474898905572,
+        "width": 222.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#fdff00",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -4056,33 +4303,36 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "233.16350622372477",
-        "y": "2599.774898905572",
+        "x": 233.16350622372477,
+        "y": 2599.774898905572,
+        "r": "middle",
         "fill": "#000000",
-        "fontSize": "17",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
+        "fontSize": "17",
         "tspans": [
           {
             "text": "Clustering"
           }
         ]
       }
-    ],
-    "dataNodeId": "CBSGvGPoI53p7BezXNm6M",
-    "dataType": "topic",
-    "dataTitle": "Clustering"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "vQI-4uFQJ6694nm1SCpDR",
+    "dataType": "topic",
+    "dataTitle": "Dimensionality Reduction",
+    "dataParentId": "CBSGvGPoI53p7BezXNm6M",
+    "dataParentTitle": "Clustering",
     "children": [
       {
         "tag": "rect",
-        "x": "-302.79558981501435",
-        "y": "2574.5485496439533",
-        "width": "270.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": -302.79558981501435,
+        "y": 2574.5485496439533,
+        "width": 270.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#fdff00",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -4090,35 +4340,34 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "-167.64558981501438",
-        "y": "2599.8485496439534",
+        "x": -167.64558981501438,
+        "y": 2599.8485496439534,
+        "r": "middle",
         "fill": "#000000",
-        "fontSize": "17",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
+        "fontSize": "17",
         "tspans": [
           {
             "text": "Dimensionality Reduction"
           }
         ]
       }
-    ],
-    "dataNodeId": "vQI-4uFQJ6694nm1SCpDR",
-    "dataType": "topic",
-    "dataTitle": "Dimensionality Reduction",
-    "dataParentId": "CBSGvGPoI53p7BezXNm6M",
-    "dataParentTitle": "Clustering"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "BzUunjJrUMlh6K1NOOD87",
+    "dataType": "subtopic",
+    "dataTitle": "Overlapping",
     "children": [
       {
         "tag": "rect",
-        "x": "122.01350622372476",
-        "y": "2717.7447673231877",
-        "width": "222.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": 122.01350622372476,
+        "y": 2717.7447673231877,
+        "width": 222.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#ffe599",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -4126,33 +4375,34 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "233.16350622372477",
-        "y": "2743.044767323188",
+        "x": 233.16350622372477,
+        "y": 2743.044767323188,
+        "r": "middle",
         "fill": "#000000",
-        "fontSize": "17",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
+        "fontSize": "17",
         "tspans": [
           {
             "text": "Overlapping"
           }
         ]
       }
-    ],
-    "dataNodeId": "BzUunjJrUMlh6K1NOOD87",
-    "dataType": "subtopic",
-    "dataTitle": "Overlapping"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "jJ8cXfHV2LG5PJGZRTHxB",
+    "dataType": "subtopic",
+    "dataTitle": "Hierarchical",
     "children": [
       {
         "tag": "rect",
-        "x": "122.01350622372476",
-        "y": "2770.7447673231877",
-        "width": "222.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": 122.01350622372476,
+        "y": 2770.7447673231877,
+        "width": 222.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#ffe599",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -4160,33 +4410,34 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "233.16350622372477",
-        "y": "2796.044767323188",
+        "x": 233.16350622372477,
+        "y": 2796.044767323188,
+        "r": "middle",
         "fill": "#000000",
-        "fontSize": "17",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
+        "fontSize": "17",
         "tspans": [
           {
             "text": "Hierarchical"
           }
         ]
       }
-    ],
-    "dataNodeId": "jJ8cXfHV2LG5PJGZRTHxB",
-    "dataType": "subtopic",
-    "dataTitle": "Hierarchical"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "eErzKbR8sRNlrYcwNSRSh",
+    "dataType": "subtopic",
+    "dataTitle": "Exclusive",
     "children": [
       {
         "tag": "rect",
-        "x": "122.01350622372476",
-        "y": "2664.7447673231877",
-        "width": "222.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": 122.01350622372476,
+        "y": 2664.7447673231877,
+        "width": 222.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#ffe599",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -4194,33 +4445,34 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "233.16350622372477",
-        "y": "2690.044767323188",
+        "x": 233.16350622372477,
+        "y": 2690.044767323188,
+        "r": "middle",
         "fill": "#000000",
-        "fontSize": "17",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
+        "fontSize": "17",
         "tspans": [
           {
             "text": "Exclusive"
           }
         ]
       }
-    ],
-    "dataNodeId": "eErzKbR8sRNlrYcwNSRSh",
-    "dataType": "subtopic",
-    "dataTitle": "Exclusive"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "VrLaUipVKWvwnFF0ZbIlo",
+    "dataType": "subtopic",
+    "dataTitle": "Probabilistic",
     "children": [
       {
         "tag": "rect",
-        "x": "122.01350622372476",
-        "y": "2823.7447673231877",
-        "width": "222.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": 122.01350622372476,
+        "y": 2823.7447673231877,
+        "width": 222.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#ffe599",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -4228,33 +4480,34 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "233.16350622372477",
-        "y": "2849.044767323188",
+        "x": 233.16350622372477,
+        "y": 2849.044767323188,
+        "r": "middle",
         "fill": "#000000",
-        "fontSize": "17",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
+        "fontSize": "17",
         "tspans": [
           {
             "text": "Probabilistic"
           }
         ]
       }
-    ],
-    "dataNodeId": "VrLaUipVKWvwnFF0ZbIlo",
-    "dataType": "subtopic",
-    "dataTitle": "Probabilistic"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "owSUO9Ut9sggd1OiWr3O7",
+    "dataType": "subtopic",
+    "dataTitle": "Autoencoders",
     "children": [
       {
         "tag": "rect",
-        "x": "-302.79558981501435",
-        "y": "2717.818418061569",
-        "width": "270.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": -302.79558981501435,
+        "y": 2717.818418061569,
+        "width": 270.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#ffe599",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -4262,33 +4515,36 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "-167.64558981501438",
-        "y": "2743.118418061569",
+        "x": -167.64558981501438,
+        "y": 2743.118418061569,
+        "r": "middle",
         "fill": "#000000",
-        "fontSize": "17",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
+        "fontSize": "17",
         "tspans": [
           {
             "text": "Autoencoders"
           }
         ]
       }
-    ],
-    "dataNodeId": "owSUO9Ut9sggd1OiWr3O7",
-    "dataType": "subtopic",
-    "dataTitle": "Autoencoders"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "K-x_L3z8JTSHwtTeHm4EG",
+    "dataType": "subtopic",
+    "dataTitle": "Principal Component Analysis ",
+    "dataParentId": "vQI-4uFQJ6694nm1SCpDR",
+    "dataParentTitle": "Dimensionality Reduction",
     "children": [
       {
         "tag": "rect",
-        "x": "-302.79558981501435",
-        "y": "2664.818418061569",
-        "width": "270.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": -302.79558981501435,
+        "y": 2664.818418061569,
+        "width": 270.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#ffe599",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -4296,35 +4552,33 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "-167.64558981501438",
-        "y": "2690.118418061569",
+        "x": -167.64558981501438,
+        "y": 2690.118418061569,
+        "r": "middle",
         "fill": "#000000",
-        "fontSize": "17",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
+        "fontSize": "17",
         "tspans": [
           {
-            "text": "Principal Component Analysis "
+            "text": "Principal Component Analysis"
           }
         ]
       }
-    ],
-    "dataNodeId": "K-x_L3z8JTSHwtTeHm4EG",
-    "dataType": "subtopic",
-    "dataTitle": "Principal Component Analysis ",
-    "dataParentId": "vQI-4uFQJ6694nm1SCpDR",
-    "dataParentTitle": "Dimensionality Reduction"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "6pRmzfpARAApr1JRCC7f5",
+    "dataType": "paragraph",
     "children": [
       {
         "tag": "rect",
-        "x": "-711.127244443855",
-        "y": "2717.718418061569",
-        "width": "278",
-        "height": "73.5",
-        "rx": "5",
+        "x": -711.127244443855,
+        "y": 2717.718418061569,
+        "width": 278,
+        "height": 73.5,
+        "rx": 5,
         "fill": "transparent",
         "stroke": "transparent",
         "strokeWidth": "2.5"
@@ -4335,29 +4589,30 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
         "tspans": [
           {
             "text": "Reinforcement Learning",
-            "x": "-573.377244443855",
-            "y": "2754.468418061569",
-            "dy": "0",
+            "x": -573.377244443855,
+            "y": 2754.468418061569,
+            "dy": 0,
             "textAnchor": "middle",
             "dominantBaseline": "middle",
             "fontSize": "20"
           }
         ]
       }
-    ],
-    "dataNodeId": "6pRmzfpARAApr1JRCC7f5",
-    "dataType": "paragraph"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "EtU_9MOklVBvnvyg30Yfx",
+    "dataType": "topic",
+    "dataTitle": "What is Reinforcement Learning?",
     "children": [
       {
         "tag": "rect",
-        "x": "-703.527244443855",
-        "y": "2854.61971779646",
-        "width": "300.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": -703.527244443855,
+        "y": 2854.61971779646,
+        "width": 300.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#fdff00",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -4365,33 +4620,34 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "-553.377244443855",
-        "y": "2879.91971779646",
+        "x": -553.377244443855,
+        "y": 2879.91971779646,
+        "r": "middle",
         "fill": "#000000",
-        "fontSize": "17",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
+        "fontSize": "17",
         "tspans": [
           {
             "text": "What is Reinforcement Learning?"
           }
         ]
       }
-    ],
-    "dataNodeId": "EtU_9MOklVBvnvyg30Yfx",
-    "dataType": "topic",
-    "dataTitle": "What is Reinforcement Learning?"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "PZ-WxKGTcWTrXmYI_inD_",
+    "dataType": "subtopic",
+    "dataTitle": "Policy Gradient",
     "children": [
       {
         "tag": "rect",
-        "x": "-703.527244443855",
-        "y": "3013.223584467147",
-        "width": "300.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": -703.527244443855,
+        "y": 3013.223584467147,
+        "width": 300.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#ffe599",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -4399,33 +4655,34 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "-553.377244443855",
-        "y": "3038.523584467147",
+        "x": -553.377244443855,
+        "y": 3038.523584467147,
+        "r": "middle",
         "fill": "#000000",
-        "fontSize": "17",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
+        "fontSize": "17",
         "tspans": [
           {
             "text": "Policy Gradient"
           }
         ]
       }
-    ],
-    "dataNodeId": "PZ-WxKGTcWTrXmYI_inD_",
-    "dataType": "subtopic",
-    "dataTitle": "Policy Gradient"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "4Vy6lW9vF_SWwbKLU0qno",
+    "dataType": "subtopic",
+    "dataTitle": "Actor-Critic Methods",
     "children": [
       {
         "tag": "rect",
-        "x": "-703.527244443855",
-        "y": "3066.223584467147",
-        "width": "300.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": -703.527244443855,
+        "y": 3066.223584467147,
+        "width": 300.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#ffe599",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -4433,33 +4690,34 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "-553.377244443855",
-        "y": "3091.523584467147",
+        "x": -553.377244443855,
+        "y": 3091.523584467147,
+        "r": "middle",
         "fill": "#000000",
-        "fontSize": "17",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
+        "fontSize": "17",
         "tspans": [
           {
             "text": "Actor-Critic Methods"
           }
         ]
       }
-    ],
-    "dataNodeId": "4Vy6lW9vF_SWwbKLU0qno",
-    "dataType": "subtopic",
-    "dataTitle": "Actor-Critic Methods"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "9o-ZT9oZIE3hCXD6eWZI0",
+    "dataType": "subtopic",
+    "dataTitle": "Deep-Q Networks",
     "children": [
       {
         "tag": "rect",
-        "x": "-703.527244443855",
-        "y": "2960.223584467147",
-        "width": "300.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": -703.527244443855,
+        "y": 2960.223584467147,
+        "width": 300.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#ffe599",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -4467,33 +4725,34 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "-553.377244443855",
-        "y": "2985.523584467147",
+        "x": -553.377244443855,
+        "y": 2985.523584467147,
+        "r": "middle",
         "fill": "#000000",
-        "fontSize": "17",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
+        "fontSize": "17",
         "tspans": [
           {
             "text": "Deep-Q Networks"
           }
         ]
       }
-    ],
-    "dataNodeId": "9o-ZT9oZIE3hCXD6eWZI0",
-    "dataType": "subtopic",
-    "dataTitle": "Deep-Q Networks"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "wxq5dkrpgvs3axmLmeHCk",
+    "dataType": "subtopic",
+    "dataTitle": "Q-Learning",
     "children": [
       {
         "tag": "rect",
-        "x": "-703.527244443855",
-        "y": "3119.223584467147",
-        "width": "300.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": -703.527244443855,
+        "y": 3119.223584467147,
+        "width": 300.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#ffe599",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -4501,33 +4760,33 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "-553.377244443855",
-        "y": "3144.523584467147",
+        "x": -553.377244443855,
+        "y": 3144.523584467147,
+        "r": "middle",
         "fill": "#000000",
-        "fontSize": "17",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
+        "fontSize": "17",
         "tspans": [
           {
             "text": "Q-Learning"
           }
         ]
       }
-    ],
-    "dataNodeId": "wxq5dkrpgvs3axmLmeHCk",
-    "dataType": "subtopic",
-    "dataTitle": "Q-Learning"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "GdPSm-37Qw8J7uNj9XWYJ",
+    "dataType": "paragraph",
     "children": [
       {
         "tag": "rect",
-        "x": "-266.3955898150144",
-        "y": "2844.51971779646",
-        "width": "200",
-        "height": "66.5",
-        "rx": "5",
+        "x": -266.3955898150144,
+        "y": 2844.51971779646,
+        "width": 200,
+        "height": 66.5,
+        "rx": 5,
         "fill": "transparent",
         "stroke": "transparent",
         "strokeWidth": "2.5"
@@ -4538,29 +4797,32 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
         "tspans": [
           {
             "text": "Model Evaluation",
-            "x": "-167.64558981501438",
-            "y": "2875.51971779646",
-            "dy": "0",
+            "x": -167.64558981501438,
+            "y": 2875.51971779646,
+            "dy": 0,
             "textAnchor": "middle",
             "dominantBaseline": "middle",
             "fontSize": "20"
           }
         ]
       }
-    ],
-    "dataNodeId": "GdPSm-37Qw8J7uNj9XWYJ",
-    "dataType": "paragraph"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "99TI95HVGrXIYr-PIDxhC",
+    "dataType": "topic",
+    "dataTitle": "What is Model Evaluation?",
+    "dataParentId": "GdPSm-37Qw8J7uNj9XWYJ",
+    "dataParentTitle": "Model Evaluation",
     "children": [
       {
         "tag": "rect",
-        "x": "-302.79558981501435",
-        "y": "2962.950685330561",
-        "width": "270.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": -302.79558981501435,
+        "y": 2962.950685330561,
+        "width": 270.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#fdff00",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -4568,35 +4830,36 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "-167.64558981501438",
-        "y": "2988.2506853305613",
+        "x": -167.64558981501438,
+        "y": 2988.2506853305613,
+        "r": "middle",
         "fill": "#000000",
-        "fontSize": "17",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
+        "fontSize": "17",
         "tspans": [
           {
             "text": "What is Model Evaluation?"
           }
         ]
       }
-    ],
-    "dataNodeId": "99TI95HVGrXIYr-PIDxhC",
-    "dataType": "topic",
-    "dataTitle": "What is Model Evaluation?",
-    "dataParentId": "GdPSm-37Qw8J7uNj9XWYJ",
-    "dataParentTitle": "Model Evaluation"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "5dKl6SUQhOsZfUtVR5hzw",
+    "dataType": "topic",
+    "dataTitle": "Metrics to Evaluate",
+    "dataParentId": "vmERbhRIevLLNc7Ny2pWp",
+    "dataParentTitle": "Why is it important?",
     "children": [
       {
         "tag": "rect",
-        "x": "-302.79558981501435",
-        "y": "3120.72",
-        "width": "270.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": -302.79558981501435,
+        "y": 3120.72,
+        "width": 270.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#fdff00",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -4604,35 +4867,36 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "-167.64558981501438",
-        "y": "3146.02",
+        "x": -167.64558981501438,
+        "y": 3146.02,
+        "r": "middle",
         "fill": "#000000",
-        "fontSize": "17",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
+        "fontSize": "17",
         "tspans": [
           {
             "text": "Metrics to Evaluate"
           }
         ]
       }
-    ],
-    "dataNodeId": "5dKl6SUQhOsZfUtVR5hzw",
-    "dataType": "topic",
-    "dataTitle": "Metrics to Evaluate",
-    "dataParentId": "vmERbhRIevLLNc7Ny2pWp",
-    "dataParentTitle": "Why is it important?"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "3wib9UH0_OLhKjqKoZEMv",
+    "dataType": "subtopic",
+    "dataTitle": "Accuracy",
+    "dataParentId": "5dKl6SUQhOsZfUtVR5hzw",
+    "dataParentTitle": "Metrics to Evaluate",
     "children": [
       {
         "tag": "rect",
-        "x": "89.31128704667744",
-        "y": "2960.720603833673",
-        "width": "121.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": 89.31128704667744,
+        "y": 2960.720603833673,
+        "width": 121.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#ffe599",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -4640,35 +4904,34 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "149.96128704667746",
-        "y": "2986.0206038336732",
+        "x": 149.96128704667746,
+        "y": 2986.0206038336732,
+        "r": "middle",
         "fill": "#000000",
-        "fontSize": "17",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
+        "fontSize": "17",
         "tspans": [
           {
             "text": "Accuracy"
           }
         ]
       }
-    ],
-    "dataNodeId": "3wib9UH0_OLhKjqKoZEMv",
-    "dataType": "subtopic",
-    "dataTitle": "Accuracy",
-    "dataParentId": "5dKl6SUQhOsZfUtVR5hzw",
-    "dataParentTitle": "Metrics to Evaluate"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "mja35tndhAT5z_ysv-hDe",
+    "dataType": "subtopic",
+    "dataTitle": "Precision",
     "children": [
       {
         "tag": "rect",
-        "x": "216.30513613377187",
-        "y": "2960.720603833673",
-        "width": "127.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": 216.30513613377187,
+        "y": 2960.720603833673,
+        "width": 127.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#ffe599",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -4676,33 +4939,34 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "279.9551361337719",
-        "y": "2986.0206038336732",
+        "x": 279.9551361337719,
+        "y": 2986.0206038336732,
+        "r": "middle",
         "fill": "#000000",
-        "fontSize": "17",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
+        "fontSize": "17",
         "tspans": [
           {
             "text": "Precision"
           }
         ]
       }
-    ],
-    "dataNodeId": "mja35tndhAT5z_ysv-hDe",
-    "dataType": "subtopic",
-    "dataTitle": "Precision"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "DH33Na9zz_WGmbD-Dxvq1",
+    "dataType": "subtopic",
+    "dataTitle": "Recall",
     "children": [
       {
         "tag": "rect",
-        "x": "216.30513613377187",
-        "y": "3013.720603833673",
-        "width": "127.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": 216.30513613377187,
+        "y": 3013.720603833673,
+        "width": 127.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#ffe599",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -4710,33 +4974,36 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "279.9551361337719",
-        "y": "3039.0206038336732",
+        "x": 279.9551361337719,
+        "y": 3039.0206038336732,
+        "r": "middle",
         "fill": "#000000",
-        "fontSize": "17",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
+        "fontSize": "17",
         "tspans": [
           {
             "text": "Recall"
           }
         ]
       }
-    ],
-    "dataNodeId": "DH33Na9zz_WGmbD-Dxvq1",
-    "dataType": "subtopic",
-    "dataTitle": "Recall"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "FdNY8QUbPPpeHFgD8TTaD",
+    "dataType": "subtopic",
+    "dataTitle": "F1-Score",
+    "dataParentId": "5dKl6SUQhOsZfUtVR5hzw",
+    "dataParentTitle": "Metrics to Evaluate",
     "children": [
       {
         "tag": "rect",
-        "x": "89.31444063431668",
-        "y": "3013.720603833673",
-        "width": "121.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": 89.31444063431668,
+        "y": 3013.720603833673,
+        "width": 121.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#ffe599",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -4744,35 +5011,36 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "149.9644406343167",
-        "y": "3039.0206038336732",
+        "x": 149.9644406343167,
+        "y": 3039.0206038336732,
+        "r": "middle",
         "fill": "#000000",
-        "fontSize": "17",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
+        "fontSize": "17",
         "tspans": [
           {
             "text": "F1-Score"
           }
         ]
       }
-    ],
-    "dataNodeId": "FdNY8QUbPPpeHFgD8TTaD",
-    "dataType": "subtopic",
-    "dataTitle": "F1-Score",
-    "dataParentId": "5dKl6SUQhOsZfUtVR5hzw",
-    "dataParentTitle": "Metrics to Evaluate"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "anEGWHVpcp75e3jQrj_LZ",
+    "dataType": "subtopic",
+    "dataTitle": "ROC-AUC",
+    "dataParentId": "5dKl6SUQhOsZfUtVR5hzw",
+    "dataParentTitle": "Metrics to Evaluate",
     "children": [
       {
         "tag": "rect",
-        "x": "89.31128704667744",
-        "y": "3066.720603833673",
-        "width": "121.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": 89.31128704667744,
+        "y": 3066.720603833673,
+        "width": 121.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#ffe599",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -4780,35 +5048,34 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "149.96128704667746",
-        "y": "3092.0206038336732",
+        "x": 149.96128704667746,
+        "y": 3092.0206038336732,
+        "r": "middle",
         "fill": "#000000",
-        "fontSize": "17",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
+        "fontSize": "17",
         "tspans": [
           {
             "text": "ROC-AUC"
           }
         ]
       }
-    ],
-    "dataNodeId": "anEGWHVpcp75e3jQrj_LZ",
-    "dataType": "subtopic",
-    "dataTitle": "ROC-AUC",
-    "dataParentId": "5dKl6SUQhOsZfUtVR5hzw",
-    "dataParentTitle": "Metrics to Evaluate"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "7fOp3t283GeOn6Tf4kEuN",
+    "dataType": "subtopic",
+    "dataTitle": "Log Loss",
     "children": [
       {
         "tag": "rect",
-        "x": "216.30513613377187",
-        "y": "3066.720603833673",
-        "width": "127.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": 216.30513613377187,
+        "y": 3066.720603833673,
+        "width": 127.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#ffe599",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -4816,33 +5083,36 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "279.9551361337719",
-        "y": "3092.0206038336732",
+        "x": 279.9551361337719,
+        "y": 3092.0206038336732,
+        "r": "middle",
         "fill": "#000000",
-        "fontSize": "17",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
+        "fontSize": "17",
         "tspans": [
           {
             "text": "Log Loss"
           }
         ]
       }
-    ],
-    "dataNodeId": "7fOp3t283GeOn6Tf4kEuN",
-    "dataType": "subtopic",
-    "dataTitle": "Log Loss"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "oyL0M2OP4NTNbIO3zq-Hz",
+    "dataType": "subtopic",
+    "dataTitle": "Confusion Matrix",
+    "dataParentId": "5dKl6SUQhOsZfUtVR5hzw",
+    "dataParentTitle": "Metrics to Evaluate",
     "children": [
       {
         "tag": "rect",
-        "x": "90.31128704667744",
-        "y": "3119.720603833673",
-        "width": "253.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": 90.31128704667744,
+        "y": 3119.720603833673,
+        "width": 253.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#ffe599",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -4850,35 +5120,33 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "216.96128704667746",
-        "y": "3145.0206038336732",
+        "x": 216.96128704667746,
+        "y": 3145.0206038336732,
+        "r": "middle",
         "fill": "#000000",
-        "fontSize": "17",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
+        "fontSize": "17",
         "tspans": [
           {
             "text": "Confusion Matrix"
           }
         ]
       }
-    ],
-    "dataNodeId": "oyL0M2OP4NTNbIO3zq-Hz",
-    "dataType": "subtopic",
-    "dataTitle": "Confusion Matrix",
-    "dataParentId": "5dKl6SUQhOsZfUtVR5hzw",
-    "dataParentTitle": "Metrics to Evaluate"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "PSDG8k44DbOiMrSYsQ0Rx",
+    "dataType": "paragraph",
     "children": [
       {
         "tag": "rect",
-        "x": "-676.127244443855",
-        "y": "3235.061074714849",
-        "width": "219",
-        "height": "53.5",
-        "rx": "5",
+        "x": -676.127244443855,
+        "y": 3235.061074714849,
+        "width": 219,
+        "height": 53.5,
+        "rx": 5,
         "fill": "transparent",
         "stroke": "transparent",
         "strokeWidth": "2.5"
@@ -4889,29 +5157,30 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
         "tspans": [
           {
             "text": "Deep Learning",
-            "x": "-567.877244443855",
-            "y": "3261.811074714849",
-            "dy": "0",
+            "x": -567.877244443855,
+            "y": 3261.811074714849,
+            "dy": 0,
             "textAnchor": "middle",
             "dominantBaseline": "middle",
             "fontSize": "20"
           }
         ]
       }
-    ],
-    "dataNodeId": "PSDG8k44DbOiMrSYsQ0Rx",
-    "dataType": "paragraph"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "LWLqa61GK5ukYzHpjinYi",
+    "dataType": "subtopic",
+    "dataTitle": "Forward propagation",
     "children": [
       {
         "tag": "rect",
-        "x": "-703.4396691215065",
-        "y": "3534.5062291401464",
-        "width": "313.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": -703.4396691215065,
+        "y": 3534.5062291401464,
+        "width": 313.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#ffe599",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -4919,33 +5188,34 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "-546.7896691215066",
-        "y": "3559.8062291401466",
+        "x": -546.7896691215066,
+        "y": 3559.8062291401466,
+        "r": "middle",
         "fill": "#000000",
-        "fontSize": "17",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
+        "fontSize": "17",
         "tspans": [
           {
             "text": "Forward propagation"
           }
         ]
       }
-    ],
-    "dataNodeId": "LWLqa61GK5ukYzHpjinYi",
-    "dataType": "subtopic",
-    "dataTitle": "Forward propagation"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "0meihv22e11GwqnRdSJ9g",
+    "dataType": "subtopic",
+    "dataTitle": "Back Propagation",
     "children": [
       {
         "tag": "rect",
-        "x": "-703.4396691215065",
-        "y": "3587.5062291401464",
-        "width": "313.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": -703.4396691215065,
+        "y": 3587.5062291401464,
+        "width": 313.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#ffe599",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -4953,33 +5223,34 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "-546.7896691215066",
-        "y": "3612.8062291401466",
+        "x": -546.7896691215066,
+        "y": 3612.8062291401466,
+        "r": "middle",
         "fill": "#000000",
-        "fontSize": "17",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
+        "fontSize": "17",
         "tspans": [
           {
             "text": "Back Propagation"
           }
         ]
       }
-    ],
-    "dataNodeId": "0meihv22e11GwqnRdSJ9g",
-    "dataType": "subtopic",
-    "dataTitle": "Back Propagation"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "8425N_E43Dv5mcmEcXRIa",
+    "dataType": "subtopic",
+    "dataTitle": "Perceptron, Multi-layer Perceptrons",
     "children": [
       {
         "tag": "rect",
-        "x": "-703.4396691215065",
-        "y": "3481.5062291401464",
-        "width": "313.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": -703.4396691215065,
+        "y": 3481.5062291401464,
+        "width": 313.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#ffe599",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -4987,33 +5258,34 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "-546.7896691215066",
-        "y": "3506.8062291401466",
+        "x": -546.7896691215066,
+        "y": 3506.8062291401466,
+        "r": "middle",
         "fill": "#000000",
-        "fontSize": "17",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
+        "fontSize": "17",
         "tspans": [
           {
             "text": "Perceptron, Multi-layer Perceptrons"
           }
         ]
       }
-    ],
-    "dataNodeId": "8425N_E43Dv5mcmEcXRIa",
-    "dataType": "subtopic",
-    "dataTitle": "Perceptron, Multi-layer Perceptrons"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "RXTci1N6i6D9HqTbsLYIy",
+    "dataType": "subtopic",
+    "dataTitle": "Activation Functions",
     "children": [
       {
         "tag": "rect",
-        "x": "-703.4396691215065",
-        "y": "3640.5062291401464",
-        "width": "313.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": -703.4396691215065,
+        "y": 3640.5062291401464,
+        "width": 313.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#ffe599",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -5021,33 +5293,34 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "-546.7896691215066",
-        "y": "3665.8062291401466",
+        "x": -546.7896691215066,
+        "y": 3665.8062291401466,
+        "r": "middle",
         "fill": "#000000",
-        "fontSize": "17",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
+        "fontSize": "17",
         "tspans": [
           {
             "text": "Activation Functions"
           }
         ]
       }
-    ],
-    "dataNodeId": "RXTci1N6i6D9HqTbsLYIy",
-    "dataType": "subtopic",
-    "dataTitle": "Activation Functions"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "4dxZmLg0UEaaVEORupOOC",
+    "dataType": "topic",
+    "dataTitle": "Neural Network (NN) Basics",
     "children": [
       {
         "tag": "rect",
-        "x": "-703.4396691215065",
-        "y": "3384.5062291401464",
-        "width": "313.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": -703.4396691215065,
+        "y": 3384.5062291401464,
+        "width": 313.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#fdff00",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -5055,33 +5328,34 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "-546.7896691215066",
-        "y": "3409.8062291401466",
+        "x": -546.7896691215066,
+        "y": 3409.8062291401466,
+        "r": "middle",
         "fill": "#000000",
-        "fontSize": "17",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
+        "fontSize": "17",
         "tspans": [
           {
             "text": "Neural Network (NN) Basics"
           }
         ]
       }
-    ],
-    "dataNodeId": "4dxZmLg0UEaaVEORupOOC",
-    "dataType": "topic",
-    "dataTitle": "Neural Network (NN) Basics"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "KcfFjpxFTFxI6HR6hBPrl",
+    "dataType": "subtopic",
+    "dataTitle": "Loss Functions",
     "children": [
       {
         "tag": "rect",
-        "x": "-703.4396691215065",
-        "y": "3693.5062291401464",
-        "width": "313.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": -703.4396691215065,
+        "y": 3693.5062291401464,
+        "width": 313.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#ffe599",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -5089,33 +5363,36 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "-546.7896691215066",
-        "y": "3718.8062291401466",
+        "x": -546.7896691215066,
+        "y": 3718.8062291401466,
+        "r": "middle",
         "fill": "#000000",
-        "fontSize": "17",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
+        "fontSize": "17",
         "tspans": [
           {
             "text": "Loss Functions"
           }
         ]
       }
-    ],
-    "dataNodeId": "KcfFjpxFTFxI6HR6hBPrl",
-    "dataType": "subtopic",
-    "dataTitle": "Loss Functions"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "ZVbnAF9I1r8qWFFYG6nXv",
+    "dataType": "topic",
+    "dataTitle": "Scikit-learn",
+    "dataParentId": "Ns2zKn8BL_kTEI6O65pCp",
+    "dataParentTitle": "Types of Machine Learning",
     "children": [
       {
         "tag": "rect",
-        "x": "-279.2881872719935",
-        "y": "1888.4032715281323",
-        "width": "210.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": -279.2881872719935,
+        "y": 1888.4032715281323,
+        "width": 210.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#fdff00",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -5123,80 +5400,79 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "-174.1381872719935",
-        "y": "1913.7032715281325",
+        "x": -174.1381872719935,
+        "y": 1913.7032715281325,
+        "r": "middle",
         "fill": "#000000",
-        "fontSize": "17",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
+        "fontSize": "17",
         "tspans": [
           {
             "text": "Scikit-learn"
           }
         ]
       }
-    ],
-    "dataNodeId": "ZVbnAF9I1r8qWFFYG6nXv",
-    "dataType": "topic",
-    "dataTitle": "Scikit-learn",
-    "dataParentId": "Ns2zKn8BL_kTEI6O65pCp",
-    "dataParentTitle": "Types of Machine Learning"
+    ]
   },
   {
     "kind": "g",
-    "children": [
-      {
-        "tag": "line",
-        "x1": "36.8618127280065",
-        "y1": "1414.10460622576",
-        "x2": "36.8618127280065",
-        "y2": "1722.10460622576",
-        "style": "stroke-linecap: round; stroke-width: 3.5; stroke: #2B78E4; stroke-dasharray: 0;"
-      }
-    ],
     "dataNodeId": "CLBEDsXWxTG1SBaZWN3wr",
-    "dataType": "vertical"
-  },
-  {
-    "kind": "g",
+    "dataType": "vertical",
     "children": [
       {
         "tag": "line",
-        "x1": "-85.1381872719935",
-        "y1": "1414.10460622576",
-        "x2": "37.8618127280065",
-        "y2": "1414.10460622576",
+        "x1": 36.8618127280065,
+        "y1": 1414.10460622576,
+        "x2": 36.8618127280065,
+        "y2": 1722.10460622576,
         "style": "stroke-linecap: round; stroke-width: 3.5; stroke: #2B78E4; stroke-dasharray: 0;"
       }
-    ],
+    ]
+  },
+  {
+    "kind": "g",
     "dataNodeId": "eFw46u6SbFjl7CUMQIoby",
-    "dataType": "horizontal"
-  },
-  {
-    "kind": "g",
+    "dataType": "horizontal",
     "children": [
       {
         "tag": "line",
-        "x1": "-61.1381872719935",
-        "y1": "1562.10460622576",
-        "x2": "35.8618127280065",
-        "y2": "1562.10460622576",
+        "x1": -85.1381872719935,
+        "y1": 1414.10460622576,
+        "x2": 37.8618127280065,
+        "y2": 1414.10460622576,
         "style": "stroke-linecap: round; stroke-width: 3.5; stroke: #2B78E4; stroke-dasharray: 0;"
       }
-    ],
-    "dataNodeId": "nKtNZ-LuCLRGQ3XKGz5WV",
-    "dataType": "horizontal"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "nKtNZ-LuCLRGQ3XKGz5WV",
+    "dataType": "horizontal",
+    "children": [
+      {
+        "tag": "line",
+        "x1": -61.1381872719935,
+        "y1": 1562.10460622576,
+        "x2": 35.8618127280065,
+        "y2": 1562.10460622576,
+        "style": "stroke-linecap: round; stroke-width: 3.5; stroke: #2B78E4; stroke-dasharray: 0;"
+      }
+    ]
+  },
+  {
+    "kind": "g",
+    "dataNodeId": "1aX_vO5zxfTV8_kUIFHkR",
+    "dataType": "subtopic",
+    "dataTitle": "Ridge",
     "children": [
       {
         "tag": "rect",
-        "x": "-172.65856209149393",
-        "y": "2361.122092054328",
-        "width": "113.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": -172.65856209149393,
+        "y": 2361.122092054328,
+        "width": 113.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#ffe599",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -5204,33 +5480,34 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "-116.00856209149393",
-        "y": "2386.422092054328",
+        "x": -116.00856209149393,
+        "y": 2386.422092054328,
+        "r": "middle",
         "fill": "#000000",
-        "fontSize": "17",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
+        "fontSize": "17",
         "tspans": [
           {
             "text": "Ridge"
           }
         ]
       }
-    ],
-    "dataNodeId": "1aX_vO5zxfTV8_kUIFHkR",
-    "dataType": "subtopic",
-    "dataTitle": "Ridge"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "EXogp25SPW1bBfb1gRDAe",
+    "dataType": "subtopic",
+    "dataTitle": "Lasso",
     "children": [
       {
         "tag": "rect",
-        "x": "-301.76971806659117",
-        "y": "2361.122092054328",
-        "width": "123.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": -301.76971806659117,
+        "y": 2361.122092054328,
+        "width": 123.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#ffe599",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -5238,33 +5515,36 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "-240.1197180665912",
-        "y": "2386.422092054328",
+        "x": -240.1197180665912,
+        "y": 2386.422092054328,
+        "r": "middle",
         "fill": "#000000",
-        "fontSize": "17",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
+        "fontSize": "17",
         "tspans": [
           {
             "text": "Lasso"
           }
         ]
       }
-    ],
-    "dataNodeId": "EXogp25SPW1bBfb1gRDAe",
-    "dataType": "subtopic",
-    "dataTitle": "Lasso"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "0hi0LdCtj9Paimgfc-l1O",
+    "dataType": "topic",
+    "dataTitle": "Validation Techniques",
+    "dataParentId": "5dKl6SUQhOsZfUtVR5hzw",
+    "dataParentTitle": "Metrics to Evaluate",
     "children": [
       {
         "tag": "rect",
-        "x": "-302.79558981501435",
-        "y": "3238.161074714849",
-        "width": "270.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": -302.79558981501435,
+        "y": 3238.161074714849,
+        "width": 270.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#fdff00",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -5272,35 +5552,36 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "-167.64558981501438",
-        "y": "3263.461074714849",
+        "x": -167.64558981501438,
+        "y": 3263.461074714849,
+        "r": "middle",
         "fill": "#000000",
-        "fontSize": "17",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
+        "fontSize": "17",
         "tspans": [
           {
             "text": "Validation Techniques"
           }
         ]
       }
-    ],
-    "dataNodeId": "0hi0LdCtj9Paimgfc-l1O",
-    "dataType": "topic",
-    "dataTitle": "Validation Techniques",
-    "dataParentId": "5dKl6SUQhOsZfUtVR5hzw",
-    "dataParentTitle": "Metrics to Evaluate"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "GKMhIXEuSKdW75-24Zopb",
+    "dataType": "subtopic",
+    "dataTitle": "LOOCV",
+    "dataParentId": "0hi0LdCtj9Paimgfc-l1O",
+    "dataParentTitle": "Validation Techniques",
     "children": [
       {
         "tag": "rect",
-        "x": "80.58681648400486",
-        "y": "3291.161074714849",
-        "width": "264.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": 80.58681648400486,
+        "y": 3291.161074714849,
+        "width": 264.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#ffe599",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -5308,35 +5589,36 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "212.73681648400486",
-        "y": "3316.461074714849",
+        "x": 212.73681648400486,
+        "y": 3316.461074714849,
+        "r": "middle",
         "fill": "#000000",
-        "fontSize": "17",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
+        "fontSize": "17",
         "tspans": [
           {
             "text": "LOOCV"
           }
         ]
       }
-    ],
-    "dataNodeId": "GKMhIXEuSKdW75-24Zopb",
-    "dataType": "subtopic",
-    "dataTitle": "LOOCV",
-    "dataParentId": "0hi0LdCtj9Paimgfc-l1O",
-    "dataParentTitle": "Validation Techniques"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "vRS7DW2WUaXiHk9oJgg3z",
+    "dataType": "subtopic",
+    "dataTitle": "K-Fold Cross Validation",
+    "dataParentId": "0hi0LdCtj9Paimgfc-l1O",
+    "dataParentTitle": "Validation Techniques",
     "children": [
       {
         "tag": "rect",
-        "x": "80.58681648400486",
-        "y": "3238.161074714849",
-        "width": "264.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": 80.58681648400486,
+        "y": 3238.161074714849,
+        "width": 264.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#ffe599",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -5344,35 +5626,36 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "212.73681648400486",
-        "y": "3263.461074714849",
+        "x": 212.73681648400486,
+        "y": 3263.461074714849,
+        "r": "middle",
         "fill": "#000000",
-        "fontSize": "17",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
+        "fontSize": "17",
         "tspans": [
           {
             "text": "K-Fold Cross Validation"
           }
         ]
       }
-    ],
-    "dataNodeId": "vRS7DW2WUaXiHk9oJgg3z",
-    "dataType": "subtopic",
-    "dataTitle": "K-Fold Cross Validation",
-    "dataParentId": "0hi0LdCtj9Paimgfc-l1O",
-    "dataParentTitle": "Validation Techniques"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "_Z2miSW4PwILMRtBFajBn",
+    "dataType": "topic",
+    "dataTitle": "Deep Learning Architectures",
+    "dataParentId": "A_Kx3pEj0jpnLJzdOpcQ9",
+    "dataParentTitle": "Deep Learning Libraries",
     "children": [
       {
         "tag": "rect",
-        "x": "80.58681648400486",
-        "y": "3384.5062291401464",
-        "width": "264.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": 80.58681648400486,
+        "y": 3384.5062291401464,
+        "width": 264.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#fdff00",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -5380,35 +5663,34 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "212.73681648400486",
-        "y": "3409.8062291401466",
+        "x": 212.73681648400486,
+        "y": 3409.8062291401466,
+        "r": "middle",
         "fill": "#000000",
-        "fontSize": "17",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
+        "fontSize": "17",
         "tspans": [
           {
             "text": "Deep Learning Architectures"
           }
         ]
       }
-    ],
-    "dataNodeId": "_Z2miSW4PwILMRtBFajBn",
-    "dataType": "topic",
-    "dataTitle": "Deep Learning Architectures",
-    "dataParentId": "A_Kx3pEj0jpnLJzdOpcQ9",
-    "dataParentTitle": "Deep Learning Libraries"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "BtO2wH7YYqE25HShI6sd9",
+    "dataType": "topic",
+    "dataTitle": "Convolutional Neural Network",
     "children": [
       {
         "tag": "rect",
-        "x": "52.58681648400486",
-        "y": "3622.298816097384",
-        "width": "292.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": 52.58681648400486,
+        "y": 3622.298816097384,
+        "width": 292.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#fdff00",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -5416,33 +5698,36 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "198.73681648400486",
-        "y": "3647.5988160973843",
+        "x": 198.73681648400486,
+        "y": 3647.5988160973843,
+        "r": "middle",
         "fill": "#000000",
-        "fontSize": "17",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
+        "fontSize": "17",
         "tspans": [
           {
             "text": "Convolutional Neural Network"
           }
         ]
       }
-    ],
-    "dataNodeId": "BtO2wH7YYqE25HShI6sd9",
-    "dataType": "topic",
-    "dataTitle": "Convolutional Neural Network"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "I-GEE7PvpQmhQSfZmxqwA",
+    "dataType": "subtopic",
+    "dataTitle": "Pooling",
+    "dataParentId": "BtO2wH7YYqE25HShI6sd9",
+    "dataParentTitle": "Convolutional Neural Network",
     "children": [
       {
         "tag": "rect",
-        "x": "-170.2221339272493",
-        "y": "3622.298816097384",
-        "width": "111.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": -170.2221339272493,
+        "y": 3622.298816097384,
+        "width": 111.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#ffe599",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -5450,35 +5735,34 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "-114.5721339272493",
-        "y": "3647.5988160973843",
+        "x": -114.5721339272493,
+        "y": 3647.5988160973843,
+        "r": "middle",
         "fill": "#000000",
-        "fontSize": "17",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
+        "fontSize": "17",
         "tspans": [
           {
             "text": "Pooling"
           }
         ]
       }
-    ],
-    "dataNodeId": "I-GEE7PvpQmhQSfZmxqwA",
-    "dataType": "subtopic",
-    "dataTitle": "Pooling",
-    "dataParentId": "BtO2wH7YYqE25HShI6sd9",
-    "dataParentTitle": "Convolutional Neural Network"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "a2PGTDnXKp759vFZzkjSF",
+    "dataType": "subtopic",
+    "dataTitle": "Padding",
     "children": [
       {
         "tag": "rect",
-        "x": "-306.87471681944066",
-        "y": "3675.298816097384",
-        "width": "129.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": -306.87471681944066,
+        "y": 3675.298816097384,
+        "width": 129.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#ffe599",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -5486,33 +5770,34 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "-242.2247168194407",
-        "y": "3700.5988160973843",
+        "x": -242.2247168194407,
+        "y": 3700.5988160973843,
+        "r": "middle",
         "fill": "#000000",
-        "fontSize": "17",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
+        "fontSize": "17",
         "tspans": [
           {
             "text": "Padding"
           }
         ]
       }
-    ],
-    "dataNodeId": "a2PGTDnXKp759vFZzkjSF",
-    "dataType": "subtopic",
-    "dataTitle": "Padding"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "MtoYStcZBduLSbjRuPjq0",
+    "dataType": "subtopic",
+    "dataTitle": "Convolution",
     "children": [
       {
         "tag": "rect",
-        "x": "-306.87471681944066",
-        "y": "3622.298816097384",
-        "width": "129.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": -306.87471681944066,
+        "y": 3622.298816097384,
+        "width": 129.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#ffe599",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -5520,33 +5805,36 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "-242.2247168194407",
-        "y": "3647.5988160973843",
+        "x": -242.2247168194407,
+        "y": 3647.5988160973843,
+        "r": "middle",
         "fill": "#000000",
-        "fontSize": "17",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
+        "fontSize": "17",
         "tspans": [
           {
             "text": "Convolution"
           }
         ]
       }
-    ],
-    "dataNodeId": "MtoYStcZBduLSbjRuPjq0",
-    "dataType": "subtopic",
-    "dataTitle": "Convolution"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "YWxSI45e5K_4YOrvmh6LV",
+    "dataType": "subtopic",
+    "dataTitle": "Strides",
+    "dataParentId": "BtO2wH7YYqE25HShI6sd9",
+    "dataParentTitle": "Convolutional Neural Network",
     "children": [
       {
         "tag": "rect",
-        "x": "-170.2221339272493",
-        "y": "3675.298816097384",
-        "width": "111.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": -170.2221339272493,
+        "y": 3675.298816097384,
+        "width": 111.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#ffe599",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -5554,35 +5842,34 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "-114.5721339272493",
-        "y": "3700.5988160973843",
+        "x": -114.5721339272493,
+        "y": 3700.5988160973843,
+        "r": "middle",
         "fill": "#000000",
-        "fontSize": "17",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
+        "fontSize": "17",
         "tspans": [
           {
             "text": "Strides"
           }
         ]
       }
-    ],
-    "dataNodeId": "YWxSI45e5K_4YOrvmh6LV",
-    "dataType": "subtopic",
-    "dataTitle": "Strides",
-    "dataParentId": "BtO2wH7YYqE25HShI6sd9",
-    "dataParentTitle": "Convolutional Neural Network"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "gCGHtxqD4V_Ite_AXMspf",
+    "dataType": "topic",
+    "dataTitle": "Applications of CNNs",
     "children": [
       {
         "tag": "rect",
-        "x": "49.58681648400486",
-        "y": "3771.628926748161",
-        "width": "298.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": 49.58681648400486,
+        "y": 3771.628926748161,
+        "width": 298.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#fdff00",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -5590,33 +5877,34 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "198.73681648400486",
-        "y": "3796.9289267481613",
+        "x": 198.73681648400486,
+        "y": 3796.9289267481613,
+        "r": "middle",
         "fill": "#000000",
-        "fontSize": "17",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
+        "fontSize": "17",
         "tspans": [
           {
             "text": "Applications of CNNs"
           }
         ]
       }
-    ],
-    "dataNodeId": "gCGHtxqD4V_Ite_AXMspf",
-    "dataType": "topic",
-    "dataTitle": "Applications of CNNs"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "E4k6WgNXdnNoApR675VKb",
+    "dataType": "subtopic",
+    "dataTitle": "Image Classification",
     "children": [
       {
         "tag": "rect",
-        "x": "49.58681648400485",
-        "y": "3929.806791215419",
-        "width": "298.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": 49.58681648400485,
+        "y": 3929.806791215419,
+        "width": 298.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#ffe599",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -5624,33 +5912,34 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "198.73681648400486",
-        "y": "3955.106791215419",
+        "x": 198.73681648400486,
+        "y": 3955.106791215419,
+        "r": "middle",
         "fill": "#000000",
-        "fontSize": "17",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
+        "fontSize": "17",
         "tspans": [
           {
             "text": "Image Classification"
           }
         ]
       }
-    ],
-    "dataNodeId": "E4k6WgNXdnNoApR675VKb",
-    "dataType": "subtopic",
-    "dataTitle": "Image Classification"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "iSX9YExs1gS4L2CBQux5w",
+    "dataType": "subtopic",
+    "dataTitle": "Image Segmentation",
     "children": [
       {
         "tag": "rect",
-        "x": "49.58681648400485",
-        "y": "3982.806791215419",
-        "width": "298.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": 49.58681648400485,
+        "y": 3982.806791215419,
+        "width": 298.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#ffe599",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -5658,33 +5947,34 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "198.73681648400486",
-        "y": "4008.106791215419",
+        "x": 198.73681648400486,
+        "y": 4008.106791215419,
+        "r": "middle",
         "fill": "#000000",
-        "fontSize": "17",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
+        "fontSize": "17",
         "tspans": [
           {
             "text": "Image Segmentation"
           }
         ]
       }
-    ],
-    "dataNodeId": "iSX9YExs1gS4L2CBQux5w",
-    "dataType": "subtopic",
-    "dataTitle": "Image Segmentation"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "jPvZdgye7cBf0bPMVGf7a",
+    "dataType": "subtopic",
+    "dataTitle": "Image &amp; Video Recognition",
     "children": [
       {
         "tag": "rect",
-        "x": "49.58681648400485",
-        "y": "3876.806791215419",
-        "width": "298.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": 49.58681648400485,
+        "y": 3876.806791215419,
+        "width": 298.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#ffe599",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -5692,33 +5982,34 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "198.73681648400486",
-        "y": "3902.106791215419",
+        "x": 198.73681648400486,
+        "y": 3902.106791215419,
+        "r": "middle",
         "fill": "#000000",
-        "fontSize": "17",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
+        "fontSize": "17",
         "tspans": [
           {
-            "text": "Image & Video Recognition"
+            "text": "Image &amp; Video Recognition"
           }
         ]
       }
-    ],
-    "dataNodeId": "jPvZdgye7cBf0bPMVGf7a",
-    "dataType": "subtopic",
-    "dataTitle": "Image & Video Recognition"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "_eKuBhCCwUHnEGwHNQY-g",
+    "dataType": "subtopic",
+    "dataTitle": "Recommendation Systems",
     "children": [
       {
         "tag": "rect",
-        "x": "49.58681648400485",
-        "y": "4035.806791215419",
-        "width": "298.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": 49.58681648400485,
+        "y": 4035.806791215419,
+        "width": 298.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#ffe599",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -5726,33 +6017,36 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "198.73681648400486",
-        "y": "4061.106791215419",
+        "x": 198.73681648400486,
+        "y": 4061.106791215419,
+        "r": "middle",
         "fill": "#000000",
-        "fontSize": "17",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
+        "fontSize": "17",
         "tspans": [
           {
             "text": "Recommendation Systems"
           }
         ]
       }
-    ],
-    "dataNodeId": "_eKuBhCCwUHnEGwHNQY-g",
-    "dataType": "subtopic",
-    "dataTitle": "Recommendation Systems"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "H0cscBaExZPNZuFubBUv7",
+    "dataType": "topic",
+    "dataTitle": "Recurrent Neural Networks",
+    "dataParentId": "gCGHtxqD4V_Ite_AXMspf",
+    "dataParentTitle": "Applications of CNNs",
     "children": [
       {
         "tag": "rect",
-        "x": "-325.26971806659117",
-        "y": "3771.628926748161",
-        "width": "291.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": -325.26971806659117,
+        "y": 3771.628926748161,
+        "width": 291.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#fdff00",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -5760,35 +6054,34 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "-179.6197180665912",
-        "y": "3796.9289267481613",
+        "x": -179.6197180665912,
+        "y": 3796.9289267481613,
+        "r": "middle",
         "fill": "#000000",
-        "fontSize": "17",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
+        "fontSize": "17",
         "tspans": [
           {
             "text": "Recurrent Neural Networks"
           }
         ]
       }
-    ],
-    "dataNodeId": "H0cscBaExZPNZuFubBUv7",
-    "dataType": "topic",
-    "dataTitle": "Recurrent Neural Networks",
-    "dataParentId": "gCGHtxqD4V_Ite_AXMspf",
-    "dataParentTitle": "Applications of CNNs"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "LpggrF1MMvAxtO9EJe3wY",
+    "dataType": "subtopic",
+    "dataTitle": "RNN",
     "children": [
       {
         "tag": "rect",
-        "x": "-322.40356673306366",
-        "y": "3869.335455509079",
-        "width": "97.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": -322.40356673306366,
+        "y": 3869.335455509079,
+        "width": 97.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#ffe599",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -5796,33 +6089,34 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "-273.7535667330637",
-        "y": "3894.6354555090793",
+        "x": -273.7535667330637,
+        "y": 3894.6354555090793,
+        "r": "middle",
         "fill": "#000000",
-        "fontSize": "17",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
+        "fontSize": "17",
         "tspans": [
           {
             "text": "RNN"
           }
         ]
       }
-    ],
-    "dataNodeId": "LpggrF1MMvAxtO9EJe3wY",
-    "dataType": "subtopic",
-    "dataTitle": "RNN"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "ZWDSLqxmfg3aPBZFH479q",
+    "dataType": "subtopic",
+    "dataTitle": "GRU",
     "children": [
       {
         "tag": "rect",
-        "x": "-215.40356673306368",
-        "y": "3869.335455509079",
-        "width": "73.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": -215.40356673306368,
+        "y": 3869.335455509079,
+        "width": 73.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#ffe599",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -5830,33 +6124,34 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "-178.75356673306368",
-        "y": "3894.6354555090793",
+        "x": -178.75356673306368,
+        "y": 3894.6354555090793,
+        "r": "middle",
         "fill": "#000000",
-        "fontSize": "17",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
+        "fontSize": "17",
         "tspans": [
           {
             "text": "GRU"
           }
         ]
       }
-    ],
-    "dataNodeId": "ZWDSLqxmfg3aPBZFH479q",
-    "dataType": "subtopic",
-    "dataTitle": "GRU"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "LdUwTWfCIcowwC-e6q3ac",
+    "dataType": "subtopic",
+    "dataTitle": "LSTM",
     "children": [
       {
         "tag": "rect",
-        "x": "-132.40356673306374",
-        "y": "3869.335455509079",
-        "width": "97.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": -132.40356673306374,
+        "y": 3869.335455509079,
+        "width": 97.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#ffe599",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -5864,33 +6159,36 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "-83.75356673306374",
-        "y": "3894.6354555090793",
+        "x": -83.75356673306374,
+        "y": 3894.6354555090793,
+        "r": "middle",
         "fill": "#000000",
-        "fontSize": "17",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
+        "fontSize": "17",
         "tspans": [
           {
             "text": "LSTM"
           }
         ]
       }
-    ],
-    "dataNodeId": "LdUwTWfCIcowwC-e6q3ac",
-    "dataType": "subtopic",
-    "dataTitle": "LSTM"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "-tzeA13f2jYDm4aO5JciT",
+    "dataType": "topic",
+    "dataTitle": "Attention Mechanisms",
+    "dataParentId": "H0cscBaExZPNZuFubBUv7",
+    "dataParentTitle": "Recurrent Neural Networks",
     "children": [
       {
         "tag": "rect",
-        "x": "-703.527244443855",
-        "y": "3973.047958198172",
-        "width": "224.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": -703.527244443855,
+        "y": 3973.047958198172,
+        "width": 224.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#fdff00",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -5898,35 +6196,36 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "-591.377244443855",
-        "y": "3998.3479581981724",
+        "x": -591.377244443855,
+        "y": 3998.3479581981724,
+        "r": "middle",
         "fill": "#000000",
-        "fontSize": "17",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
+        "fontSize": "17",
         "tspans": [
           {
             "text": "Attention Mechanisms"
           }
         ]
       }
-    ],
-    "dataNodeId": "-tzeA13f2jYDm4aO5JciT",
-    "dataType": "topic",
-    "dataTitle": "Attention Mechanisms",
-    "dataParentId": "H0cscBaExZPNZuFubBUv7",
-    "dataParentTitle": "Recurrent Neural Networks"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "kvf2CUKBe4qSbZla4Brh3",
+    "dataType": "topic",
+    "dataTitle": "Autoencoders",
+    "dataParentId": "-tzeA13f2jYDm4aO5JciT",
+    "dataParentTitle": "Attention Mechanisms",
     "children": [
       {
         "tag": "rect",
-        "x": "-702.527244443855",
-        "y": "4175.750127048074",
-        "width": "224.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": -702.527244443855,
+        "y": 4175.750127048074,
+        "width": 224.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#fdff00",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -5934,35 +6233,36 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "-590.377244443855",
-        "y": "4201.050127048074",
+        "x": -590.377244443855,
+        "y": 4201.050127048074,
+        "r": "middle",
         "fill": "#000000",
-        "fontSize": "17",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
+        "fontSize": "17",
         "tspans": [
           {
             "text": "Autoencoders"
           }
         ]
       }
-    ],
-    "dataNodeId": "kvf2CUKBe4qSbZla4Brh3",
-    "dataType": "topic",
-    "dataTitle": "Autoencoders",
-    "dataParentId": "-tzeA13f2jYDm4aO5JciT",
-    "dataParentTitle": "Attention Mechanisms"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "rDIg16eb6B6um1P8uMy51",
+    "dataType": "subtopic",
+    "dataTitle": "Transformers",
+    "dataParentId": "-tzeA13f2jYDm4aO5JciT",
+    "dataParentTitle": "Attention Mechanisms",
     "children": [
       {
         "tag": "rect",
-        "x": "-313.7867859986136",
-        "y": "4026.047958198172",
-        "width": "269.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": -313.7867859986136,
+        "y": 4026.047958198172,
+        "width": 269.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#ffe599",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -5970,35 +6270,36 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "-179.13678599861362",
-        "y": "4051.3479581981724",
+        "x": -179.13678599861362,
+        "y": 4051.3479581981724,
+        "r": "middle",
         "fill": "#000000",
-        "fontSize": "17",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
+        "fontSize": "17",
         "tspans": [
           {
             "text": "Transformers"
           }
         ]
       }
-    ],
-    "dataNodeId": "rDIg16eb6B6um1P8uMy51",
-    "dataType": "subtopic",
-    "dataTitle": "Transformers",
-    "dataParentId": "-tzeA13f2jYDm4aO5JciT",
-    "dataParentTitle": "Attention Mechanisms"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "J1aGPkZqDZfUwpVmC88AL",
+    "dataType": "subtopic",
+    "dataTitle": "Multi-head Attention",
+    "dataParentId": "-tzeA13f2jYDm4aO5JciT",
+    "dataParentTitle": "Attention Mechanisms",
     "children": [
       {
         "tag": "rect",
-        "x": "-313.7867859986136",
-        "y": "4079.047958198172",
-        "width": "269.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": -313.7867859986136,
+        "y": 4079.047958198172,
+        "width": 269.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#ffe599",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -6006,35 +6307,36 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "-179.13678599861362",
-        "y": "4104.347958198172",
+        "x": -179.13678599861362,
+        "y": 4104.347958198172,
+        "r": "middle",
         "fill": "#000000",
-        "fontSize": "17",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
+        "fontSize": "17",
         "tspans": [
           {
             "text": "Multi-head Attention"
           }
         ]
       }
-    ],
-    "dataNodeId": "J1aGPkZqDZfUwpVmC88AL",
-    "dataType": "subtopic",
-    "dataTitle": "Multi-head Attention",
-    "dataParentId": "-tzeA13f2jYDm4aO5JciT",
-    "dataParentTitle": "Attention Mechanisms"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "oTKC1o1OOnPiTh60a8yVc",
+    "dataType": "subtopic",
+    "dataTitle": "Self-Attention",
+    "dataParentId": "-tzeA13f2jYDm4aO5JciT",
+    "dataParentTitle": "Attention Mechanisms",
     "children": [
       {
         "tag": "rect",
-        "x": "-313.7867859986136",
-        "y": "3973.047958198172",
-        "width": "269.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": -313.7867859986136,
+        "y": 3973.047958198172,
+        "width": 269.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#ffe599",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -6042,35 +6344,36 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "-179.13678599861362",
-        "y": "3998.3479581981724",
+        "x": -179.13678599861362,
+        "y": 3998.3479581981724,
+        "r": "middle",
         "fill": "#000000",
-        "fontSize": "17",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
+        "fontSize": "17",
         "tspans": [
           {
             "text": "Self-Attention"
           }
         ]
       }
-    ],
-    "dataNodeId": "oTKC1o1OOnPiTh60a8yVc",
-    "dataType": "subtopic",
-    "dataTitle": "Self-Attention",
-    "dataParentId": "-tzeA13f2jYDm4aO5JciT",
-    "dataParentTitle": "Attention Mechanisms"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "IR0wVIcu1MxOOBiLBnn8S",
+    "dataType": "topic",
+    "dataTitle": "Generative Adversarial Networks",
+    "dataParentId": "kvf2CUKBe4qSbZla4Brh3",
+    "dataParentTitle": "Autoencoders",
     "children": [
       {
         "tag": "rect",
-        "x": "-336.7867859986136",
-        "y": "4175.750127048074",
-        "width": "315.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": -336.7867859986136,
+        "y": 4175.750127048074,
+        "width": 315.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#fdff00",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -6078,35 +6381,33 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "-179.13678599861362",
-        "y": "4201.050127048074",
+        "x": -179.13678599861362,
+        "y": 4201.050127048074,
+        "r": "middle",
         "fill": "#000000",
-        "fontSize": "17",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
+        "fontSize": "17",
         "tspans": [
           {
             "text": "Generative Adversarial Networks"
           }
         ]
       }
-    ],
-    "dataNodeId": "IR0wVIcu1MxOOBiLBnn8S",
-    "dataType": "topic",
-    "dataTitle": "Generative Adversarial Networks",
-    "dataParentId": "kvf2CUKBe4qSbZla4Brh3",
-    "dataParentTitle": "Autoencoders"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "2eiJQUo9lA32lOTR6kbBp",
+    "dataType": "paragraph",
     "children": [
       {
         "tag": "rect",
-        "x": "87.34010183215503",
-        "y": "4168.150127048074",
-        "width": "279",
-        "height": "61.5",
-        "rx": "5",
+        "x": 87.34010183215503,
+        "y": 4168.150127048074,
+        "width": 279,
+        "height": 61.5,
+        "rx": 5,
         "fill": "transparent",
         "stroke": "transparent",
         "strokeWidth": "2.5"
@@ -6117,29 +6418,30 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
         "tspans": [
           {
             "text": "Advanced Concepts in ML",
-            "x": "225.59010183215503",
-            "y": "4198.900127048074",
-            "dy": "0",
+            "x": 225.59010183215503,
+            "y": 4198.900127048074,
+            "dy": 0,
             "textAnchor": "middle",
             "dominantBaseline": "middle",
             "fontSize": "20"
           }
         ]
       }
-    ],
-    "dataNodeId": "2eiJQUo9lA32lOTR6kbBp",
-    "dataType": "paragraph"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "JVXe2QDQaqiJYPupIMhWe",
+    "dataType": "topic",
+    "dataTitle": "Natural Language Processing",
     "children": [
       {
         "tag": "rect",
-        "x": "70.30513613377187",
-        "y": "4302.916192654979",
-        "width": "273.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": 70.30513613377187,
+        "y": 4302.916192654979,
+        "width": 273.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#fdff00",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -6147,33 +6449,34 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "206.95513613377187",
-        "y": "4328.216192654978",
+        "x": 206.95513613377187,
+        "y": 4328.216192654978,
+        "r": "middle",
         "fill": "#000000",
-        "fontSize": "17",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
+        "fontSize": "17",
         "tspans": [
           {
             "text": "Natural Language Processing"
           }
         ]
       }
-    ],
-    "dataNodeId": "JVXe2QDQaqiJYPupIMhWe",
-    "dataType": "topic",
-    "dataTitle": "Natural Language Processing"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "QbftToskhtBlTz1jyiRkb",
+    "dataType": "subtopic",
+    "dataTitle": "Tokenization",
     "children": [
       {
         "tag": "rect",
-        "x": "135.03991330086598",
-        "y": "4395.963934450062",
-        "width": "207.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": 135.03991330086598,
+        "y": 4395.963934450062,
+        "width": 207.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#ffe599",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -6181,33 +6484,34 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "238.68991330086598",
-        "y": "4421.263934450061",
+        "x": 238.68991330086598,
+        "y": 4421.263934450061,
+        "r": "middle",
         "fill": "#000000",
-        "fontSize": "17",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
+        "fontSize": "17",
         "tspans": [
           {
             "text": "Tokenization"
           }
         ]
       }
-    ],
-    "dataNodeId": "QbftToskhtBlTz1jyiRkb",
-    "dataType": "subtopic",
-    "dataTitle": "Tokenization"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "pP0VeUSK9CDodgz-BQmrP",
+    "dataType": "subtopic",
+    "dataTitle": "Lemmatization",
     "children": [
       {
         "tag": "rect",
-        "x": "135.03991330086598",
-        "y": "4448.963934450062",
-        "width": "207.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": 135.03991330086598,
+        "y": 4448.963934450062,
+        "width": 207.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#ffe599",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -6215,33 +6519,34 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "238.68991330086598",
-        "y": "4474.263934450061",
+        "x": 238.68991330086598,
+        "y": 4474.263934450061,
+        "r": "middle",
         "fill": "#000000",
-        "fontSize": "17",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
+        "fontSize": "17",
         "tspans": [
           {
             "text": "Lemmatization"
           }
         ]
       }
-    ],
-    "dataNodeId": "pP0VeUSK9CDodgz-BQmrP",
-    "dataType": "subtopic",
-    "dataTitle": "Lemmatization"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "UO1GEUe8e22uRB6DAxfpe",
+    "dataType": "subtopic",
+    "dataTitle": "Stemming",
     "children": [
       {
         "tag": "rect",
-        "x": "135.03991330086598",
-        "y": "4607.963934450062",
-        "width": "207.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": 135.03991330086598,
+        "y": 4607.963934450062,
+        "width": 207.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#ffe599",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -6249,33 +6554,34 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "238.68991330086598",
-        "y": "4633.263934450061",
+        "x": 238.68991330086598,
+        "y": 4633.263934450061,
+        "r": "middle",
         "fill": "#000000",
-        "fontSize": "17",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
+        "fontSize": "17",
         "tspans": [
           {
             "text": "Stemming"
           }
         ]
       }
-    ],
-    "dataNodeId": "UO1GEUe8e22uRB6DAxfpe",
-    "dataType": "subtopic",
-    "dataTitle": "Stemming"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "CaHbAXDIJQXcQ9DZqziod",
+    "dataType": "subtopic",
+    "dataTitle": "Embeddings",
     "children": [
       {
         "tag": "rect",
-        "x": "135.03991330086598",
-        "y": "4501.963934450062",
-        "width": "207.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": 135.03991330086598,
+        "y": 4501.963934450062,
+        "width": 207.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#ffe599",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -6283,33 +6589,34 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "238.68991330086598",
-        "y": "4527.263934450061",
+        "x": 238.68991330086598,
+        "y": 4527.263934450061,
+        "r": "middle",
         "fill": "#000000",
-        "fontSize": "17",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
+        "fontSize": "17",
         "tspans": [
           {
             "text": "Embeddings"
           }
         ]
       }
-    ],
-    "dataNodeId": "CaHbAXDIJQXcQ9DZqziod",
-    "dataType": "subtopic",
-    "dataTitle": "Embeddings"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "sChxcuQ2OruKVx8P4wAK_",
+    "dataType": "subtopic",
+    "dataTitle": "Attention Models",
     "children": [
       {
         "tag": "rect",
-        "x": "135.03991330086598",
-        "y": "4554.963934450062",
-        "width": "207.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": 135.03991330086598,
+        "y": 4554.963934450062,
+        "width": 207.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#ffe599",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -6317,48 +6624,48 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "238.68991330086598",
-        "y": "4580.263934450061",
+        "x": 238.68991330086598,
+        "y": 4580.263934450061,
+        "r": "middle",
         "fill": "#000000",
-        "fontSize": "17",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
+        "fontSize": "17",
         "tspans": [
           {
             "text": "Attention Models"
           }
         ]
       }
-    ],
-    "dataNodeId": "sChxcuQ2OruKVx8P4wAK_",
-    "dataType": "subtopic",
-    "dataTitle": "Attention Models"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "4qvR1QQzrmoVIVCAsp92H",
+    "dataType": "vertical",
     "children": [
       {
         "tag": "line",
-        "x1": "-332.1892556595822",
-        "y1": "4441.989984473966",
-        "x2": "-332.1892556595822",
-        "y2": "4528.989984473966",
+        "x1": -332.1892556595822,
+        "y1": 4441.989984473966,
+        "x2": -332.1892556595822,
+        "y2": 4528.989984473966,
         "style": "stroke-linecap: round; stroke-width: 3.5; stroke: #2B78E4; stroke-dasharray: 0.8 8;"
       }
-    ],
-    "dataNodeId": "4qvR1QQzrmoVIVCAsp92H",
-    "dataType": "vertical"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "O5dely89N5UCMBeUfh8ud",
+    "dataType": "paragraph",
     "children": [
       {
         "tag": "rect",
-        "x": "-564.8664962866078",
-        "y": "4434.239984473966",
-        "width": "619",
-        "height": "114.5",
-        "rx": "5",
+        "x": -564.8664962866078,
+        "y": 4434.239984473966,
+        "width": 619,
+        "height": 114.5,
+        "rx": 5,
         "fill": "WHITe",
         "stroke": "#000000",
         "strokeWidth": "2.5"
@@ -6369,161 +6676,168 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
         "tspans": [
           {
             "text": "Also visit the following related roadmaps",
-            "x": "-256.6164962866078",
-            "y": "4462.989984473966",
-            "dy": "0",
+            "x": -256.6164962866078,
+            "y": 4462.989984473966,
+            "dy": 0,
             "textAnchor": "middle",
             "dominantBaseline": "middle",
             "fontSize": "17"
           }
         ]
       }
-    ],
-    "dataNodeId": "O5dely89N5UCMBeUfh8ud",
-    "dataType": "paragraph"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "hl06pnTWoMnzLmiOz9Sga",
+    "dataType": "button",
+    "dataLink": "https://roadmap.sh/ai-data-scientist",
     "children": [
       {
         "tag": "rect",
-        "x": "-550.1239442280381",
-        "y": "4488.190756570174",
-        "width": "196.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": -550.1239442280381,
+        "y": 4488.190756570174,
+        "width": 196.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#4136D6",
         "stroke": "#4136D6",
         "strokeWidth": "2.7"
       },
       {
         "tag": "text",
-        "x": "-451.97394422803814",
-        "y": "4513.490756570173",
+        "x": -451.97394422803814,
+        "y": 4513.490756570173,
+        "r": "middle",
         "fill": "#FFf",
-        "fontSize": "17",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
+        "fontSize": "17",
         "tspans": [
           {
-            "text": "AI & Data Scientist"
+            "text": "AI &amp; Data Scientist"
           }
         ]
       }
-    ],
-    "dataNodeId": "hl06pnTWoMnzLmiOz9Sga",
-    "dataType": "button",
-    "dataLink": "https://roadmap.sh/ai-data-scientist"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "KGFYqDgOVSFXd2lbg8vGx",
+    "dataType": "button",
+    "dataLink": "https://roadmap.sh/mlops",
     "children": [
       {
         "tag": "rect",
-        "x": "-347.38796723918114",
-        "y": "4488.190756570174",
-        "width": "97.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": -347.38796723918114,
+        "y": 4488.190756570174,
+        "width": 97.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#4136D6",
         "stroke": "#4136D6",
         "strokeWidth": "2.7"
       },
       {
         "tag": "text",
-        "x": "-298.73796723918116",
-        "y": "4513.490756570173",
+        "x": -298.73796723918116,
+        "y": 4513.490756570173,
+        "r": "middle",
         "fill": "#FFf",
-        "fontSize": "17",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
+        "fontSize": "17",
         "tspans": [
           {
             "text": "MLOps"
           }
         ]
       }
-    ],
-    "dataNodeId": "KGFYqDgOVSFXd2lbg8vGx",
-    "dataType": "button",
-    "dataLink": "https://roadmap.sh/mlops"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "xcOlVnhYfnSCfzLpkcaRS",
+    "dataType": "button",
+    "dataLink": "https://roadmap.sh/ai-engineer",
     "children": [
       {
         "tag": "rect",
-        "x": "-242.30860737279951",
-        "y": "4488.190756570174",
-        "width": "145.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": -242.30860737279951,
+        "y": 4488.190756570174,
+        "width": 145.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#4136D6",
         "stroke": "#4136D6",
         "strokeWidth": "2.7"
       },
       {
         "tag": "text",
-        "x": "-169.6586073727995",
-        "y": "4513.490756570173",
+        "x": -169.6586073727995,
+        "y": 4513.490756570173,
+        "r": "middle",
         "fill": "#FFf",
-        "fontSize": "17",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
+        "fontSize": "17",
         "tspans": [
           {
             "text": "AI Engineer"
           }
         ]
       }
-    ],
-    "dataNodeId": "xcOlVnhYfnSCfzLpkcaRS",
-    "dataType": "button",
-    "dataLink": "https://roadmap.sh/ai-engineer"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "UZq7Aq3nhidsXdsKeEnNF",
+    "dataType": "button",
+    "dataLink": "https://roadmap.sh/ai-agents",
     "children": [
       {
         "tag": "rect",
-        "x": "-87.29305301692713",
-        "y": "4488.190756570174",
-        "width": "117.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": -87.29305301692713,
+        "y": 4488.190756570174,
+        "width": 117.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#4136D6",
         "stroke": "#4136D6",
         "strokeWidth": "2.7"
       },
       {
         "tag": "text",
-        "x": "-28.643053016927126",
-        "y": "4513.490756570173",
+        "x": -28.643053016927126,
+        "y": 4513.490756570173,
+        "r": "middle",
         "fill": "#FFf",
-        "fontSize": "17",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
+        "fontSize": "17",
         "tspans": [
           {
             "text": "AI Agents"
           }
         ]
       }
-    ],
-    "dataNodeId": "UZq7Aq3nhidsXdsKeEnNF",
-    "dataType": "button",
-    "dataLink": "https://roadmap.sh/ai-agents"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "Tv3sZvus76dmu0X9AqCIU",
+    "dataType": "topic",
+    "dataTitle": "Explainable AI",
+    "dataParentId": "JVXe2QDQaqiJYPupIMhWe",
+    "dataParentTitle": "Natural Language Processing",
     "children": [
       {
         "tag": "rect",
-        "x": "-267.7881872719935",
-        "y": "4302.916192654979",
-        "width": "176.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": -267.7881872719935,
+        "y": 4302.916192654979,
+        "width": 176.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#fdff00",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -6531,35 +6845,36 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "-179.6381872719935",
-        "y": "4328.216192654978",
+        "x": -179.6381872719935,
+        "y": 4328.216192654978,
+        "r": "middle",
         "fill": "#000000",
-        "fontSize": "17",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
+        "fontSize": "17",
         "tspans": [
           {
             "text": "Explainable AI"
           }
         ]
       }
-    ],
-    "dataNodeId": "Tv3sZvus76dmu0X9AqCIU",
-    "dataType": "topic",
-    "dataTitle": "Explainable AI",
-    "dataParentId": "JVXe2QDQaqiJYPupIMhWe",
-    "dataParentTitle": "Natural Language Processing"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "5xxAg18h74pDAUPy6P8NQ",
+    "dataType": "subtopic",
+    "dataTitle": "Train - Test Data",
+    "dataParentId": "ZVbnAF9I1r8qWFFYG6nXv",
+    "dataParentTitle": "Scikit-learn",
     "children": [
       {
         "tag": "rect",
-        "x": "107.58681648400483",
-        "y": "1835.4032715281323",
-        "width": "237.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": 107.58681648400483,
+        "y": 1835.4032715281323,
+        "width": 237.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#ffe599",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -6567,35 +6882,36 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "226.23681648400483",
-        "y": "1860.7032715281325",
+        "x": 226.23681648400483,
+        "y": 1860.7032715281325,
+        "r": "middle",
         "fill": "#000000",
-        "fontSize": "17",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
+        "fontSize": "17",
         "tspans": [
           {
             "text": "Train - Test Data"
           }
         ]
       }
-    ],
-    "dataNodeId": "5xxAg18h74pDAUPy6P8NQ",
-    "dataType": "subtopic",
-    "dataTitle": "Train - Test Data",
-    "dataParentId": "ZVbnAF9I1r8qWFFYG6nXv",
-    "dataParentTitle": "Scikit-learn"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "-W2uAccH7Y2XIwhfl9mDF",
+    "dataType": "subtopic",
+    "dataTitle": "Data Preparation",
+    "dataParentId": "ZVbnAF9I1r8qWFFYG6nXv",
+    "dataParentTitle": "Scikit-learn",
     "children": [
       {
         "tag": "rect",
-        "x": "107.58681648400483",
-        "y": "1888.4032715281323",
-        "width": "237.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": 107.58681648400483,
+        "y": 1888.4032715281323,
+        "width": 237.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#ffe599",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -6603,35 +6919,36 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "226.23681648400483",
-        "y": "1913.7032715281325",
+        "x": 226.23681648400483,
+        "y": 1913.7032715281325,
+        "r": "middle",
         "fill": "#000000",
-        "fontSize": "17",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
+        "fontSize": "17",
         "tspans": [
           {
             "text": "Data Preparation"
           }
         ]
       }
-    ],
-    "dataNodeId": "-W2uAccH7Y2XIwhfl9mDF",
-    "dataType": "subtopic",
-    "dataTitle": "Data Preparation",
-    "dataParentId": "ZVbnAF9I1r8qWFFYG6nXv",
-    "dataParentTitle": "Scikit-learn"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "bIhGv4886V4RWJD3tX0a0",
+    "dataType": "subtopic",
+    "dataTitle": "Data Loading",
+    "dataParentId": "ZVbnAF9I1r8qWFFYG6nXv",
+    "dataParentTitle": "Scikit-learn",
     "children": [
       {
         "tag": "rect",
-        "x": "107.58681648400483",
-        "y": "1782.4032715281323",
-        "width": "237.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": 107.58681648400483,
+        "y": 1782.4032715281323,
+        "width": 237.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#ffe599",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -6639,35 +6956,36 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "226.23681648400483",
-        "y": "1807.7032715281325",
+        "x": 226.23681648400483,
+        "y": 1807.7032715281325,
+        "r": "middle",
         "fill": "#000000",
-        "fontSize": "17",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
+        "fontSize": "17",
         "tspans": [
           {
             "text": "Data Loading"
           }
         ]
       }
-    ],
-    "dataNodeId": "bIhGv4886V4RWJD3tX0a0",
-    "dataType": "subtopic",
-    "dataTitle": "Data Loading",
-    "dataParentId": "ZVbnAF9I1r8qWFFYG6nXv",
-    "dataParentTitle": "Scikit-learn"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "m4vmnxRMBf7zwNnwrMEnk",
+    "dataType": "subtopic",
+    "dataTitle": "Tuning",
+    "dataParentId": "ZVbnAF9I1r8qWFFYG6nXv",
+    "dataParentTitle": "Scikit-learn",
     "children": [
       {
         "tag": "rect",
-        "x": "107.58681648400483",
-        "y": "1994.4032715281323",
-        "width": "237.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": 107.58681648400483,
+        "y": 1994.4032715281323,
+        "width": 237.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#ffe599",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -6675,35 +6993,36 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "226.23681648400483",
-        "y": "2019.7032715281325",
+        "x": 226.23681648400483,
+        "y": 2019.7032715281325,
+        "r": "middle",
         "fill": "#000000",
-        "fontSize": "17",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
+        "fontSize": "17",
         "tspans": [
           {
             "text": "Tuning"
           }
         ]
       }
-    ],
-    "dataNodeId": "m4vmnxRMBf7zwNnwrMEnk",
-    "dataType": "subtopic",
-    "dataTitle": "Tuning",
-    "dataParentId": "ZVbnAF9I1r8qWFFYG6nXv",
-    "dataParentTitle": "Scikit-learn"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "vBnqnIh_xSn0OuY9oQ5e-",
+    "dataType": "subtopic",
+    "dataTitle": "Prediction",
+    "dataParentId": "ZVbnAF9I1r8qWFFYG6nXv",
+    "dataParentTitle": "Scikit-learn",
     "children": [
       {
         "tag": "rect",
-        "x": "107.58681648400483",
-        "y": "2047.4032715281323",
-        "width": "237.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": 107.58681648400483,
+        "y": 2047.4032715281323,
+        "width": 237.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#ffe599",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -6711,35 +7030,36 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "226.23681648400483",
-        "y": "2072.7032715281325",
+        "x": 226.23681648400483,
+        "y": 2072.7032715281325,
+        "r": "middle",
         "fill": "#000000",
-        "fontSize": "17",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
+        "fontSize": "17",
         "tspans": [
           {
             "text": "Prediction"
           }
         ]
       }
-    ],
-    "dataNodeId": "vBnqnIh_xSn0OuY9oQ5e-",
-    "dataType": "subtopic",
-    "dataTitle": "Prediction",
-    "dataParentId": "ZVbnAF9I1r8qWFFYG6nXv",
-    "dataParentTitle": "Scikit-learn"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "Ddhph9saFgfMi-uUFGK75",
+    "dataType": "subtopic",
+    "dataTitle": "Model Selection",
+    "dataParentId": "ZVbnAF9I1r8qWFFYG6nXv",
+    "dataParentTitle": "Scikit-learn",
     "children": [
       {
         "tag": "rect",
-        "x": "107.58681648400483",
-        "y": "1941.4032715281323",
-        "width": "237.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": 107.58681648400483,
+        "y": 1941.4032715281323,
+        "width": 237.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#ffe599",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -6747,35 +7067,36 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "226.23681648400483",
-        "y": "1966.7032715281325",
+        "x": 226.23681648400483,
+        "y": 1966.7032715281325,
+        "r": "middle",
         "fill": "#000000",
-        "fontSize": "17",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
+        "fontSize": "17",
         "tspans": [
           {
             "text": "Model Selection"
           }
         ]
       }
-    ],
-    "dataNodeId": "Ddhph9saFgfMi-uUFGK75",
-    "dataType": "subtopic",
-    "dataTitle": "Model Selection",
-    "dataParentId": "ZVbnAF9I1r8qWFFYG6nXv",
-    "dataParentTitle": "Scikit-learn"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "A_Kx3pEj0jpnLJzdOpcQ9",
+    "dataType": "topic",
+    "dataTitle": "Deep Learning Libraries",
+    "dataParentId": "4dxZmLg0UEaaVEORupOOC",
+    "dataParentTitle": "Neural Network (NN) Basics",
     "children": [
       {
         "tag": "rect",
-        "x": "-309.26971806659117",
-        "y": "3384.5062291401464",
-        "width": "257.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": -309.26971806659117,
+        "y": 3384.5062291401464,
+        "width": 257.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#fdff00",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -6783,35 +7104,34 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "-180.6197180665912",
-        "y": "3409.8062291401466",
+        "x": -180.6197180665912,
+        "y": 3409.8062291401466,
+        "r": "middle",
         "fill": "#000000",
-        "fontSize": "17",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
+        "fontSize": "17",
         "tspans": [
           {
             "text": "Deep Learning Libraries"
           }
         ]
       }
-    ],
-    "dataNodeId": "A_Kx3pEj0jpnLJzdOpcQ9",
-    "dataType": "topic",
-    "dataTitle": "Deep Learning Libraries",
-    "dataParentId": "4dxZmLg0UEaaVEORupOOC",
-    "dataParentTitle": "Neural Network (NN) Basics"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "Ru8_xMyFxye1hyzCUYvnj",
+    "dataType": "subtopic",
+    "dataTitle": "TensorFlow",
     "children": [
       {
         "tag": "rect",
-        "x": "-306.87471681944066",
-        "y": "3483.0237579137147",
-        "width": "129.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": -306.87471681944066,
+        "y": 3483.0237579137147,
+        "width": 129.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#ffe599",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -6819,33 +7139,34 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "-242.2247168194407",
-        "y": "3508.323757913715",
+        "x": -242.2247168194407,
+        "y": 3508.323757913715,
+        "r": "middle",
         "fill": "#000000",
-        "fontSize": "17",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
+        "fontSize": "17",
         "tspans": [
           {
             "text": "TensorFlow"
           }
         ]
       }
-    ],
-    "dataNodeId": "Ru8_xMyFxye1hyzCUYvnj",
-    "dataType": "subtopic",
-    "dataTitle": "TensorFlow"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "zoXnXI4Wf5sxddHqYwQjP",
+    "dataType": "subtopic",
+    "dataTitle": "Keras",
     "children": [
       {
         "tag": "rect",
-        "x": "-170.2221339272493",
-        "y": "3483.0237579137147",
-        "width": "111.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": -170.2221339272493,
+        "y": 3483.0237579137147,
+        "width": 111.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#ffe599",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -6853,33 +7174,34 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "-114.5721339272493",
-        "y": "3508.323757913715",
+        "x": -114.5721339272493,
+        "y": 3508.323757913715,
+        "r": "middle",
         "fill": "#000000",
-        "fontSize": "17",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
+        "fontSize": "17",
         "tspans": [
           {
             "text": "Keras"
           }
         ]
       }
-    ],
-    "dataNodeId": "zoXnXI4Wf5sxddHqYwQjP",
-    "dataType": "subtopic",
-    "dataTitle": "Keras"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "7RSW-Pypf3QpZp4O21AGl",
+    "dataType": "subtopic",
+    "dataTitle": "PyTorch",
     "children": [
       {
         "tag": "rect",
-        "x": "-170.2221339272493",
-        "y": "3536.0237579137147",
-        "width": "111.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": -170.2221339272493,
+        "y": 3536.0237579137147,
+        "width": 111.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#ffe599",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -6887,33 +7209,34 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "-114.5721339272493",
-        "y": "3561.323757913715",
+        "x": -114.5721339272493,
+        "y": 3561.323757913715,
+        "r": "middle",
         "fill": "#000000",
-        "fontSize": "17",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
+        "fontSize": "17",
         "tspans": [
           {
             "text": "PyTorch"
           }
         ]
       }
-    ],
-    "dataNodeId": "7RSW-Pypf3QpZp4O21AGl",
-    "dataType": "subtopic",
-    "dataTitle": "PyTorch"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "yKtRmgwrJ75VVz7_txZ-S",
+    "dataType": "subtopic",
+    "dataTitle": "Scikit-learn",
     "children": [
       {
         "tag": "rect",
-        "x": "-306.87471681944066",
-        "y": "3536.0237579137147",
-        "width": "129.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": -306.87471681944066,
+        "y": 3536.0237579137147,
+        "width": 129.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#ffe599",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -6921,33 +7244,34 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "-242.2247168194407",
-        "y": "3561.323757913715",
+        "x": -242.2247168194407,
+        "y": 3561.323757913715,
+        "r": "middle",
         "fill": "#000000",
-        "fontSize": "17",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
+        "fontSize": "17",
         "tspans": [
           {
             "text": "Scikit-learn"
           }
         ]
       }
-    ],
-    "dataNodeId": "yKtRmgwrJ75VVz7_txZ-S",
-    "dataType": "subtopic",
-    "dataTitle": "Scikit-learn"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "0-6BV-MggAyD7g3JH45B7",
+    "dataType": "subtopic",
+    "dataTitle": "ElasticNet Regularization",
     "children": [
       {
         "tag": "rect",
-        "x": "-301.76971806659117",
-        "y": "2414.122092054328",
-        "width": "242.3",
-        "height": "47.3",
-        "rx": "5",
+        "x": -301.76971806659117,
+        "y": 2414.122092054328,
+        "width": 242.3,
+        "height": 47.3,
+        "rx": 5,
         "fill": "#ffe599",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -6955,33 +7279,34 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "-180.6197180665912",
-        "y": "2439.922092054328",
+        "x": -180.6197180665912,
+        "y": 2439.922092054328,
+        "r": "middle",
         "fill": "#000000",
-        "fontSize": "17",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
+        "fontSize": "17",
         "tspans": [
           {
             "text": "ElasticNet Regularization"
           }
         ]
       }
-    ],
-    "dataNodeId": "0-6BV-MggAyD7g3JH45B7",
-    "dataType": "subtopic",
-    "dataTitle": "ElasticNet Regularization"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "vmERbhRIevLLNc7Ny2pWp",
+    "dataType": "topic",
+    "dataTitle": "Why is it important?",
     "children": [
       {
         "tag": "rect",
-        "x": "-302.79558981501435",
-        "y": "3015.950685330561",
-        "width": "270.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": -302.79558981501435,
+        "y": 3015.950685330561,
+        "width": 270.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#fdff00",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -6989,48 +7314,48 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "-167.64558981501438",
-        "y": "3041.2506853305613",
+        "x": -167.64558981501438,
+        "y": 3041.2506853305613,
+        "r": "middle",
         "fill": "#000000",
-        "fontSize": "17",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
+        "fontSize": "17",
         "tspans": [
           {
             "text": "Why is it important?"
           }
         ]
       }
-    ],
-    "dataNodeId": "vmERbhRIevLLNc7Ny2pWp",
-    "dataType": "topic",
-    "dataTitle": "Why is it important?"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "pzEgbKewpTcphOkGFhoKb",
+    "dataType": "vertical",
     "children": [
       {
         "tag": "line",
-        "x1": "-180.6197180665912",
-        "y1": "4549.613934450062",
-        "x2": "-180.6197180665912",
-        "y2": "4624.613934450062",
+        "x1": -180.6197180665912,
+        "y1": 4549.613934450062,
+        "x2": -180.6197180665912,
+        "y2": 4624.613934450062,
         "style": "stroke-linecap: round; stroke-width: 3.65; stroke: #2B78E4; stroke-dasharray: 0.8 8;"
       }
-    ],
-    "dataNodeId": "pzEgbKewpTcphOkGFhoKb",
-    "dataType": "vertical"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "yHmHXymPNWwu8p1vvqD3o",
+    "dataType": "paragraph",
     "children": [
       {
         "tag": "rect",
-        "x": "-9.252815208049242",
-        "y": "-150.90106699547107",
-        "width": "355",
-        "height": "140.5",
-        "rx": "5",
+        "x": -9.252815208049242,
+        "y": -150.90106699547107,
+        "width": 355,
+        "height": 140.5,
+        "rx": 5,
         "fill": "#FFFFFf",
         "stroke": "#ffffff",
         "strokeWidth": "2.5"
@@ -7041,59 +7366,58 @@ export const MACHINE_LEARNING_SVG_DATASET: SvgElementItem[] = [
         "tspans": [
           {
             "text": "Find the detailed version of this roadmap",
-            "x": "7.997184791950758",
-            "y": "-122.15106699547107",
-            "dy": "0",
+            "x": 7.997184791950758,
+            "y": -122.15106699547107,
+            "dy": 0,
             "textAnchor": "start",
             "dominantBaseline": "middle",
             "fontSize": "17"
           },
           {
             "text": "along with other similar roadmaps",
-            "x": "7.997184791950758",
-            "y": "-122.15106699547107",
-            "dy": "25.5",
+            "x": 7.997184791950758,
+            "y": -122.15106699547107,
+            "dy": 25.5,
             "textAnchor": "start",
             "dominantBaseline": "middle",
             "fontSize": "17"
           }
         ]
       }
-    ],
-    "dataNodeId": "yHmHXymPNWwu8p1vvqD3o",
-    "dataType": "paragraph"
+    ]
   },
   {
     "kind": "g",
+    "dataNodeId": "2zqZkyVgigifcRS1H7F_b",
+    "dataType": "button",
+    "dataLink": "https://roadmap.sh",
     "children": [
       {
         "tag": "rect",
-        "x": "4.050559204750902",
-        "y": "-68.81550357772579",
-        "width": "327.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": 4.050559204750902,
+        "y": -68.81550357772579,
+        "width": 327.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#e3e3e3",
         "stroke": "#e3e3e3",
         "strokeWidth": "2.7"
       },
       {
         "tag": "text",
-        "x": "167.7005592047509",
-        "y": "-43.51550357772579",
+        "x": 167.7005592047509,
+        "y": -43.51550357772579,
+        "r": "middle",
         "fill": "#000000",
-        "fontSize": "17",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
+        "fontSize": "17",
         "tspans": [
           {
             "text": "roadmap.sh"
           }
         ]
       }
-    ],
-    "dataNodeId": "2zqZkyVgigifcRS1H7F_b",
-    "dataType": "button",
-    "dataLink": "https://roadmap.sh"
+    ]
   }
 ];

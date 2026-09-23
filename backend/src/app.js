@@ -23,7 +23,7 @@ app.get('/', (req, res) => {
     status: 'online',
     service: 'CareerMapper API Backend',
     frontendUrl: 'http://localhost:5175',
-    message: 'Backend API server is running. Please access the CareerMapper Web App at http://localhost:5175'
+    message: 'Backend API server is running.'
   });
 });
 
@@ -31,17 +31,34 @@ app.get('/health', (req, res) => {
   res.status(200).json({ status: 'ok' });
 });
 
+// Role Roadmaps
+app.use('/', roleRoadmapRoutes);
 app.use('/api', roleRoadmapRoutes);
-app.use('/api', jobPreparationRoutes);
 
+// Job Preparation Roadmaps (Mount on all path variants)
+app.use('/job-preparation', jobPreparationRoutes);
+app.use('/api/job-preparation', jobPreparationRoutes);
+app.use('/job-prep', jobPreparationRoutes);
+app.use('/api/job-prep', jobPreparationRoutes);
+
+// Core System Routes
 app.use('/', skillRoutes);
+app.use('/api', skillRoutes);
 app.use('/', knowledgeRoutes);
+app.use('/api', knowledgeRoutes);
 app.use('/', resumeRoutes);
+app.use('/api', resumeRoutes);
 app.use('/', roleRoutes);
+app.use('/api', roleRoutes);
 app.use('/', jobRoutes);
+app.use('/api', jobRoutes);
 app.use('/', chatRoutes);
+app.use('/api', chatRoutes);
 app.use('/', savedJobRoutes);
+app.use('/api', savedJobRoutes);
 app.use('/', roadmapRoutes);
+app.use('/api', roadmapRoutes);
 app.use('/', userRoutes);
+app.use('/api', userRoutes);
 
 export default app;

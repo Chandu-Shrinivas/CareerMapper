@@ -266,10 +266,15 @@ export const matchRoles = async (userSkills, detectedDomain = 'Unknown') => {
 
     // 1. Get profile text
     const profileText = userSkills.map(s => String(s.name || '').trim()).join(' ');
+    const targetDomain = Array.isArray(detectedDomain)
+      ? (detectedDomain[0] === 'BCom' ? 'B.Com' : detectedDomain[0])
+      : typeof detectedDomain === 'string'
+        ? (detectedDomain.split(',')[0].trim() === 'BCom' ? 'B.Com' : detectedDomain.split(',')[0].trim())
+        : 'IT';
 
     // 2. Call ML Service and execute hybrid merge
     try {
-      const mlResult = await predict(profileText);
+      const mlResult = await predict(profileText, targetDomain);
       if (mlResult && mlResult.success && !mlResult.fallback && mlResult.predictions) {
         const mlPredictions = mlResult.predictions; // [{ role, confidence }]
         

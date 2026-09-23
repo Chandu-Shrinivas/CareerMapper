@@ -9,6 +9,8 @@ export const FULLSTACK_SVG_DATASET: SvgElementItem[] = [
     "stroke": "#2b78e4",
     "strokeWidth": "3.5",
     "strokeDasharray": "0",
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
     "dataEdgeId": "reactflow__edge-iogwMmOvub2ZF4zgg6WyFx2-mGgx_QTEPmVKf6AijX9fiy2"
   },
   {
@@ -17,6 +19,8 @@ export const FULLSTACK_SVG_DATASET: SvgElementItem[] = [
     "stroke": "#2b78e4",
     "strokeWidth": "3.5",
     "strokeDasharray": "0",
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
     "dataEdgeId": "reactflow__edge-B0kARTODvCBi0iOF8iiqIz2-mGgx_QTEPmVKf6AijX9fiy2"
   },
   {
@@ -25,6 +29,8 @@ export const FULLSTACK_SVG_DATASET: SvgElementItem[] = [
     "stroke": "#2b78e4",
     "strokeWidth": "3.5",
     "strokeDasharray": "0",
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
     "dataEdgeId": "reactflow__edge-khoUtTUxdf8udAzN9_CAbz2-mGgx_QTEPmVKf6AijX9fiw1"
   },
   {
@@ -33,6 +39,8 @@ export const FULLSTACK_SVG_DATASET: SvgElementItem[] = [
     "stroke": "#2b78e4",
     "strokeWidth": "3.5",
     "strokeDasharray": "0",
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
     "dataEdgeId": "reactflow__edge-dAJHWmGeiYdzZ1ZjrWz1Sz2-khoUtTUxdf8udAzN9_CAby2"
   },
   {
@@ -41,6 +49,8 @@ export const FULLSTACK_SVG_DATASET: SvgElementItem[] = [
     "stroke": "#2b78e4",
     "strokeWidth": "3.5",
     "strokeDasharray": "0",
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
     "dataEdgeId": "reactflow__edge-mGgx_QTEPmVKf6AijX9fix2-We2APJpOPTr-VNfowG0kIz2"
   },
   {
@@ -49,6 +59,8 @@ export const FULLSTACK_SVG_DATASET: SvgElementItem[] = [
     "stroke": "#2b78e4",
     "strokeWidth": "3.5",
     "strokeDasharray": "0",
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
     "dataEdgeId": "reactflow__edge-We2APJpOPTr-VNfowG0kIy2-khoUtTUxdf8udAzN9_CAbz1"
   },
   {
@@ -57,6 +69,8 @@ export const FULLSTACK_SVG_DATASET: SvgElementItem[] = [
     "stroke": "#2b78e4",
     "strokeWidth": "3.5",
     "strokeDasharray": "0",
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
     "dataEdgeId": "reactflow__edge-8sPXL8iClpPqje03kssesy2-khoUtTUxdf8udAzN9_CAbz1"
   },
   {
@@ -65,6 +79,8 @@ export const FULLSTACK_SVG_DATASET: SvgElementItem[] = [
     "stroke": "#2b78e4",
     "strokeWidth": "3.5",
     "strokeDasharray": "0",
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
     "dataEdgeId": "reactflow__edge-2kKHuQZScu7hCDgQWxl5uy2-khoUtTUxdf8udAzN9_CAbz2"
   },
   {
@@ -73,6 +89,8 @@ export const FULLSTACK_SVG_DATASET: SvgElementItem[] = [
     "stroke": "#2b78e4",
     "strokeWidth": "3.5",
     "strokeDasharray": "0",
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
     "dataEdgeId": "reactflow__edge-khoUtTUxdf8udAzN9_CAby2-QfW-odmDYknm_qXNcDu5oy1"
   },
   {
@@ -81,6 +99,8 @@ export const FULLSTACK_SVG_DATASET: SvgElementItem[] = [
     "stroke": "#2b78e4",
     "strokeWidth": "3.5",
     "strokeDasharray": "0",
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
     "dataEdgeId": "reactflow__edge-QfW-odmDYknm_qXNcDu5oz2-2kKHuQZScu7hCDgQWxl5uy1"
   },
   {
@@ -89,6 +109,8 @@ export const FULLSTACK_SVG_DATASET: SvgElementItem[] = [
     "stroke": "#2b78e4",
     "strokeWidth": "3.5",
     "strokeDasharray": "0",
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
     "dataEdgeId": "reactflow__edge-2kKHuQZScu7hCDgQWxl5ux2-cUOfvOlQ_0Uu1VX3i67kJz1"
   },
   {
@@ -97,6 +119,8 @@ export const FULLSTACK_SVG_DATASET: SvgElementItem[] = [
     "stroke": "#2b78e4",
     "strokeWidth": "3.5",
     "strokeDasharray": "0",
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
     "dataEdgeId": "reactflow__edge-vmHbWdmMHF53otXIrqzRVy2-cUOfvOlQ_0Uu1VX3i67kJz2"
   },
   {
@@ -105,6 +129,8 @@ export const FULLSTACK_SVG_DATASET: SvgElementItem[] = [
     "stroke": "#2b78e4",
     "strokeWidth": "3.5",
     "strokeDasharray": "0",
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
     "dataEdgeId": "reactflow__edge-vHojhJYjiN0IwruEqi1Dvy2-cUOfvOlQ_0Uu1VX3i67kJz1"
   },
   {
@@ -113,6 +139,8 @@ export const FULLSTACK_SVG_DATASET: SvgElementItem[] = [
     "stroke": "#2b78e4",
     "strokeWidth": "3.5",
     "strokeDasharray": "0",
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
     "dataEdgeId": "reactflow__edge-Onfd7Sl8LG2sjh2aQY7gby2-cUOfvOlQ_0Uu1VX3i67kJw1"
   },
   {
@@ -121,6 +149,8 @@ export const FULLSTACK_SVG_DATASET: SvgElementItem[] = [
     "stroke": "#2b78e4",
     "strokeWidth": "3.5",
     "strokeDasharray": "0",
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
     "dataEdgeId": "reactflow__edge-SHTSvMDqI7X1_ZT7-m--nz2-cUOfvOlQ_0Uu1VX3i67kJy2"
   },
   {
@@ -129,6 +159,8 @@ export const FULLSTACK_SVG_DATASET: SvgElementItem[] = [
     "stroke": "#2b78e4",
     "strokeWidth": "3.5",
     "strokeDasharray": "0",
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
     "dataEdgeId": "reactflow__edge-cUOfvOlQ_0Uu1VX3i67kJz2-2kKHuQZScu7hCDgQWxl5uw2"
   },
   {
@@ -137,6 +169,8 @@ export const FULLSTACK_SVG_DATASET: SvgElementItem[] = [
     "stroke": "#2b78e4",
     "strokeWidth": "3.5",
     "strokeDasharray": "0",
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
     "dataEdgeId": "reactflow__edge-_aA6Hp4KkgJeptqo8oKTgz2-HGhnbMg6jh6cAmUH4DtOxw1"
   },
   {
@@ -145,6 +179,8 @@ export const FULLSTACK_SVG_DATASET: SvgElementItem[] = [
     "stroke": "#2b78e4",
     "strokeWidth": "3.5",
     "strokeDasharray": "0",
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
     "dataEdgeId": "reactflow__edge-y1SFX7uvWaCy4OYBnECLux2-2kKHuQZScu7hCDgQWxl5uz1"
   },
   {
@@ -153,6 +189,8 @@ export const FULLSTACK_SVG_DATASET: SvgElementItem[] = [
     "stroke": "#2b78e4",
     "strokeWidth": "3.5",
     "strokeDasharray": "0",
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
     "dataEdgeId": "reactflow__edge-863KMXcFJzInvTp_-Ldmzy2-2kKHuQZScu7hCDgQWxl5uz2"
   },
   {
@@ -161,6 +199,8 @@ export const FULLSTACK_SVG_DATASET: SvgElementItem[] = [
     "stroke": "#2b78e4",
     "strokeWidth": "3.5",
     "strokeDasharray": "0",
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
     "dataEdgeId": "reactflow__edge-rFXupYpUFfp7vZO8zh614y2-2kKHuQZScu7hCDgQWxl5uw1"
   },
   {
@@ -169,23 +209,21 @@ export const FULLSTACK_SVG_DATASET: SvgElementItem[] = [
     "stroke": "#2b78e4",
     "strokeWidth": "3.5",
     "strokeDasharray": "0",
+    "strokeLinecap": "round",
+    "strokeLinejoin": "round",
     "dataEdgeId": "reactflow__edge-2kKHuQZScu7hCDgQWxl5ux2-sVXZrBCsiSzWBBYWTm-nQw1"
   },
   {
     "kind": "g",
     "dataNodeId": "yrZUjoNj7mjOHaZVRiFJV",
     "dataType": "horizontal",
-    "dataTitle": null,
-    "dataParentId": null,
-    "dataParentTitle": null,
-    "dataLink": null,
     "children": [
       {
         "tag": "line",
-        "x1": "-502.08230823147517",
-        "y1": "507.90458777290166",
-        "x2": "-439.08230823147517",
-        "y2": "507.90458777290166",
+        "x1": -502.08230823147517,
+        "y1": 507.90458777290166,
+        "x2": -439.08230823147517,
+        "y2": 507.90458777290166,
         "style": "stroke-linecap: round; stroke-width: 3.5; stroke: #2B78E4; stroke-dasharray: 0.8 8;"
       }
     ]
@@ -194,41 +232,29 @@ export const FULLSTACK_SVG_DATASET: SvgElementItem[] = [
     "kind": "g",
     "dataNodeId": "kPPgIGhyoDoJoUJnP-vOY",
     "dataType": "section",
-    "dataTitle": null,
-    "dataParentId": null,
-    "dataParentTitle": null,
-    "dataLink": null,
     "children": [
       {
         "tag": "rect",
-        "x": "46.009212053078706",
-        "y": "-124.15228984395415",
-        "width": "353.3",
-        "height": "100.3",
-        "rx": "5",
+        "x": 46.009212053078706,
+        "y": -124.15228984395415,
+        "width": 353.3,
+        "height": 100.3,
+        "rx": 5,
         "fill": "#ffffff",
         "stroke": "#ffffff",
-        "strokeWidth": "2.7",
-        "style": null
+        "strokeWidth": "2.7"
       },
       {
         "tag": "text",
-        "x": "44.659212053078704",
-        "y": "-133.50228984395414",
+        "x": 44.659212053078704,
+        "y": -133.50228984395414,
+        "r": "left",
+        "fill": "black",
         "textAnchor": "left",
         "dominantBaseline": "auto",
         "fontSize": "17",
-        "fill": "black",
-        "text": "",
         "tspans": [
           {
-            "x": null,
-            "y": null,
-            "dy": null,
-            "textAnchor": null,
-            "dominantBaseline": null,
-            "fontSize": null,
-            "fill": null,
             "text": ""
           }
         ]
@@ -239,17 +265,13 @@ export const FULLSTACK_SVG_DATASET: SvgElementItem[] = [
     "kind": "g",
     "dataNodeId": "tmRyxL2cIei7PVHdOvmuJ",
     "dataType": "horizontal",
-    "dataTitle": null,
-    "dataParentId": null,
-    "dataParentTitle": null,
-    "dataLink": null,
     "children": [
       {
         "tag": "line",
-        "x1": "253.00948964805815",
-        "y1": "1225.2210153640276",
-        "x2": "338.00948964805815",
-        "y2": "1225.2210153640276",
+        "x1": 253.00948964805815,
+        "y1": 1225.2210153640276,
+        "x2": 338.00948964805815,
+        "y2": 1225.2210153640276,
         "style": "stroke-linecap: round; stroke-width: 3.5; stroke: #2B78E4; stroke-dasharray: 0.8 8;"
       }
     ]
@@ -258,17 +280,13 @@ export const FULLSTACK_SVG_DATASET: SvgElementItem[] = [
     "kind": "g",
     "dataNodeId": "Ju00mr0KLGN2BV6yEQGPt",
     "dataType": "vertical",
-    "dataTitle": null,
-    "dataParentId": null,
-    "dataParentTitle": null,
-    "dataLink": null,
     "children": [
       {
         "tag": "line",
-        "x1": "-35.36972326342038",
-        "y1": "1834.052389726952",
-        "x2": "-35.36972326342038",
-        "y2": "1938.052389726952",
+        "x1": -35.36972326342038,
+        "y1": 1834.052389726952,
+        "x2": -35.36972326342038,
+        "y2": 1938.052389726952,
         "style": "stroke-linecap: round; stroke-width: 3.5; stroke: #4136D4; stroke-dasharray: 0.8 8;"
       }
     ]
@@ -277,42 +295,30 @@ export const FULLSTACK_SVG_DATASET: SvgElementItem[] = [
     "kind": "g",
     "dataNodeId": "sVXZrBCsiSzWBBYWTm-nQ",
     "dataType": "paragraph",
-    "dataTitle": null,
-    "dataParentId": null,
-    "dataParentTitle": null,
-    "dataLink": null,
     "children": [
       {
         "tag": "rect",
-        "x": "-252.03332913299596",
-        "y": "1747.2647859609992",
-        "width": "454",
-        "height": "121.5",
-        "rx": "5",
+        "x": -252.03332913299596,
+        "y": 1747.2647859609992,
+        "width": 454,
+        "height": 121.5,
+        "rx": 5,
         "fill": "#ffffff",
         "stroke": "#000000",
-        "strokeWidth": "2.5",
-        "style": null
+        "strokeWidth": "2.5"
       },
       {
         "tag": "text",
-        "x": null,
-        "y": null,
-        "textAnchor": null,
-        "dominantBaseline": null,
-        "fontSize": null,
         "fill": "black",
-        "text": "",
         "tspans": [
           {
-            "x": "-26.28332913299596",
-            "y": "1776.0147859609992",
-            "dy": "0",
+            "text": "Continue Learning with following relevant tracks",
+            "x": -26.28332913299596,
+            "y": 1776.0147859609992,
+            "dy": 0,
             "textAnchor": "middle",
             "dominantBaseline": "middle",
-            "fontSize": "17",
-            "fill": null,
-            "text": "Continue Learning with following relevant tracks"
+            "fontSize": "17"
           }
         ]
       }
@@ -323,28 +329,18 @@ export const FULLSTACK_SVG_DATASET: SvgElementItem[] = [
     "dataNodeId": "iogwMmOvub2ZF4zgg6WyF",
     "dataType": "title",
     "dataTitle": "Full Stack",
-    "dataParentId": null,
-    "dataParentTitle": null,
-    "dataLink": null,
     "children": [
       {
         "tag": "text",
-        "x": "-503.58230823147517",
-        "y": "-158.89091544360696",
+        "x": -503.58230823147517,
+        "y": -158.89091544360696,
+        "r": "middle",
+        "fill": "black",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
         "fontSize": "28",
-        "fill": "black",
-        "text": "",
         "tspans": [
           {
-            "x": null,
-            "y": null,
-            "dy": null,
-            "textAnchor": null,
-            "dominantBaseline": null,
-            "fontSize": null,
-            "fill": null,
             "text": "Full Stack"
           }
         ]
@@ -355,41 +351,30 @@ export const FULLSTACK_SVG_DATASET: SvgElementItem[] = [
     "kind": "g",
     "dataNodeId": "sQsxo9QyLKZyhMnFUcxhS",
     "dataType": "button",
-    "dataTitle": null,
-    "dataParentId": null,
-    "dataParentTitle": null,
     "dataLink": "https://roadmap.sh/frontend",
     "children": [
       {
         "tag": "rect",
-        "x": "-234.5197232634204",
-        "y": "1803.834543333457",
-        "width": "101.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": -234.5197232634204,
+        "y": 1803.834543333457,
+        "width": 101.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#4136D4",
         "stroke": "#4136D4",
-        "strokeWidth": "2.7",
-        "style": null
+        "strokeWidth": "2.7"
       },
       {
         "tag": "text",
-        "x": "-183.86972326342038",
-        "y": "1829.1345433334573",
+        "x": -183.86972326342038,
+        "y": 1829.1345433334573,
+        "r": "middle",
+        "fill": "#FFFFFf",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
         "fontSize": "17",
-        "fill": "#FFFFFf",
-        "text": "",
         "tspans": [
           {
-            "x": null,
-            "y": null,
-            "dy": null,
-            "textAnchor": null,
-            "dominantBaseline": null,
-            "fontSize": null,
-            "fill": null,
             "text": "Frontend"
           }
         ]
@@ -400,17 +385,13 @@ export const FULLSTACK_SVG_DATASET: SvgElementItem[] = [
     "kind": "g",
     "dataNodeId": "LEijbLyxg4RyutKEM2Y5g",
     "dataType": "vertical",
-    "dataTitle": null,
-    "dataParentId": null,
-    "dataParentTitle": null,
-    "dataLink": null,
     "children": [
       {
         "tag": "line",
-        "x1": "-503.58230823147517",
-        "y1": "-273.89091544360696",
-        "x2": "-503.58230823147517",
-        "y2": "-192.89091544360696",
+        "x1": -503.58230823147517,
+        "y1": -273.89091544360696,
+        "x2": -503.58230823147517,
+        "y2": -192.89091544360696,
         "style": "stroke-linecap: round; stroke-width: 3.5; stroke: #0A33FF; stroke-dasharray: 0.8 8;"
       }
     ]
@@ -422,15 +403,14 @@ export const FULLSTACK_SVG_DATASET: SvgElementItem[] = [
     "dataTitle": "HTML",
     "dataParentId": "iogwMmOvub2ZF4zgg6WyF",
     "dataParentTitle": "Full Stack",
-    "dataLink": null,
     "children": [
       {
         "tag": "rect",
-        "x": "-394.21446376179995",
-        "y": "44.754587772901665",
-        "width": "102.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": -394.21446376179995,
+        "y": 44.754587772901665,
+        "width": 102.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#fdff00",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -438,22 +418,15 @@ export const FULLSTACK_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "-343.06446376179997",
-        "y": "70.05458777290167",
+        "x": -343.06446376179997,
+        "y": 70.05458777290167,
+        "r": "middle",
+        "fill": "#000000",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
         "fontSize": "17",
-        "fill": "#000000",
-        "text": "",
         "tspans": [
           {
-            "x": null,
-            "y": null,
-            "dy": null,
-            "textAnchor": null,
-            "dominantBaseline": null,
-            "fontSize": null,
-            "fill": null,
             "text": "HTML"
           }
         ]
@@ -467,15 +440,14 @@ export const FULLSTACK_SVG_DATASET: SvgElementItem[] = [
     "dataTitle": "CSS",
     "dataParentId": "B0kARTODvCBi0iOF8iiqI",
     "dataParentTitle": "HTML",
-    "dataLink": null,
     "children": [
       {
         "tag": "rect",
-        "x": "-250.21446376179998",
-        "y": "44.754587772901665",
-        "width": "98.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": -250.21446376179998,
+        "y": 44.754587772901665,
+        "width": 98.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#fdff00",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -483,22 +455,15 @@ export const FULLSTACK_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "-201.06446376179997",
-        "y": "70.05458777290167",
+        "x": -201.06446376179997,
+        "y": 70.05458777290167,
+        "r": "middle",
+        "fill": "#000000",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
         "fontSize": "17",
-        "fill": "#000000",
-        "text": "",
         "tspans": [
           {
-            "x": null,
-            "y": null,
-            "dy": null,
-            "textAnchor": null,
-            "dominantBaseline": null,
-            "fontSize": null,
-            "fill": null,
             "text": "CSS"
           }
         ]
@@ -512,15 +477,14 @@ export const FULLSTACK_SVG_DATASET: SvgElementItem[] = [
     "dataTitle": "JavaScript",
     "dataParentId": "dAJHWmGeiYdzZ1ZjrWz1S",
     "dataParentTitle": "CSS",
-    "dataLink": null,
     "children": [
       {
         "tag": "rect",
-        "x": "29.35948964805815",
-        "y": "44.754587772901665",
-        "width": "122.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": 29.35948964805815,
+        "y": 44.754587772901665,
+        "width": 122.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#fdff00",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -528,22 +492,15 @@ export const FULLSTACK_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "90.50948964805815",
-        "y": "70.05458777290167",
+        "x": 90.50948964805815,
+        "y": 70.05458777290167,
+        "r": "middle",
+        "fill": "#000000",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
         "fontSize": "17",
-        "fill": "#000000",
-        "text": "",
         "tspans": [
           {
-            "x": null,
-            "y": null,
-            "dy": null,
-            "textAnchor": null,
-            "dominantBaseline": null,
-            "fontSize": null,
-            "fill": null,
             "text": "JavaScript"
           }
         ]
@@ -557,15 +514,14 @@ export const FULLSTACK_SVG_DATASET: SvgElementItem[] = [
     "dataTitle": "npm",
     "dataParentId": "T9PB6WQf-Fa9NXKKvVOy_",
     "dataParentTitle": "JavaScript",
-    "dataLink": null,
     "children": [
       {
         "tag": "rect",
-        "x": "299.53210433132233",
-        "y": "134.75458777290166",
-        "width": "98.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": 299.53210433132233,
+        "y": 134.75458777290166,
+        "width": 98.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#fdff00",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -573,22 +529,15 @@ export const FULLSTACK_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "348.6821043313223",
-        "y": "160.05458777290167",
+        "x": 348.6821043313223,
+        "y": 160.05458777290167,
+        "r": "middle",
+        "fill": "#000000",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
         "fontSize": "17",
-        "fill": "#000000",
-        "text": "",
         "tspans": [
           {
-            "x": null,
-            "y": null,
-            "dy": null,
-            "textAnchor": null,
-            "dominantBaseline": null,
-            "fontSize": null,
-            "fill": null,
             "text": "npm"
           }
         ]
@@ -600,17 +549,14 @@ export const FULLSTACK_SVG_DATASET: SvgElementItem[] = [
     "dataNodeId": "WsdUAEaI7FX6DKKhPXUHp",
     "dataType": "subtopic",
     "dataTitle": "Checkpoint - Static Webpages",
-    "dataParentId": null,
-    "dataParentTitle": null,
-    "dataLink": null,
     "children": [
       {
         "tag": "rect",
-        "x": "-350.6280696313755",
-        "y": "134.75458777290166",
-        "width": "288.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": -350.6280696313755,
+        "y": 134.75458777290166,
+        "width": 288.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#333333",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -618,22 +564,15 @@ export const FULLSTACK_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "-206.47806963137555",
-        "y": "160.05458777290167",
+        "x": -206.47806963137555,
+        "y": 160.05458777290167,
+        "r": "middle",
+        "fill": "#ffffff",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
         "fontSize": "17",
-        "fill": "#ffffff",
-        "text": "",
         "tspans": [
           {
-            "x": null,
-            "y": null,
-            "dy": null,
-            "textAnchor": null,
-            "dominantBaseline": null,
-            "fontSize": null,
-            "fill": null,
             "text": "Checkpoint - Static Webpages"
           }
         ]
@@ -644,17 +583,13 @@ export const FULLSTACK_SVG_DATASET: SvgElementItem[] = [
     "kind": "g",
     "dataNodeId": "arAWBttFmMY6g99PcEaeA",
     "dataType": "vertical",
-    "dataTitle": null,
-    "dataParentId": null,
-    "dataParentTitle": null,
-    "dataLink": null,
     "children": [
       {
         "tag": "line",
-        "x1": "-106.88142186176219",
-        "y1": "69.40458777290166",
-        "x2": "-106.88142186176219",
-        "y2": "133.40458777290166",
+        "x1": -106.88142186176219,
+        "y1": 69.40458777290166,
+        "x2": -106.88142186176219,
+        "y2": 133.40458777290166,
         "style": "stroke-linecap: round; stroke-width: 3.5; stroke: #2B78E4; stroke-dasharray: 0.8 8;"
       }
     ]
@@ -664,17 +599,14 @@ export const FULLSTACK_SVG_DATASET: SvgElementItem[] = [
     "dataNodeId": "2DFzoIUjKdAKGjfu_SCfa",
     "dataType": "subtopic",
     "dataTitle": "Checkpoint - Interactivity",
-    "dataParentId": null,
-    "dataParentTitle": null,
-    "dataLink": null,
     "children": [
       {
         "tag": "rect",
-        "x": "-22.64051035194185",
-        "y": "134.75458777290166",
-        "width": "284.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": -22.64051035194185,
+        "y": 134.75458777290166,
+        "width": 284.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#333333",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -682,22 +614,15 @@ export const FULLSTACK_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "119.50948964805815",
-        "y": "160.05458777290167",
+        "x": 119.50948964805815,
+        "y": 160.05458777290167,
+        "r": "middle",
+        "fill": "#ffffff",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
         "fontSize": "17",
-        "fill": "#ffffff",
-        "text": "",
         "tspans": [
           {
-            "x": null,
-            "y": null,
-            "dy": null,
-            "textAnchor": null,
-            "dominantBaseline": null,
-            "fontSize": null,
-            "fill": null,
             "text": "Checkpoint - Interactivity"
           }
         ]
@@ -708,17 +633,13 @@ export const FULLSTACK_SVG_DATASET: SvgElementItem[] = [
     "kind": "g",
     "dataNodeId": "CVVeXklBu8uEr7oyiSEhQ",
     "dataType": "vertical",
-    "dataTitle": null,
-    "dataParentId": null,
-    "dataParentTitle": null,
-    "dataLink": null,
     "children": [
       {
         "tag": "line",
-        "x1": "202.1185781382378",
-        "y1": "71.40458777290166",
-        "x2": "202.1185781382378",
-        "y2": "133.40458777290166",
+        "x1": 202.1185781382378,
+        "y1": 71.40458777290166,
+        "x2": 202.1185781382378,
+        "y2": 133.40458777290166,
         "style": "stroke-linecap: round; stroke-width: 3.5; stroke: #2B78E4; stroke-dasharray: 0.8 8;"
       }
     ]
@@ -730,15 +651,14 @@ export const FULLSTACK_SVG_DATASET: SvgElementItem[] = [
     "dataTitle": "Git",
     "dataParentId": "mGgx_QTEPmVKf6AijX9fi",
     "dataParentTitle": "npm",
-    "dataLink": null,
     "children": [
       {
         "tag": "rect",
-        "x": "163.35948964805814",
-        "y": "317.7545877729017",
-        "width": "98.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": 163.35948964805814,
+        "y": 317.7545877729017,
+        "width": 98.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#fdff00",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -746,22 +666,15 @@ export const FULLSTACK_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "212.50948964805815",
-        "y": "343.05458777290164",
+        "x": 212.50948964805815,
+        "y": 343.05458777290164,
+        "r": "middle",
+        "fill": "#000000",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
         "fontSize": "17",
-        "fill": "#000000",
-        "text": "",
         "tspans": [
           {
-            "x": null,
-            "y": null,
-            "dy": null,
-            "textAnchor": null,
-            "dominantBaseline": null,
-            "fontSize": null,
-            "fill": null,
             "text": "Git"
           }
         ]
@@ -775,15 +688,14 @@ export const FULLSTACK_SVG_DATASET: SvgElementItem[] = [
     "dataTitle": "GitHub",
     "dataParentId": "We2APJpOPTr-VNfowG0kI",
     "dataParentTitle": "Git",
-    "dataLink": null,
     "children": [
       {
         "tag": "rect",
-        "x": "-18.21446376179997",
-        "y": "317.7545877729017",
-        "width": "98.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": -18.21446376179997,
+        "y": 317.7545877729017,
+        "width": 98.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#fdff00",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -791,22 +703,15 @@ export const FULLSTACK_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "30.93553623820003",
-        "y": "343.05458777290164",
+        "x": 30.93553623820003,
+        "y": 343.05458777290164,
+        "r": "middle",
+        "fill": "#000000",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
         "fontSize": "17",
-        "fill": "#000000",
-        "text": "",
         "tspans": [
           {
-            "x": null,
-            "y": null,
-            "dy": null,
-            "textAnchor": null,
-            "dominantBaseline": null,
-            "fontSize": null,
-            "fill": null,
             "text": "GitHub"
           }
         ]
@@ -818,17 +723,14 @@ export const FULLSTACK_SVG_DATASET: SvgElementItem[] = [
     "dataNodeId": "R4aeJNOrfWyVp3ea-qF4H",
     "dataType": "subtopic",
     "dataTitle": "Checkpoint - External Packages",
-    "dataParentId": null,
-    "dataParentTitle": null,
-    "dataLink": null,
     "children": [
       {
         "tag": "rect",
-        "x": "-25.628069631375546",
-        "y": "216.75458777290166",
-        "width": "287.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": -25.628069631375546,
+        "y": 216.75458777290166,
+        "width": 287.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#333333",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -836,22 +738,15 @@ export const FULLSTACK_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "118.02193036862445",
-        "y": "242.05458777290167",
+        "x": 118.02193036862445,
+        "y": 242.05458777290167,
+        "r": "middle",
+        "fill": "#ffffff",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
         "fontSize": "17",
-        "fill": "#ffffff",
-        "text": "",
         "tspans": [
           {
-            "x": null,
-            "y": null,
-            "dy": null,
-            "textAnchor": null,
-            "dominantBaseline": null,
-            "fontSize": null,
-            "fill": null,
             "text": "Checkpoint - External Packages"
           }
         ]
@@ -862,17 +757,13 @@ export const FULLSTACK_SVG_DATASET: SvgElementItem[] = [
     "kind": "g",
     "dataNodeId": "PW10DTLV-5U2ue770SXtM",
     "dataType": "horizontal",
-    "dataTitle": null,
-    "dataParentId": null,
-    "dataParentTitle": null,
-    "dataLink": null,
     "children": [
       {
         "tag": "line",
-        "x1": "262.02193036862445",
-        "y1": "239.90458777290166",
-        "x2": "347.02193036862445",
-        "y2": "239.90458777290166",
+        "x1": 262.02193036862445,
+        "y1": 239.90458777290166,
+        "x2": 347.02193036862445,
+        "y2": 239.90458777290166,
         "style": "stroke-linecap: round; stroke-width: 3.5; stroke: #2B78E4; stroke-dasharray: 0.8 8;"
       }
     ]
@@ -884,15 +775,14 @@ export const FULLSTACK_SVG_DATASET: SvgElementItem[] = [
     "dataTitle": "Tailwind CSS",
     "dataParentId": "8sPXL8iClpPqje03ksses",
     "dataParentTitle": "GitHub",
-    "dataLink": null,
     "children": [
       {
         "tag": "rect",
-        "x": "-328.1280696313755",
-        "y": "316.7545877729017",
-        "width": "143.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": -328.1280696313755,
+        "y": 316.7545877729017,
+        "width": 143.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#fdff00",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -900,22 +790,15 @@ export const FULLSTACK_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "-256.47806963137555",
-        "y": "342.05458777290164",
+        "x": -256.47806963137555,
+        "y": 342.05458777290164,
+        "r": "middle",
+        "fill": "#000000",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
         "fontSize": "17",
-        "fill": "#000000",
-        "text": "",
         "tspans": [
           {
-            "x": null,
-            "y": null,
-            "dy": null,
-            "textAnchor": null,
-            "dominantBaseline": null,
-            "fontSize": null,
-            "fill": null,
             "text": "Tailwind CSS"
           }
         ]
@@ -929,15 +812,14 @@ export const FULLSTACK_SVG_DATASET: SvgElementItem[] = [
     "dataTitle": "React",
     "dataParentId": "CVCqdPkq_hGQfI8EEi5RC",
     "dataParentTitle": "Tailwind CSS",
-    "dataLink": null,
     "children": [
       {
         "tag": "rect",
-        "x": "-443.46789566867767",
-        "y": "316.7545877729017",
-        "width": "98.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": -443.46789566867767,
+        "y": 316.7545877729017,
+        "width": 98.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#fdff00",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -945,22 +827,15 @@ export const FULLSTACK_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "-394.3178956686777",
-        "y": "342.05458777290164",
+        "x": -394.3178956686777,
+        "y": 342.05458777290164,
+        "r": "middle",
+        "fill": "#000000",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
         "fontSize": "17",
-        "fill": "#000000",
-        "text": "",
         "tspans": [
           {
-            "x": null,
-            "y": null,
-            "dy": null,
-            "textAnchor": null,
-            "dominantBaseline": null,
-            "fontSize": null,
-            "fill": null,
             "text": "React"
           }
         ]
@@ -972,17 +847,14 @@ export const FULLSTACK_SVG_DATASET: SvgElementItem[] = [
     "dataNodeId": "zFGWxgLPcZoW7KIzlnSV9",
     "dataType": "subtopic",
     "dataTitle": "Checkpoint - Collaborative Work",
-    "dataParentId": null,
-    "dataParentTitle": null,
-    "dataLink": null,
     "children": [
       {
         "tag": "rect",
-        "x": "-349.6280696313755",
-        "y": "216.75458777290166",
-        "width": "287.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": -349.6280696313755,
+        "y": 216.75458777290166,
+        "width": 287.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#333333",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -990,22 +862,15 @@ export const FULLSTACK_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "-205.97806963137555",
-        "y": "242.05458777290167",
+        "x": -205.97806963137555,
+        "y": 242.05458777290167,
+        "r": "middle",
+        "fill": "#ffffff",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
         "fontSize": "17",
-        "fill": "#ffffff",
-        "text": "",
         "tspans": [
           {
-            "x": null,
-            "y": null,
-            "dy": null,
-            "textAnchor": null,
-            "dominantBaseline": null,
-            "fontSize": null,
-            "fill": null,
             "text": "Checkpoint - Collaborative Work"
           }
         ]
@@ -1016,17 +881,13 @@ export const FULLSTACK_SVG_DATASET: SvgElementItem[] = [
     "kind": "g",
     "dataNodeId": "8MhESAMICF6j7X3RL9bFE",
     "dataType": "vertical",
-    "dataTitle": null,
-    "dataParentId": null,
-    "dataParentTitle": null,
-    "dataLink": null,
     "children": [
       {
         "tag": "line",
-        "x1": "-106.88142186176219",
-        "y1": "265.40458777290166",
-        "x2": "-106.88142186176219",
-        "y2": "338.40458777290166",
+        "x1": -106.88142186176219,
+        "y1": 265.40458777290166,
+        "x2": -106.88142186176219,
+        "y2": 338.40458777290166,
         "style": "stroke-linecap: round; stroke-width: 3.5; stroke: #2B78E4; stroke-dasharray: 0.8 8;"
       }
     ]
@@ -1035,52 +896,39 @@ export const FULLSTACK_SVG_DATASET: SvgElementItem[] = [
     "kind": "g",
     "dataNodeId": "H63WyNiiJ2Yr9HWs98EjR",
     "dataType": "paragraph",
-    "dataTitle": null,
-    "dataParentId": null,
-    "dataParentTitle": null,
-    "dataLink": null,
     "children": [
       {
         "tag": "rect",
-        "x": "-458.22806963137555",
-        "y": "398.15458777290166",
-        "width": "276",
-        "height": "60.5",
-        "rx": "5",
+        "x": -458.22806963137555,
+        "y": 398.15458777290166,
+        "width": 276,
+        "height": 60.5,
+        "rx": 5,
         "fill": "TRANSPARENT",
         "stroke": "transparent",
-        "strokeWidth": "2.5",
-        "style": null
+        "strokeWidth": "2.5"
       },
       {
         "tag": "text",
-        "x": null,
-        "y": null,
-        "textAnchor": null,
-        "dominantBaseline": null,
-        "fontSize": null,
         "fill": "#000000",
-        "text": "",
         "tspans": [
           {
-            "x": "-321.47806963137555",
-            "y": "415.65458777290166",
-            "dy": "0",
+            "text": "Feel free to skip these and",
+            "x": -321.47806963137555,
+            "y": 415.65458777290166,
+            "dy": 0,
             "textAnchor": "middle",
             "dominantBaseline": "middle",
-            "fontSize": "17",
-            "fill": null,
-            "text": "Feel free to skip these and"
+            "fontSize": "17"
           },
           {
-            "x": "-321.47806963137555",
-            "y": "415.65458777290166",
-            "dy": "25.5",
+            "text": "revisit after learning Backend",
+            "x": -321.47806963137555,
+            "y": 415.65458777290166,
+            "dy": 25.5,
             "textAnchor": "middle",
             "dominantBaseline": "middle",
-            "fontSize": "17",
-            "fill": null,
-            "text": "revisit after learning Backend"
+            "fontSize": "17"
           }
         ]
       }
@@ -1090,42 +938,30 @@ export const FULLSTACK_SVG_DATASET: SvgElementItem[] = [
     "kind": "g",
     "dataNodeId": "QfW-odmDYknm_qXNcDu5o",
     "dataType": "paragraph",
-    "dataTitle": null,
-    "dataParentId": null,
-    "dataParentTitle": null,
-    "dataLink": null,
     "children": [
       {
         "tag": "rect",
-        "x": "-480.83230823147517",
-        "y": "577.1545877729017",
-        "width": "265",
-        "height": "45.5",
-        "rx": "5",
+        "x": -480.83230823147517,
+        "y": 577.1545877729017,
+        "width": 265,
+        "height": 45.5,
+        "rx": 5,
         "fill": "#ffffff",
         "stroke": "transparent",
-        "strokeWidth": "2.5",
-        "style": null
+        "strokeWidth": "2.5"
       },
       {
         "tag": "text",
-        "x": null,
-        "y": null,
-        "textAnchor": null,
-        "dominantBaseline": null,
-        "fontSize": null,
         "fill": "#000000",
-        "text": "",
         "tspans": [
           {
-            "x": "-349.58230823147517",
-            "y": "599.9045877729017",
-            "dy": "0",
+            "text": "Start Backend Development",
+            "x": -349.58230823147517,
+            "y": 599.9045877729017,
+            "dy": 0,
             "textAnchor": "middle",
             "dominantBaseline": "middle",
-            "fontSize": "17",
-            "fill": null,
-            "text": "Start Backend Development"
+            "fontSize": "17"
           }
         ]
       }
@@ -1136,17 +972,14 @@ export const FULLSTACK_SVG_DATASET: SvgElementItem[] = [
     "dataNodeId": "7JU1cVggMDoZUV-adGsf-",
     "dataType": "subtopic",
     "dataTitle": "Checkpoint - Frontend Apps",
-    "dataParentId": null,
-    "dataParentTitle": null,
-    "dataLink": null,
     "children": [
       {
         "tag": "rect",
-        "x": "-442.1280696313755",
-        "y": "484.7545877729017",
-        "width": "257.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": -442.1280696313755,
+        "y": 484.7545877729017,
+        "width": 257.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#333333",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -1154,22 +987,15 @@ export const FULLSTACK_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "-313.47806963137555",
-        "y": "510.05458777290164",
+        "x": -313.47806963137555,
+        "y": 510.05458777290164,
+        "r": "middle",
+        "fill": "#ffffff",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
         "fontSize": "17",
-        "fill": "#ffffff",
-        "text": "",
         "tspans": [
           {
-            "x": null,
-            "y": null,
-            "dy": null,
-            "textAnchor": null,
-            "dominantBaseline": null,
-            "fontSize": null,
-            "fill": null,
             "text": "Checkpoint - Frontend Apps"
           }
         ]
@@ -1183,15 +1009,14 @@ export const FULLSTACK_SVG_DATASET: SvgElementItem[] = [
     "dataTitle": "Node.js",
     "dataParentId": "QfW-odmDYknm_qXNcDu5o",
     "dataParentTitle": "Start Backend Development",
-    "dataLink": null,
     "children": [
       {
         "tag": "rect",
-        "x": "8.35948964805815",
-        "y": "576.2545877729017",
-        "width": "143.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": 8.35948964805815,
+        "y": 576.2545877729017,
+        "width": 143.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#fdff00",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -1199,22 +1024,15 @@ export const FULLSTACK_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "80.00948964805815",
-        "y": "601.5545877729016",
+        "x": 80.00948964805815,
+        "y": 601.5545877729016,
+        "r": "middle",
+        "fill": "#000000",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
         "fontSize": "17",
-        "fill": "#000000",
-        "text": "",
         "tspans": [
           {
-            "x": null,
-            "y": null,
-            "dy": null,
-            "textAnchor": null,
-            "dominantBaseline": null,
-            "fontSize": null,
-            "fill": null,
             "text": "Node.js"
           }
         ]
@@ -1225,62 +1043,48 @@ export const FULLSTACK_SVG_DATASET: SvgElementItem[] = [
     "kind": "g",
     "dataNodeId": "qCV1wiNSXj4OSHyMqxRIK",
     "dataType": "paragraph",
-    "dataTitle": null,
-    "dataParentId": null,
-    "dataParentTitle": null,
-    "dataLink": null,
     "children": [
       {
         "tag": "rect",
-        "x": "-25.728069631375547",
-        "y": "432.65458777290166",
-        "width": "445",
-        "height": "98.5",
-        "rx": "5",
+        "x": -25.728069631375547,
+        "y": 432.65458777290166,
+        "width": 445,
+        "height": 98.5,
+        "rx": 5,
         "fill": "TRANSPARENT",
         "stroke": "transparent",
-        "strokeWidth": "2.5",
-        "style": null
+        "strokeWidth": "2.5"
       },
       {
         "tag": "text",
-        "x": null,
-        "y": null,
-        "textAnchor": null,
-        "dominantBaseline": null,
-        "fontSize": null,
         "fill": "#000000",
-        "text": "",
         "tspans": [
           {
-            "x": "-8.478069631375547",
-            "y": "456.40458777290166",
-            "dy": "0",
+            "text": "You can pick any backend programming language.",
+            "x": -8.478069631375547,
+            "y": 456.40458777290166,
+            "dy": 0,
             "textAnchor": "start",
             "dominantBaseline": "middle",
-            "fontSize": "17",
-            "fill": null,
-            "text": "You can pick any backend programming language."
+            "fontSize": "17"
           },
           {
-            "x": "-8.478069631375547",
-            "y": "456.40458777290166",
-            "dy": "25.5",
+            "text": "My recommendation is Node.js because you are",
+            "x": -8.478069631375547,
+            "y": 456.40458777290166,
+            "dy": 25.5,
             "textAnchor": "start",
             "dominantBaseline": "middle",
-            "fontSize": "17",
-            "fill": null,
-            "text": "My recommendation is Node.js because you are"
+            "fontSize": "17"
           },
           {
-            "x": "-8.478069631375547",
-            "y": "456.40458777290166",
-            "dy": "51",
+            "text": "already familiar with JavaScript and it's easier to pick.",
+            "x": -8.478069631375547,
+            "y": 456.40458777290166,
+            "dy": 51,
             "textAnchor": "start",
             "dominantBaseline": "middle",
-            "fontSize": "17",
-            "fill": null,
-            "text": "already familiar with JavaScript and it's easier to pick."
+            "fontSize": "17"
           }
         ]
       }
@@ -1290,17 +1094,13 @@ export const FULLSTACK_SVG_DATASET: SvgElementItem[] = [
     "kind": "g",
     "dataNodeId": "0QKpvDD33C3WCmNGtRanp",
     "dataType": "vertical",
-    "dataTitle": null,
-    "dataParentId": null,
-    "dataParentTitle": null,
-    "dataLink": null,
     "children": [
       {
         "tag": "line",
-        "x1": "-93.70433957685361",
-        "y1": "531.9045877729017",
-        "x2": "-93.70433957685361",
-        "y2": "661.9045877729017",
+        "x1": -93.70433957685361,
+        "y1": 531.9045877729017,
+        "x2": -93.70433957685361,
+        "y2": 661.9045877729017,
         "style": "stroke-linecap: round; stroke-width: 3; stroke: #000000; stroke-dasharray: 0;"
       }
     ]
@@ -1309,29 +1109,18 @@ export const FULLSTACK_SVG_DATASET: SvgElementItem[] = [
     "kind": "g",
     "dataNodeId": "WqNcVZ8IkyqEubdd9JCa1",
     "dataType": "label",
-    "dataTitle": null,
-    "dataParentId": null,
-    "dataParentTitle": null,
-    "dataLink": null,
     "children": [
       {
         "tag": "text",
-        "x": "-273.06446376179997",
-        "y": "654.9045877729017",
+        "x": -273.06446376179997,
+        "y": 654.9045877729017,
+        "r": "left",
+        "fill": "black",
         "textAnchor": "left",
         "dominantBaseline": "auto",
         "fontSize": "17",
-        "fill": "black",
-        "text": "",
         "tspans": [
           {
-            "x": null,
-            "y": null,
-            "dy": null,
-            "textAnchor": null,
-            "dominantBaseline": null,
-            "fontSize": null,
-            "fill": null,
             "text": "Backend Starts here"
           }
         ]
@@ -1342,18 +1131,15 @@ export const FULLSTACK_SVG_DATASET: SvgElementItem[] = [
     "kind": "g",
     "dataNodeId": "JGu0TKwAw-ieiG92BytYI",
     "dataType": "subtopic",
-    "dataTitle": "Checkpoint \u2014 CLI Apps",
-    "dataParentId": null,
-    "dataParentTitle": null,
-    "dataLink": null,
+    "dataTitle": "Checkpoint — CLI Apps",
     "children": [
       {
         "tag": "rect",
-        "x": "-46.64051035194185",
-        "y": "653.2545877729017",
-        "width": "299.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": -46.64051035194185,
+        "y": 653.2545877729017,
+        "width": 299.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#333333",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -1361,23 +1147,16 @@ export const FULLSTACK_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "103.00948964805815",
-        "y": "678.5545877729016",
+        "x": 103.00948964805815,
+        "y": 678.5545877729016,
+        "r": "middle",
+        "fill": "#ffffff",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
         "fontSize": "17",
-        "fill": "#ffffff",
-        "text": "",
         "tspans": [
           {
-            "x": null,
-            "y": null,
-            "dy": null,
-            "textAnchor": null,
-            "dominantBaseline": null,
-            "fontSize": null,
-            "fill": null,
-            "text": "Checkpoint \u2014 CLI Apps"
+            "text": "Checkpoint — CLI Apps"
           }
         ]
       }
@@ -1387,17 +1166,13 @@ export const FULLSTACK_SVG_DATASET: SvgElementItem[] = [
     "kind": "g",
     "dataNodeId": "o72NM00uoHXswkadhqVVW",
     "dataType": "horizontal",
-    "dataTitle": null,
-    "dataParentId": null,
-    "dataParentTitle": null,
-    "dataLink": null,
     "children": [
       {
         "tag": "line",
-        "x1": "253.00948964805815",
-        "y1": "676.4045877729017",
-        "x2": "338.00948964805815",
-        "y2": "676.4045877729017",
+        "x1": 253.00948964805815,
+        "y1": 676.4045877729017,
+        "x2": 338.00948964805815,
+        "y2": 676.4045877729017,
         "style": "stroke-linecap: round; stroke-width: 3.5; stroke: #2B78E4; stroke-dasharray: 0.8 8;"
       }
     ]
@@ -1409,15 +1184,14 @@ export const FULLSTACK_SVG_DATASET: SvgElementItem[] = [
     "dataTitle": "RESTful APIs",
     "dataParentId": "HGhnbMg6jh6cAmUH4DtOx",
     "dataParentTitle": "PostgreSQL",
-    "dataLink": null,
     "children": [
       {
         "tag": "rect",
-        "x": "-116.0314218617622",
-        "y": "849.2545877729017",
-        "width": "148.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": -116.0314218617622,
+        "y": 849.2545877729017,
+        "width": 148.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#fdff00",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -1425,22 +1199,15 @@ export const FULLSTACK_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "-41.88142186176219",
-        "y": "874.5545877729016",
+        "x": -41.88142186176219,
+        "y": 874.5545877729016,
+        "r": "middle",
+        "fill": "#000000",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
         "fontSize": "17",
-        "fill": "#000000",
-        "text": "",
         "tspans": [
           {
-            "x": null,
-            "y": null,
-            "dy": null,
-            "textAnchor": null,
-            "dominantBaseline": null,
-            "fontSize": null,
-            "fill": null,
             "text": "RESTful APIs"
           }
         ]
@@ -1451,18 +1218,15 @@ export const FULLSTACK_SVG_DATASET: SvgElementItem[] = [
     "kind": "g",
     "dataNodeId": "3EtGLO6cwkLc1-o9gwFNk",
     "dataType": "subtopic",
-    "dataTitle": "Checkpoint \u2014 Simple CRUD Apps",
-    "dataParentId": null,
-    "dataParentTitle": null,
-    "dataLink": null,
+    "dataTitle": "Checkpoint — Simple CRUD Apps",
     "children": [
       {
         "tag": "rect",
-        "x": "-48.640510351941906",
-        "y": "781.0710153640276",
-        "width": "301.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": -48.640510351941906,
+        "y": 781.0710153640276,
+        "width": 301.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#333333",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -1470,23 +1234,16 @@ export const FULLSTACK_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "102.00948964805809",
-        "y": "806.3710153640276",
+        "x": 102.00948964805809,
+        "y": 806.3710153640276,
+        "r": "middle",
+        "fill": "#ffffff",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
         "fontSize": "17",
-        "fill": "#ffffff",
-        "text": "",
         "tspans": [
           {
-            "x": null,
-            "y": null,
-            "dy": null,
-            "textAnchor": null,
-            "dominantBaseline": null,
-            "fontSize": null,
-            "fill": null,
-            "text": "Checkpoint \u2014 Simple CRUD Apps"
+            "text": "Checkpoint — Simple CRUD Apps"
           }
         ]
       }
@@ -1496,17 +1253,13 @@ export const FULLSTACK_SVG_DATASET: SvgElementItem[] = [
     "kind": "g",
     "dataNodeId": "BQV2ycD-EnmssO1idTgx9",
     "dataType": "horizontal",
-    "dataTitle": null,
-    "dataParentId": null,
-    "dataParentTitle": null,
-    "dataLink": null,
     "children": [
       {
         "tag": "line",
-        "x1": "253.00948964805815",
-        "y1": "804.2210153640276",
-        "x2": "338.00948964805815",
-        "y2": "804.2210153640276",
+        "x1": 253.00948964805815,
+        "y1": 804.2210153640276,
+        "x2": 338.00948964805815,
+        "y2": 804.2210153640276,
         "style": "stroke-linecap: round; stroke-width: 3.5; stroke: #2B78E4; stroke-dasharray: 0.8 8;"
       }
     ]
@@ -1518,15 +1271,14 @@ export const FULLSTACK_SVG_DATASET: SvgElementItem[] = [
     "dataTitle": "JWT Auth",
     "dataParentId": "vmHbWdmMHF53otXIrqzRV",
     "dataParentTitle": "RESTful APIs",
-    "dataLink": null,
     "children": [
       {
         "tag": "rect",
-        "x": "-255.71446376179998",
-        "y": "849.2545877729017",
-        "width": "120.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": -255.71446376179998,
+        "y": 849.2545877729017,
+        "width": 120.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#fdff00",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -1534,22 +1286,15 @@ export const FULLSTACK_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "-195.56446376179997",
-        "y": "874.5545877729016",
+        "x": -195.56446376179997,
+        "y": 874.5545877729016,
+        "r": "middle",
+        "fill": "#000000",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
         "fontSize": "17",
-        "fill": "#000000",
-        "text": "",
         "tspans": [
           {
-            "x": null,
-            "y": null,
-            "dy": null,
-            "textAnchor": null,
-            "dominantBaseline": null,
-            "fontSize": null,
-            "fill": null,
             "text": "JWT Auth"
           }
         ]
@@ -1563,15 +1308,14 @@ export const FULLSTACK_SVG_DATASET: SvgElementItem[] = [
     "dataTitle": "Redis",
     "dataParentId": "vHojhJYjiN0IwruEqi1Dv",
     "dataParentTitle": "JWT Auth",
-    "dataLink": null,
     "children": [
       {
         "tag": "rect",
-        "x": "-458.73230823147514",
-        "y": "849.2545877729017",
-        "width": "98.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": -458.73230823147514,
+        "y": 849.2545877729017,
+        "width": 98.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#fdff00",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -1579,22 +1323,15 @@ export const FULLSTACK_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "-409.58230823147517",
-        "y": "874.5545877729016",
+        "x": -409.58230823147517,
+        "y": 874.5545877729016,
+        "r": "middle",
+        "fill": "#000000",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
         "fontSize": "17",
-        "fill": "#000000",
-        "text": "",
         "tspans": [
           {
-            "x": null,
-            "y": null,
-            "dy": null,
-            "textAnchor": null,
-            "dominantBaseline": null,
-            "fontSize": null,
-            "fill": null,
             "text": "Redis"
           }
         ]
@@ -1608,15 +1345,14 @@ export const FULLSTACK_SVG_DATASET: SvgElementItem[] = [
     "dataTitle": "Linux Basics",
     "dataParentId": "Onfd7Sl8LG2sjh2aQY7gb",
     "dataParentTitle": "Redis",
-    "dataLink": null,
     "children": [
       {
         "tag": "rect",
-        "x": "-575.2323082314751",
-        "y": "1146.6643775154214",
-        "width": "143.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": -575.2323082314751,
+        "y": 1146.6643775154214,
+        "width": 143.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#fdff00",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -1624,22 +1360,15 @@ export const FULLSTACK_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "-503.58230823147517",
-        "y": "1171.9643775154216",
+        "x": -503.58230823147517,
+        "y": 1171.9643775154216,
+        "r": "middle",
+        "fill": "#000000",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
         "fontSize": "17",
-        "fill": "#000000",
-        "text": "",
         "tspans": [
           {
-            "x": null,
-            "y": null,
-            "dy": null,
-            "textAnchor": null,
-            "dominantBaseline": null,
-            "fontSize": null,
-            "fill": null,
             "text": "Linux Basics"
           }
         ]
@@ -1650,17 +1379,13 @@ export const FULLSTACK_SVG_DATASET: SvgElementItem[] = [
     "kind": "g",
     "dataNodeId": "gSUWhfd0DQoJjDpHEkk0i",
     "dataType": "horizontal",
-    "dataTitle": null,
-    "dataParentId": null,
-    "dataParentTitle": null,
-    "dataLink": null,
     "children": [
       {
         "tag": "line",
-        "x1": "-504.47806963137555",
-        "y1": "980.0850398450953",
-        "x2": "-404.47806963137555",
-        "y2": "980.0850398450953",
+        "x1": -504.47806963137555,
+        "y1": 980.0850398450953,
+        "x2": -404.47806963137555,
+        "y2": 980.0850398450953,
         "style": "stroke-linecap: round; stroke-width: 3.5; stroke: #2B78E4; stroke-dasharray: 0.8 8;"
       }
     ]
@@ -1669,18 +1394,15 @@ export const FULLSTACK_SVG_DATASET: SvgElementItem[] = [
     "kind": "g",
     "dataNodeId": "v4NF25lJElAtkU0Rm6Fob",
     "dataType": "subtopic",
-    "dataTitle": "Checkpoint \u2014 Complete App",
-    "dataParentId": null,
-    "dataParentTitle": null,
-    "dataLink": null,
+    "dataTitle": "Checkpoint — Complete App",
     "children": [
       {
         "tag": "rect",
-        "x": "-458.1280696313755",
-        "y": "956.9350398450953",
-        "width": "262.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": -458.1280696313755,
+        "y": 956.9350398450953,
+        "width": 262.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#333333",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -1688,23 +1410,16 @@ export const FULLSTACK_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "-326.97806963137555",
-        "y": "982.2350398450952",
+        "x": -326.97806963137555,
+        "y": 982.2350398450952,
+        "r": "middle",
+        "fill": "#ffffff",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
         "fontSize": "17",
-        "fill": "#ffffff",
-        "text": "",
         "tspans": [
           {
-            "x": null,
-            "y": null,
-            "dy": null,
-            "textAnchor": null,
-            "dominantBaseline": null,
-            "fontSize": null,
-            "fill": null,
-            "text": "Checkpoint \u2014 Complete App"
+            "text": "Checkpoint — Complete App"
           }
         ]
       }
@@ -1714,17 +1429,13 @@ export const FULLSTACK_SVG_DATASET: SvgElementItem[] = [
     "kind": "g",
     "dataNodeId": "Oav7YPRBmsE1gVhEURckg",
     "dataType": "horizontal",
-    "dataTitle": null,
-    "dataParentId": null,
-    "dataParentTitle": null,
-    "dataLink": null,
     "children": [
       {
         "tag": "line",
-        "x1": "-560.0823082314752",
-        "y1": "1047.8143775154215",
-        "x2": "-317.08230823147517",
-        "y2": "1047.8143775154215",
+        "x1": -560.0823082314752,
+        "y1": 1047.8143775154215,
+        "x2": -317.08230823147517,
+        "y2": 1047.8143775154215,
         "style": "stroke-linecap: round; stroke-width: 3; stroke: #000000; stroke-dasharray: 0;"
       }
     ]
@@ -1733,29 +1444,18 @@ export const FULLSTACK_SVG_DATASET: SvgElementItem[] = [
     "kind": "g",
     "dataNodeId": "Dj2QhtEuuIgKc2CvgFGyK",
     "dataType": "label",
-    "dataTitle": null,
-    "dataParentId": null,
-    "dataParentTitle": null,
-    "dataLink": null,
     "children": [
       {
         "tag": "text",
-        "x": "-463.2578102157039",
-        "y": "1075.3143775154215",
+        "x": -463.2578102157039,
+        "y": 1075.3143775154215,
+        "r": "left",
+        "fill": "black",
         "textAnchor": "left",
         "dominantBaseline": "auto",
         "fontSize": "17",
-        "fill": "black",
-        "text": "",
         "tspans": [
           {
-            "x": null,
-            "y": null,
-            "dy": null,
-            "textAnchor": null,
-            "dominantBaseline": null,
-            "fontSize": null,
-            "fill": null,
             "text": "DevOps starts here"
           }
         ]
@@ -1769,15 +1469,14 @@ export const FULLSTACK_SVG_DATASET: SvgElementItem[] = [
     "dataTitle": "Basic AWS Services",
     "dataParentId": "SHTSvMDqI7X1_ZT7-m--n",
     "dataParentTitle": "Linux Basics",
-    "dataLink": null,
     "children": [
       {
         "tag": "rect",
-        "x": "-240.35433957685362",
-        "y": "1146.6643775154214",
-        "width": "207.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": -240.35433957685362,
+        "y": 1146.6643775154214,
+        "width": 207.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#fdff00",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -1785,22 +1484,15 @@ export const FULLSTACK_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "-136.7043395768536",
-        "y": "1171.9643775154216",
+        "x": -136.7043395768536,
+        "y": 1171.9643775154216,
+        "r": "middle",
+        "fill": "#000000",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
         "fontSize": "17",
-        "fill": "#000000",
-        "text": "",
         "tspans": [
           {
-            "x": null,
-            "y": null,
-            "dy": null,
-            "textAnchor": null,
-            "dominantBaseline": null,
-            "fontSize": null,
-            "fill": null,
             "text": "Basic AWS Services"
           }
         ]
@@ -1812,17 +1504,14 @@ export const FULLSTACK_SVG_DATASET: SvgElementItem[] = [
     "dataNodeId": "6oBIxYj8WPcUHidQ99tus",
     "dataType": "subtopic",
     "dataTitle": "EC2",
-    "dataParentId": null,
-    "dataParentTitle": null,
-    "dataLink": null,
     "children": [
       {
         "tag": "rect",
-        "x": "-238.21446376179998",
-        "y": "1088.6643775154214",
-        "width": "68.3",
-        "height": "48.3",
-        "rx": "5",
+        "x": -238.21446376179998,
+        "y": 1088.6643775154214,
+        "width": 68.3,
+        "height": 48.3,
+        "rx": 5,
         "fill": "#ffe599",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -1830,22 +1519,15 @@ export const FULLSTACK_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "-204.06446376179997",
-        "y": "1114.9643775154216",
+        "x": -204.06446376179997,
+        "y": 1114.9643775154216,
+        "r": "middle",
+        "fill": "#000000",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
         "fontSize": "17",
-        "fill": "#000000",
-        "text": "",
         "tspans": [
           {
-            "x": null,
-            "y": null,
-            "dy": null,
-            "textAnchor": null,
-            "dominantBaseline": null,
-            "fontSize": null,
-            "fill": null,
             "text": "EC2"
           }
         ]
@@ -1857,17 +1539,14 @@ export const FULLSTACK_SVG_DATASET: SvgElementItem[] = [
     "dataNodeId": "QtL-bLKtWIdH00K6k_PdC",
     "dataType": "subtopic",
     "dataTitle": "VPC",
-    "dataParentId": null,
-    "dataParentTitle": null,
-    "dataLink": null,
     "children": [
       {
         "tag": "rect",
-        "x": "-164.21446376179998",
-        "y": "1088.6643775154214",
-        "width": "68.3",
-        "height": "48.3",
-        "rx": "5",
+        "x": -164.21446376179998,
+        "y": 1088.6643775154214,
+        "width": 68.3,
+        "height": 48.3,
+        "rx": 5,
         "fill": "#ffe599",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -1875,22 +1554,15 @@ export const FULLSTACK_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "-130.06446376179997",
-        "y": "1114.9643775154216",
+        "x": -130.06446376179997,
+        "y": 1114.9643775154216,
+        "r": "middle",
+        "fill": "#000000",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
         "fontSize": "17",
-        "fill": "#000000",
-        "text": "",
         "tspans": [
           {
-            "x": null,
-            "y": null,
-            "dy": null,
-            "textAnchor": null,
-            "dominantBaseline": null,
-            "fontSize": null,
-            "fill": null,
             "text": "VPC"
           }
         ]
@@ -1902,17 +1574,14 @@ export const FULLSTACK_SVG_DATASET: SvgElementItem[] = [
     "dataNodeId": "5zyYpu9cyuTFwQCjTbHpS",
     "dataType": "subtopic",
     "dataTitle": "Route53",
-    "dataParentId": null,
-    "dataParentTitle": null,
-    "dataLink": null,
     "children": [
       {
         "tag": "rect",
-        "x": "-238.21446376179998",
-        "y": "1033.6643775154214",
-        "width": "101.3",
-        "height": "48.3",
-        "rx": "5",
+        "x": -238.21446376179998,
+        "y": 1033.6643775154214,
+        "width": 101.3,
+        "height": 48.3,
+        "rx": 5,
         "fill": "#ffe599",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -1920,22 +1589,15 @@ export const FULLSTACK_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "-187.56446376179997",
-        "y": "1059.9643775154216",
+        "x": -187.56446376179997,
+        "y": 1059.9643775154216,
+        "r": "middle",
+        "fill": "#000000",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
         "fontSize": "17",
-        "fill": "#000000",
-        "text": "",
         "tspans": [
           {
-            "x": null,
-            "y": null,
-            "dy": null,
-            "textAnchor": null,
-            "dominantBaseline": null,
-            "fontSize": null,
-            "fill": null,
             "text": "Route53"
           }
         ]
@@ -1947,17 +1609,14 @@ export const FULLSTACK_SVG_DATASET: SvgElementItem[] = [
     "dataNodeId": "B-cphY7Imnv6JBMujVIF7",
     "dataType": "subtopic",
     "dataTitle": "SES",
-    "dataParentId": null,
-    "dataParentTitle": null,
-    "dataLink": null,
     "children": [
       {
         "tag": "rect",
-        "x": "-132.35433957685362",
-        "y": "1033.6643775154214",
-        "width": "98.3",
-        "height": "48.3",
-        "rx": "5",
+        "x": -132.35433957685362,
+        "y": 1033.6643775154214,
+        "width": 98.3,
+        "height": 48.3,
+        "rx": 5,
         "fill": "#ffe599",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -1965,22 +1624,15 @@ export const FULLSTACK_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "-83.20433957685361",
-        "y": "1059.9643775154216",
+        "x": -83.20433957685361,
+        "y": 1059.9643775154216,
+        "r": "middle",
+        "fill": "#000000",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
         "fontSize": "17",
-        "fill": "#000000",
-        "text": "",
         "tspans": [
           {
-            "x": null,
-            "y": null,
-            "dy": null,
-            "textAnchor": null,
-            "dominantBaseline": null,
-            "fontSize": null,
-            "fill": null,
             "text": "SES"
           }
         ]
@@ -1992,17 +1644,14 @@ export const FULLSTACK_SVG_DATASET: SvgElementItem[] = [
     "dataNodeId": "n2Xp_ijJ2OS8xhE7xMWxk",
     "dataType": "subtopic",
     "dataTitle": "S3",
-    "dataParentId": null,
-    "dataParentTitle": null,
-    "dataLink": null,
     "children": [
       {
         "tag": "rect",
-        "x": "-90.21446376179998",
-        "y": "1088.6643775154214",
-        "width": "57.3",
-        "height": "48.3",
-        "rx": "5",
+        "x": -90.21446376179998,
+        "y": 1088.6643775154214,
+        "width": 57.3,
+        "height": 48.3,
+        "rx": 5,
         "fill": "#ffe599",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -2010,22 +1659,15 @@ export const FULLSTACK_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "-61.56446376179997",
-        "y": "1114.9643775154216",
+        "x": -61.56446376179997,
+        "y": 1114.9643775154216,
+        "r": "middle",
+        "fill": "#000000",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
         "fontSize": "17",
-        "fill": "#000000",
-        "text": "",
         "tspans": [
           {
-            "x": null,
-            "y": null,
-            "dy": null,
-            "textAnchor": null,
-            "dominantBaseline": null,
-            "fontSize": null,
-            "fill": null,
             "text": "S3"
           }
         ]
@@ -2036,72 +1678,57 @@ export const FULLSTACK_SVG_DATASET: SvgElementItem[] = [
     "kind": "g",
     "dataNodeId": "fKzuMTsf6XL_0Ik6t8SAX",
     "dataType": "paragraph",
-    "dataTitle": null,
-    "dataParentId": null,
-    "dataParentTitle": null,
-    "dataLink": null,
     "children": [
       {
         "tag": "rect",
-        "x": "59.74718479195076",
-        "y": "925.0643775154215",
-        "width": "342",
-        "height": "136.5",
-        "rx": "5",
+        "x": 59.74718479195076,
+        "y": 925.0643775154215,
+        "width": 342,
+        "height": 136.5,
+        "rx": 5,
         "fill": "#ffffff",
         "stroke": "#000000",
-        "strokeWidth": "2.5",
-        "style": null
+        "strokeWidth": "2.5"
       },
       {
         "tag": "text",
-        "x": null,
-        "y": null,
-        "textAnchor": null,
-        "dominantBaseline": null,
-        "fontSize": null,
         "fill": "#000000",
-        "text": "",
         "tspans": [
           {
-            "x": "76.99718479195076",
-            "y": "955.0643775154215",
-            "dy": "0",
+            "text": "Use the checkpoints and do not forget",
+            "x": 76.99718479195076,
+            "y": 955.0643775154215,
+            "dy": 0,
             "textAnchor": "start",
             "dominantBaseline": "middle",
-            "fontSize": "17",
-            "fill": null,
-            "text": "Use the checkpoints and do not forget"
+            "fontSize": "17"
           },
           {
-            "x": "76.99718479195076",
-            "y": "955.0643775154215",
-            "dy": "25.5",
+            "text": "to practice what you learn. There are",
+            "x": 76.99718479195076,
+            "y": 955.0643775154215,
+            "dy": 25.5,
             "textAnchor": "start",
             "dominantBaseline": "middle",
-            "fontSize": "17",
-            "fill": null,
-            "text": "to practice what you learn. There are"
+            "fontSize": "17"
           },
           {
-            "x": "76.99718479195076",
-            "y": "955.0643775154215",
-            "dy": "51",
+            "text": "project ideas at each checkpoint that",
+            "x": 76.99718479195076,
+            "y": 955.0643775154215,
+            "dy": 51,
             "textAnchor": "start",
             "dominantBaseline": "middle",
-            "fontSize": "17",
-            "fill": null,
-            "text": "project ideas at each checkpoint that"
+            "fontSize": "17"
           },
           {
-            "x": "76.99718479195076",
-            "y": "955.0643775154215",
-            "dy": "76.5",
+            "text": "you can build to solidify your knowledge.",
+            "x": 76.99718479195076,
+            "y": 955.0643775154215,
+            "dy": 76.5,
             "textAnchor": "start",
             "dominantBaseline": "middle",
-            "fontSize": "17",
-            "fill": null,
-            "text": "you can build to solidify your knowledge."
+            "fontSize": "17"
           }
         ]
       }
@@ -2114,15 +1741,14 @@ export const FULLSTACK_SVG_DATASET: SvgElementItem[] = [
     "dataTitle": "Monit",
     "dataParentId": "cUOfvOlQ_0Uu1VX3i67kJ",
     "dataParentTitle": "Basic AWS Services",
-    "dataLink": null,
     "children": [
       {
         "tag": "rect",
-        "x": "291.8719303686245",
-        "y": "1267.873833184426",
-        "width": "86.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": 291.8719303686245,
+        "y": 1267.873833184426,
+        "width": 86.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#fdff00",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -2130,22 +1756,15 @@ export const FULLSTACK_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "335.02193036862445",
-        "y": "1293.1738331844263",
+        "x": 335.02193036862445,
+        "y": 1293.1738331844263,
+        "r": "middle",
+        "fill": "#000000",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
         "fontSize": "17",
-        "fill": "#000000",
-        "text": "",
         "tspans": [
           {
-            "x": null,
-            "y": null,
-            "dy": null,
-            "textAnchor": null,
-            "dominantBaseline": null,
-            "fontSize": null,
-            "fill": null,
             "text": "Monit"
           }
         ]
@@ -2159,15 +1778,14 @@ export const FULLSTACK_SVG_DATASET: SvgElementItem[] = [
     "dataTitle": "PostgreSQL",
     "dataParentId": "_aA6Hp4KkgJeptqo8oKTg",
     "dataParentTitle": "Node.js",
-    "dataLink": null,
     "children": [
       {
         "tag": "rect",
-        "x": "263.3719303686245",
-        "y": "718.2545877729017",
-        "width": "143.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": 263.3719303686245,
+        "y": 718.2545877729017,
+        "width": 143.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#fdff00",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -2175,22 +1793,15 @@ export const FULLSTACK_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "335.02193036862445",
-        "y": "743.5545877729016",
+        "x": 335.02193036862445,
+        "y": 743.5545877729016,
+        "r": "middle",
+        "fill": "#000000",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
         "fontSize": "17",
-        "fill": "#000000",
-        "text": "",
         "tspans": [
           {
-            "x": null,
-            "y": null,
-            "dy": null,
-            "textAnchor": null,
-            "dominantBaseline": null,
-            "fontSize": null,
-            "fill": null,
             "text": "PostgreSQL"
           }
         ]
@@ -2201,18 +1812,15 @@ export const FULLSTACK_SVG_DATASET: SvgElementItem[] = [
     "kind": "g",
     "dataNodeId": "J2_IWAb1s9zZcxOY3NXm2",
     "dataType": "subtopic",
-    "dataTitle": "Checkpoint \u2014 Deployment",
-    "dataParentId": null,
-    "dataParentTitle": null,
-    "dataLink": null,
+    "dataTitle": "Checkpoint — Deployment",
     "children": [
       {
         "tag": "rect",
-        "x": "17.35948964805815",
-        "y": "1202.0710153640275",
-        "width": "245.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": 17.35948964805815,
+        "y": 1202.0710153640275,
+        "width": 245.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#333333",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -2220,23 +1828,16 @@ export const FULLSTACK_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "140.00948964805815",
-        "y": "1227.3710153640277",
+        "x": 140.00948964805815,
+        "y": 1227.3710153640277,
+        "r": "middle",
+        "fill": "#ffffff",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
         "fontSize": "17",
-        "fill": "#ffffff",
-        "text": "",
         "tspans": [
           {
-            "x": null,
-            "y": null,
-            "dy": null,
-            "textAnchor": null,
-            "dominantBaseline": null,
-            "fontSize": null,
-            "fill": null,
-            "text": "Checkpoint \u2014 Deployment"
+            "text": "Checkpoint — Deployment"
           }
         ]
       }
@@ -2249,15 +1850,14 @@ export const FULLSTACK_SVG_DATASET: SvgElementItem[] = [
     "dataTitle": "GitHub Actions",
     "dataParentId": "y1SFX7uvWaCy4OYBnECLu",
     "dataParentTitle": "Monit",
-    "dataLink": null,
     "children": [
       {
         "tag": "rect",
-        "x": "104.35948964805814",
-        "y": "1393.873833184426",
-        "width": "157.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": 104.35948964805814,
+        "y": 1393.873833184426,
+        "width": 157.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#fdff00",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -2265,22 +1865,15 @@ export const FULLSTACK_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "183.00948964805815",
-        "y": "1419.1738331844263",
+        "x": 183.00948964805815,
+        "y": 1419.1738331844263,
+        "r": "middle",
+        "fill": "#000000",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
         "fontSize": "17",
-        "fill": "#000000",
-        "text": "",
         "tspans": [
           {
-            "x": null,
-            "y": null,
-            "dy": null,
-            "textAnchor": null,
-            "dominantBaseline": null,
-            "fontSize": null,
-            "fill": null,
             "text": "GitHub Actions"
           }
         ]
@@ -2291,17 +1884,13 @@ export const FULLSTACK_SVG_DATASET: SvgElementItem[] = [
     "kind": "g",
     "dataNodeId": "zh4DYU0QpAolXJ6wE0CEe",
     "dataType": "horizontal",
-    "dataTitle": null,
-    "dataParentId": null,
-    "dataParentTitle": null,
-    "dataLink": null,
     "children": [
       {
         "tag": "line",
-        "x1": "253.00948964805815",
-        "y1": "1350.2210153640276",
-        "x2": "338.00948964805815",
-        "y2": "1350.2210153640276",
+        "x1": 253.00948964805815,
+        "y1": 1350.2210153640276,
+        "x2": 338.00948964805815,
+        "y2": 1350.2210153640276,
         "style": "stroke-linecap: round; stroke-width: 3.5; stroke: #2B78E4; stroke-dasharray: 0.8 8;"
       }
     ]
@@ -2310,18 +1899,15 @@ export const FULLSTACK_SVG_DATASET: SvgElementItem[] = [
     "kind": "g",
     "dataNodeId": "NQmEl27eBPYhivcXdOEz3",
     "dataType": "subtopic",
-    "dataTitle": "Checkpoint \u2014 Monitoring",
-    "dataParentId": null,
-    "dataParentTitle": null,
-    "dataLink": null,
+    "dataTitle": "Checkpoint — Monitoring",
     "children": [
       {
         "tag": "rect",
-        "x": "17.35948964805815",
-        "y": "1327.0710153640275",
-        "width": "245.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": 17.35948964805815,
+        "y": 1327.0710153640275,
+        "width": 245.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#333333",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -2329,23 +1915,16 @@ export const FULLSTACK_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "140.00948964805815",
-        "y": "1352.3710153640277",
+        "x": 140.00948964805815,
+        "y": 1352.3710153640277,
+        "r": "middle",
+        "fill": "#ffffff",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
         "fontSize": "17",
-        "fill": "#ffffff",
-        "text": "",
         "tspans": [
           {
-            "x": null,
-            "y": null,
-            "dy": null,
-            "textAnchor": null,
-            "dominantBaseline": null,
-            "fontSize": null,
-            "fill": null,
-            "text": "Checkpoint \u2014 Monitoring"
+            "text": "Checkpoint — Monitoring"
           }
         ]
       }
@@ -2358,15 +1937,14 @@ export const FULLSTACK_SVG_DATASET: SvgElementItem[] = [
     "dataTitle": "Ansible",
     "dataParentId": "863KMXcFJzInvTp_-Ldmz",
     "dataParentTitle": "GitHub Actions",
-    "dataLink": null,
     "children": [
       {
         "tag": "rect",
-        "x": "-326.21446376179995",
-        "y": "1393.873833184426",
-        "width": "99.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": -326.21446376179995,
+        "y": 1393.873833184426,
+        "width": 99.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#fdff00",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -2374,22 +1952,15 @@ export const FULLSTACK_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "-276.56446376179997",
-        "y": "1419.1738331844263",
+        "x": -276.56446376179997,
+        "y": 1419.1738331844263,
+        "r": "middle",
+        "fill": "#000000",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
         "fontSize": "17",
-        "fill": "#000000",
-        "text": "",
         "tspans": [
           {
-            "x": null,
-            "y": null,
-            "dy": null,
-            "textAnchor": null,
-            "dominantBaseline": null,
-            "fontSize": null,
-            "fill": null,
             "text": "Ansible"
           }
         ]
@@ -2400,17 +1971,13 @@ export const FULLSTACK_SVG_DATASET: SvgElementItem[] = [
     "kind": "g",
     "dataNodeId": "WJIx6JGqxoNT-vKk4LMQp",
     "dataType": "vertical",
-    "dataTitle": null,
-    "dataParentId": null,
-    "dataParentTitle": null,
-    "dataLink": null,
     "children": [
       {
         "tag": "line",
-        "x1": "-117.56446376179997",
-        "y1": "1366",
-        "x2": "-117.56446376179997",
-        "y2": "1416",
+        "x1": -117.56446376179997,
+        "y1": 1366,
+        "x2": -117.56446376179997,
+        "y2": 1416,
         "style": "stroke-linecap: round; stroke-width: 3.5; stroke: #2B78E4; stroke-dasharray: 0.8 8;"
       }
     ]
@@ -2419,18 +1986,15 @@ export const FULLSTACK_SVG_DATASET: SvgElementItem[] = [
     "kind": "g",
     "dataNodeId": "liaY1GnlOateB_ZKBjNpY",
     "dataType": "subtopic",
-    "dataTitle": "Checkpoint \u2014 CI / CD",
-    "dataParentId": null,
-    "dataParentTitle": null,
-    "dataLink": null,
+    "dataTitle": "Checkpoint — CI / CD",
     "children": [
       {
         "tag": "rect",
-        "x": "-225.21446376179998",
-        "y": "1327.0710153640275",
-        "width": "215.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": -225.21446376179998,
+        "y": 1327.0710153640275,
+        "width": 215.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#333333",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -2438,23 +2002,16 @@ export const FULLSTACK_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "-117.56446376179997",
-        "y": "1352.3710153640277",
+        "x": -117.56446376179997,
+        "y": 1352.3710153640277,
+        "r": "middle",
+        "fill": "#ffffff",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
         "fontSize": "17",
-        "fill": "#ffffff",
-        "text": "",
         "tspans": [
           {
-            "x": null,
-            "y": null,
-            "dy": null,
-            "textAnchor": null,
-            "dominantBaseline": null,
-            "fontSize": null,
-            "fill": null,
-            "text": "Checkpoint \u2014 CI / CD"
+            "text": "Checkpoint — CI / CD"
           }
         ]
       }
@@ -2467,15 +2024,14 @@ export const FULLSTACK_SVG_DATASET: SvgElementItem[] = [
     "dataTitle": "Terraform",
     "dataParentId": "rFXupYpUFfp7vZO8zh614",
     "dataParentTitle": "Ansible",
-    "dataLink": null,
     "children": [
       {
         "tag": "rect",
-        "x": "-558.7323082314751",
-        "y": "1470.0786303718248",
-        "width": "118.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": -558.7323082314751,
+        "y": 1470.0786303718248,
+        "width": 118.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#fdff00",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -2483,22 +2039,15 @@ export const FULLSTACK_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "-499.58230823147517",
-        "y": "1495.378630371825",
+        "x": -499.58230823147517,
+        "y": 1495.378630371825,
+        "r": "middle",
+        "fill": "#000000",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
         "fontSize": "17",
-        "fill": "#000000",
-        "text": "",
         "tspans": [
           {
-            "x": null,
-            "y": null,
-            "dy": null,
-            "textAnchor": null,
-            "dominantBaseline": null,
-            "fontSize": null,
-            "fill": null,
             "text": "Terraform"
           }
         ]
@@ -2509,17 +2058,13 @@ export const FULLSTACK_SVG_DATASET: SvgElementItem[] = [
     "kind": "g",
     "dataNodeId": "gJhoy4tQwP4Gtwh0wL343",
     "dataType": "vertical",
-    "dataTitle": null,
-    "dataParentId": null,
-    "dataParentTitle": null,
-    "dataLink": null,
     "children": [
       {
         "tag": "line",
-        "x1": "-462.7578102157039",
-        "y1": "1365.182006288024",
-        "x2": "-462.7578102157039",
-        "y2": "1415.182006288024",
+        "x1": -462.7578102157039,
+        "y1": 1365.182006288024,
+        "x2": -462.7578102157039,
+        "y2": 1415.182006288024,
         "style": "stroke-linecap: round; stroke-width: 3.5; stroke: #2B78E4; stroke-dasharray: 0.8 8;"
       }
     ]
@@ -2528,18 +2073,15 @@ export const FULLSTACK_SVG_DATASET: SvgElementItem[] = [
     "kind": "g",
     "dataNodeId": "sO_9-l4FECbaqiaFnyeXO",
     "dataType": "subtopic",
-    "dataTitle": "Checkpoint \u2014 Automation",
-    "dataParentId": null,
-    "dataParentTitle": null,
-    "dataLink": null,
+    "dataTitle": "Checkpoint — Automation",
     "children": [
       {
         "tag": "rect",
-        "x": "-570.4078102157039",
-        "y": "1326.2530216520515",
-        "width": "249.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": -570.4078102157039,
+        "y": 1326.2530216520515,
+        "width": 249.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#333333",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -2547,23 +2089,16 @@ export const FULLSTACK_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "-445.7578102157039",
-        "y": "1351.5530216520517",
+        "x": -445.7578102157039,
+        "y": 1351.5530216520517,
+        "r": "middle",
+        "fill": "#ffffff",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
         "fontSize": "17",
-        "fill": "#ffffff",
-        "text": "",
         "tspans": [
           {
-            "x": null,
-            "y": null,
-            "dy": null,
-            "textAnchor": null,
-            "dominantBaseline": null,
-            "fontSize": null,
-            "fill": null,
-            "text": "Checkpoint \u2014 Automation"
+            "text": "Checkpoint — Automation"
           }
         ]
       }
@@ -2573,17 +2108,13 @@ export const FULLSTACK_SVG_DATASET: SvgElementItem[] = [
     "kind": "g",
     "dataNodeId": "b7EdI-25v_eVMkqTBa0se",
     "dataType": "horizontal",
-    "dataTitle": null,
-    "dataParentId": null,
-    "dataParentTitle": null,
-    "dataLink": null,
     "children": [
       {
         "tag": "line",
-        "x1": "-498",
-        "y1": "1562.5384432996068",
-        "x2": "-398",
-        "y2": "1562.5384432996068",
+        "x1": -498,
+        "y1": 1562.5384432996068,
+        "x2": -398,
+        "y2": 1562.5384432996068,
         "style": "stroke-linecap: round; stroke-width: 3.5; stroke: #2B78E4; stroke-dasharray: 0.8 8;"
       }
     ]
@@ -2592,18 +2123,15 @@ export const FULLSTACK_SVG_DATASET: SvgElementItem[] = [
     "kind": "g",
     "dataNodeId": "YVMyHFSCVF-GgXydq-SFJ",
     "dataType": "subtopic",
-    "dataTitle": "Checkpoint \u2014 Infrastructure",
-    "dataParentId": null,
-    "dataParentTitle": null,
-    "dataLink": null,
+    "dataTitle": "Checkpoint — Infrastructure",
     "children": [
       {
         "tag": "rect",
-        "x": "-414.21446376179995",
-        "y": "1539.3884432996067",
-        "width": "257.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": -414.21446376179995,
+        "y": 1539.3884432996067,
+        "width": 257.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#333333",
         "stroke": "black",
         "strokeWidth": "2.7",
@@ -2611,23 +2139,16 @@ export const FULLSTACK_SVG_DATASET: SvgElementItem[] = [
       },
       {
         "tag": "text",
-        "x": "-285.56446376179997",
-        "y": "1564.688443299607",
+        "x": -285.56446376179997,
+        "y": 1564.688443299607,
+        "r": "middle",
+        "fill": "#ffffff",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
         "fontSize": "17",
-        "fill": "#ffffff",
-        "text": "",
         "tspans": [
           {
-            "x": null,
-            "y": null,
-            "dy": null,
-            "textAnchor": null,
-            "dominantBaseline": null,
-            "fontSize": null,
-            "fill": null,
-            "text": "Checkpoint \u2014 Infrastructure"
+            "text": "Checkpoint — Infrastructure"
           }
         ]
       }
@@ -2637,41 +2158,30 @@ export const FULLSTACK_SVG_DATASET: SvgElementItem[] = [
     "kind": "g",
     "dataNodeId": "DezWXw5LWeP1S5Sosj90S",
     "dataType": "button",
-    "dataTitle": null,
-    "dataParentId": null,
-    "dataParentTitle": null,
     "dataLink": "https://roadmap.sh/backend",
     "children": [
       {
         "tag": "rect",
-        "x": "-127.51972326342039",
-        "y": "1803.834543333457",
-        "width": "101.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": -127.51972326342039,
+        "y": 1803.834543333457,
+        "width": 101.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#4136D4",
         "stroke": "#4136D4",
-        "strokeWidth": "2.7",
-        "style": null
+        "strokeWidth": "2.7"
       },
       {
         "tag": "text",
-        "x": "-76.86972326342038",
-        "y": "1829.1345433334573",
+        "x": -76.86972326342038,
+        "y": 1829.1345433334573,
+        "r": "middle",
+        "fill": "#FFFFFf",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
         "fontSize": "17",
-        "fill": "#FFFFFf",
-        "text": "",
         "tspans": [
           {
-            "x": null,
-            "y": null,
-            "dy": null,
-            "textAnchor": null,
-            "dominantBaseline": null,
-            "fontSize": null,
-            "fill": null,
             "text": "Backend"
           }
         ]
@@ -2682,41 +2192,30 @@ export const FULLSTACK_SVG_DATASET: SvgElementItem[] = [
     "kind": "g",
     "dataNodeId": "DsvdvpHWD0FgTjdkSJ9Uu",
     "dataType": "button",
-    "dataTitle": null,
-    "dataParentId": null,
-    "dataParentTitle": null,
     "dataLink": "https://roadmap.sh/devops",
     "children": [
       {
         "tag": "rect",
-        "x": "-20.51972326342038",
-        "y": "1803.834543333457",
-        "width": "101.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": -20.51972326342038,
+        "y": 1803.834543333457,
+        "width": 101.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#4136D4",
         "stroke": "#4136D4",
-        "strokeWidth": "2.7",
-        "style": null
+        "strokeWidth": "2.7"
       },
       {
         "tag": "text",
-        "x": "30.130276736579617",
-        "y": "1829.1345433334573",
+        "x": 30.130276736579617,
+        "y": 1829.1345433334573,
+        "r": "middle",
+        "fill": "#FFFFFf",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
         "fontSize": "17",
-        "fill": "#FFFFFf",
-        "text": "",
         "tspans": [
           {
-            "x": null,
-            "y": null,
-            "dy": null,
-            "textAnchor": null,
-            "dominantBaseline": null,
-            "fontSize": null,
-            "fill": null,
             "text": "DevOps"
           }
         ]
@@ -2727,41 +2226,30 @@ export const FULLSTACK_SVG_DATASET: SvgElementItem[] = [
     "kind": "g",
     "dataNodeId": "uSLzfLPXxS5-P7ozscvjZ",
     "dataType": "button",
-    "dataTitle": null,
-    "dataParentId": null,
-    "dataParentTitle": null,
     "dataLink": "https://roadmap.sh/aws",
     "children": [
       {
         "tag": "rect",
-        "x": "86.48027673657961",
-        "y": "1803.834543333457",
-        "width": "98.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": 86.48027673657961,
+        "y": 1803.834543333457,
+        "width": 98.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#4136D4",
         "stroke": "#4136D4",
-        "strokeWidth": "2.7",
-        "style": null
+        "strokeWidth": "2.7"
       },
       {
         "tag": "text",
-        "x": "135.63027673657962",
-        "y": "1829.1345433334573",
+        "x": 135.63027673657962,
+        "y": 1829.1345433334573,
+        "r": "middle",
+        "fill": "#FFFFFf",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
         "fontSize": "17",
-        "fill": "#FFFFFf",
-        "text": "",
         "tspans": [
           {
-            "x": null,
-            "y": null,
-            "dy": null,
-            "textAnchor": null,
-            "dominantBaseline": null,
-            "fontSize": null,
-            "fill": null,
             "text": "AWS"
           }
         ]
@@ -2772,33 +2260,21 @@ export const FULLSTACK_SVG_DATASET: SvgElementItem[] = [
     "kind": "g",
     "dataNodeId": "2bi7EWaC5QIWX6_Vl6988",
     "dataType": "paragraph",
-    "dataTitle": null,
-    "dataParentId": null,
-    "dataParentTitle": null,
-    "dataLink": null,
     "children": [
       {
         "tag": "rect",
-        "x": "73.3682771963982",
-        "y": "-100.41069241448308",
-        "width": "26",
-        "height": "22.5",
-        "rx": "5",
+        "x": 73.3682771963982,
+        "y": -100.41069241448308,
+        "width": 26,
+        "height": 22.5,
+        "rx": 5,
         "fill": "#fcff00",
         "stroke": "#000000",
-        "strokeWidth": "2.5",
-        "style": null
+        "strokeWidth": "2.5"
       },
       {
         "tag": "text",
-        "x": null,
-        "y": null,
-        "textAnchor": null,
-        "dominantBaseline": null,
-        "fontSize": null,
-        "fill": "#ffffff",
-        "text": "",
-        "tspans": []
+        "fill": "#ffffff"
       }
     ]
   },
@@ -2806,29 +2282,18 @@ export const FULLSTACK_SVG_DATASET: SvgElementItem[] = [
     "kind": "g",
     "dataNodeId": "aaWX__NQvUofoN1VzwgD0",
     "dataType": "label",
-    "dataTitle": null,
-    "dataParentId": null,
-    "dataParentTitle": null,
-    "dataLink": null,
     "children": [
       {
         "tag": "text",
-        "x": "112.99749010787673",
-        "y": "-83.16069241448308",
+        "x": 112.99749010787673,
+        "y": -83.16069241448308,
+        "r": "left",
+        "fill": "black",
         "textAnchor": "left",
         "dominantBaseline": "auto",
         "fontSize": "17",
-        "fill": "black",
-        "text": "",
         "tspans": [
           {
-            "x": null,
-            "y": null,
-            "dy": null,
-            "textAnchor": null,
-            "dominantBaseline": null,
-            "fontSize": null,
-            "fill": null,
             "text": "Key topics to learn"
           }
         ]
@@ -2839,33 +2304,21 @@ export const FULLSTACK_SVG_DATASET: SvgElementItem[] = [
     "kind": "g",
     "dataNodeId": "kvS4x6z7YWJjMpkpU01yh",
     "dataType": "paragraph",
-    "dataTitle": null,
-    "dataParentId": null,
-    "dataParentTitle": null,
-    "dataLink": null,
     "children": [
       {
         "tag": "rect",
-        "x": "73.3682771963982",
-        "y": "-67.03925019287855",
-        "width": "26",
-        "height": "22.5",
-        "rx": "5",
+        "x": 73.3682771963982,
+        "y": -67.03925019287855,
+        "width": 26,
+        "height": 22.5,
+        "rx": 5,
         "fill": "#000000",
         "stroke": "#000000",
-        "strokeWidth": "2.5",
-        "style": null
+        "strokeWidth": "2.5"
       },
       {
         "tag": "text",
-        "x": null,
-        "y": null,
-        "textAnchor": null,
-        "dominantBaseline": null,
-        "fontSize": null,
-        "fill": "#000000",
-        "text": "",
-        "tspans": []
+        "fill": "#000000"
       }
     ]
   },
@@ -2873,29 +2326,18 @@ export const FULLSTACK_SVG_DATASET: SvgElementItem[] = [
     "kind": "g",
     "dataNodeId": "7HLG5FTMmOWGS-mOpqnQh",
     "dataType": "label",
-    "dataTitle": null,
-    "dataParentId": null,
-    "dataParentTitle": null,
-    "dataLink": null,
     "children": [
       {
         "tag": "text",
-        "x": "112.99749010787673",
-        "y": "-47.16069241448308",
+        "x": 112.99749010787673,
+        "y": -47.16069241448308,
+        "r": "left",
+        "fill": "black",
         "textAnchor": "left",
         "dominantBaseline": "auto",
         "fontSize": "17",
-        "fill": "black",
-        "text": "",
         "tspans": [
           {
-            "x": null,
-            "y": null,
-            "dy": null,
-            "textAnchor": null,
-            "dominantBaseline": null,
-            "fontSize": null,
-            "fill": null,
             "text": "Project ideas and suggestions"
           }
         ]
@@ -2906,41 +2348,29 @@ export const FULLSTACK_SVG_DATASET: SvgElementItem[] = [
     "kind": "g",
     "dataNodeId": "9mrs26igEG0D9GpMv2NZc",
     "dataType": "section",
-    "dataTitle": null,
-    "dataParentId": null,
-    "dataParentTitle": null,
-    "dataLink": null,
     "children": [
       {
         "tag": "rect",
-        "x": "-316.166084034493",
-        "y": "-276.75767016925363",
-        "width": "343.3",
-        "height": "256.3",
-        "rx": "5",
+        "x": -316.166084034493,
+        "y": -276.75767016925363,
+        "width": 343.3,
+        "height": 256.3,
+        "rx": 5,
         "fill": "#ffffff",
         "stroke": "#ffffff",
-        "strokeWidth": "2.7",
-        "style": null
+        "strokeWidth": "2.7"
       },
       {
         "tag": "text",
-        "x": "-317.516084034493",
-        "y": "-286.10767016925365",
+        "x": -317.516084034493,
+        "y": -286.10767016925365,
+        "r": "left",
+        "fill": "black",
         "textAnchor": "left",
         "dominantBaseline": "auto",
         "fontSize": "17",
-        "fill": "black",
-        "text": "",
         "tspans": [
           {
-            "x": null,
-            "y": null,
-            "dy": null,
-            "textAnchor": null,
-            "dominantBaseline": null,
-            "fontSize": null,
-            "fill": null,
             "text": ""
           }
         ]
@@ -2951,52 +2381,39 @@ export const FULLSTACK_SVG_DATASET: SvgElementItem[] = [
     "kind": "g",
     "dataNodeId": "X8Gvqj2h4wkfA1Cx2d1iW",
     "dataType": "paragraph",
-    "dataTitle": null,
-    "dataParentId": null,
-    "dataParentTitle": null,
-    "dataLink": null,
     "children": [
       {
         "tag": "rect",
-        "x": "-295.81446376179997",
-        "y": "-249.90106699547107",
-        "width": "311",
-        "height": "52.5",
-        "rx": "5",
+        "x": -295.81446376179997,
+        "y": -249.90106699547107,
+        "width": 311,
+        "height": 52.5,
+        "rx": 5,
         "fill": "transparent",
         "stroke": "transparent",
-        "strokeWidth": "2.5",
-        "style": null
+        "strokeWidth": "2.5"
       },
       {
         "tag": "text",
-        "x": null,
-        "y": null,
-        "textAnchor": null,
-        "dominantBaseline": null,
-        "fontSize": null,
         "fill": "#000000",
-        "text": "",
         "tspans": [
           {
-            "x": "-294.56446376179997",
-            "y": "-237.15106699547107",
-            "dy": "0",
+            "text": "If you are already a full-stack developer",
+            "x": -294.56446376179997,
+            "y": -237.15106699547107,
+            "dy": 0,
             "textAnchor": "start",
             "dominantBaseline": "middle",
-            "fontSize": "17",
-            "fill": null,
-            "text": "If you are already a full-stack developer"
+            "fontSize": "17"
           },
           {
-            "x": "-294.56446376179997",
-            "y": "-237.15106699547107",
-            "dy": "25.5",
+            "text": "you should visit the following tracks.",
+            "x": -294.56446376179997,
+            "y": -237.15106699547107,
+            "dy": 25.5,
             "textAnchor": "start",
             "dominantBaseline": "middle",
-            "fontSize": "17",
-            "fill": null,
-            "text": "you should visit the following tracks."
+            "fontSize": "17"
           }
         ]
       }
@@ -3006,62 +2423,48 @@ export const FULLSTACK_SVG_DATASET: SvgElementItem[] = [
     "kind": "g",
     "dataNodeId": "7cbUuhyNE2SoZbm2Zh_t7",
     "dataType": "paragraph",
-    "dataTitle": null,
-    "dataParentId": null,
-    "dataParentTitle": null,
-    "dataLink": null,
     "children": [
       {
         "tag": "rect",
-        "x": "-295.81446376179997",
-        "y": "-120.90106699547107",
-        "width": "311",
-        "height": "77.5",
-        "rx": "5",
+        "x": -295.81446376179997,
+        "y": -120.90106699547107,
+        "width": 311,
+        "height": 77.5,
+        "rx": 5,
         "fill": "transparent",
         "stroke": "transparent",
-        "strokeWidth": "2.5",
-        "style": null
+        "strokeWidth": "2.5"
       },
       {
         "tag": "text",
-        "x": null,
-        "y": null,
-        "textAnchor": null,
-        "dominantBaseline": null,
-        "fontSize": null,
         "fill": "#000000",
-        "text": "",
         "tspans": [
           {
-            "x": "-294.56446376179997",
-            "y": "-108.15106699547107",
-            "dy": "0",
+            "text": "Target audience for this roadmap is",
+            "x": -294.56446376179997,
+            "y": -108.15106699547107,
+            "dy": 0,
             "textAnchor": "start",
             "dominantBaseline": "middle",
-            "fontSize": "17",
-            "fill": null,
-            "text": "Target audience for this roadmap is"
+            "fontSize": "17"
           },
           {
-            "x": "-294.56446376179997",
-            "y": "-108.15106699547107",
-            "dy": "25.5",
+            "text": "absolute beginners wanting to get into",
+            "x": -294.56446376179997,
+            "y": -108.15106699547107,
+            "dy": 25.5,
             "textAnchor": "start",
             "dominantBaseline": "middle",
-            "fontSize": "17",
-            "fill": null,
-            "text": "absolute beginners wanting to get into"
+            "fontSize": "17"
           },
           {
-            "x": "-294.56446376179997",
-            "y": "-108.15106699547107",
-            "dy": "51",
+            "text": "full-stack development.",
+            "x": -294.56446376179997,
+            "y": -108.15106699547107,
+            "dy": 51,
             "textAnchor": "start",
             "dominantBaseline": "middle",
-            "fontSize": "17",
-            "fill": null,
-            "text": "full-stack development."
+            "fontSize": "17"
           }
         ]
       }
@@ -3071,41 +2474,30 @@ export const FULLSTACK_SVG_DATASET: SvgElementItem[] = [
     "kind": "g",
     "dataNodeId": "p1nlhjqz_BiKFFop2yHpJ",
     "dataType": "button",
-    "dataTitle": null,
-    "dataParentId": null,
-    "dataParentTitle": null,
     "dataLink": "https://roadmap.sh/frontend",
     "children": [
       {
         "tag": "rect",
-        "x": "-291.9507174828185",
-        "y": "-186.07126760749415",
-        "width": "96.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": -291.9507174828185,
+        "y": -186.07126760749415,
+        "width": 96.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#E3E3E3",
         "stroke": "#E3E3E3",
-        "strokeWidth": "2.7",
-        "style": null
+        "strokeWidth": "2.7"
       },
       {
         "tag": "text",
-        "x": "-243.80071748281853",
-        "y": "-160.77126760749414",
+        "x": -243.80071748281853,
+        "y": -160.77126760749414,
+        "r": "middle",
+        "fill": "#000000",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
         "fontSize": "17",
-        "fill": "#000000",
-        "text": "",
         "tspans": [
           {
-            "x": null,
-            "y": null,
-            "dy": null,
-            "textAnchor": null,
-            "dominantBaseline": null,
-            "fontSize": null,
-            "fill": null,
             "text": "Frontend"
           }
         ]
@@ -3116,41 +2508,30 @@ export const FULLSTACK_SVG_DATASET: SvgElementItem[] = [
     "kind": "g",
     "dataNodeId": "bt_V8XXqg8XDAJCzHrbWt",
     "dataType": "button",
-    "dataTitle": null,
-    "dataParentId": null,
-    "dataParentTitle": null,
     "dataLink": "https://roadmap.sh/backend",
     "children": [
       {
         "tag": "rect",
-        "x": "-190.74195631976292",
-        "y": "-186.07126760749415",
-        "width": "96.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": -190.74195631976292,
+        "y": -186.07126760749415,
+        "width": 96.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#E3E3E3",
         "stroke": "#E3E3E3",
-        "strokeWidth": "2.7",
-        "style": null
+        "strokeWidth": "2.7"
       },
       {
         "tag": "text",
-        "x": "-142.59195631976291",
-        "y": "-160.77126760749414",
+        "x": -142.59195631976291,
+        "y": -160.77126760749414,
+        "r": "middle",
+        "fill": "#000000",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
         "fontSize": "17",
-        "fill": "#000000",
-        "text": "",
         "tspans": [
           {
-            "x": null,
-            "y": null,
-            "dy": null,
-            "textAnchor": null,
-            "dominantBaseline": null,
-            "fontSize": null,
-            "fill": null,
             "text": "Backend"
           }
         ]
@@ -3161,41 +2542,30 @@ export const FULLSTACK_SVG_DATASET: SvgElementItem[] = [
     "kind": "g",
     "dataNodeId": "x1j-a82XiCX3bNIgLFryZ",
     "dataType": "button",
-    "dataTitle": null,
-    "dataParentId": null,
-    "dataParentTitle": null,
     "dataLink": "https://roadmap.sh/devops",
     "children": [
       {
         "tag": "rect",
-        "x": "-88.1680029099048",
-        "y": "-186.07126760749415",
-        "width": "86.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": -88.1680029099048,
+        "y": -186.07126760749415,
+        "width": 86.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#E3E3E3",
         "stroke": "#E3E3E3",
-        "strokeWidth": "2.7",
-        "style": null
+        "strokeWidth": "2.7"
       },
       {
         "tag": "text",
-        "x": "-45.018002909904794",
-        "y": "-160.77126760749414",
+        "x": -45.018002909904794,
+        "y": -160.77126760749414,
+        "r": "middle",
+        "fill": "#000000",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
         "fontSize": "17",
-        "fill": "#000000",
-        "text": "",
         "tspans": [
           {
-            "x": null,
-            "y": null,
-            "dy": null,
-            "textAnchor": null,
-            "dominantBaseline": null,
-            "fontSize": null,
-            "fill": null,
             "text": "DevOps"
           }
         ]
@@ -3206,52 +2576,39 @@ export const FULLSTACK_SVG_DATASET: SvgElementItem[] = [
     "kind": "g",
     "dataNodeId": "yHmHXymPNWwu8p1vvqD3o",
     "dataType": "paragraph",
-    "dataTitle": null,
-    "dataParentId": null,
-    "dataParentTitle": null,
-    "dataLink": null,
     "children": [
       {
         "tag": "rect",
-        "x": "45.74718479195076",
-        "y": "-284.90106699547107",
-        "width": "355",
-        "height": "140.5",
-        "rx": "5",
+        "x": 45.74718479195076,
+        "y": -284.90106699547107,
+        "width": 355,
+        "height": 140.5,
+        "rx": 5,
         "fill": "#FFFFFf",
         "stroke": "#ffffff",
-        "strokeWidth": "2.5",
-        "style": null
+        "strokeWidth": "2.5"
       },
       {
         "tag": "text",
-        "x": null,
-        "y": null,
-        "textAnchor": null,
-        "dominantBaseline": null,
-        "fontSize": null,
         "fill": "black",
-        "text": "",
         "tspans": [
           {
-            "x": "62.99718479195076",
-            "y": "-256.15106699547107",
-            "dy": "0",
+            "text": "Find the detailed version of this roadmap",
+            "x": 62.99718479195076,
+            "y": -256.15106699547107,
+            "dy": 0,
             "textAnchor": "start",
             "dominantBaseline": "middle",
-            "fontSize": "17",
-            "fill": null,
-            "text": "Find the detailed version of this roadmap"
+            "fontSize": "17"
           },
           {
-            "x": "62.99718479195076",
-            "y": "-256.15106699547107",
-            "dy": "25.5",
+            "text": "along with other similar roadmaps",
+            "x": 62.99718479195076,
+            "y": -256.15106699547107,
+            "dy": 25.5,
             "textAnchor": "start",
             "dominantBaseline": "middle",
-            "fontSize": "17",
-            "fill": null,
-            "text": "along with other similar roadmaps"
+            "fontSize": "17"
           }
         ]
       }
@@ -3261,41 +2618,30 @@ export const FULLSTACK_SVG_DATASET: SvgElementItem[] = [
     "kind": "g",
     "dataNodeId": "2zqZkyVgigifcRS1H7F_b",
     "dataType": "button",
-    "dataTitle": null,
-    "dataParentId": null,
-    "dataParentTitle": null,
     "dataLink": "https://roadmap.sh",
     "children": [
       {
         "tag": "rect",
-        "x": "59.050559204750904",
-        "y": "-202.8155035777258",
-        "width": "327.3",
-        "height": "46.3",
-        "rx": "5",
+        "x": 59.050559204750904,
+        "y": -202.8155035777258,
+        "width": 327.3,
+        "height": 46.3,
+        "rx": 5,
         "fill": "#e3e3e3",
         "stroke": "#e3e3e3",
-        "strokeWidth": "2.7",
-        "style": null
+        "strokeWidth": "2.7"
       },
       {
         "tag": "text",
-        "x": "222.7005592047509",
-        "y": "-177.51550357772578",
+        "x": 222.7005592047509,
+        "y": -177.51550357772578,
+        "r": "middle",
+        "fill": "#000000",
         "textAnchor": "middle",
         "dominantBaseline": "middle",
         "fontSize": "17",
-        "fill": "#000000",
-        "text": "",
         "tspans": [
           {
-            "x": null,
-            "y": null,
-            "dy": null,
-            "textAnchor": null,
-            "dominantBaseline": null,
-            "fontSize": null,
-            "fill": null,
             "text": "roadmap.sh"
           }
         ]

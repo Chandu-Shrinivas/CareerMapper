@@ -5,11 +5,13 @@ import { POSTGRESQL_DBA_SVG_DATASET, POSTGRESQL_DBA_SVG_VIEWBOX } from '../../da
 interface SvgRoadmapWrapperProps {
   onNodeStatusChange?: () => void;
   onSelectNode?: (nodeId: string) => void;
+  selectedNodeId?: string | null;
 }
 
 export const PostgreSqlDbaSvgRoadmap: React.FC<SvgRoadmapWrapperProps> = ({
   onNodeStatusChange,
-  onSelectNode
+  onSelectNode,
+  selectedNodeId
 }) => {
   return (
     <GenericSvgRoadmap
@@ -19,6 +21,8 @@ export const PostgreSqlDbaSvgRoadmap: React.FC<SvgRoadmapWrapperProps> = ({
       dataset={POSTGRESQL_DBA_SVG_DATASET}
       onNodeStatusChange={onNodeStatusChange}
       onSelectNode={onSelectNode}
+    
+      selectedNodeId={selectedNodeId}
     />
   );
 };

@@ -1,0 +1,77 @@
+{
+  "model_name": "ECE Role Classifier (TF-IDF + LinearSVC)",
+  "dataset_name": "CareerMapper Frozen ECE Master Dataset (ece_master.csv)",
+  "created_timestamp": "2026-09-22T16:42:40Z",
+  "random_seed": 42,
+  "total_records": 5663,
+  "train_records": 3964,
+  "val_records": 849,
+  "test_records": 850,
+  "classes": [
+    "Embedded Systems Engineer",
+    "IoT Engineer",
+    "PCB Design Engineer",
+    "Signal Processing Engineer",
+    "VLSI Design Engineer"
+  ],
+  "vectorizer_config": {
+    "ngram_range": [
+      1,
+      2
+    ],
+    "sublinear_tf": true,
+    "min_df": 2,
+    "max_features": 30000,
+    "token_pattern": "(?u)\\b[a-zA-Z0-9_\\+\\#\\.\\-]+\\b"
+  },
+  "classifier_config": {
+    "classifier": "LinearSVC",
+    "C": 1.0,
+    "class_weight": "balanced",
+    "random_state": 42
+  },
+  "test_metrics": {
+    "accuracy": 0.9459,
+    "macro_f1": 0.9189,
+    "weighted_f1": 0.9456,
+    "precision_macro": 0.9211,
+    "recall_macro": 0.9176
+  },
+  "per_class_metrics": [
+    {
+      "role": "Embedded Systems Engineer",
+      "precision": 0.9471,
+      "recall": 0.9685,
+      "f1_score": 0.9577,
+      "support": 222
+    },
+    {
+      "role": "IoT Engineer",
+      "precision": 0.9699,
+      "recall": 0.9641,
+      "f1_score": 0.967,
+      "support": 334
+    },
+    {
+      "role": "PCB Design Engineer",
+      "precision": 0.8667,
+      "recall": 0.7959,
+      "f1_score": 0.8298,
+      "support": 49
+    },
+    {
+      "role": "Signal Processing Engineer",
+      "precision": 0.8864,
+      "recall": 0.9286,
+      "f1_score": 0.907,
+      "support": 42
+    },
+    {
+      "role": "VLSI Design Engineer",
+      "precision": 0.9356,
+      "recall": 0.931,
+      "f1_score": 0.9333,
+      "support": 203
+    }
+  ]
+}

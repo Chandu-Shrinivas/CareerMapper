@@ -24,13 +24,21 @@ export default function SkillsInventory() {
   const [verError, setVerError] = useState<string | null>(null);
 
   useEffect(() => {
-    const rawDraft = localStorage.getItem(DRAFT_KEY);
-    if (rawDraft) {
-      try {
-        const parsed = JSON.parse(rawDraft);
-        setSkills(parsed.skills || []);
-      } catch (e) {}
-    }
+    const loadSkillsFromStorage = () => {
+      const rawDraft = localStorage.getItem(DRAFT_KEY) || localStorage.getItem('careerProfile');
+      if (rawDraft) {
+        try {
+          const parsed = JSON.parse(rawDraft);
+          setSkills(parsed.skills || []);
+        } catch (e) {}
+      }
+    };
+
+    loadSkillsFromStorage();
+
+    window.addEventListener('cm_skills_updated', loadSkillsFromStorage);
+    window.addEventListener('careerProfileUpdated', loadSkillsFromStorage);
+    window.addEventListener('storage', loadSkillsFromStorage);
 
     const fetchRoadmap = async () => {
       try {
@@ -45,6 +53,12 @@ export default function SkillsInventory() {
       }
     };
     fetchRoadmap();
+
+    return () => {
+      window.removeEventListener('cm_skills_updated', loadSkillsFromStorage);
+      window.removeEventListener('careerProfileUpdated', loadSkillsFromStorage);
+      window.removeEventListener('storage', loadSkillsFromStorage);
+    };
   }, []);
 
   useEffect(() => {

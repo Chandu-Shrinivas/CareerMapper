@@ -1,10 +1,11 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Search, Compass, Briefcase } from 'lucide-react';
+import { Search, Compass, Briefcase, MapPin } from 'lucide-react';
 import { Button } from '../components/ui/button';
 import { Card, CardHeader, CardContent } from '../components/ui/card';
 import { Badge } from '../components/ui/badge';
 import { Input } from '../components/ui/input';
+import { getCanonicalRoleName, getRoleRoadmap, hasRoleRoadmap } from '../utils/roleResolver';
 
 const careerPaths = [
   { title: 'Frontend Developer', domain: 'IT', desc: 'Builds and maintains user-facing web layouts.' },
@@ -82,39 +83,53 @@ export default function CareerPaths() {
 
       {filteredPaths.length > 0 ? (
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          {filteredPaths.map((path) => (
-            <Card key={path.title} className="bg-zinc-900/20 border-zinc-900 shadow-soft flex flex-col justify-between rounded-lg">
-              <CardHeader className="p-5 pb-2 flex flex-row items-start justify-between space-y-0 gap-3">
-                <div className="space-y-1">
-                  <h3 className="text-sm font-bold text-white tracking-tight">{path.title}</h3>
-                  <Badge variant="outline" className="text-[9px] uppercase font-bold border-zinc-800 bg-zinc-900/40 text-zinc-400">
-                    {path.domain}
-                  </Badge>
-                </div>
-                <Compass className="size-4 text-zinc-500 shrink-0 mt-0.5" />
-              </CardHeader>
-              <CardContent className="p-5 pt-0 space-y-4">
-                <p className="text-xs text-zinc-400 leading-relaxed min-h-[32px]">{path.desc}</p>
-                <div className="flex items-center gap-2 w-full">
-                  <Button 
-                    onClick={() => handleExplore(path.title)}
-                    className="flex-1 h-8 bg-zinc-900 hover:bg-zinc-800 hover:text-white text-zinc-300 font-bold text-xs rounded border border-zinc-800 transition-colors"
-                  >
-                    <Compass className="mr-1.5 size-3.5" />
-                    Explore
-                  </Button>
-                  <Button 
-                    onClick={() => handleViewJobs(path.title)}
-                    variant="outline"
-                    className="flex-1 h-8 border-zinc-800 hover:bg-zinc-800 text-zinc-300 hover:text-white font-bold text-xs rounded transition-colors cursor-pointer"
-                  >
-                    <Briefcase className="mr-1.5 size-3.5 text-zinc-400" />
-                    View Jobs →
-                  </Button>
-                </div>
-              </CardContent>
-            </Card>
-          ))}
+          {filteredPaths.map((path) => {
+            const canonicalName = getCanonicalRoleName(path.title);
+            const roadmapMatch = getRoleRoadmap(path.title);
+
+            return (
+              <Card key={path.title} className="bg-zinc-900/20 border-zinc-900 shadow-soft flex flex-col justify-between rounded-lg">
+                <CardHeader className="p-5 pb-2 flex flex-row items-start justify-between space-y-0 gap-3">
+                  <div className="space-y-1">
+                    <h3 className="text-sm font-bold text-white tracking-tight">{canonicalName}</h3>
+                    <Badge variant="outline" className="text-[9px] uppercase font-bold border-zinc-800 bg-zinc-900/40 text-zinc-400">
+                      {path.domain}
+                    </Badge>
+                  </div>
+                  <Compass className="size-4 text-zinc-500 shrink-0 mt-0.5" />
+                </CardHeader>
+                <CardContent className="p-5 pt-0 space-y-4">
+                  <p className="text-xs text-zinc-400 leading-relaxed min-h-[32px]">{path.desc}</p>
+                  <div className="flex flex-wrap items-center gap-2 w-full">
+                    <Button 
+                      onClick={() => handleExplore(path.title)}
+                      className="flex-1 h-8 bg-zinc-900 hover:bg-zinc-800 hover:text-white text-zinc-300 font-bold text-xs rounded border border-zinc-800 transition-colors"
+                    >
+                      <Compass className="mr-1.5 size-3.5" />
+                      Explore
+                    </Button>
+                    <Button 
+                      onClick={() => handleViewJobs(path.title)}
+                      variant="outline"
+                      className="flex-1 h-8 border-zinc-800 hover:bg-zinc-800 text-zinc-300 hover:text-white font-bold text-xs rounded transition-colors cursor-pointer"
+                    >
+                      <Briefcase className="mr-1.5 size-3.5 text-zinc-400" />
+                      Jobs
+                    </Button>
+                    {roadmapMatch && (
+                      <Button 
+                        onClick={() => navigate(roadmapMatch.route)}
+                        className="w-full sm:w-auto h-8 bg-emerald-500 hover:bg-emerald-400 text-zinc-950 font-bold text-xs rounded transition-colors cursor-pointer flex items-center justify-center gap-1 px-3 shadow"
+                      >
+                        <MapPin className="size-3" />
+                        Prepare with Roadmap →
+                      </Button>
+                    )}
+                  </div>
+                </CardContent>
+              </Card>
+            );
+          })}
         </div>
       ) : (
         <div className="text-center py-20 bg-zinc-900/10 border border-zinc-900 rounded-lg">

@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { toast } from 'sonner';
 import { type SvgElementItem, type SvgChildElement, type SvgNodeGroup } from '../../data/frontendSvgData';
+import { FRONTEND_SEMANTIC_NODES } from '../../data/frontendSemanticModel';
 import { RoadmapProgressStore, type NodeStatus } from '../../services/RoadmapProgressStore';
 import { getNavigationConfig } from '../../utils/roadmapNavigation';
 import { NodeStatusMenu } from './NodeStatusMenu';
@@ -14,6 +15,7 @@ interface GenericSvgRoadmapProps {
   dataset: SvgElementItem[];
   className?: string;
   onNodeStatusChange?: () => void;
+  onSelectNode?: (nodeId: string) => void;
   selectedNodeId?: string | null;
 }
 
@@ -24,6 +26,7 @@ export const GenericSvgRoadmap: React.FC<GenericSvgRoadmapProps> = ({
   dataset,
   className,
   onNodeStatusChange,
+  onSelectNode,
   selectedNodeId
 }) => {
   const navigate = useNavigate();
@@ -51,7 +54,7 @@ export const GenericSvgRoadmap: React.FC<GenericSvgRoadmapProps> = ({
   // Sync drawer when selectedNodeId changes from parent header
   useEffect(() => {
     if (!selectedNodeId) return;
-    const target = dataset.find(item => item.kind === 'g' && item.dataNodeId === selectedNodeId);
+    const target = dataset.find(item => item.kind === 'g' && (item as SvgNodeGroup).dataNodeId === selectedNodeId) as SvgNodeGroup | undefined;
     if (target && target.dataNodeId) {
       const nodeTitle = target.dataTitle || extractTextFromChildren(target.children) || 'Roadmap Topic';
       setSelectedDrawerNode({
@@ -65,14 +68,29 @@ export const GenericSvgRoadmap: React.FC<GenericSvgRoadmapProps> = ({
     }
   }, [selectedNodeId, dataset, nodeStatuses]);
 
-  // Sync to localStorage
+  // Sync to localStorage / custom progress change events
   useEffect(() => {
-    const handleStorageChange = () => {
-      setNodeStatuses(RoadmapProgressStore.getStatuses(roadmapId));
-      onNodeStatusChange?.();
+    const handleProgressChange = (e: Event) => {
+      const customEvent = e as CustomEvent;
+      if (!customEvent.detail || !customEvent.detail.roadmapId || customEvent.detail.roadmapId === roadmapId) {
+        const newStatuses = RoadmapProgressStore.getStatuses(roadmapId);
+        setNodeStatuses(newStatuses);
+        setSelectedDrawerNode(prev => {
+          if (!prev) return null;
+          return {
+            ...prev,
+            status: newStatuses[prev.id] || 'default'
+          };
+        });
+        onNodeStatusChange?.();
+      }
     };
-    window.addEventListener('storage', handleStorageChange);
-    return () => window.removeEventListener('storage', handleStorageChange);
+    window.addEventListener('cm_roadmap_progress_changed', handleProgressChange);
+    window.addEventListener('storage', handleProgressChange);
+    return () => {
+      window.removeEventListener('cm_roadmap_progress_changed', handleProgressChange);
+      window.removeEventListener('storage', handleProgressChange);
+    };
   }, [roadmapId, onNodeStatusChange]);
 
   // Recalculate menu position dynamically on scroll / resize / container changes
@@ -114,18 +132,20 @@ export const GenericSvgRoadmap: React.FC<GenericSvgRoadmapProps> = ({
   }, [hoveredNodeId]);
 
   const isRoadmapShGroup = (node: SvgNodeGroup): boolean => {
-    if (node.dataLink && node.dataLink.toLowerCase().includes('roadmap.sh')) return true;
-    if (node.dataNodeId === 'ktU7bNX3hu-_hTFE1CjrM' || node.dataNodeId === '2zqZkyVgigifcRS1H7F_b' || node.dataNodeId === 'yHmHXymPNWwu8p1vvqD3o') return true;
+    if (node.dataNodeId && FRONTEND_SEMANTIC_NODES[node.dataNodeId]?.kind === 'external') {
+      return true;
+    }
+    if (node.dataNodeId === 'VtqrDBk_y5m5UsknaxVv-' || node.dataNodeId === 'ktU7bNX3hu-_hTFE1CjrM' || node.dataNodeId === '2zqZkyVgigifcRS1H7F_b' || node.dataNodeId === 'yHmHXymPNWwu8p1vvqD3o') return true;
 
     if (node.children) {
       for (const child of node.children) {
         if (child.tag === 'text') {
-          if (child.text && (child.text.toLowerCase().includes('roadmap.sh') || child.text.toLowerCase().includes('find the detailed version of this roadmap'))) {
+          if (child.text && child.text.toLowerCase().includes('find the detailed version of this roadmap')) {
             return true;
           }
           if (child.tspans) {
             for (const ts of child.tspans) {
-              if (ts.text && (ts.text.toLowerCase().includes('roadmap.sh') || ts.text.toLowerCase().includes('find the detailed version of this roadmap'))) {
+              if (ts.text && ts.text.toLowerCase().includes('find the detailed version of this roadmap')) {
                 return true;
               }
             }
@@ -146,13 +166,14 @@ export const GenericSvgRoadmap: React.FC<GenericSvgRoadmapProps> = ({
 
   const handleStatusChange = (nodeId: string, status: 'learning' | 'done' | 'skipped' | 'default', e?: React.MouseEvent) => {
     if (e) e.stopPropagation();
-    const { nextStatus, allStatuses } = RoadmapProgressStore.toggleStatus(roadmapId, nodeId, status as any);
+    const { nextStatus, allStatuses } = RoadmapProgressStore.toggleStatus(roadmapId, nodeId, status as any, dataset);
     setNodeStatuses({ ...allStatuses });
     onNodeStatusChange?.();
 
     // Update open drawer if currently selected
-    if (selectedDrawerNode && selectedDrawerNode.id === nodeId) {
-      setSelectedDrawerNode(prev => prev ? { ...prev, status: nextStatus } : null);
+    if (selectedDrawerNode) {
+      const currentDrawerStatus = allStatuses[selectedDrawerNode.id] || 'default';
+      setSelectedDrawerNode(prev => prev ? { ...prev, status: currentDrawerStatus } : null);
     }
   };
 
@@ -224,6 +245,7 @@ export const GenericSvgRoadmap: React.FC<GenericSvgRoadmapProps> = ({
 
     // 2. Learning Node handling -> Open Detail Drawer
     if (isLearningNode(node) && node.dataNodeId) {
+      onSelectNode?.(node.dataNodeId);
       const status = nodeStatuses[node.dataNodeId] || 'default';
       const nodeTitle = node.dataTitle || extractTextFromChildren(node.children) || 'Roadmap Topic';
       setSelectedDrawerNode({
@@ -355,7 +377,9 @@ export const GenericSvgRoadmap: React.FC<GenericSvgRoadmapProps> = ({
           </text>
         );
       }
-      case 'line':
+      case 'line': {
+        const styleObj = parseStyleString(child.style ?? undefined);
+        const lineDash = (styleObj.strokeDasharray === '0' || styleObj.strokeDasharray === 'none') ? undefined : (styleObj.strokeDasharray || '0.8 8');
         return (
           <line
             key={index}
@@ -367,11 +391,12 @@ export const GenericSvgRoadmap: React.FC<GenericSvgRoadmapProps> = ({
               strokeLinecap: 'round',
               strokeWidth: '3.5px',
               stroke: '#2B78E4',
-              strokeDasharray: '0.8 8',
-              ...parseStyleString(child.style ?? undefined)
+              ...styleObj,
+              strokeDasharray: lineDash
             }}
           />
         );
+      }
       case 'circle':
         return (
           <circle
@@ -520,6 +545,7 @@ export const GenericSvgRoadmap: React.FC<GenericSvgRoadmapProps> = ({
         >
           {dataset.map((elem: SvgElementItem, idx: number) => {
             if (elem.kind === 'path') {
+              const dasharray = (!elem.strokeDasharray || elem.strokeDasharray === '0' || elem.strokeDasharray === 'none') ? undefined : elem.strokeDasharray;
               return (
                 <path
                   key={`edge-${idx}`}
@@ -530,7 +556,7 @@ export const GenericSvgRoadmap: React.FC<GenericSvgRoadmapProps> = ({
                   data-edge-id={elem.dataEdgeId}
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                  strokeDasharray={elem.strokeDasharray || '0'}
+                  strokeDasharray={dasharray}
                 />
               );
             }

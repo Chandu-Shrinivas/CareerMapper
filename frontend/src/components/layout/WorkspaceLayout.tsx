@@ -26,6 +26,7 @@ import {
   SidebarInset
 } from '../ui/sidebar';
 import { authService } from '../../services/auth';
+import { Logo } from '../brand/Logo';
 import { AIAssistant } from '../AIAssistant';
 
 const DRAFT_KEY = 'cm_profile_draft';
@@ -125,18 +126,13 @@ export default function WorkspaceLayout({ children }: { children: React.ReactNod
         <div className="min-h-screen bg-zinc-950 text-zinc-50 flex w-full">
           {/* Collapsible Sidebar */}
           <Sidebar className="border-r border-zinc-900 bg-zinc-950" collapsible="icon">
-            <SidebarHeader className="h-14 flex items-center justify-between px-4 border-b border-zinc-900/60 bg-zinc-950 shrink-0 group-data-[collapsible=icon]:px-2 group-data-[collapsible=icon]:justify-center">
-              <div className="flex items-center gap-2 group-data-[collapsible=icon]:hidden">
-                <span className="size-6 rounded-lg bg-emerald-500 flex items-center justify-center text-[10px] font-black text-zinc-950">
-                  CM
-                </span>
-                <span className="font-display font-black text-sm tracking-widest text-white uppercase select-none">
-                  CareerMapper
-                </span>
+            <SidebarHeader className="h-16 flex items-center justify-between px-4 border-b border-zinc-900/60 bg-zinc-950 shrink-0 overflow-hidden group-data-[collapsible=icon]:px-2 group-data-[collapsible=icon]:justify-center">
+              <div className="flex items-center group-data-[collapsible=icon]:hidden overflow-hidden max-h-full">
+                <Logo size="md" textClassName="text-sm font-bold text-white tracking-wider" />
               </div>
-              <span className="size-7 rounded-lg bg-emerald-500 hidden group-data-[collapsible=icon]:flex items-center justify-center text-xs font-black text-zinc-950 select-none mx-auto">
-                CM
-              </span>
+              <div className="hidden group-data-[collapsible=icon]:flex items-center justify-center mx-auto overflow-hidden max-h-full">
+                <Logo variant="mark" size={28} />
+              </div>
             </SidebarHeader>
             
             <SidebarContent className="bg-zinc-950 px-2 py-3 space-y-4 custom-scrollbar">

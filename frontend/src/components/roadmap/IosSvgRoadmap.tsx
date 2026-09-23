@@ -4,14 +4,14 @@ import { IOS_SVG_DATASET, IOS_SVG_VIEWBOX } from '../../data/iosSvgData';
 
 interface SvgRoadmapWrapperProps {
   onNodeStatusChange?: () => void;
-  selectedNodeId?: string | null;
   onSelectNode?: (nodeId: string) => void;
+  selectedNodeId?: string | null;
 }
 
 export const IosSvgRoadmap: React.FC<SvgRoadmapWrapperProps> = ({
   onNodeStatusChange,
-  selectedNodeId,
-  onSelectNode
+  onSelectNode,
+  selectedNodeId
 }) => {
   return (
     <GenericSvgRoadmap
@@ -22,6 +22,7 @@ export const IosSvgRoadmap: React.FC<SvgRoadmapWrapperProps> = ({
       onNodeStatusChange={onNodeStatusChange}
       selectedNodeId={selectedNodeId}
       onSelectNode={onSelectNode}
+    
     />
   );
 };

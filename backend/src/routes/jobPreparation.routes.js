@@ -3,20 +3,29 @@ import {
   prepareJob,
   getJobPreparations,
   getJobPreparationById,
-  togglePreparationTask,
+  togglePreparationNode,
+  recalculateReadiness,
+  reanalyzeJob,
   getJobInterviewPrep,
-  startInterviewSimulation,
-  respondToInterviewSimulation
+  startInterviewSimulation
 } from '../controllers/jobPreparation.controller.js';
 
 const router = express.Router();
 
-router.post('/jobs/:jobId/prepare', prepareJob);
-router.get('/job-preparations', getJobPreparations);
-router.get('/job-preparations/:id', getJobPreparationById);
-router.post('/job-preparations/:id/tasks/:taskId/toggle', togglePreparationTask);
-router.get('/job-preparations/:id/interview-prep', getJobInterviewPrep);
-router.post('/job-preparations/:id/interview-simulation/start', startInterviewSimulation);
-router.post('/interview-simulation/:sessionId/respond', respondToInterviewSimulation);
+router.post('/prepare/:jobId', prepareJob);
+router.post('/create', prepareJob);
+router.post('/generate', prepareJob);
+router.get('/', getJobPreparations);
+router.get('/:id', getJobPreparationById);
+router.patch('/:id/node-status', togglePreparationNode);
+router.post('/:id/node-status', togglePreparationNode);
+router.post('/:id/tasks/:taskId/toggle', (req, res, next) => {
+  req.body.nodeId = req.params.taskId;
+  return togglePreparationNode(req, res, next);
+});
+router.post('/:id/recalculate', recalculateReadiness);
+router.post('/:id/reanalyze', reanalyzeJob);
+router.get('/:id/interview-prep', getJobInterviewPrep);
+router.post('/:id/interview-simulation', startInterviewSimulation);
 
 export default router;

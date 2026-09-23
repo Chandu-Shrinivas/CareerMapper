@@ -1,0 +1,253 @@
+{
+  "model_name": "ECE Role Classifier v1 (TF-IDF + LinearSVC)",
+  "evaluation_timestamp": "2026-09-22T17:24:34Z",
+  "total_test_cases": 208,
+  "standard_ece_cases": 172,
+  "standard_ece_accuracy": 0.9419,
+  "standard_ece_macro_f1": 0.9428,
+  "repeatability_test": "PASS",
+  "data_leakage_check": "PASS (0 overlapping master records)",
+  "inference_latency_ms_per_record": 0.011,
+  "category_performance": [
+    {
+      "category": "A. Role-Clear Cases",
+      "total_cases": 30,
+      "correct_cases": 30,
+      "accuracy_pct": 100.0,
+      "avg_margin": 0.4992
+    },
+    {
+      "category": "AA. Career-Switch Cases",
+      "total_cases": 1,
+      "correct_cases": 1,
+      "accuracy_pct": 100.0,
+      "avg_margin": 0.3465
+    },
+    {
+      "category": "AB. Multiple Job Experience Cases",
+      "total_cases": 1,
+      "correct_cases": 0,
+      "accuracy_pct": 0.0,
+      "avg_margin": 0.5721
+    },
+    {
+      "category": "AD. Repetition Test",
+      "total_cases": 1,
+      "correct_cases": 1,
+      "accuracy_pct": 100.0,
+      "avg_margin": 0.945
+    },
+    {
+      "category": "AE. Conflicting Signal Test",
+      "total_cases": 2,
+      "correct_cases": 2,
+      "accuracy_pct": 100.0,
+      "avg_margin": 0.6392
+    },
+    {
+      "category": "B. Title Variations",
+      "total_cases": 25,
+      "correct_cases": 19,
+      "accuracy_pct": 76.0,
+      "avg_margin": 0.2414
+    },
+    {
+      "category": "C. Experience-Based Resume Text",
+      "total_cases": 10,
+      "correct_cases": 8,
+      "accuracy_pct": 80.0,
+      "avg_margin": 0.3837
+    },
+    {
+      "category": "D. Job Description Formats",
+      "total_cases": 5,
+      "correct_cases": 5,
+      "accuracy_pct": 100.0,
+      "avg_margin": 0.4706
+    },
+    {
+      "category": "E. Resume Formats",
+      "total_cases": 5,
+      "correct_cases": 5,
+      "accuracy_pct": 100.0,
+      "avg_margin": 0.4752
+    },
+    {
+      "category": "F. Technical Stack Combinations",
+      "total_cases": 10,
+      "correct_cases": 10,
+      "accuracy_pct": 100.0,
+      "avg_margin": 0.4965
+    },
+    {
+      "category": "G. Skill Synonyms & Abbreviations",
+      "total_cases": 5,
+      "correct_cases": 5,
+      "accuracy_pct": 100.0,
+      "avg_margin": 0.2867
+    },
+    {
+      "category": "H. Unseen Technology Test",
+      "total_cases": 5,
+      "correct_cases": 5,
+      "accuracy_pct": 100.0,
+      "avg_margin": 0.3361
+    },
+    {
+      "category": "I. Seniority Variation",
+      "total_cases": 22,
+      "correct_cases": 22,
+      "accuracy_pct": 100.0,
+      "avg_margin": 0.7547
+    },
+    {
+      "category": "J. Industry Variation",
+      "total_cases": 20,
+      "correct_cases": 20,
+      "accuracy_pct": 100.0,
+      "avg_margin": 0.64
+    },
+    {
+      "category": "K. Application-Domain Variation",
+      "total_cases": 5,
+      "correct_cases": 5,
+      "accuracy_pct": 100.0,
+      "avg_margin": 0.5744
+    },
+    {
+      "category": "L. Cross-Role Hybrid Cases",
+      "total_cases": 5,
+      "correct_cases": 4,
+      "accuracy_pct": 80.0,
+      "avg_margin": 0.593
+    },
+    {
+      "category": "M. Multi-Disciplinary Cases",
+      "total_cases": 3,
+      "correct_cases": 3,
+      "accuracy_pct": 100.0,
+      "avg_margin": 0.2932
+    },
+    {
+      "category": "N. Misleading Keyword Cases",
+      "total_cases": 5,
+      "correct_cases": 0,
+      "accuracy_pct": 0.0,
+      "avg_margin": 0.3268
+    },
+    {
+      "category": "O. Generic Hardware Cases",
+      "total_cases": 3,
+      "correct_cases": 0,
+      "accuracy_pct": 0.0,
+      "avg_margin": 0.153
+    },
+    {
+      "category": "P. Generic Software Cases",
+      "total_cases": 5,
+      "correct_cases": 0,
+      "accuracy_pct": 0.0,
+      "avg_margin": 0.1013
+    },
+    {
+      "category": "Q. Other-Domain Cases",
+      "total_cases": 8,
+      "correct_cases": 0,
+      "accuracy_pct": 0.0,
+      "avg_margin": 0.0768
+    },
+    {
+      "category": "R. Out-of-Domain Non-Technical Cases",
+      "total_cases": 5,
+      "correct_cases": 0,
+      "accuracy_pct": 0.0,
+      "avg_margin": 0.1526
+    },
+    {
+      "category": "S. Empty / Minimal Input",
+      "total_cases": 7,
+      "correct_cases": 0,
+      "accuracy_pct": 0.0,
+      "avg_margin": 0.0676
+    },
+    {
+      "category": "T. Very Short Technical Input",
+      "total_cases": 5,
+      "correct_cases": 5,
+      "accuracy_pct": 100.0,
+      "avg_margin": 0.596
+    },
+    {
+      "category": "U. Very Long Input",
+      "total_cases": 2,
+      "correct_cases": 2,
+      "accuracy_pct": 100.0,
+      "avg_margin": 0.8252
+    },
+    {
+      "category": "V. Noisy Text",
+      "total_cases": 4,
+      "correct_cases": 4,
+      "accuracy_pct": 100.0,
+      "avg_margin": 0.609
+    },
+    {
+      "category": "X. Negation Tests",
+      "total_cases": 3,
+      "correct_cases": 0,
+      "accuracy_pct": 0.0,
+      "avg_margin": 0.4412
+    },
+    {
+      "category": "Y. Skill-List Noise",
+      "total_cases": 3,
+      "correct_cases": 3,
+      "accuracy_pct": 100.0,
+      "avg_margin": 0.2527
+    },
+    {
+      "category": "Z. Project-Based Cases",
+      "total_cases": 3,
+      "correct_cases": 3,
+      "accuracy_pct": 100.0,
+      "avg_margin": 0.3259
+    }
+  ],
+  "per_role_metrics": [
+    {
+      "role": "Embedded Systems Engineer",
+      "precision": 0.8475,
+      "recall": 1.0,
+      "f1_score": 0.9174,
+      "support": 50
+    },
+    {
+      "role": "IoT Engineer",
+      "precision": 0.9545,
+      "recall": 0.8077,
+      "f1_score": 0.875,
+      "support": 26
+    },
+    {
+      "role": "PCB Design Engineer",
+      "precision": 1.0,
+      "recall": 0.9211,
+      "f1_score": 0.9589,
+      "support": 38
+    },
+    {
+      "role": "Signal Processing Engineer",
+      "precision": 1.0,
+      "recall": 0.9545,
+      "f1_score": 0.9767,
+      "support": 22
+    },
+    {
+      "role": "VLSI Design Engineer",
+      "precision": 1.0,
+      "recall": 0.9722,
+      "f1_score": 0.9859,
+      "support": 36
+    }
+  ]
+}

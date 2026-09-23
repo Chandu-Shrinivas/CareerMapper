@@ -34,8 +34,11 @@ def run_production_preprocessing():
 
     # 1. Resolve robust file paths
     script_dir = os.path.dirname(os.path.abspath(__file__))
-    raw_dataset_path = os.path.join(script_dir, '../datasets/raw/clean_it_roles_dataset_no_leakage.csv')
-    cleaned_output_path = os.path.join(script_dir, '../datasets/cleaned/clean_it_roles_dataset_preprocessed.csv')
+    multi_domain_path = os.path.join(script_dir, '../datasets/raw/multi_domain_career_roles_dataset.csv')
+    it_raw_path = os.path.join(script_dir, '../datasets/raw/clean_it_roles_dataset_no_leakage.csv')
+    
+    raw_dataset_path = multi_domain_path if os.path.exists(multi_domain_path) else it_raw_path
+    cleaned_output_path = os.path.join(script_dir, '../datasets/cleaned/clean_roles_dataset_preprocessed.csv')
     vectorizer_output_path = os.path.join(script_dir, '../models/role_classifier_vectorizer.joblib')
     
     final_xtrain_path = os.path.join(script_dir, '../datasets/final/X_train_tfidf.joblib')

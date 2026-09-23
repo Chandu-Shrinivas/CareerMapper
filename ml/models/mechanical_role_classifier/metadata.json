@@ -1,0 +1,123 @@
+{
+  "model_name": "Mechanical Role Classifier v1",
+  "model_version": "1.0.0",
+  "domain": "Mechanical",
+  "dataset_name": "mechanical_master.csv",
+  "total_records": 10706,
+  "split_sizes": {
+    "train": 7494,
+    "validation": 1606,
+    "test": 1606
+  },
+  "random_seed": 42,
+  "vectorizer_config": {
+    "ngram_range": [
+      1,
+      2
+    ],
+    "sublinear_tf": true,
+    "max_features": 50000
+  },
+  "classifier_config": {
+    "type": "LinearSVC",
+    "C": 0.5,
+    "class_weight": "balanced"
+  },
+  "validation_metrics": {
+    "accuracy": 0.9220270827425608,
+    "val_results": [
+      {
+        "Configuration": "TF-IDF (1,2) + LinearSVC (C=0.5)",
+        "Val Accuracy": 0.937733499377335,
+        "Val Macro F1": 0.9220270827425608,
+        "Val Weighted F1": 0.9382475780256007,
+        "Val Macro Precision": 0.9207663419366773,
+        "Val Macro Recall": 0.9236896598614969
+      },
+      {
+        "Configuration": "TF-IDF (1,2) + LinearSVC (C=1.0)",
+        "Val Accuracy": 0.9364881693648817,
+        "Val Macro F1": 0.9198742956017527,
+        "Val Weighted F1": 0.9368739500006406,
+        "Val Macro Precision": 0.9206040671643645,
+        "Val Macro Recall": 0.9195023696394754
+      },
+      {
+        "Configuration": "TF-IDF (1,2) + LinearSVC (C=2.0)",
+        "Val Accuracy": 0.9383561643835616,
+        "Val Macro F1": 0.9215512347878605,
+        "Val Weighted F1": 0.9385658383018692,
+        "Val Macro Precision": 0.92356067979432,
+        "Val Macro Recall": 0.9197764621287631
+      },
+      {
+        "Configuration": "TF-IDF (1,3) + LinearSVC (C=1.0)",
+        "Val Accuracy": 0.9364881693648817,
+        "Val Macro F1": 0.9193022452004943,
+        "Val Weighted F1": 0.9370130248444,
+        "Val Macro Precision": 0.9165965512844094,
+        "Val Macro Recall": 0.9223635773578481
+      },
+      {
+        "Configuration": "TF-IDF (1,2) + LogisticRegression (C=1.0)",
+        "Val Accuracy": 0.9153175591531756,
+        "Val Macro F1": 0.8975785667638594,
+        "Val Weighted F1": 0.9171385512004421,
+        "Val Macro Precision": 0.8892080792376295,
+        "Val Macro Recall": 0.9082771545442885
+      }
+    ]
+  },
+  "test_metrics": {
+    "accuracy": 0.9333748443337484,
+    "macro_precision": 0.9137460498562208,
+    "macro_recall": 0.9193774625634467,
+    "macro_f1": 0.9162646710613386,
+    "weighted_f1": 0.9339364246170753,
+    "per_role": [
+      {
+        "Role": "CAD Design Engineer",
+        "Precision": 0.918918918918919,
+        "Recall": 0.8947368421052632,
+        "F1-Score": 0.9066666666666666,
+        "Support": 76
+      },
+      {
+        "Role": "FEA/CFD Analyst",
+        "Precision": 0.8532608695652174,
+        "Recall": 0.9022988505747126,
+        "F1-Score": 0.8770949720670391,
+        "Support": 174
+      },
+      {
+        "Role": "HVAC Engineer",
+        "Precision": 0.9739696312364425,
+        "Recall": 0.9635193133047211,
+        "F1-Score": 0.9687162891046386,
+        "Support": 466
+      },
+      {
+        "Role": "Manufacturing Engineer",
+        "Precision": 0.9678510998307953,
+        "Recall": 0.942339373970346,
+        "F1-Score": 0.9549248747913188,
+        "Support": 607
+      },
+      {
+        "Role": "Product Design Engineer",
+        "Precision": 0.8547297297297297,
+        "Recall": 0.8939929328621908,
+        "F1-Score": 0.8739205526770294,
+        "Support": 283
+      }
+    ]
+  },
+  "class_labels": [
+    "CAD Design Engineer",
+    "FEA/CFD Analyst",
+    "HVAC Engineer",
+    "Manufacturing Engineer",
+    "Product Design Engineer"
+  ],
+  "training_date": "2026-09-22"
+}

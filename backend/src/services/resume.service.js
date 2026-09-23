@@ -3,12 +3,17 @@ const require = createRequire(import.meta.url);
 const { PDFParse } = require('pdf-parse');
 import { readJsonFile } from '../utils/fileUtils.js';
 import { detectLevel } from '../utils/levelDetector.js';
-
 export const extractSkillsFromResume = async (fileBuffer) => {
   // STEP 1 — Extract text
-  const parser = new PDFParse({ data: fileBuffer });
-  const data = await parser.getText();
-  const text = data.text.toLowerCase().replace(/\s+/g, ' ');
+  let rawText = '';
+  try {
+    const parser = new PDFParse({ data: fileBuffer });
+    const data = await parser.getText();
+    rawText = data.text || '';
+  } catch (err) {
+    rawText = fileBuffer.toString('utf-8');
+  }
+  const text = rawText.toLowerCase().replace(/\s+/g, ' ');
 
   // STEP 2 — Load skill dictionary
   const domainsData = readJsonFile('data/domains.json');

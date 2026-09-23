@@ -1,4 +1,7 @@
 import type { RoadmapDefinition, RoadmapNode, NodeStatus } from '../types/roadmap';
+import { FRONTEND_SEMANTIC_NODES } from '../data/frontendSemanticModel';
+import { BACKEND_SEMANTIC_NODES } from '../data/backendSemanticModel';
+import { getSemanticNode } from './roadmapHierarchy';
 
 export interface SectionProgress {
   id: string;
@@ -35,11 +38,15 @@ export interface CalculatedRoadmapProgress {
   nextRecommendation: RecommendedTopic | null;
 }
 
-export function isEligibleLearningNode(node: {
-  id?: string;
-  type?: string;
-  statusEnabled?: boolean;
-}): boolean {
+export function isEligibleLearningNode(
+  node: { id?: string; type?: string; statusEnabled?: boolean },
+  roadmapId?: string
+): boolean {
+  if (!node.id) return false;
+  const semantic = getSemanticNode(node.id, roadmapId);
+  if (semantic) {
+    return semantic.progressEligible;
+  }
   if (node.statusEnabled === false) return false;
   if (node.type === 'main') return false;
   if (node.type === 'navigation' && node.statusEnabled !== true) return false;
@@ -52,14 +59,25 @@ export function calculateRoadmapProgress(
   lastUpdated: string | null = null,
   fallbackDatasetNodes?: { id: string; title: string; type?: string; statusEnabled?: boolean }[]
 ): CalculatedRoadmapProgress {
-  const roadmapId = roadmapDefinition?.id || 'unknown';
+  const roadmapId = roadmapDefinition?.id || 'frontend';
   
-  // 1. Gather trackable nodes
+  // 1. Gather trackable nodes from semantic model if frontend or backend
   let trackableNodes: RoadmapNode[] = [];
 
-  if (fallbackDatasetNodes && fallbackDatasetNodes.length > 0) {
+  const activeModel = roadmapId === 'backend' ? BACKEND_SEMANTIC_NODES : roadmapId === 'frontend' ? FRONTEND_SEMANTIC_NODES : null;
+
+  if (activeModel) {
+    // Collect all semantic nodes with progressEligible = true
+    const eligibleSemantic = Object.values(activeModel).filter(n => n.progressEligible);
+    trackableNodes = eligibleSemantic.map(n => ({
+      id: n.nodeId,
+      title: n.title,
+      type: 'subtopic',
+      statusEnabled: true
+    }));
+  } else if (fallbackDatasetNodes && fallbackDatasetNodes.length > 0) {
     trackableNodes = fallbackDatasetNodes
-      .filter(isEligibleLearningNode)
+      .filter(n => isEligibleLearningNode(n, roadmapId))
       .map(n => ({
         id: n.id,
         title: n.title,
@@ -67,9 +85,8 @@ export function calculateRoadmapProgress(
         statusEnabled: n.statusEnabled !== false
       }));
   } else if (roadmapDefinition && roadmapDefinition.nodes && roadmapDefinition.nodes.length > 0) {
-    trackableNodes = roadmapDefinition.nodes.filter(isEligibleLearningNode);
+    trackableNodes = roadmapDefinition.nodes.filter(n => isEligibleLearningNode(n, roadmapId));
   }
-
 
   const total = trackableNodes.length;
   let done = 0;
@@ -79,11 +96,8 @@ export function calculateRoadmapProgress(
   let remainingMinutes = 0;
   let hasEstimatedMinutes = false;
 
-  const statusMap: Record<string, NodeStatus> = {};
-
   for (const node of trackableNodes) {
     const st = nodeStatuses[node.id] || 'default';
-    statusMap[node.id] = st;
 
     if (st === 'done') {
       done++;
@@ -102,6 +116,7 @@ export function calculateRoadmapProgress(
       }
     }
   }
+
 
   const completionPercentage = total > 0 ? Math.round((done / total) * 100) : 0;
   const isComplete = total > 0 && done === total;

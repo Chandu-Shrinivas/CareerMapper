@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { 
-  Briefcase, ArrowRight, Award, MapPin
+  Briefcase, ArrowRight, Award, MapPin, AlertCircle
 } from 'lucide-react';
 import { Card } from '../components/ui/card';
 import { Badge } from '../components/ui/badge';
@@ -45,14 +45,14 @@ export default function MyRoadmapsPage() {
       <div className="space-y-3">
         <div className="flex items-center gap-2">
           <Badge className="bg-emerald-500/10 border-emerald-500/30 text-emerald-400 font-mono text-[10px] uppercase px-3 py-1">
-            SYSTEM 2 — JOB PREPARATION PLANS
+            MY JOB PREPARATION ROADMAPS
           </Badge>
         </div>
         <h1 className="text-2xl sm:text-3xl font-black text-white tracking-tight">
           My Job Preparation Roadmaps
         </h1>
         <p className="text-xs text-zinc-400 max-w-3xl leading-relaxed">
-          Your active, job-bound preparation roadmaps. Each plan is custom-built for a specific job posting, analyzing skill gaps, calculating deterministic readiness scores, and generating actionable prep phases.
+          Job-specific preparation roadmaps analyzing complete job descriptions, calculating deterministic readiness scores, matching your skills inventory, and providing custom preparation graphs.
         </p>
       </div>
 
@@ -60,7 +60,7 @@ export default function MyRoadmapsPage() {
       {loading && (
         <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
           {[1, 2].map(i => (
-            <Skeleton key={i} className="h-52 w-full rounded-2xl bg-zinc-900" />
+            <Skeleton key={i} className="h-48 w-full rounded-2xl bg-zinc-900" />
           ))}
         </div>
       )}
@@ -82,18 +82,18 @@ export default function MyRoadmapsPage() {
             <Briefcase className="size-7" />
           </div>
           <div className="space-y-2">
-            <h3 className="text-base font-bold text-white">No Job Preparation Roadmaps Yet</h3>
+            <h3 className="text-base font-bold text-white">No job preparation roadmaps yet.</h3>
             <p className="text-xs text-zinc-400 leading-relaxed max-w-md mx-auto">
-              Search live job listings or saved jobs, then click <strong>"Prepare for this Job"</strong> to generate a custom preparation plan and skill gap breakdown.
+              Open a job and choose <strong>"Prepare for this Job"</strong> to create a job-specific preparation plan.
             </p>
           </div>
           <Button onClick={() => navigate('/jobs')} className="bg-white hover:bg-zinc-200 text-zinc-950 font-bold text-xs h-10 px-6 rounded-xl shadow">
-            Browse Job Listings →
+            Explore Jobs →
           </Button>
         </Card>
       )}
 
-      {/* Preparations Grid */}
+      {/* Preparations Concise Cards Grid */}
       {!loading && !error && preparations.length > 0 && (
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {preparations.map((prep) => (
@@ -127,7 +127,7 @@ export default function MyRoadmapsPage() {
                   <div className="text-right shrink-0 bg-zinc-950 border border-zinc-800 px-3 py-1.5 rounded-xl">
                     <span className="text-[9px] font-bold text-zinc-500 uppercase tracking-widest block">Readiness</span>
                     <span className="font-mono text-sm font-black text-emerald-400 flex items-center gap-1 justify-end">
-                      <Award className="size-3.5" /> {prep.readinessScore}%
+                      <Award className="size-3.5" /> {prep.readinessScore}% Ready
                     </span>
                   </div>
                 </div>
@@ -135,22 +135,23 @@ export default function MyRoadmapsPage() {
                 {/* Progress breakdown */}
                 <div className="space-y-2 pt-2 border-t border-zinc-900">
                   <div className="flex justify-between items-center text-xs font-mono">
-                    <span className="text-zinc-400 font-bold">Preparation Progress</span>
-                    <span className="text-zinc-300 font-bold">{prep.completedTasks} / {prep.totalTasks} Tasks</span>
+                    <span className="text-zinc-400 font-bold">Preparation Completion</span>
+                    <span className="text-zinc-300 font-bold">{prep.completedNodes || 0} / {prep.totalNodes || 0} Topics</span>
                   </div>
-                  <Progress value={prep.progressPercentage} className="h-2 bg-zinc-950" />
+                  <Progress value={prep.progressPercentage || 0} className="h-2 bg-zinc-950" />
                 </div>
               </div>
 
+              {/* Card Footer Summary */}
               <div className="pt-3 border-t border-zinc-900 flex items-center justify-between text-xs">
                 <div className="flex items-center gap-3 text-zinc-500 font-mono text-[10px]">
-                  <span>✓ {prep.matchedSkillsCount} Matched</span>
+                  <span>{prep.totalGapsCount || 0} gaps remaining</span>
                   <span>·</span>
-                  <span className="text-amber-400 font-bold">🔴 {prep.missingSkillsCount} Skill Gaps</span>
+                  <span className="text-rose-400 font-bold">{prep.criticalGapsCount || 0} critical gaps</span>
                 </div>
 
                 <span className="text-emerald-400 font-bold flex items-center gap-1 group-hover:translate-x-1 transition-transform">
-                  Continue Prep <ArrowRight className="size-3.5" />
+                  Continue Preparation <ArrowRight className="size-3.5" />
                 </span>
               </div>
             </Card>

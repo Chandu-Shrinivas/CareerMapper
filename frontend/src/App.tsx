@@ -99,6 +99,8 @@ export default function App() {
           <Route path="/role-roadmaps" element={<ProtectedRoute><WorkspaceLayout><RoleRoadmapsPage /></WorkspaceLayout></ProtectedRoute>} />
           <Route path="/role-roadmaps/:slug" element={<ProtectedRoute><WorkspaceLayout><RoleRoadmapDetailPage /></WorkspaceLayout></ProtectedRoute>} />
           <Route path="/career-roadmap/:slug" element={<ProtectedRoute><WorkspaceLayout><RoleRoadmapDetailPage /></WorkspaceLayout></ProtectedRoute>} />
+          <Route path="/details/:slug" element={<ProtectedRoute><WorkspaceLayout><RoleRoadmapDetailPage /></WorkspaceLayout></ProtectedRoute>} />
+          <Route path="/roadmaps/:slug" element={<ProtectedRoute><WorkspaceLayout><RoleRoadmapDetailPage /></WorkspaceLayout></ProtectedRoute>} />
           <Route path="/my-roadmaps" element={<ProtectedRoute><WorkspaceLayout><MyRoadmapsPage /></WorkspaceLayout></ProtectedRoute>} />
           <Route path="/job-preparation/:id" element={<ProtectedRoute><WorkspaceLayout><JobPreparationDetailPage /></WorkspaceLayout></ProtectedRoute>} />
           <Route path="/career-paths" element={<ProtectedRoute><WorkspaceLayout><CareerPaths /></WorkspaceLayout></ProtectedRoute>} />

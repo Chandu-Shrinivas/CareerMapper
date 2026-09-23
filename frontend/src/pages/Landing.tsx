@@ -6,6 +6,7 @@ import { Input } from '../components/ui/input';
 import { Label } from '../components/ui/label';
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from '../components/ui/card';
 import { authService } from '../services/auth';
+import { Logo } from '../components/brand/Logo';
 
 export default function Landing() {
   const navigate = useNavigate();
@@ -114,7 +115,7 @@ export default function Landing() {
       {/* Top Navbar */}
       <header className="border-b border-border bg-background/50 backdrop-blur-md sticky top-0 z-50">
         <div className="max-w-[1100px] mx-auto px-6 h-14 flex items-center justify-between">
-          <span className="font-display font-bold text-md tracking-tight">CareerMapper</span>
+          <Logo size="sm" textClassName="text-sm font-bold text-foreground" />
           <div className="flex items-center gap-4 text-xs font-medium text-muted-foreground">
             <a href="#auth-section" className="hover:text-foreground transition-colors">Get Started</a>
             <span className="h-3 w-px bg-border"></span>

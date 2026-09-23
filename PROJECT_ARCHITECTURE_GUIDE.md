@@ -11,7 +11,7 @@
   ```mermaid
   graph TD
       %% Frontend Pages
-      subgraph Frontend [React SPA - Port 3000]
+      subgraph Frontend [React SPA - Port 5173]
           UI_Home["Home Page (/)"] --> UI_Analysis["Analysis Page (/analysis)"]
           UI_Home --> UI_Manual["Manual Entry (/manual)"]
           UI_Analysis --> UI_Recs["Recommendations (/recommendations)"]
@@ -169,14 +169,14 @@
   * **File Path**: [role.service.js](file:///c:/Users/Lenovo/Downloads/CareerMapper-main/backend/src/services/role.service.js) → `matchRoles` (Orchestrates ML call & merge)
 
   ### 11. Frontend Pages
-  * **Purpose**: User interface pages compiled into static assets served on Port 3000.
-  * **Routing File**: Encapsulated within `frontend/dist/assets/index-Dbmc6PXd.js`
+  * **Purpose**: User interface pages served by Vite dev server on Port 5173 (or built static assets in dist/).
+  * **Routing File**: [App.tsx](file:///c:/Users/Lenovo/Downloads/CareerMapper-main/frontend/src/App.tsx) (React Router page routing)
   * **Pages and Routes**:
-    * **Landing Page (`/`)**: Main entry. Choice between PDF upload and manual skill entry.
-    * **Resume Upload Page (`/analysis`)**: Handles dragging/dropping resume PDF, shows progress animations, calls backend `/extract-skills`.
-    * **Manual Skill Form (`/manual`)**: Form to select skills/proficiency, calls backend `/detect-domain`.
-    * **Recommendations (`/recommendations`)**: Displays Top-3 recommended career tracks, percentages, domain, confidence, and missing skills.
-    * **Role Details (`/details/:roleName`)**: Dynamic page presenting career roadmaps and training paths for a selected job role.
+    * **Landing Page (`/`)**: [Landing.tsx](file:///c:/Users/Lenovo/Downloads/CareerMapper-main/frontend/src/pages/Landing.tsx) — Main entry with feature overview and quick access.
+    * **Resume Upload Page (`/analysis`)**: [Upload.tsx](file:///c:/Users/Lenovo/Downloads/CareerMapper-main/frontend/src/pages/Upload.tsx) — Handles dragging/dropping resume PDF, progress animations, calls backend `/extract-skills`.
+    * **Manual Skill Form (`/manual`)**: [ManualEntry.tsx](file:///c:/Users/Lenovo/Downloads/CareerMapper-main/frontend/src/pages/ManualEntry.tsx) — Interactive skill selection, calls backend `/detect-domain`.
+    * **Recommendations (`/recommendations`)**: [Recommendations.tsx](file:///c:/Users/Lenovo/Downloads/CareerMapper-main/frontend/src/pages/Recommendations.tsx) — Displays Top-3 recommended career tracks, match scores, domain, confidence, and skill gap cards.
+    * **Role Details (`/details/:roleName`)**: [RoleDetail.tsx](file:///c:/Users/Lenovo/Downloads/CareerMapper-main/frontend/src/pages/RoleDetail.tsx) — Dynamic page presenting interactive career roadmaps and module training paths.
 
   ---
 
@@ -215,22 +215,25 @@
   │   │   └── utils/                 # Utilities (proximity level detector, skill normalizer, file reader)
   │   └── tests/                     # Unit and integration test suites
   │
-  ├── frontend/                      # React SPA build deployment folder (Port 3000)
-  │   ├── dist/                      # Static web deployment files
-  │   │   ├── index.html             # HTML landing wrapper
-  │   │   └── assets/                # Compiled CSS styling and Javascript module bundles
-  │   └── src/                       # React source root (contains empty templates)
+  ├── frontend/                      # React 19 + TypeScript + Vite SPA (Port 5173)
+  │   ├── dist/                      # Production build distribution folder
+  │   └── src/                       # React application source code
+  │       ├── components/            # Reusable UI components (Navbar, Footer, SkillBadge, GapCard, etc.)
+  │       ├── context/               # React Context providers (AssessmentContext)
+  │       ├── data/                  # Static roadmap & SVG assets
+  │       ├── hooks/                 # Custom React hooks
+  │       ├── pages/                 # Route page components (Landing, Upload, ManualEntry, Recommendations, RoleDetail)
+  │       ├── services/              # API Client (api.ts) & backend communication layer
+  │       └── types/                 # TypeScript interfaces & domain schemas
   │
   ├── ml/                            # Active Python ML Inference Service (Port 8000)
   │   ├── datasets/                  # Raw and preprocessed CSV IT roles data
   │   ├── models/                    # Serialized joblib models (LinearSVC, TF-IDF Vectorizer)
-  │   ├── notebooks/                 # Baseline model training Jupyer notebook (.ipynb)
+  │   ├── notebooks/                 # Baseline model training Jupyter notebook (.ipynb)
   │   ├── scripts/                   # Dataset preprocessing & clean CSV generation python files
   │   ├── utils/                     # Spam filter, quality check, and Inference Guard logic
   │   ├── inference_service.py       # FastAPI routing, health checks, and prediction endpoint
   │   └── requirements.txt           # Python library requirements (scikit-learn, joblib, fastapi)
-  │
-  └── ml-service/                    # Stale/duplicate Python project folder (unused)
   ```
 
   ---

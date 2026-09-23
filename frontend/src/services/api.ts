@@ -970,6 +970,118 @@ export const api = {
         category: 'Mobile',
         icon: 'Smartphone',
         nodeCount: 65
+      },
+      {
+        slug: 'software-architect',
+        title: 'Software Architect',
+        description: 'Step by step guide to becoming a Software Architect in 2026',
+        category: 'Engineering',
+        icon: 'Layers',
+        nodeCount: 68
+      },
+      {
+        slug: 'qa',
+        title: 'QA Engineer / Automation Tester',
+        description: 'Steps to follow in order to become a modern QA Engineer in 2026',
+        category: 'Engineering',
+        icon: 'CheckCircle',
+        nodeCount: 237
+      },
+      {
+        slug: 'cyber-security',
+        title: 'Cyber Security Expert',
+        description: 'Step by step guide to becoming a Cyber Security Expert in 2026',
+        category: 'Security',
+        icon: 'Shield',
+        nodeCount: 302
+      },
+      {
+        slug: 'api-design',
+        title: 'API Design',
+        description: 'Step by step guide to learn how to design and build robust APIs in 2026',
+        category: 'Engineering',
+        icon: 'Layers',
+        nodeCount: 98
+      },
+      {
+        slug: 'technical-writer',
+        title: 'Technical Writer',
+        description: 'Roadmap for anyone looking for a career in technical writing in 2026',
+        category: 'Engineering',
+        icon: 'Layers',
+        nodeCount: 65
+      },
+      {
+        slug: 'ux-design',
+        title: 'UX Design',
+        description: 'Step by step guide to becoming a UX Designer in 2026',
+        category: 'Engineering',
+        icon: 'Layout',
+        nodeCount: 94
+      },
+      {
+        slug: 'game-developer',
+        title: 'Game Developer',
+        description: 'Step by step guide to becoming a Game Developer in 2026',
+        category: 'Engineering',
+        icon: 'Layers',
+        nodeCount: 110
+      },
+      {
+        slug: 'product-manager',
+        title: 'Product Manager',
+        description: 'Everything you need to know to become a Product Manager in 2026',
+        category: 'Management',
+        icon: 'Layers',
+        nodeCount: 85
+      },
+      {
+        slug: 'mlops',
+        title: 'MLOps',
+        description: 'Step by step guide to learn MLOps in 2026',
+        category: 'AI & Data',
+        icon: 'Cpu',
+        nodeCount: 48
+      },
+      {
+        slug: 'system-design',
+        title: 'System Design',
+        description: 'Everything you need to know about designing large-scale systems in 2026',
+        category: 'Engineering',
+        icon: 'Server',
+        nodeCount: 147
+      },
+      {
+        slug: 'engineering-manager',
+        title: 'Engineering Manager',
+        description: 'Everything you need to know to become an Engineering Manager in 2026',
+        category: 'Management',
+        icon: 'Cpu',
+        nodeCount: 133
+      },
+      {
+        slug: 'forward-deployed-engineer',
+        title: 'Forward Deployed Engineer',
+        description: 'Step-by-step guide to becoming a Forward Deployed Engineer in 2026',
+        category: 'Engineering',
+        icon: 'Cpu',
+        nodeCount: 15
+      },
+      {
+        slug: 'aspnet-core',
+        title: 'ASP.NET Core Developer',
+        description: 'Step-by-step guide to becoming an ASP.NET Core developer in 2026',
+        category: 'Engineering',
+        icon: 'Server',
+        nodeCount: 16
+      },
+      {
+        slug: 'datastructures-and-algorithms',
+        title: 'Data Structures & Algorithms',
+        description: 'Step by step guide to learn Data Structures and Algorithms in 2026',
+        category: 'Computer Science',
+        icon: 'Code',
+        nodeCount: 107
       }
     ];
 
@@ -1007,7 +1119,7 @@ export const api = {
   // ---------------- SYSTEM 2: JOB PREPARATION ROADMAPS ----------------
   async getJobPreparations(): Promise<any> {
     const email = authService.getSession().user?.email || '';
-    const response = await fetch(`${BACKEND_URL}/job-prep`, {
+    const response = await fetch(`${BACKEND_URL}/job-preparation?email=${encodeURIComponent(email)}`, {
       headers: { 'X-User-Email': email }
     });
     if (!response.ok) throw new Error('Failed to fetch job preparations.');
@@ -1016,44 +1128,98 @@ export const api = {
 
   async getJobPreparationById(id: string): Promise<any> {
     const email = authService.getSession().user?.email || '';
-    const response = await fetch(`${BACKEND_URL}/job-prep/${id}`, {
+    const response = await fetch(`${BACKEND_URL}/job-preparation/${id}?email=${encodeURIComponent(email)}`, {
       headers: { 'X-User-Email': email }
     });
     if (!response.ok) throw new Error('Failed to fetch job preparation detail.');
     return response.json();
   },
 
-  async prepareJob(jobId: string): Promise<any> {
+  async prepareJob(jobId: string, userSkills: string[] = []): Promise<any> {
     const email = authService.getSession().user?.email || '';
-    const response = await fetch(`${BACKEND_URL}/job-prep/generate`, {
+    const response = await fetch(`${BACKEND_URL}/job-preparation/prepare/${jobId}`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
         'X-User-Email': email
       },
-      body: JSON.stringify({ jobId })
+      body: JSON.stringify({ email, userSkills })
     });
-    if (!response.ok) throw new Error('Failed to initialize job preparation.');
+    if (!response.ok) {
+      const err = await response.json().catch(() => ({}));
+      throw new Error(err.message || 'Failed to initialize job preparation.');
+    }
+    return response.json();
+  },
+
+  async togglePreparationNode(prepId: string, nodeId: string, status: string = 'done'): Promise<any> {
+    const email = authService.getSession().user?.email || '';
+    const response = await fetch(`${BACKEND_URL}/job-preparation/${prepId}/node-status`, {
+      method: 'PATCH',
+      headers: {
+        'Content-Type': 'application/json',
+        'X-User-Email': email
+      },
+      body: JSON.stringify({ email, nodeId, status })
+    });
+    if (!response.ok) throw new Error('Failed to update roadmap node status.');
+    return response.json();
+  },
+
+  async recalculateReadiness(prepId: string): Promise<any> {
+    const email = authService.getSession().user?.email || '';
+    const response = await fetch(`${BACKEND_URL}/job-preparation/${prepId}/recalculate`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'X-User-Email': email
+      },
+      body: JSON.stringify({ email })
+    });
+    if (!response.ok) throw new Error('Failed to recalculate readiness.');
+    return response.json();
+  },
+
+  async reanalyzeJob(prepId: string): Promise<any> {
+    const email = authService.getSession().user?.email || '';
+    const response = await fetch(`${BACKEND_URL}/job-preparation/${prepId}/reanalyze`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'X-User-Email': email
+      },
+      body: JSON.stringify({ email })
+    });
+    if (!response.ok) throw new Error('Failed to re-analyze job description.');
     return response.json();
   },
 
   async togglePreparationTask(prepId: string, taskId: string): Promise<any> {
-    const email = authService.getSession().user?.email || '';
-    const response = await fetch(`${BACKEND_URL}/job-prep/${prepId}/tasks/${taskId}/toggle`, {
-      method: 'POST',
-      headers: { 'X-User-Email': email }
-    });
-    if (!response.ok) throw new Error('Failed to toggle task progress.');
-    return response.json();
+    return this.togglePreparationNode(prepId, taskId, 'done');
   },
 
   // Job Interview Prep Aliases
   async getJobInterviewPrep(prepId: string): Promise<any> {
-    return this.getInterviewPrep(prepId);
+    const email = authService.getSession().user?.email || '';
+    const response = await fetch(`${BACKEND_URL}/job-preparation/${prepId}/interview-prep?email=${encodeURIComponent(email)}`, {
+      headers: { 'X-User-Email': email }
+    });
+    if (!response.ok) throw new Error('Failed to fetch interview prep.');
+    return response.json();
   },
 
   async startJobInterviewSimulation(prepId: string, mode?: string): Promise<any> {
-    return this.startInterviewSimulation(prepId, mode);
+    const email = authService.getSession().user?.email || '';
+    const response = await fetch(`${BACKEND_URL}/job-preparation/${prepId}/interview-simulation`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'X-User-Email': email
+      },
+      body: JSON.stringify({ email, mode })
+    });
+    if (!response.ok) throw new Error('Failed to start interview simulation.');
+    return response.json();
   },
 
   async respondJobInterviewSimulation(sessionId: string, questionId: string, userAnswer: string): Promise<any> {

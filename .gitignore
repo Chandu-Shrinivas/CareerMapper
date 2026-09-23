@@ -17,3 +17,7 @@ env/
 frontend/.git_bak/
 **/scratch/
 .agents/
+.tmp/
+data/
+*.parquet
+*.csv
